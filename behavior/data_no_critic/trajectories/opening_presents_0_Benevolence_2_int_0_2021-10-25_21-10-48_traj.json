@@ -1,0 +1,173 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1",
+          "Next to: package_1",
+          "Next to: package_0"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "package_1",
+        "category": "package",
+        "State description ": [
+          "Location: bedroom",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "package_0",
+        "category": "package",
+        "State description ": [
+          "Location: bedroom",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1",
+          "Next to: bed_10"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "package_1",
+      "thoughts": "The goal is for all packages to be open. Both package_1 and package_0 are closed. I will start by opening package_1, as either can be opened first."
+    },
+    "goal": "target environment state:\n['forall', 'package.n.02', '-', 'package.n.02', 'open', 'package.n.02']\n\n\n",
+    "feedback": "Open package_1 failed"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1",
+          "Next to: package_1",
+          "Next to: package_0"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "package_1",
+        "category": "package",
+        "State description ": [
+          "Location: bedroom",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "package_0",
+        "category": "package",
+        "State description ": [
+          "Location: bedroom",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1",
+          "Next to: bed_10"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "package_0",
+      "thoughts": "The goal is for all packages to be open. package_1 is already open, but package_0 is closed. I will attempt to open package_0 to progress toward the goal."
+    },
+    "goal": "target environment state:\n['forall', 'package.n.02', '-', 'package.n.02', 'open', 'package.n.02']\n\n\n",
+    "feedback": "Open package_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1",
+          "Next to: package_1",
+          "Next to: package_0"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "package_1",
+        "category": "package",
+        "State description ": [
+          "Location: bedroom",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "package_0",
+        "category": "package",
+        "State description ": [
+          "Location: bedroom",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1",
+          "Next to: bed_10"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "Both package_0 and package_1 are already open according to the current environment state, so the goal is achieved."
+    },
+    "goal": "target environment state:\n['forall', 'package.n.02', '-', 'package.n.02', 'open', 'package.n.02']\n\n\n",
+    "feedback": ""
+  }
+]

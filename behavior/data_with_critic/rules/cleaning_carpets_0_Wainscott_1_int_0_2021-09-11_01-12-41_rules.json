@@ -1,0 +1,23 @@
+[
+    
+    {
+        "rule": "G(!sink_51_is_toggled_on -> X(!soak_hand_towel_102))",
+        "explanation": "Require the sink to be on before soaking the towel."
+    },
+    {
+        "rule": "G(hand_towel_102_in_hand -> X(!left_grasp_hand_towel_102))",
+        "explanation": "Block repeated grasp attempts when the towel is already in hand."
+    },
+    {
+        "rule": "G(!hand_towel_102_in_hand -> X(!hand_towel_102_place_inside_sink_51))",
+        "explanation": "Disallow placing the towel in the sink unless it is actually held."
+    },
+    {
+        "rule": "G(!hand_towel_102_in_hand -> X(!clean_room_floor_corridor_0))",
+        "explanation": "Prevent cleaning the floor without a towel in hand."
+    },
+    {
+        "rule": "G(!room_floor_corridor_0_is_stained -> X(!clean_room_floor_corridor_0))",
+        "explanation": "Once the floor is clean, forbid further cleaning actions."
+    }
+]

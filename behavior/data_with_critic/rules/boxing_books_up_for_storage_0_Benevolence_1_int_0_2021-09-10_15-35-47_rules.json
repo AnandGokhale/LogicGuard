@@ -1,0 +1,66 @@
+[
+    {
+        "rule": "G(!notebook_59_in_hand -> X(!notebook_59_place_inside_carton_66))",
+        "explanation": "Don\u2019t place notebook_59 into the carton unless it\u2019s in hand."
+    },
+    {
+        "rule": "G(notebook_59_inside_carton_66 -> X(!left_grasp_notebook_59))",
+        "explanation": "Once notebook_59 is inside the carton, don\u2019t grasp it again."
+    },
+    {
+        "rule": "G(!notebook_60_in_hand -> X(!notebook_60_place_inside_carton_66))",
+        "explanation": "Don\u2019t place notebook_60 into the carton unless it\u2019s in hand."
+    },
+    {
+        "rule": "G(notebook_60_inside_carton_66 -> X(!left_grasp_notebook_60))",
+        "explanation": "Once notebook_60 is inside the carton, don\u2019t grasp it again."
+    },
+    {
+        "rule": "G(!notebook_61_in_hand -> X(!notebook_61_place_inside_carton_66))",
+        "explanation": "Don\u2019t place notebook_61 into the carton unless it\u2019s in hand."
+    },
+    {
+        "rule": "G(notebook_61_inside_carton_66 -> X(!left_grasp_notebook_61))",
+        "explanation": "Once notebook_61 is inside the carton, don\u2019t grasp it again."
+    },
+    {
+        "rule": "G(!notebook_62_in_hand -> X(!notebook_62_place_inside_carton_66))",
+        "explanation": "Don\u2019t place notebook_62 into the carton unless it\u2019s in hand."
+    },
+    {
+        "rule": "G(notebook_62_inside_carton_66 -> X(!left_grasp_notebook_62))",
+        "explanation": "Once notebook_62 is inside the carton, don\u2019t grasp it again."
+    },
+    {
+        "rule": "G(!notebook_63_in_hand -> X(!notebook_63_place_inside_carton_66))",
+        "explanation": "Don\u2019t place notebook_63 into the carton unless it\u2019s in hand."
+    },
+    {
+        "rule": "G(notebook_63_inside_carton_66 -> X(!left_grasp_notebook_63))",
+        "explanation": "Once notebook_63 is inside the carton, don\u2019t grasp it again."
+    },
+    {
+        "rule": "G(!hardback_64_in_hand -> X(!hardback_64_place_inside_carton_66))",
+        "explanation": "Don\u2019t place hardback_64 into the carton unless it\u2019s in hand."
+    },
+    {
+        "rule": "G(hardback_64_inside_carton_66 -> X(!left_grasp_hardback_64))",
+        "explanation": "Once hardback_64 is inside the carton, don\u2019t grasp it again."
+    },
+    {
+        "rule": "G(!hardback_65_in_hand -> X(!hardback_65_place_inside_carton_66))",
+        "explanation": "Don\u2019t place hardback_65 into the carton unless it\u2019s in hand."
+    },
+    {
+        "rule": "G(hardback_65_inside_carton_66 -> X(!left_grasp_hardback_65))",
+        "explanation": "Once hardback_65 is inside the carton, don\u2019t grasp it again."
+    },
+    {
+        "rule": "G((notebook_59_inside_carton_66 & notebook_60_inside_carton_66 & notebook_61_inside_carton_66 & notebook_62_inside_carton_66 & notebook_63_inside_carton_66 & hardback_64_inside_carton_66 & hardback_65_inside_carton_66) -> X(done))",
+        "explanation": "When all seven objects are in the carton, signal task completion."
+    },
+    {
+        "rule": "G((notebook_59_inside_carton_66 & notebook_60_inside_carton_66 & notebook_61_inside_carton_66 & notebook_62_inside_carton_66 & notebook_63_inside_carton_66 & hardback_64_inside_carton_66 & hardback_65_inside_carton_66) -> X(!left_grasp_notebook_59 & !left_grasp_notebook_60 & !left_grasp_notebook_61 & !left_grasp_notebook_62 & !left_grasp_notebook_63 & !left_grasp_hardback_64 & !left_grasp_hardback_65 & !notebook_59_place_inside_carton_66 & !notebook_60_place_inside_carton_66 & !notebook_61_place_inside_carton_66 & !notebook_62_place_inside_carton_66 & !notebook_63_place_inside_carton_66 & !hardback_64_place_inside_carton_66 & !hardback_65_place_inside_carton_66))",
+        "explanation": "After completion, block any further grasps or placements of the target objects."
+    }
+]

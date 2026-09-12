@@ -1,0 +1,270 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "vacuum_0",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "vacuum_0",
+      "thoughts": "The goal is to remove dust from the bedroom floor. The vacuum is a cleaning tool and is currently toggled off. Turning it on is the first step toward cleaning the dusty floor."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Toggleon vacuum_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "vacuum_0",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "room_floor_bedroom_0",
+      "thoughts": "The vacuum is already toggled on and can be used as a cleaning tool. The bedroom floor is dusty, so the next step is to use the vacuum to clean the dust from the floor."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Clean-dust failed, please place object in a toggled on cleaner or get a cleaner first"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "vacuum_0",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "vacuum_0",
+      "thoughts": "The vacuum is toggled on and can be used as a cleaning tool, but the robot needs to grasp it before using it to clean the floor."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp vacuum_0 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "vacuum_0"
+    },
+    "object_state": [
+      {
+        "name": "vacuum_0",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "room_floor_bedroom_0",
+      "thoughts": "The robot is holding the vacuum in its right hand, which is toggled on and clean. The floor is dusty. The next step is to use the vacuum to clean the bedroom floor to achieve the goal state."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Clean-dust floors success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "vacuum_0"
+    },
+    "object_state": [
+      {
+        "name": "vacuum_0",
+        "category": "vacuum",
+        "State description ": [
+          "Location: None",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "room_floor_bedroom_0",
+      "thoughts": "The robot is holding a toggled-on vacuum in its right hand and the bedroom floor is dusty. Using the vacuum to clean the bedroom floor will help achieve the goal state of a non-dusty floor."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "vacuum_0"
+    },
+    "object_state": [
+      {
+        "name": "vacuum_0",
+        "category": "vacuum",
+        "State description ": [
+          "Location: None",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "The room_floor_bedroom_0 is already clean, as indicated by its Dust status: Clean in the current environment state. The goal is already achieved."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": ""
+  }
+]

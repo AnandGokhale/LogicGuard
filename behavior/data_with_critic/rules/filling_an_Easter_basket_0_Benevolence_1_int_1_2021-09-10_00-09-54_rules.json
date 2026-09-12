@@ -1,0 +1,66 @@
+[
+    {
+        "rule": "G((!basket_0_in_hand) -> X(!basket_0_place_ontop_countertop_18))",
+        "explanation": "Don\u2019t place basket_0 on the countertop unless it is currently held."
+    },
+    {
+        "rule": "G(basket_0_on_top_of_countertop_18 -> X(!left_grasp_basket_0))",
+        "explanation": "Once basket_0 is correctly placed, block any further grasp of it."
+    },
+    {
+        "rule": "G((!basket_1_in_hand) -> X(!basket_1_place_ontop_countertop_18))",
+        "explanation": "Don\u2019t place basket_1 on the countertop unless it is currently held."
+    },
+    {
+        "rule": "G(basket_1_on_top_of_countertop_18 -> X(!left_grasp_basket_1))",
+        "explanation": "Once basket_1 is correctly placed, block any further grasp of it."
+    },
+    {
+        "rule": "G((!egg_0_in_hand) -> X(!egg_0_place_inside_basket_0))",
+        "explanation": "Prevent placing egg_0 into basket_0 unless egg_0 is in hand."
+    },
+    {
+        "rule": "G(egg_0_inside_basket_0 -> X(!egg_0_place_inside_basket_0))",
+        "explanation": "Once egg_0 is inside basket_0, block any further attempts to place it there."
+    },
+    {
+        "rule": "G((!lollipop_0_in_hand) -> X(!lollipop_0_place_inside_basket_0))",
+        "explanation": "Prevent placing lollipop_0 into basket_0 unless lollipop_0 is in hand."
+    },
+    {
+        "rule": "G(lollipop_0_inside_basket_0 -> X(!lollipop_0_place_inside_basket_0))",
+        "explanation": "Once lollipop_0 is inside basket_0, block any further attempts to place it there."
+    },
+    {
+        "rule": "G((!bracelet_0_in_hand) -> X(!bracelet_0_place_inside_basket_1))",
+        "explanation": "Prevent placing bracelet_0 into basket_1 unless bracelet_0 is in hand."
+    },
+    {
+        "rule": "G(bracelet_0_inside_basket_1 -> X(!bracelet_0_place_inside_basket_1))",
+        "explanation": "Once bracelet_0 is inside basket_1, block any further attempts to place it there."
+    },
+    {
+        "rule": "G((!ball_0_in_hand) -> X(!ball_0_place_inside_basket_0))",
+        "explanation": "Prevent placing ball_0 into basket_0 unless ball_0 is in hand."
+    },
+    {
+        "rule": "G(ball_0_inside_basket_0 -> X(!ball_0_place_inside_basket_0))",
+        "explanation": "Once ball_0 is inside basket_0, block any further attempts to place it there."
+    },
+    {
+        "rule": "G((!bow_0_in_hand) -> X(!left_grasp_bow_0))",
+        "explanation": "Don\u2019t grasp bow_0 unless it is needed for placement."
+    },
+    {
+        "rule": "G((!bow_1_in_hand) -> X(!left_grasp_bow_1))",
+        "explanation": "Don\u2019t grasp bow_1 unless it is needed for placement."
+    },
+    {
+        "rule": "G((basket_0_on_top_of_countertop_18 & basket_1_on_top_of_countertop_18 & egg_0_inside_basket_0 & egg_1_inside_basket_1 & lollipop_0_inside_basket_0 & lollipop_1_inside_basket_1 & bracelet_0_inside_basket_1 & ball_0_inside_basket_0) -> X(done))",
+        "explanation": "As soon as all core placement subgoals are satisfied, trigger task completion."
+    },
+    {
+        "rule": "G((basket_0_on_top_of_countertop_18 & basket_1_on_top_of_countertop_18 & egg_0_inside_basket_0 & egg_1_inside_basket_1 & lollipop_0_inside_basket_0 & lollipop_1_inside_basket_1 & bracelet_0_inside_basket_1 & ball_0_inside_basket_0) -> X(!left_grasp_basket_0))",
+        "explanation": "Once the task is essentially done, block any further basket grasps to prevent undoing progress."
+    }
+]

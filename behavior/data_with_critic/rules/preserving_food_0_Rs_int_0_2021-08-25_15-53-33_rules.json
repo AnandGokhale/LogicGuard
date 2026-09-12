@@ -1,0 +1,70 @@
+[
+    {
+        "rule": "G(!carving_knife_66_in_hand -> X(!slice_strawberry_61))",
+        "explanation": "Block slicing strawberry 61 unless the knife is in hand."
+    },
+    {
+        "rule": "G(strawberry_61_is_sliced -> X(!slice_strawberry_61))",
+        "explanation": "Once strawberry 61 is sliced, prevent further slicing."
+    },
+    {
+        "rule": "G(!carving_knife_66_in_hand -> X(!slice_strawberry_62))",
+        "explanation": "Block slicing strawberry 62 unless the knife is in hand."
+    },
+    {
+        "rule": "G(strawberry_62_is_sliced -> X(!slice_strawberry_62))",
+        "explanation": "Once strawberry 62 is sliced, prevent further slicing."
+    },
+    {
+        "rule": "G(!jar_64_is_open -> X(!strawberry_61_part_0_place_inside_jar_64))",
+        "explanation": "Cannot place strawberry 61 part 0 into a closed jar."
+    },
+    {
+        "rule": "G(strawberry_61_part_0_inside_jar_64 -> X(!strawberry_61_part_0_place_inside_jar_64))",
+        "explanation": "Once part 0 is inside the jar, prevent re-placement."
+    },
+    {
+        "rule": "G(!jar_64_is_open -> X(!strawberry_61_part_1_place_inside_jar_64))",
+        "explanation": "Cannot place strawberry 61 part 1 into a closed jar."
+    },
+    {
+        "rule": "G(strawberry_61_part_1_inside_jar_64 -> X(!strawberry_61_part_1_place_inside_jar_64))",
+        "explanation": "Once part 1 is inside the jar, prevent re-placement."
+    },
+    {
+        "rule": "G(!jar_64_is_open -> X(!strawberry_62_part_0_place_inside_jar_64))",
+        "explanation": "Cannot place strawberry 62 part 0 into a closed jar."
+    },
+    {
+        "rule": "G(strawberry_62_part_0_inside_jar_64 -> X(!strawberry_62_part_0_place_inside_jar_64))",
+        "explanation": "Once strawberry 62 part 0 is inside the jar, prevent re-placement."
+    },
+    {
+        "rule": "G(!jar_64_is_open -> X(!strawberry_62_part_1_place_inside_jar_64))",
+        "explanation": "Cannot place strawberry 62 part 1 into a closed jar."
+    },
+    {
+        "rule": "G(strawberry_62_part_1_inside_jar_64 -> X(!strawberry_62_part_1_place_inside_jar_64))",
+        "explanation": "Once strawberry 62 part 1 is inside the jar, prevent re-placement."
+    },
+    {
+        "rule": "G(!beef_63_in_hand -> X(!beef_63_place_inside_fridge_40))",
+        "explanation": "Must grasp beef 63 before placing it into fridge 40."
+    },
+    {
+        "rule": "G(!fridge_40_is_open -> X(!beef_63_place_inside_fridge_40))",
+        "explanation": "Fridge 40 must be open to place beef inside."
+    },
+    {
+        "rule": "G(beef_63_inside_fridge_40 -> X(!beef_63_place_inside_fridge_40))",
+        "explanation": "Once beef 63 is inside the fridge, prevent redundant placement."
+    },
+    {
+        "rule": "G(!beef_63_inside_fridge_40 -> X(!freeze_beef_63))",
+        "explanation": "Cannot freeze beef 63 unless it is inside the fridge."
+    },
+    {
+        "rule": "G(beef_63_is_frozen -> X(!freeze_beef_63))",
+        "explanation": "Once beef 63 is frozen, prevent further freezing."
+    }
+]

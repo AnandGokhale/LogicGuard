@@ -1,0 +1,5316 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: cup_1",
+          "Under: cup_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: cup_1",
+          "Next to: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: breakfast_table_2",
+          "Next to: bowl_3",
+          "Next to: room_floor_dining_room_0",
+          "Next to: cup_0",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: breakfast_table_2",
+          "Next to: pop_0",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On top of: breakfast_table_2",
+          "Next to: catsup_0",
+          "Under: catsup_0"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: cup_1"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: bowl_1",
+          "Next to: cup_1",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: room_floor_dining_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "cup_0",
+      "thoughts": "To achieve the goal of placing all cups inside buckets, I need to start by picking up a cup. I choose cup_0 as it is available and on the table."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Grasp cup_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "cup_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: cup_1",
+          "Under: cup_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: cup_1",
+          "Next to: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: breakfast_table_2",
+          "Next to: bowl_3",
+          "Next to: room_floor_dining_room_0",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: breakfast_table_2",
+          "Next to: pop_0",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: bowl_1",
+          "Next to: cup_1",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: room_floor_dining_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "I am holding cup_0 in my left hand, and the goal requires all cups to be inside a bucket. bucket_0 is available and on the floor, so I will place cup_0 inside bucket_0 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Place inside cup_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: cup_1",
+          "Under: cup_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: cup_1",
+          "Next to: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: breakfast_table_2",
+          "Next to: bowl_3",
+          "Next to: room_floor_dining_room_0",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Inside: cup_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: breakfast_table_2",
+          "Next to: pop_0",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On top of: breakfast_table_2",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: bowl_1",
+          "Next to: cup_1",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: room_floor_dining_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bowl_0",
+      "thoughts": "The goal requires all bowls to be inside a bucket. Since my hands are empty, I will grasp bowl_0 first so I can place it inside bucket_0 in a subsequent step."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Grasp bowl_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bowl_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: cup_1",
+          "Under: cup_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: cup_1",
+          "Next to: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: breakfast_table_2",
+          "Next to: bowl_3",
+          "Next to: room_floor_dining_room_0",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Inside: cup_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: breakfast_table_2",
+          "Next to: pop_0",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: bowl_1",
+          "Next to: cup_1",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "I am currently holding bowl_0 in my left hand, and the goal requires all bowls to be inside a bucket. Placing bowl_0 inside bucket_0 will make progress toward satisfying this goal."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Place inside bowl_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: cup_1",
+          "Next to: pop_0",
+          "Under: cup_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: cup_1",
+          "Next to: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: breakfast_table_2",
+          "Next to: bowl_3",
+          "Next to: room_floor_dining_room_0",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "Inside: cup_0",
+          "Inside: bowl_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: breakfast_table_2",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: bowl_1",
+          "Next to: cup_1",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0",
+          "Inside: cup_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bowl_1",
+      "thoughts": "To satisfy the goal that all bowls are inside a bucket, I need to place bowl_1 inside a bucket. First, I will grasp bowl_1 so I can move it toward a bucket."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Grasp bowl_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bowl_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: cup_1",
+          "Under: cup_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: cup_1",
+          "Next to: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: breakfast_table_2",
+          "Next to: bowl_3",
+          "Next to: room_floor_dining_room_0",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "Inside: cup_0",
+          "Inside: bowl_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: breakfast_table_2",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: cup_1",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0",
+          "Inside: cup_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_1",
+      "thoughts": "I am holding bowl_1 in my left hand. To satisfy the goal that all bowls are inside a bucket, I will place bowl_1 inside bucket_1, which is currently in the dining room and accessible."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Place inside bowl_1 bucket_1 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: cup_1",
+          "Next to: pop_0",
+          "Under: cup_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_1",
+          "Inside: bucket_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: cup_1",
+          "Next to: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: breakfast_table_2",
+          "Next to: bowl_3",
+          "Next to: room_floor_dining_room_0",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "Inside: cup_0",
+          "Inside: bowl_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: breakfast_table_2",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: cup_1",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0",
+          "Inside: cup_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bowl_3",
+      "thoughts": "To satisfy the goal that all bowls are inside a bucket, I need to put bowl_3 inside a bucket. I will grasp bowl_3 first to prepare for this action."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Grasp bowl_3 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bowl_3",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: cup_1",
+          "Next to: pop_0",
+          "Under: cup_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_1",
+          "Inside: bucket_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: breakfast_table_2",
+          "Next to: room_floor_dining_room_0",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "Inside: cup_0",
+          "Inside: bowl_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: breakfast_table_2",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: cup_1",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0",
+          "Inside: cup_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_1",
+      "thoughts": "To achieve the goal that all bowls are inside a bucket, I will place the bowl_3, which is currently in my left hand, inside bucket_1."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Place inside bowl_3 bucket_1 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2",
+          "Next to: cup_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: cup_1",
+          "Next to: pop_0",
+          "Under: cup_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_1",
+          "Under: bowl_3",
+          "Inside: bucket_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Inside: bowl_3",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_1",
+          "Inside: bucket_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: straight_chair_4",
+          "Next to: breakfast_table_2",
+          "Next to: room_floor_dining_room_0",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "Inside: cup_0",
+          "Inside: bowl_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: breakfast_table_2",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: cup_1",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0",
+          "Inside: cup_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "catsup_0",
+      "thoughts": "To satisfy the goal that a bucket is inside catsup_0, I need to first pick up catsup_0 so I can later put a bucket inside it."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Grasp catsup_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "catsup_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2",
+          "Next to: cup_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: cup_1",
+          "Under: cup_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_1",
+          "Under: bowl_3",
+          "Inside: bucket_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Inside: bowl_3",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_1",
+          "Inside: bucket_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: straight_chair_4",
+          "Next to: breakfast_table_2",
+          "Next to: room_floor_dining_room_0",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "Inside: cup_0",
+          "Inside: bowl_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: cup_1"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0",
+          "Inside: cup_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "bucket_1",
+      "thoughts": "To make progress toward putting a bucket inside catsup_0, I need to pick up a bucket with my free right hand so I can later place it inside the catsup bottle."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Teleport bowl_1 INSIDE bucket_1 successful: True\nTeleport bowl_3 INSIDE bucket_1 successful: True\nGrasp bucket_1 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "catsup_0",
+      "right_hand": "bucket_1"
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: cup_1",
+          "Under: cup_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Inside: bucket_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Inside: bowl_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Inside: bowl_1",
+          "Inside: bucket_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: breakfast_table_2",
+          "Next to: room_floor_dining_room_0",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "Inside: cup_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: straight_chair_4",
+          "Next to: straight_chair_4",
+          "Under: bowl_1",
+          "Under: bucket_1",
+          "Under: bowl_3"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: cup_1"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0",
+          "Inside: cup_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_1",
+      "thoughts": "To achieve the goal of having a bucket inside catsup_0, I need to free my left hand, which is currently holding catsup_0, so I will place catsup_0 inside bucket_1. This will allow me to manipulate the objects as required for the next steps."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Place inside catsup_0 bucket_1 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "bucket_1"
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: cup_1",
+          "Next to: pop_0",
+          "Under: cup_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "Inside: bucket_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "Under: bowl_1",
+          "Under: bowl_3",
+          "Under: catsup_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: catsup_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: breakfast_table_2",
+          "Next to: room_floor_dining_room_0",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "Inside: cup_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2",
+          "Under: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: cup_1"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0",
+          "Inside: cup_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_INSIDE",
+      "object": "catsup_0",
+      "thoughts": "The goal requires a bucket to be inside catsup_0. Since I am holding bucket_1 in my right hand and catsup_0 is accessible, I will place bucket_1 inside catsup_0 to satisfy the goal condition."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "catsup_0 is already in right_hand"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "bucket_1"
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: cup_1",
+          "Next to: pop_0",
+          "Under: cup_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "Inside: bucket_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "Under: bowl_1",
+          "Under: bowl_3",
+          "Under: catsup_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: catsup_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: breakfast_table_2",
+          "Next to: room_floor_dining_room_0",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2",
+          "Under: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: cup_1"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "cup_1",
+      "thoughts": "The goal requires all cups to be inside a bucket. My left hand is empty, so I will grasp cup_1, which is accessible, to prepare to place it inside a bucket."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Grasp cup_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "cup_1",
+      "right_hand": "bucket_1"
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2",
+          "Next to: bucket_1",
+          "Next to: bowl_2"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: catsup_0",
+          "Next to: room_floor_dining_room_0",
+          "Under: bowl_1",
+          "Under: bowl_3",
+          "Under: cup_1",
+          "Under: catsup_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: catsup_0",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: bowl_1",
+          "Under: bowl_3",
+          "Under: catsup_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "Inside: cup_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: cup_1",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Inside: bowl_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2",
+          "Next to: straight_chair_3",
+          "Under: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2",
+          "Next to: straight_chair_4"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_INSIDE",
+      "object": "cup_1",
+      "thoughts": "To progress towards the goal of having all cups inside a bucket, I will place the cup_1 (in my left hand) inside the bucket_1 (in my right hand). Since I am already holding both objects, this is the most direct next step."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "bucket_1 is bigger than cup_1"
+  },
+  {
+    "robot_state": {
+      "left_hand": "cup_1",
+      "right_hand": "bucket_1"
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "Inside: bucket_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Next to: room_floor_dining_room_0",
+          "Under: bowl_1",
+          "Under: bowl_3",
+          "Under: catsup_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: catsup_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bucket_1",
+          "Under: bowl_3",
+          "Inside: bucket_1"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2",
+          "Next to: straight_chair_3",
+          "Under: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_RELEASE",
+      "object": "bucket_1",
+      "thoughts": "Now that cup_1 has been placed inside bucket_1 and released from the right hand, I should release bucket_1 from my left hand to free up my hands for further actions, such as placing other bowls or cups inside buckets as required by the goal state."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "bucket_1 is not in left_hand"
+  },
+  {
+    "robot_state": {
+      "left_hand": "cup_1",
+      "right_hand": "bucket_1"
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "Inside: bucket_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Under: bowl_1",
+          "Under: bowl_3",
+          "Under: catsup_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Inside: bucket_1"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2",
+          "Next to: straight_chair_3",
+          "Under: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "bowl_1",
+      "thoughts": "To achieve the goal of placing all bowls inside a bucket, I need to grasp bowl_1 so that I can later place it inside bucket_1, which is currently accessible."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "right_hand is already holding bucket_1"
+  },
+  {
+    "robot_state": {
+      "left_hand": "cup_1",
+      "right_hand": "bucket_1"
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bucket_1",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: breakfast_table_2",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Under: bowl_1",
+          "Under: bowl_3",
+          "Under: cup_1"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "Inside: bucket_1"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Inside: bowl_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2",
+          "Next to: straight_chair_3",
+          "Under: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_INSIDE",
+      "object": "bucket_1",
+      "thoughts": "Now that bowl_1 is in my right hand and bucket_1 is in my left hand, I will place bowl_1 inside bucket_1 to progress towards the goal of all bowls being inside a bucket."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "bucket_1 is already in right_hand"
+  },
+  {
+    "robot_state": {
+      "left_hand": "cup_1",
+      "right_hand": "bucket_1"
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bucket_1",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: breakfast_table_2",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "Inside: bucket_1"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Inside: bowl_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2",
+          "Next to: straight_chair_3",
+          "Under: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_1",
+      "thoughts": "I am currently holding cup_1 in my left hand and bucket_1 in my right hand. To achieve the goal of all cups being inside a bucket, I will place cup_1 inside bucket_1."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Place inside cup_1 bucket_1 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "bucket_1"
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_1",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Inside: bucket_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Next to: room_floor_dining_room_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "Inside: bucket_1"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: room_floor_dining_room_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2",
+          "Next to: straight_chair_3",
+          "Under: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_RELEASE",
+      "object": "bucket_1",
+      "thoughts": "My right hand is still holding bucket_1, but to pick up another bowl or cup to place it inside a bucket, I need to free up a hand. I will release bucket_1 from my right hand to make it available for further manipulation."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Teleport bowl_1 INSIDE bucket_1 successful: True\nTeleport bowl_3 INSIDE bucket_1 successful: True\nTeleport catsup_0 INSIDE bucket_1 successful: True\nTeleport cup_1 INSIDE bucket_1 successful: True\nRelease bucket_1 from right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Under: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Inside: bowl_1",
+          "Inside: bowl_3",
+          "Inside: cup_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2",
+          "Next to: straight_chair_3",
+          "Under: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bucket_0",
+      "thoughts": "To satisfy the goal that all cups and bowls are inside a bucket, and since cup_0 and bowl_0 are not yet inside any bucket, I will grasp bucket_0 with my left hand so I can place the remaining items inside it."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Teleport cup_0 INSIDE bucket_0 successful: True\nTeleport bowl_0 INSIDE bucket_0 successful: True\nGrasp bucket_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "Inside: cup_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2",
+          "Next to: straight_chair_3",
+          "Under: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0",
+          "Inside: cup_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "catsup_0",
+      "thoughts": "The goal requires that there exists a bucket inside catsup_0. Since I am holding bucket_0 in my left hand and catsup_0 is accessible, I will place bucket_0 inside catsup_0 to satisfy this part of the goal."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "bucket_0 is bigger than catsup_0"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "Inside: cup_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2",
+          "Next to: straight_chair_3",
+          "Under: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_2"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Inside: bucket_0",
+          "Inside: cup_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "bowl_2",
+      "thoughts": "The critic says the remaining goal is to have bowl_2 inside a bucket (either bucket_0 or bucket_1). Since my hands are now free, I will grasp bowl_2 with my right hand so I can place it into a bucket."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Grasp bowl_2 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": "bowl_2"
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_2",
+          "Next to: room_floor_dining_room_0",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "Under: bowl_2",
+          "Inside: cup_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2",
+          "Next to: straight_chair_3",
+          "Under: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_0",
+          "Under: bowl_2",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Under: bowl_2",
+          "Inside: bucket_0",
+          "Inside: cup_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "I am holding bowl_2 in my right hand and bucket_0 is available. To satisfy the goal of having all bowls inside a bucket, I will place bowl_2 inside bucket_0."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Place inside bowl_2 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Under: bucket_0",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Under: bucket_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Under: bucket_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: catsup_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cup_0",
+          "Next to: bowl_2",
+          "Next to: bowl_0",
+          "Inside: bowl_2"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Under: bucket_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2",
+          "Next to: straight_chair_3",
+          "Under: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: bowl_2",
+          "Next to: bowl_0",
+          "Under: bowl_2",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "Inside: bucket_0",
+          "Inside: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Next to: bowl_2",
+          "Under: bowl_2",
+          "Inside: bucket_0",
+          "Inside: cup_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_1",
+      "thoughts": "I am holding bucket_0 in my left hand. To satisfy the goal that all bowls and cups are inside a bucket, and that a bucket is inside catsup_0, I need to begin by nesting the buckets. Placing bucket_0 inside bucket_1 is a logical next step."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Teleport cup_0 INSIDE bucket_0 successful: True\nTeleport bowl_0 INSIDE bucket_0 successful: True\nTeleport bowl_2 INSIDE bucket_0 successful: True\nPlace inside bucket_0 bucket_1 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: bucket_0",
+          "Next to: catsup_0",
+          "Next to: cup_0",
+          "Next to: bowl_2",
+          "Next to: bowl_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: bucket_0",
+          "Next to: catsup_0",
+          "Under: cup_0",
+          "Under: bowl_2",
+          "Under: bowl_0",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: bucket_0",
+          "Next to: catsup_0",
+          "Next to: cup_0",
+          "Next to: bowl_2",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_0",
+          "Inside: cup_0",
+          "Inside: bowl_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: cup_1",
+          "Next to: bucket_0",
+          "Next to: catsup_0",
+          "Under: cup_0",
+          "Under: bowl_2",
+          "Under: bowl_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: cup_1",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: bucket_0",
+          "Next to: catsup_0",
+          "Next to: bowl_0",
+          "Under: cup_0",
+          "Under: bowl_2",
+          "Under: bowl_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Next to: cup_0",
+          "Next to: bowl_2",
+          "Next to: bowl_0",
+          "Under: bowl_0",
+          "Inside: bucket_1",
+          "Inside: cup_0",
+          "Inside: bowl_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: straight_chair_4",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: bucket_0",
+          "Under: cup_0",
+          "Under: bowl_2",
+          "Under: bowl_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2",
+          "Next to: straight_chair_3",
+          "Under: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bucket_1",
+          "Next to: bucket_0",
+          "Next to: bowl_2",
+          "Next to: bowl_0",
+          "Inside: bucket_1",
+          "Inside: bucket_0",
+          "Inside: bowl_2"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: bowl_3",
+          "On top of: catsup_0",
+          "Next to: straight_chair_4",
+          "Next to: bucket_1",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "Inside: bucket_1",
+          "Inside: bucket_0",
+          "Inside: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_4",
+          "Next to: bucket_1",
+          "Next to: cup_1",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Next to: bowl_2",
+          "Inside: bucket_1",
+          "Inside: bucket_0",
+          "Inside: cup_0",
+          "Inside: bowl_2"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bucket_1",
+      "thoughts": "To achieve the goal of having a bucket inside catsup_0, I need to place bucket_1 (which now contains bucket_0 and all nested objects) inside catsup_0. First, I need to pick up bucket_1."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": "Teleport bowl_1 INSIDE bucket_1 successful: True\nTeleport bowl_3 INSIDE bucket_1 successful: True\nTeleport catsup_0 INSIDE bucket_1 successful: True\nTeleport cup_1 INSIDE bucket_1 successful: True\nTeleport bucket_0 INSIDE bucket_1 successful: True\nTeleport cup_0 INSIDE bucket_0 successful: True\nTeleport bowl_0 INSIDE bucket_0 successful: True\nTeleport bowl_2 INSIDE bucket_0 successful: True\nGrasp bucket_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "straight_chair_4",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_2",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: bucket_0",
+          "Next to: catsup_0",
+          "Next to: cup_0",
+          "Next to: bowl_2",
+          "Next to: bowl_0",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1",
+          "Inside: bucket_0",
+          "Inside: cup_0",
+          "Inside: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_1",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: bucket_0",
+          "Next to: catsup_0",
+          "Next to: cup_0",
+          "Next to: bowl_2",
+          "Next to: bowl_0",
+          "Under: cup_0",
+          "Inside: bowl_1",
+          "Inside: bowl_3",
+          "Inside: cup_1",
+          "Inside: bucket_0",
+          "Inside: bowl_2"
+        ]
+      },
+      {
+        "name": "bowl_3",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: cup_1",
+          "Next to: bucket_0",
+          "Next to: catsup_0",
+          "Next to: cup_0",
+          "Next to: bowl_2",
+          "Next to: bowl_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: cup_1",
+          "Inside: bucket_0",
+          "Inside: cup_0",
+          "Inside: bowl_2"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: bucket_0",
+          "Next to: catsup_0",
+          "Next to: cup_0",
+          "Next to: bowl_2",
+          "Next to: bowl_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: bucket_0",
+          "Inside: cup_0",
+          "Inside: bowl_2"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: catsup_0",
+          "Next to: cup_0",
+          "Next to: bowl_2",
+          "Next to: bowl_0",
+          "Under: cup_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1",
+          "Inside: bowl_2"
+        ]
+      },
+      {
+        "name": "catsup_0",
+        "category": "catsup",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: bucket_0",
+          "Next to: cup_0",
+          "Next to: bowl_2",
+          "Next to: bowl_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1",
+          "Inside: bucket_0",
+          "Inside: cup_0",
+          "Inside: bowl_2"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_2",
+          "Next to: straight_chair_3",
+          "Under: breakfast_table_2",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "straight_chair_3",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pop_0",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: bucket_0",
+          "Next to: catsup_0",
+          "Next to: bowl_2",
+          "Next to: bowl_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1",
+          "Inside: bucket_0",
+          "Inside: bowl_2"
+        ]
+      },
+      {
+        "name": "bowl_2",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: bucket_0",
+          "Next to: catsup_0",
+          "Next to: cup_0",
+          "Next to: bowl_0",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1",
+          "Inside: bucket_0",
+          "Inside: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_1",
+          "Next to: bucket_1",
+          "Next to: bowl_3",
+          "Next to: cup_1",
+          "Next to: bucket_0",
+          "Next to: catsup_0",
+          "Next to: cup_0",
+          "Next to: bowl_2",
+          "Inside: bowl_1",
+          "Inside: bucket_1",
+          "Inside: bowl_3",
+          "Inside: cup_1",
+          "Inside: bucket_0",
+          "Inside: cup_0",
+          "Inside: bowl_2"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "According to the critic\u2019s rule, as soon as every cup, bowl, and catsup_0 are inside some bucket (which is true now), I must trigger DONE and stop all actions."
+    },
+    "goal": "target environment state:\n['forall', 'cup.n.01', '-', 'cup.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'cup.n.01', 'bucket.n.01']\n['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']\n['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup_0', 'bucket.n.01']\n\n\n",
+    "feedback": ""
+  }
+]

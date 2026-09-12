@@ -1,0 +1,4221 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: toilet_6",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To clean the stained surfaces, I need to use the rag. The first step is to pick up the rag so I can soak it and use it as a cleaning tool."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_7",
+      "thoughts": "The rag needs to be soaked, and the sink is currently toggled off. I will turn on the sink so I can soak the rag in it."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Toggleon sink_7 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_0",
+      "thoughts": "The rag is currently not soaked, and the sink is toggled on. I am holding the rag in my left hand, so I can soak it in the sink to make progress towards the goal state where the rag is soaked."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_7",
+      "thoughts": "The rag needs to be soaked, and the previous attempt to soak failed because the rag was not in the sink. I will place the rag inside the toggled on sink first so that I can soak it."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 sink_7 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Under: soap_0",
+          "Next to: sink_7"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0",
+          "Inside: rag_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To soak the rag, I first need to pick it up with my left hand so I can place it inside the sink for soaking."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The goal requires the rag to be soaked and inside the bucket. Since the rag is already in my left hand, I should place it inside the bucket first, then soak it using water from the bucket."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Next to: sink_7",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag needs to be soaked and is currently not soaked. To soak it, I need to grasp it first so I can move it into the sink or otherwise soak it."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_7",
+      "thoughts": "The rag needs to be soaked, and the sink is toggled on and can act as a water source. Placing the rag inside the sink will allow me to soak it in the next step."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 sink_7 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Under: soap_0",
+          "Next to: sink_7"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0",
+          "Inside: rag_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "I need to soak the rag, and to do that, I must first pick it up so I can place it in the sink or bucket for soaking."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The rag needs to be soaked and inside the bucket as per the goal. Placing the rag inside the bucket is the first step before soaking it."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Next to: sink_7",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag needs to be soaked, and the sink is toggled on. First, I need to grasp the rag so I can move it to the sink for soaking."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_7",
+      "thoughts": "The rag needs to be soaked, and the sink is toggled on. I will place the rag inside the sink to prepare for soaking."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 sink_7 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Under: soap_0",
+          "Next to: sink_7"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0",
+          "Inside: rag_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To soak the rag, I need to pick it up first since it is not currently in my hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The rag needs to be soaked and inside the bucket. Placing the rag inside the bucket is the first step to soak it, as the bucket may contain water or will be used to soak the rag."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Next to: sink_7",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag needs to be soaked, and to do that, I need to pick it up first. Since both hands are empty, I will use my left hand to grasp the rag."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The rag needs to be soaked and inside the bucket. Since I am already holding the rag in my left hand and the bucket is accessible, I will place the rag inside the bucket as the next step."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Next to: sink_7",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag needs to be soaked and used for cleaning. First, I need to pick up the rag so I can soak it in the sink."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_0",
+      "thoughts": "The rag needs to be soaked to clean the stained surfaces. The sink is toggled on, so I can soak the rag now."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_7",
+      "thoughts": "The rag needs to be placed inside the toggled on sink before I can soak it. This will allow me to soak the rag and then use it to clean the stained surfaces."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 sink_7 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Under: soap_0",
+          "Next to: sink_7"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0",
+          "Inside: rag_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To soak the rag, I need to first pick it up. My hands are empty, so I will grasp the rag with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_0",
+      "thoughts": "The rag needs to be soaked to clean the stained objects. The sink is toggled on and can be used to soak the rag. Since I am already holding the rag in my left hand and the sink is on, I can proceed to soak the rag."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_7",
+      "thoughts": "The rag needs to be placed inside the toggled-on sink before soaking. I am holding the rag, so I will place it inside the sink to prepare for soaking."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 sink_7 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Under: soap_0",
+          "Next to: sink_7"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0",
+          "Inside: rag_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To soak the rag, I first need to pick it up with my left hand since both hands are empty."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "To soak the rag, I need to place it inside the bucket first. The bucket is next to the sink, which is a water source and currently toggled on, so soaking will be possible after this step."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Next to: sink_7",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bucket_0",
+      "thoughts": "The rag is already inside the bucket. To soak the rag, I need to put water in the bucket. Since the bucket is next to the sink, I will grasp the bucket so I can move it to the sink or interact with it as needed."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Teleport rag_0 INSIDE bucket_0 successful: True\nGrasp bucket_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: rag_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_7",
+      "thoughts": "To soak the rag in the bucket, I should place the bucket (with the rag inside) into the sink, which is a water source and currently toggled on. This will allow me to soak the rag in the next step."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Teleport rag_0 INSIDE bucket_0 successful: True\nPlace inside bucket_0 sink_7 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: sink_7",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_7"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0",
+          "Inside: rag_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bucket_0",
+      "thoughts": "To soak the rag, I need to place the bucket (with rag_0 inside) into the sink. First, I need to grasp bucket_0 with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Teleport rag_0 INSIDE bucket_0 successful: True\nGrasp bucket_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Inside: rag_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_7",
+      "thoughts": "To soak rag_0, I need to place bucket_0 (with rag_0 inside) into the sink, which is toggled on and can soak the rag."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Teleport rag_0 INSIDE bucket_0 successful: True\nPlace inside bucket_0 sink_7 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: sink_7",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: sink_7"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0",
+          "Inside: rag_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bucket_0",
+      "thoughts": "To soak rag_0, I need to move bucket_0 (which contains rag_0) into the sink. First, I need to pick up bucket_0."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Teleport rag_0 INSIDE bucket_0 successful: True\nGrasp bucket_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: rag_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_7",
+      "thoughts": "To soak rag_0, I need to put bucket_0 (which has rag_0 inside) into the sink. Since I am already holding bucket_0 in my left hand, I will place it inside sink_7 next."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Teleport rag_0 INSIDE bucket_0 successful: True\nPlace inside bucket_0 sink_7 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: sink_7",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_7",
+          "Inside: rag_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0",
+          "Inside: rag_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bucket_0",
+      "thoughts": "To soak the rag, I need to put the bucket (with rag_0 inside) into the sink. First, I must grasp bucket_0 with my left hand to be able to move it."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Teleport rag_0 INSIDE bucket_0 successful: True\nGrasp bucket_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Inside: rag_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_7",
+      "thoughts": "To soak rag_0, I need to place the bucket (with rag_0 inside) into the sink, which is toggled on and can act as a water source. This will allow me to soak rag_0 in the next step."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Teleport rag_0 INSIDE bucket_0 successful: True\nPlace inside bucket_0 sink_7 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: sink_7",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: sink_7",
+          "Inside: rag_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0",
+          "Inside: rag_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bucket_0",
+      "thoughts": "To soak rag_0, which is inside bucket_0, I need to put the bucket into the sink. First, I need to pick up bucket_0 with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Teleport rag_0 INSIDE bucket_0 successful: True\nGrasp bucket_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Inside: rag_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_7",
+      "thoughts": "To soak rag_0, I need to put bucket_0 (which contains rag_0) into sink_7, which is toggled on and can provide water. This will allow me to soak the rag in the next step."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Teleport rag_0 INSIDE bucket_0 successful: True\nPlace inside bucket_0 sink_7 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: sink_7",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: sink_7"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0",
+          "Inside: rag_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bucket_0",
+      "thoughts": "To soak rag_0, I need to put bucket_0 (which contains rag_0) into sink_7. First, I need to grasp bucket_0 with my left hand so I can move it into the sink."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Teleport rag_0 INSIDE bucket_0 successful: True\nGrasp bucket_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Inside: rag_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_7",
+      "thoughts": "To soak rag_0, I need to put the bucket containing the rag into the sink. Since I am holding bucket_0 in my left hand and sink_7 is toggled on, I will place bucket_0 inside sink_7 to prepare for soaking."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Teleport rag_0 INSIDE bucket_0 successful: True\nPlace inside bucket_0 sink_7 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Under: soap_0",
+          "Next to: bucket_0",
+          "Next to: sink_7",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_7"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0",
+          "Inside: rag_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bucket_0",
+      "thoughts": "To soak rag_0, which is inside bucket_0, I need to manipulate bucket_0. First, I will grasp bucket_0 with my left hand so I can move it into the sink."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Teleport rag_0 INSIDE bucket_0 successful: True\nGrasp bucket_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To soak rag_0, I need to take it out of the bucket first. My right hand is free, so I will grasp rag_0 with my right hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": "rag_0"
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_INSIDE",
+      "object": "sink_7",
+      "thoughts": "To soak the rag, I need to put rag_0 (in my right hand) into the toggled-on sink_7 so it can be soaked. This is required before I can clean stained surfaces."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 sink_7 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Under: soap_0",
+          "Next to: sink_7"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_4",
+          "Inside: bathtub_4"
+        ]
+      },
+      {
+        "name": "toilet_6",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sink_7",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_4",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_7",
+          "Inside: sink_7"
+        ]
+      },
+      {
+        "name": "sink_7",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Under: soap_0",
+          "Next to: rag_0",
+          "Next to: toilet_6",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0",
+          "Inside: rag_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_RELEASE",
+      "object": "bucket_0",
+      "thoughts": "My left hand is occupied with bucket_0, but I need an empty hand to pick up rag_0 and soak it in the sink. Releasing bucket_0 will free my left hand for the next steps."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'toilet_6']\n['not', 'stained', 'bathtub_4']\n['not', 'stained', 'sink_7']\n['not', 'stained', 'room_floor_bathroom_0']\n['and', 'soaked', 'rag_0', 'inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Release bucket_0 from left_hand successful"
+  }
+]

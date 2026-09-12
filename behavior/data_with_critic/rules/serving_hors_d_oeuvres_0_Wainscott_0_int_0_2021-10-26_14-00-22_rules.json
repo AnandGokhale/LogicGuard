@@ -1,0 +1,34 @@
+[
+    {
+        "rule": "G(tray_147_in_hand -> X(tray_147_place_ontop_breakfast_table_1))",
+        "explanation": "Only place tray 147 when it is in hand, preventing accidental placement attempts."
+    },
+    {
+        "rule": "G(tray_147_on_top_of_breakfast_table_1 -> X(!tray_147_place_ontop_breakfast_table_1))",
+        "explanation": "Once the tray is on the table, block further tray placement to avoid redundancy."
+    },
+    {
+        "rule": "G(!pretzel_152_on_top_of_breakfast_table_1 -> X(!done))",
+        "explanation": "'done' is blocked until pretzel 152 is placed, ensuring the pretzel subgoal must be met before completion."
+    },
+    {
+        "rule": "G(!pretzel_153_on_top_of_breakfast_table_1 -> X(!done))",
+        "explanation": "Similarly block 'done' until pretzel 153 is placed."
+    },
+    {
+        "rule": "G(!(salad_143_next_to_pretzel_152|salad_143_next_to_pretzel_153|salad_143_next_to_pretzel_154|salad_143_next_to_pretzel_155) -> X(!done))",
+        "explanation": "Block 'done' until salad 143 is next to one of the pretzels, enforcing the adjacency subgoal."
+    },
+    {
+        "rule": "G(!(salad_144_next_to_pretzel_152|salad_144_next_to_pretzel_153|salad_144_next_to_pretzel_154|salad_144_next_to_pretzel_155) -> X(!done))",
+        "explanation": "Block 'done' until salad 144 is next to a pretzel, covering the second salad."
+    },
+    {
+        "rule": "G(!cheese_156_on_top_of_parsley_148 -> X(!done))",
+        "explanation": "Prevent premature 'done' until cheese 156 is placed on parsley 148."
+    },
+    {
+        "rule": "G(!cheese_157_on_top_of_parsley_149 -> X(!done))",
+        "explanation": "Similarly block 'done' until cheese 157 is placed on parsley 149."
+    }
+]

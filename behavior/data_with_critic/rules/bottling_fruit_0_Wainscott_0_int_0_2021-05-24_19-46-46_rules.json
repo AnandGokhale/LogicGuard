@@ -1,0 +1,50 @@
+[
+    {
+        "rule": "G((!carving_knife_0_in_hand | !strawberry_0_in_hand) -> X(!slice_strawberry_0))",
+        "explanation": "Don\u2019t slice the strawberry unless holding both the knife and the strawberry"
+    },
+    {
+        "rule": "G(strawberry_0_is_sliced -> X(!slice_strawberry_0))",
+        "explanation": "Prevent re-slicing once the strawberry is already sliced"
+    },
+    {
+        "rule": "G((!carving_knife_0_in_hand | !peach_0_in_hand) -> X(!slice_peach_0))",
+        "explanation": "Don\u2019t slice the peach unless holding both the knife and the peach"
+    },
+    {
+        "rule": "G(peach_0_is_sliced -> X(!slice_peach_0))",
+        "explanation": "Prevent re-slicing once the peach is already sliced"
+    },
+    {
+        "rule": "G(!jar_0_is_open -> X(!strawberry_0_part_0_place_inside_jar_0))",
+        "explanation": "Block placing any strawberry part into jar_0 unless it is open"
+    },
+    {
+        "rule": "G(!jar_0_is_open -> X(!peach_0_part_0_place_inside_jar_0))",
+        "explanation": "Block placing any peach part into jar_0 unless it is open"
+    },
+    {
+        "rule": "G(!jar_1_is_open -> X(!strawberry_0_part_0_place_inside_jar_1))",
+        "explanation": "Block placing any strawberry part into jar_1 unless it is open"
+    },
+    {
+        "rule": "G(!jar_1_is_open -> X(!peach_0_part_0_place_inside_jar_1))",
+        "explanation": "Block placing any peach part into jar_1 unless it is open"
+    },
+    {
+        "rule": "G(peach_0_part_0_inside_jar_0 -> X(!strawberry_0_part_0_place_inside_jar_0))",
+        "explanation": "Prevent mixing: if any peach part is already in jar_0, forbid placing strawberry parts there"
+    },
+    {
+        "rule": "G(peach_0_part_1_inside_jar_0 -> X(!strawberry_0_part_1_place_inside_jar_0))",
+        "explanation": "Prevent mixing: if peach part 1 is in jar_0, forbid placing strawberry part 1 there"
+    },
+    {
+        "rule": "G(strawberry_0_part_0_inside_jar_0 -> X(!peach_0_part_0_place_inside_jar_0))",
+        "explanation": "Prevent mixing: if strawberry part 0 is in jar_0, forbid placing peach part 0 there"
+    },
+    {
+        "rule": "G(strawberry_0_part_1_inside_jar_0 -> X(!peach_0_part_1_place_inside_jar_0))",
+        "explanation": "Prevent mixing: if strawberry part 1 is in jar_0, forbid placing peach part 1 there"
+    }
+]

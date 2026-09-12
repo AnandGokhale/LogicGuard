@@ -1,0 +1,196 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_52",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_50",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "cruet_51",
+        "category": "cruet",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: shelf_16"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: rag_52"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_52",
+      "thoughts": "To remove the dust from car_50, I will need to use the rag_52 as a cleaning tool. First, I need to pick it up with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_50']\n\n\n",
+    "feedback": "Grasp rag_52 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_52",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_52",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_50",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "cruet_51",
+        "category": "cruet",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: shelf_16"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "car_50",
+      "thoughts": "I am holding a clean rag_52 in my left hand, which is a cleaning tool. The car_50 is dusty, and my goal is to remove the dust, so I will use the rag to clean the car."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_50']\n\n\n",
+    "feedback": "Clean-dust car_50 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_52",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_52",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_50",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cruet_51",
+        "category": "cruet",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: shelf_16"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "The car_50 is now clean and not dusty, which matches the goal state. No further actions are needed."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_50']\n\n\n",
+    "feedback": ""
+  }
+]

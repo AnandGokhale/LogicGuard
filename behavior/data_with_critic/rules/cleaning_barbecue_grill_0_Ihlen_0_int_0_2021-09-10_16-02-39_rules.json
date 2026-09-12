@@ -1,0 +1,22 @@
+[
+    {
+        "rule": "G(!rag_51_inside_sink_32 -> X(!soak_rag_51))",
+        "explanation": "Block soak_rag_51 unless rag_51 is already inside the sink."
+    },
+    {
+        "rule": "G(!rag_51_in_hand -> X(!rag_51_place_inside_sink_32))",
+        "explanation": "Only place the rag inside the sink if the robot is actually holding it."
+    },
+    {
+        "rule": "G(sink_32_is_toggled_on -> X(!toggle_on_sink_32))",
+        "explanation": "Prevent turning on the sink again if it's already on."
+    },
+    {
+        "rule": "G(rag_51_in_hand -> X(!left_grasp_rag_51))",
+        "explanation": "Do not grasp the rag if it's already in hand (avoids redundant grasps)."
+    },
+    {
+        "rule": "G((!grill_50_is_dusty & !grill_50_is_stained) -> X(!clean_grill_50))",
+        "explanation": "When the grill is both dust\u2010free and stain\u2010free, block any further clean_grill_50 actions."
+    }
+]

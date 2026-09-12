@@ -1,0 +1,30 @@
+[
+    {
+        "rule": "G(!chip_0_in_hand -> X(!chip_0_place_inside_carton_0))",
+        "explanation": "Don\u2019t attempt to place chip_0 unless chip_0 is actually in hand."
+    },
+    {
+        "rule": "G(!carton_0_is_open -> X(!chip_0_place_inside_carton_0))",
+        "explanation": "Block placing chip_0 into carton_0 if the carton is not open."
+    },
+    {
+        "rule": "G(chip_0_inside_carton_0 -> X(!(right_grasp_chip_0|left_grasp_chip_0)))",
+        "explanation": "Once chip_0 is inside carton_0, don\u2019t try to grasp it again."
+    },
+    {
+        "rule": "G(!chip_1_in_hand -> X(!chip_1_place_inside_carton_0))",
+        "explanation": "Don\u2019t attempt to place chip_1 unless chip_1 is actually in hand."
+    },
+    {
+        "rule": "G(!carton_0_is_open -> X(!chip_1_place_inside_carton_0))",
+        "explanation": "Block placing chip_1 into carton_0 if the carton is not open."
+    },
+    {
+        "rule": "G(chip_1_inside_carton_0 -> X(!(right_grasp_chip_1|left_grasp_chip_1)))",
+        "explanation": "Once chip_1 is inside carton_0, don\u2019t try to grasp it again."
+    },
+    {
+        "rule": "G(carton_0_is_open -> X(!left_grasp_carton_0))",
+        "explanation": "Don\u2019t open carton_0 again once it is already open."
+    }
+]

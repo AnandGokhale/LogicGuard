@@ -1,0 +1,38 @@
+[
+    {
+        "rule": "G(rag_145_in_hand -> X(!left_grasp_rag_145))",
+        "explanation": "If the rag is already in hand, block any further grasp to avoid repeated grasp actions."
+    },
+    {
+        "rule": "G(!rag_145_in_hand -> X(!rag_145_place_nextto_sink_67))",
+        "explanation": "Only place next to sink when the rag is in hand; block place_nextto if rag is not held."
+    },
+    {
+        "rule": "G((rag_145_in_hand & rag_145_next_to_sink_67) -> X(!rag_145_place_nextto_sink_67))",
+        "explanation": "If the held rag is already next to the sink, block placing it next to the sink again."
+    },
+    {
+        "rule": "G(rag_145_inside_sink_67 -> X(!rag_145_place_nextto_sink_67))",
+        "explanation": "Once the rag is inside the sink, block any attempt to place it next to the sink."
+    },
+    {
+        "rule": "G(!rag_145_in_hand -> X(!rag_145_place_inside_sink_67))",
+        "explanation": "Only place inside the sink when the rag is held; block place_inside if rag is not in hand."
+    },
+    {
+        "rule": "G(rag_145_inside_sink_67 -> X(!rag_145_place_inside_sink_67))",
+        "explanation": "If the rag is already inside the sink, block further place_inside to avoid redundancy."
+    },
+    {
+        "rule": "G(!rag_145_inside_sink_67 -> X(!soak_rag_145))",
+        "explanation": "Block soaking unless the rag is actually inside the sink, enforcing the correct precondition."
+    },
+    {
+        "rule": "G(!sink_67_is_toggled_on -> X(!soak_rag_145))",
+        "explanation": "Block the soak action unless the sink is toggled on, ensuring water flow is active."
+    },
+    {
+        "rule": "G(sink_67_is_toggled_on -> X(!toggle_on_sink_67))",
+        "explanation": "Once the sink is on, block any further toggle_on to prevent redundant toggles."
+    }
+]

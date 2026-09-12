@@ -1,0 +1,2911 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_0",
+          "Next to: candle_1",
+          "Next to: candle_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_4",
+          "Next to: candle_3",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "candle_0",
+      "thoughts": "The goal requires candles to be on top of coffee_table_33 and breakfast_table_1. Currently, all candles are inside cartons on the floor. I will start by picking up candle_0 with my right hand so I can move it to a table."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Grasp candle_0 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "candle_0"
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_1",
+          "Next to: candle_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_4",
+          "Next to: candle_3",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_ONTOP",
+      "object": "coffee_table_33",
+      "thoughts": "I am holding candle_0 in my right hand. The goal requires candles to be on top of the coffee table and breakfast table. I will place candle_0 on top of coffee_table_33 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Place ontop candle_0 coffee_table_33 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_1",
+          "Next to: candle_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_4",
+          "Next to: candle_3",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "candle_1",
+      "thoughts": "To achieve the goal, I need to place candles on top of the breakfast table. Candle_1 is currently inside carton_0 and on the floor, so I will grasp candle_1 with my left hand to prepare to move it to the breakfast table."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Grasp candle_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "candle_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_4",
+          "Next to: candle_3",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "breakfast_table_1",
+      "thoughts": "Since I am holding candle_1 in my left hand and the goal is to have candles on top of the breakfast table, I will place candle_1 on top of breakfast_table_1 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Place ontop candle_1 breakfast_table_1 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_4",
+          "Next to: candle_3",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean",
+          "On top of: breakfast_table_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "candle_3",
+      "thoughts": "To achieve the goal of having three candles on top of coffee_table_33, I will grasp candle_3, which is currently inside carton_1 and accessible, to later place it on the coffee table."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Grasp candle_3 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "candle_3",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_4",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean",
+          "On top of: breakfast_table_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "coffee_table_33",
+      "thoughts": "I am currently holding candle_3 in my left hand. The goal is to have three candles on top of coffee_table_33. Placing candle_3 on top of coffee_table_33 will progress towards achieving this goal."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Place ontop candle_3 coffee_table_33 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_4",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_3",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_0",
+          "Under: candle_3"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_0",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean",
+          "On top of: breakfast_table_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "candle_4",
+      "thoughts": "Candle_0 and candle_3 are already on top of coffee_table_33. To achieve three candles on the table, I need to select an additional candle that is not already on the coffee table. Candle_4 is accessible and not blocked by any critic rule, so I will grasp candle_4 next."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Grasp candle_4 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "candle_4",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_3",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_0",
+          "Under: candle_3"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_0",
+          "On top of: coffee_table_33",
+          "Inside: candle_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean",
+          "On top of: breakfast_table_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "coffee_table_33",
+      "thoughts": "I am holding candle_4 in my left hand. To achieve the goal of having three candles on top of coffee_table_33, I will place candle_4 on top of coffee_table_33."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Place ontop candle_4 coffee_table_33 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_2"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_0",
+          "Next to: candle_3",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_4",
+          "Next to: candle_3",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_4",
+          "Under: candle_0",
+          "Under: candle_3"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_4",
+          "Next to: candle_0",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean",
+          "On top of: breakfast_table_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "candle_3",
+      "thoughts": "To achieve the goal of having three candles on top of coffee_table_33, I need to place another candle there. Candle_3 is already on top of coffee_table_33, so I will grasp it to later confirm its placement or adjust it as needed."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Grasp candle_3 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "candle_3",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_2"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_4",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_4",
+          "Under: candle_0"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean",
+          "On top of: breakfast_table_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "coffee_table_33",
+      "thoughts": "The goal requires three candles on top of coffee_table_33. Since I am holding candle_3 in my left hand, I will place it on top of coffee_table_33 to work towards this goal."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Place ontop candle_3 coffee_table_33 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_0",
+          "Next to: candle_3",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_4",
+          "Next to: candle_3",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_4",
+          "Next to: candle_0",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean",
+          "On top of: breakfast_table_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "candle_4",
+      "thoughts": "There are now only two candles (candle_0 and candle_3) on top of coffee_table_33. To achieve the goal of having three candles on top of coffee_table_33, I will grasp candle_4, which is also on the coffee table, to prepare to place it and satisfy the goal condition."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Grasp candle_4 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "candle_4",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean",
+          "On top of: breakfast_table_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "coffee_table_33",
+      "thoughts": "I am currently holding candle_4 in my left hand, and the goal requires three candles to be on top of coffee_table_33. Placing candle_4 on top of coffee_table_33 will help achieve this target condition."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Place ontop candle_4 coffee_table_33 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: coffee_table_33",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: candle_0",
+          "Under: candle_4"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean",
+          "On top of: breakfast_table_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "candle_2",
+      "thoughts": "To achieve the goal of having three candles on top of coffee_table_33, I need to grasp candle_2 next, as candle_0 and candle_3 are already on the table and candle_4 was just placed there."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Grasp candle_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "candle_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_4"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean",
+          "On top of: breakfast_table_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "coffee_table_33",
+      "thoughts": "The goal is to have three candles on top of coffee_table_33, and I am currently holding candle_2 in my left hand. Placing candle_2 on coffee_table_33 will move towards achieving the goal state."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Place ontop candle_2 coffee_table_33 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_2",
+          "Under: candle_2"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_4",
+          "Under: candle_2"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean",
+          "On top of: breakfast_table_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_4",
+          "Inside: candle_4"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "candle_4",
+      "thoughts": "To achieve the goal of having three candles on coffee_table_33, I need to place more candles on it. Candle_4 is in the living room and not yet on the table, so I will grasp it first."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Grasp candle_4 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "candle_4",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_2"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean",
+          "On top of: breakfast_table_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "coffee_table_33",
+      "thoughts": "I am currently holding candle_4 in my left hand, and to achieve the goal, I need to place candles on top of coffee_table_33. Placing candle_4 onto coffee_table_33 is a necessary step towards having three candles on the table."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Place ontop candle_4 coffee_table_33 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_2",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: candle_0",
+          "Under: candle_4"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_4",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "candle_2",
+      "thoughts": "To achieve the goal of having three candles on top of coffee_table_33, I need to place another candle there. Candle_2 is already on top of coffee_table_33, so I should grasp it to arrange it if needed or to check if another candle (such as candle_0 or candle_3) should be placed next. Since candle_2 is accessible and not inside any container, I will grasp it with my left hand."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Grasp candle_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "candle_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: candle_0",
+          "Under: candle_4"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean",
+          "On top of: breakfast_table_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "coffee_table_33",
+      "thoughts": "The goal is to have three candles on top of coffee_table_33. Since I am already holding candle_2 in my left hand and coffee_table_33 is accessible, I should place candle_2 on top of coffee_table_33 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Place ontop candle_2 coffee_table_33 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_2"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: candle_0",
+          "Under: candle_4"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean",
+          "On top of: breakfast_table_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_4"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "candle_0",
+      "thoughts": "To achieve the goal of having three candles on top of coffee_table_33, I need to place another candle there. Candle_0 is next to coffee_table_33, accessible, and not already on top. I will grasp candle_0 with my left hand to prepare for placing it on the table."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Grasp candle_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "candle_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_2"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean",
+          "On top of: breakfast_table_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_4"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "coffee_table_33",
+      "thoughts": "I am currently holding candle_0 in my left hand, and one of the goals is to have a candle on top of coffee_table_33. Placing candle_0 on coffee_table_33 will make progress towards achieving this goal."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Place ontop candle_0 coffee_table_33 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_0",
+          "Next to: candle_2"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_4",
+          "Next to: candle_2",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_0"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean",
+          "On top of: breakfast_table_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_1",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_4",
+          "Next to: candle_0"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "candle_1",
+      "thoughts": "The next goal is to have a candle on top of breakfast_table_1. Candle_1 is already on top of breakfast_table_1, but to ensure it is correctly placed or if adjustment is needed, I will grasp candle_1 with my right hand to prepare for placement if necessary."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Grasp candle_1 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "candle_1"
+    },
+    "object_state": [
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: candle_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_4",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_4",
+          "Next to: candle_2",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: candle_0"
+        ]
+      },
+      {
+        "name": "candle_3",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: dining_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "breakfast_table_1",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: candle_0",
+          "On top of: coffee_table_33"
+        ]
+      },
+      {
+        "name": "candle_5",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_1",
+          "Inside: carton_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_ONTOP",
+      "object": "breakfast_table_1",
+      "thoughts": "I am holding candle_1 in my right hand and need to place it on top of breakfast_table_1 to achieve one of the goal conditions."
+    },
+    "goal": "target environment state:\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'coffee_table_33']\n['forn', '3', 'candle.n.01', '-', 'candle.n.01', 'ontop', 'candle.n.01', 'breakfast_table_1']\n\n\ninteractable objects:\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'candle_3', 'category': 'candle.n.01'}\n{'name': 'candle_4', 'category': 'candle.n.01'}\n{'name': 'candle_5', 'category': 'candle.n.01'}\n{'name': 'coffee_table_33', 'category': 'table.n.02'}\n{'name': 'breakfast_table_1', 'category': 'table.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'room_floor_dining_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n\n\n",
+    "feedback": "Place ontop candle_1 breakfast_table_1 successful"
+  }
+]

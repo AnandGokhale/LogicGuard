@@ -1,0 +1,107 @@
+[
+  {
+    "law_id": "law-001",
+    "law": "G(True)",
+    "explanation": "Always true, serves as a base rule."
+  },
+  {
+    "law_id": "law-002",
+    "law": "G(!obs_has_log & !obs_has_plank & !obs_has_2x_stick & !obs_has_iron_pickaxe -> X(action_mine_log))",
+    "explanation": "If you dont have logs, planks or sticks, mine logs"
+  },
+  {
+    "law_id": "law-003",
+    "law": "G(obs_has_log & !obs_has_plank -> X(action_craft_planks))",
+    "explanation": "If you have logs but no planks, craft planks"
+  },
+  {
+    "law_id": "law-004",
+    "law": "G(obs_has_4x_plank & !obs_near_crafting_table & !obs_has_crafting_table -> X(action_craft_crafting_table))",
+    "explanation": "If you have 4 planks, arent near a crafting table, or dont have a crafting table, craft a crafting table"
+  },
+  {
+    "law_id": "law-005",
+    "law": "G(obs_has_crafting_table & obs_has_plank & !obs_near_crafting_table -> X(action_place_crafting_table))",
+    "explanation": "If you have a crafting table, have a plank, are not near a crafting table, place the crafting table"
+  },
+  {
+    "law_id": "law-006",
+    "law": "G(obs_has_3x_plank & obs_has_2x_stick & obs_near_crafting_table & !obs_has_wood_pickaxe -> X(action_craft_wooden_pickaxe))",
+    "explanation": "If you have 3 planks, 2 sticks, are near a crafting table, and dont have a wooden pickaxe, craft a wooden pickaxe"
+  },
+  {
+    "law_id": "law-007",
+    "law": "G(obs_has_3x_cobble & obs_has_2x_stick & obs_near_crafting_table & !obs_has_stone_pickaxe -> X(action_craft_stone_pickaxe))",
+    "explanation": "If you have 3 cobblestone, 2 sticks, are near a crafting table, and dont have a stone pickaxe, craft a stone pickaxe"
+  },
+  {
+    "law_id": "law-008",
+    "law": "G((obs_has_8x_cobble & obs_near_crafting_table & !obs_has_furnace & !obs_near_furnace) -> X(action_craft_furnace))",
+    "explanation": "If you have 8 cobblestone, are near a crafting table, dont have a furnace and are not near a furnace, craft a furnace"
+  },
+  {
+    "law_id": "law-009",
+    "law": "G((obs_has_3x_iron_ore & obs_near_furnace & obs_has_fuel & !(obs_has_iron_pickaxe | obs_has_3x_iron_ingot))  -> X(action_smelt_iron))",
+    "explanation": "If you have three iron ore, are near a furnace, have fuel and do not have either of an iron pickaxe or 3 iron ingots, smelt iron"
+  },
+  {
+    "law_id": "law-010",
+    "law": "G(obs_has_3x_iron_ingot & obs_has_2x_stick & obs_near_crafting_table & !obs_has_iron_pickaxe -> X(action_craft_iron_pickaxe))",
+    "explanation": "If you have 3 iron ingots, 2 sticks, are near a crafting table, and dont have an iron pickaxe, craft an iron pickaxe"
+  },
+  {
+    "law_id": "law-011",
+    "law": "G((obs_has_iron_pickaxe & !obs_iron_pickaxe_equipped) -> X(action_equip_iron_pickaxe))",
+    "explanation": "If you have an iron pickaxe and the iron pickaxe is not equipped, equip the iron pickaxe"
+  },
+  {
+    "law_id": "law-012",
+    "law": "G(obs_diamond_in_chunk & obs_iron_pickaxe_equipped -> X(action_mine_diamond))",
+    "explanation": "If the iron pickaxe is equipped, and you have diamonds near you, mine the diamond"
+  },
+  {
+    "law_id": "law-013",
+    "law": "G(!obs_diamond_in_chunk & obs_iron_pickaxe_equipped -> X(action_explore_diamond_down))",
+    "explanation": "If you dont have diamonds in the chunk, and you have your iron pickaxe equipped, explore downwards for diamonds"
+  },
+  {
+    "law_id": "law-014",
+    "law": "G(obs_diamond_in_chunk | !obs_iron_pickaxe_equipped -> X(!action_explore_diamond_down))",
+    "explanation": "If you either have diamonds near you, or you dont have an iron pickaxe equipped, dont explore for diamonds"
+  },
+  {
+    "law_id": "law-015",
+    "law": "G(!obs_wood_pickaxe_equipped & !obs_stone_pickaxe_equipped & !obs_iron_pickaxe_equipped -> X(!action_mine_stone))",
+    "explanation": "If you dont have a wood pickaxe, a stone pickaxe, or an iron pickaxe equipped, do not mine stone"
+  },
+  {
+    "law_id": "law-016",
+    "law": "G(!obs_stone_pickaxe_equipped & !obs_iron_pickaxe_equipped -> X(!action_mine_iron_ore))",
+    "explanation": "If you dont have a stone pickaxe, or an iron pickaxe equipped, do not mine iron ore"
+  },
+  {
+    "law_id": "law-017",
+    "law": "G(!obs_has_8x_cobble -> X(!action_craft_furnace))",
+    "explanation": "If you dont have 8 cobblestone, dont craft a furnace"
+  },
+  {
+    "law_id": "law-018",
+    "law": "G(!obs_wood_pickaxe_equipped & !obs_stone_pickaxe_equipped & !obs_iron_pickaxe_equipped -> X(!action_mine_coal))",
+    "explanation": "If you dont have a wood pickaxe, a stone pickaxe, or an iron pickaxe equipped, do not mine coal"
+  },
+  {
+    "law_id": "law-019",
+    "law": "G(!obs_has_3x_plank | !obs_has_2x_stick | !obs_near_crafting_table | obs_has_wood_pickaxe -> X(!action_craft_wooden_pickaxe))",
+    "explanation": "If you dont have any of 3 planks, 2 sticks, or arent near a crafting table, or if you already have a wood pickaxe, then dont craft a wooden pickaxe. "
+  },
+  {
+    "law_id": "law-020",
+    "law": "G(!obs_has_3x_cobble | !obs_has_2x_stick | !obs_near_crafting_table | obs_has_stone_pickaxe -> X(!action_craft_stone_pickaxe))",
+    "explanation": "If you dont have any of 3 cobblestone, 2 sticks, or arent near a crafting table, or if you already have a stone pickaxe, then dont craft a stone pickaxe. "
+  },
+  {
+    "law_id": "law-021",
+    "law": "G(!obs_has_3x_iron_ingot | !obs_has_2x_stick | !obs_near_crafting_table | obs_has_iron_pickaxe -> X(!action_craft_iron_pickaxe))",
+    "explanation": "If you dont have any of 3 iron ingots, 2 sticks, or arent near a crafting table, or if you already have a iron pickaxe, then dont craft a iron pickaxe. "
+  }
+]

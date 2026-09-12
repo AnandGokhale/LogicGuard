@@ -1,0 +1,66 @@
+[
+    {
+        "rule": "G(wrapped_gift_119_next_to_christmas_tree_decorated_112 -> X(!left_grasp_wrapped_gift_119))",
+        "explanation": "Once gift 119 is placed next to the tree, never grasp it again."
+    },
+    {
+        "rule": "G(!wrapped_gift_119_in_hand -> X(!wrapped_gift_119_place_nextto_christmas_tree_decorated_112))",
+        "explanation": "Only place gift 119 next to the tree if it is actually in hand."
+    },
+    {
+        "rule": "G(wrapped_gift_120_next_to_christmas_tree_decorated_112 -> X(!left_grasp_wrapped_gift_120))",
+        "explanation": "Once gift 120 is placed next to the tree, never grasp it again."
+    },
+    {
+        "rule": "G(wrapped_gift_121_is_under_christmas_tree_decorated_112 -> X(!left_grasp_wrapped_gift_121))",
+        "explanation": "Once gift 121 is placed under the tree, never grasp it again."
+    },
+    {
+        "rule": "G(wrapped_gift_121_next_to_christmas_tree_decorated_112 -> X(!left_grasp_wrapped_gift_121))",
+        "explanation": "Once gift 121 is placed next to the tree, never grasp it again."
+    },
+    {
+        "rule": "G(!wrapped_gift_121_in_hand -> X(!wrapped_gift_121_place_nextto_christmas_tree_decorated_112))",
+        "explanation": "Only place gift 121 next to the tree if it is actually in hand."
+    },
+    {
+        "rule": "G(candle_117_on_top_of_breakfast_table_19 -> X(!candle_117_place_ontop_breakfast_table_19))",
+        "explanation": "Once candle 117 is on the table, never place it there again."
+    },
+    {
+        "rule": "G(!candle_117_in_hand -> X(!candle_117_place_ontop_breakfast_table_19))",
+        "explanation": "Only place candle 117 on the table if it is in hand."
+    },
+    {
+        "rule": "G(candle_118_on_top_of_breakfast_table_19 -> X(!candle_118_place_ontop_breakfast_table_19))",
+        "explanation": "Once candle 118 is on the table, never place it there again."
+    },
+    {
+        "rule": "G(!candle_118_in_hand -> X(!candle_118_place_ontop_breakfast_table_19))",
+        "explanation": "Only place candle 118 on the table if it is in hand."
+    },
+    {
+        "rule": "G((bow_114_on_top_of_breakfast_table_19 & bow_115_on_top_of_sofa_25 & bow_116_on_top_of_sofa_25) -> X(!(left_grasp_bow_114|left_grasp_bow_115|left_grasp_bow_116)))",
+        "explanation": "Once one valid bow configuration is achieved, never grasp any bow again."
+    },
+    {
+        "rule": "G(!bow_114_in_hand -> X(!bow_114_place_ontop_breakfast_table_19))",
+        "explanation": "Only place bow 114 on the table if it is in hand."
+    },
+    {
+        "rule": "G((bow_115_on_top_of_breakfast_table_19 & bow_114_on_top_of_sofa_25 & bow_116_on_top_of_sofa_25) -> X(!(left_grasp_bow_114|left_grasp_bow_115|left_grasp_bow_116)))",
+        "explanation": "Stop grasping bows once the second valid configuration is on spot."
+    },
+    {
+        "rule": "G(!bow_115_in_hand -> X(!bow_115_place_ontop_sofa_25))",
+        "explanation": "Only place bow 115 on the sofa if it is in hand."
+    },
+    {
+        "rule": "G(wreath_113_on_top_of_breakfast_table_19 -> X(!wreath_113_place_ontop_breakfast_table_19))",
+        "explanation": "Once the wreath is on the table, never place it again."
+    },
+    {
+        "rule": "G(!wreath_113_in_hand -> X(!wreath_113_place_ontop_breakfast_table_19))",
+        "explanation": "Only place the wreath on the table if it is in hand."
+    }
+]

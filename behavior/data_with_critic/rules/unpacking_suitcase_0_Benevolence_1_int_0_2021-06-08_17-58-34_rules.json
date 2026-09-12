@@ -1,0 +1,78 @@
+[
+    {
+        "rule": "G(!carton_0_on_floor -> X(!done))",
+        "explanation": "Don\u2019t finish until the carton is on the floor (carton-floor subgoal)."
+    },
+    {
+        "rule": "G((sock_0_inside_carton_0 & !carton_0_is_open) -> X(!left_grasp_sock_0))",
+        "explanation": "Don\u2019t grasp sock_0 out of the carton unless the carton is open (prerequisite)."
+    },
+    {
+        "rule": "G((sock_0_next_to_sofa_10 | sock_0_on_top_of_sofa_10) -> X(!left_grasp_sock_0))",
+        "explanation": "Once sock_0 is correctly placed, never grasp it again (efficiency)."
+    },
+    {
+        "rule": "G(!sock_0_in_hand -> X(!sock_0_place_ontop_sofa_10))",
+        "explanation": "Only place sock_0 on the sofa if it\u2019s actually in hand (prerequisite)."
+    },
+    {
+        "rule": "G((sock_1_inside_carton_0 & !carton_0_is_open) -> X(!left_grasp_sock_1))",
+        "explanation": "Don\u2019t grasp sock_1 out of the carton unless the carton is open (prerequisite)."
+    },
+    {
+        "rule": "G((sock_1_next_to_sofa_10 | sock_1_on_top_of_sofa_10) -> X(!left_grasp_sock_1))",
+        "explanation": "Once sock_1 is correctly placed, never grasp it again (efficiency)."
+    },
+    {
+        "rule": "G(!sock_1_in_hand -> X(!sock_1_place_ontop_sofa_10))",
+        "explanation": "Only place sock_1 on the sofa if it\u2019s actually in hand (prerequisite)."
+    },
+    {
+        "rule": "G(!(cologne_0_next_to_sofa_10 | cologne_0_on_top_of_sofa_10) -> X(!done))",
+        "explanation": "Don\u2019t finish until cologne_0 is placed next to or on top of sofa_10."
+    },
+    {
+        "rule": "G(cologne_0_inside_carton_0 -> X(!done))",
+        "explanation": "Don\u2019t finish while cologne_0 remains inside the carton (must be removed)."
+    },
+    {
+        "rule": "G(!(toothbrush_0_next_to_sofa_10 | toothbrush_0_on_top_of_sofa_10) -> X(!done))",
+        "explanation": "Don\u2019t finish until toothbrush_0 is placed next to or on top of sofa_10."
+    },
+    {
+        "rule": "G(toothbrush_0_inside_carton_0 -> X(!done))",
+        "explanation": "Don\u2019t finish while toothbrush_0 remains inside the carton (must be removed)."
+    },
+    {
+        "rule": "G(!(notebook_0_next_to_sofa_10 | notebook_0_on_top_of_sofa_10) -> X(!done))",
+        "explanation": "Don\u2019t finish until notebook_0 is placed next to or on top of sofa_10."
+    },
+    {
+        "rule": "G(notebook_0_inside_carton_0 -> X(!done))",
+        "explanation": "Don\u2019t finish while notebook_0 remains inside the carton (must be removed)."
+    },
+    {
+        "rule": "G((notebook_0_next_to_sofa_10 | notebook_0_on_top_of_sofa_10) -> X(!left_grasp_notebook_0))",
+        "explanation": "Once the notebook is correctly placed next to or on sofa_10, never grasp it again."
+    },
+    {
+        "rule": "G(!notebook_0_in_hand -> X(!notebook_0_place_ontop_sofa_10))",
+        "explanation": "Only place the notebook on the sofa if the robot is actually holding it."
+    },
+    {
+        "rule": "G((cologne_0_next_to_sofa_10 | cologne_0_on_top_of_sofa_10) -> X(!left_grasp_cologne_0 & !right_grasp_cologne_0))",
+        "explanation": "Once the cologne is placed next to or on sofa_10, blocking any further grasps avoids redundant moves."
+    },
+    {
+        "rule": "G(!cologne_0_in_hand -> X(!cologne_0_place_ontop_sofa_10))",
+        "explanation": "Ensure cologne_0 is in hand before attempting to place it on the sofa."
+    },
+    {
+        "rule": "G((toothbrush_0_next_to_sofa_10 | toothbrush_0_on_top_of_sofa_10) -> X(!right_grasp_toothbrush_0))",
+        "explanation": "After the toothbrush is correctly placed, prevent additional grasp attempts."
+    },
+    {
+        "rule": "G(!toothbrush_0_in_hand -> X(!toothbrush_0_place_ontop_sofa_10))",
+        "explanation": "Only place the toothbrush on the sofa when it is actually in hand."
+    }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "rule": "G(pool_50_on_floor -> X(!(left_grasp_pool_50|right_grasp_pool_50)))",
+    "explanation": "Once the pool is on the floor, block further grasps of the pool to avoid unnecessary moves."
+  },
+  {
+    "rule": "G(!pool_50_on_floor -> X(!clean_pool_50))",
+    "explanation": "Prevent cleaning the pool unless it is correctly on the floor, ensuring cleaning only when the pool is in place."
+  },
+  {
+    "rule": "G(!scrub_brush_51_inside_sink_32 -> X(!soak_scrub_brush_51))",
+    "explanation": "Prevent soaking the brush unless it is placed inside the sink, ensuring the soak action only occurs under the sink."
+  },
+  {
+    "rule": "G(!scrub_brush_51_in_hand -> X(!scrub_brush_51_place_ontop_shelf_16))",
+    "explanation": "Only allow placing the brush on the shelf when it is in hand, preventing invalid placements."
+  },
+  {
+    "rule": "G(detergent_52_on_floor -> X(!left_grasp_detergent_52))",
+    "explanation": "After detergent is on the floor, block further grasps to avoid needless relocations."
+  },
+  {
+    "rule": "G(!detergent_52_in_hand -> X(!detergent_52_release_detergent_52))",
+    "explanation": "Only allow releasing detergent when it is held, ensuring release actions make sense."
+  },
+  {
+    "rule": "G(!detergent_52_in_hand -> X(!detergent_52_place_ontop_room_floor_garage_0))",
+    "explanation": "Block placing detergent on the floor unless the robot is holding it, enforcing correct placement preconditions."
+  },
+  {
+    "rule": "G(!(pool_50_on_floor & !pool_50_is_stained & scrub_brush_51_on_top_of_shelf_16 & detergent_52_on_floor) -> X(!done))",
+    "explanation": "Prevent task completion until all four goal conditions are satisfied, ensuring the robot does not finish prematurely."
+  }
+]

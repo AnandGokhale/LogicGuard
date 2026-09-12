@@ -1,0 +1,14 @@
+[
+  {
+    "rule": "G(alarm_0_on_top_of_coffee_table_27 -> X(!alarm_0_place_ontop_coffee_table_27))",
+    "explanation": "Blocks repeated placements of alarm_0 onto coffee_table_27 when it’s already there."
+  },
+  {
+    "rule": "G(alarm_1_on_top_of_coffee_table_27 -> X(!alarm_1_place_ontop_coffee_table_27))",
+    "explanation": "Blocks repeated placements of alarm_1 onto coffee_table_27 when it’s already there."
+  },
+  {
+    "rule": "G((alarm_0_on_top_of_coffee_table_27 & alarm_1_on_top_of_coffee_table_27) -> X(!toggle_on_alarm_0 & !toggle_on_alarm_1 & !done))",
+    "explanation": "When both alarms sit together on coffee_table_27, forbid further toggles or task completion so that the robot must move one alarm toward breakfast_table_20 next."
+  }
+]

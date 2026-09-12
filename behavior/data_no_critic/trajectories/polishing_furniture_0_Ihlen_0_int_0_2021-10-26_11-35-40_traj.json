@@ -1,0 +1,584 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "coffee_table_10",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On top of: coffee_table_10"
+        ]
+      },
+      {
+        "name": "shelf_11",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag is a cleaning tool and is currently on top of the coffee table. I need to use the rag to clean the dusty coffee table and shelf, and eventually place it under the coffee table. First, I will pick up the rag with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'coffee_table_10']\n['not', 'dusty', 'shelf_11']\n['under', 'rag_0', 'coffee_table_10']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "coffee_table_10",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "shelf_11",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "coffee_table_10",
+      "thoughts": "The coffee table is dusty and needs to be cleaned. I am already holding the rag, which is a cleaning tool, so I will clean the coffee table first to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'coffee_table_10']\n['not', 'dusty', 'shelf_11']\n['under', 'rag_0', 'coffee_table_10']\n\n\n",
+    "feedback": "Clean-dust coffee_table_10 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "coffee_table_10",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "shelf_11",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "shelf_11",
+      "thoughts": "I have already cleaned the coffee table. The shelf is still dusty and needs to be cleaned. I am holding the rag, so I will clean the shelf next to meet the goal condition that it is not dusty."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'coffee_table_10']\n['not', 'dusty', 'shelf_11']\n['under', 'rag_0', 'coffee_table_10']\n\n\n",
+    "feedback": "Clean-dust shelf_11 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "coffee_table_10",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "shelf_11",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "shelf_11",
+      "thoughts": "The goal requires shelf_11 to not be dusty. I am holding a rag, which is a cleaning tool, so I will use it to clean shelf_11."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'coffee_table_10']\n['not', 'dusty', 'shelf_11']\n['under', 'rag_0', 'coffee_table_10']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "coffee_table_10",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "shelf_11",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_UNDER",
+      "object": "coffee_table_10",
+      "thoughts": "The rag needs to be under the coffee table as per the goal state. Since all surfaces are already clean, placing the rag under the coffee table is the next logical step."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'coffee_table_10']\n['not', 'dusty', 'shelf_11']\n['under', 'rag_0', 'coffee_table_10']\n\n\n",
+    "feedback": "Place under rag_0 coffee_table_10 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "coffee_table_10",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: rag_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Under: coffee_table_10",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "shelf_11",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag needs to be moved under the coffee table, and to do so, I first need to pick it up with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'coffee_table_10']\n['not', 'dusty', 'shelf_11']\n['under', 'rag_0', 'coffee_table_10']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "coffee_table_10",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "shelf_11",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_UNDER",
+      "object": "coffee_table_10",
+      "thoughts": "The rag needs to be placed under the coffee table to satisfy the goal state. Since I am already holding the rag in my left hand, I will place it under coffee_table_10."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'coffee_table_10']\n['not', 'dusty', 'shelf_11']\n['under', 'rag_0', 'coffee_table_10']\n\n\n",
+    "feedback": "Place under rag_0 coffee_table_10 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "coffee_table_10",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: rag_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Under: coffee_table_10",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "shelf_11",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To clean the coffee table and shelf, I need a cleaning tool. The rag is available and not being held, so I will grasp it with my left hand to prepare for cleaning."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'coffee_table_10']\n['not', 'dusty', 'shelf_11']\n['under', 'rag_0', 'coffee_table_10']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "coffee_table_10",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "shelf_11",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "coffee_table_10",
+      "thoughts": "The rag is in my left hand and the coffee table needs to be dust-free. I will clean the coffee table first to make progress toward the goal."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'coffee_table_10']\n['not', 'dusty', 'shelf_11']\n['under', 'rag_0', 'coffee_table_10']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "coffee_table_10",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "shelf_11",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_UNDER",
+      "object": "coffee_table_10",
+      "thoughts": "The rag is already clean and in my left hand, and the coffee table and shelf are already dust-free. The next goal is to place the rag under the coffee table, so I will perform LEFT_PLACE_UNDER with the rag and coffee_table_10."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'coffee_table_10']\n['not', 'dusty', 'shelf_11']\n['under', 'rag_0', 'coffee_table_10']\n\n\n",
+    "feedback": "Place under rag_0 coffee_table_10 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "coffee_table_10",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: rag_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Under: coffee_table_10",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "shelf_11",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "The coffee table and shelf are already dust-free, and the rag is already under the coffee table as required by the goal state. No further actions are needed."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'coffee_table_10']\n['not', 'dusty', 'shelf_11']\n['under', 'rag_0', 'coffee_table_10']\n\n\n",
+    "feedback": ""
+  }
+]

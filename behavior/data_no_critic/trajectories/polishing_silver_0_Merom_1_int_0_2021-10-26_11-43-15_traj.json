@@ -1,0 +1,1169 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spoon_98",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0",
+          "Next to: spoon_98",
+          "Next to: rag_101",
+          "Next to: spoon_99",
+          "Next to: spoon_97",
+          "Next to: spoon_100"
+        ]
+      },
+      {
+        "name": "rag_101",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "spoon_99",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49",
+          "Next to: rag_101"
+        ]
+      },
+      {
+        "name": "spoon_97",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49",
+          "Next to: rag_101"
+        ]
+      },
+      {
+        "name": "spoon_100",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_49",
+      "thoughts": "All dusty spoons and the rag are inside a closed bottom cabinet. To clean the spoons and remove the rag, I need access, so the first step is to open the bottom_cabinet_49."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'spoon_97']\n['not', 'dusty', 'spoon_98']\n['not', 'dusty', 'spoon_99']\n['not', 'dusty', 'spoon_100']\n['not', 'inside', 'rag_101', 'bottom_cabinet_49']\n['inside', 'spoon_97', 'bottom_cabinet_49']\n['inside', 'spoon_98', 'bottom_cabinet_49']\n['inside', 'spoon_99', 'bottom_cabinet_49']\n['inside', 'spoon_100', 'bottom_cabinet_49']\n\n\n",
+    "feedback": "Open bottom_cabinet_49 failed"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spoon_98",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0",
+          "Next to: spoon_98",
+          "Next to: rag_101",
+          "Next to: spoon_99",
+          "Next to: spoon_97",
+          "Next to: spoon_100"
+        ]
+      },
+      {
+        "name": "rag_101",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "spoon_99",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49",
+          "Next to: rag_101"
+        ]
+      },
+      {
+        "name": "spoon_97",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49",
+          "Next to: rag_101"
+        ]
+      },
+      {
+        "name": "spoon_100",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_101",
+      "thoughts": "The cabinet is already open, so I can grasp the rag to remove it from inside the cabinet, progressing toward the goal of having the rag outside."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'spoon_97']\n['not', 'dusty', 'spoon_98']\n['not', 'dusty', 'spoon_99']\n['not', 'dusty', 'spoon_100']\n['not', 'inside', 'rag_101', 'bottom_cabinet_49']\n['inside', 'spoon_97', 'bottom_cabinet_49']\n['inside', 'spoon_98', 'bottom_cabinet_49']\n['inside', 'spoon_99', 'bottom_cabinet_49']\n['inside', 'spoon_100', 'bottom_cabinet_49']\n\n\n",
+    "feedback": "Grasp rag_101 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_101",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spoon_98",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0",
+          "Next to: spoon_98",
+          "Next to: spoon_99",
+          "Next to: spoon_97",
+          "Next to: spoon_100"
+        ]
+      },
+      {
+        "name": "rag_101",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "spoon_99",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "spoon_97",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "spoon_100",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "spoon_97",
+      "thoughts": "The rag is already in my left hand, and the spoons are dusty. To achieve the goal of having the spoons not dusty, I will start by cleaning spoon_97."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'spoon_97']\n['not', 'dusty', 'spoon_98']\n['not', 'dusty', 'spoon_99']\n['not', 'dusty', 'spoon_100']\n['not', 'inside', 'rag_101', 'bottom_cabinet_49']\n['inside', 'spoon_97', 'bottom_cabinet_49']\n['inside', 'spoon_98', 'bottom_cabinet_49']\n['inside', 'spoon_99', 'bottom_cabinet_49']\n['inside', 'spoon_100', 'bottom_cabinet_49']\n\n\n",
+    "feedback": "Clean-dust spoon_97 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_101",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spoon_98",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0",
+          "Next to: spoon_98",
+          "Next to: spoon_99",
+          "Next to: spoon_97",
+          "Next to: spoon_100"
+        ]
+      },
+      {
+        "name": "rag_101",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "spoon_99",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "spoon_97",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "spoon_100",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "spoon_98",
+      "thoughts": "The rag is already in my left hand and spoon_98 is still dusty. Cleaning spoon_98 will make progress toward the goal of all spoons being not dusty."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'spoon_97']\n['not', 'dusty', 'spoon_98']\n['not', 'dusty', 'spoon_99']\n['not', 'dusty', 'spoon_100']\n['not', 'inside', 'rag_101', 'bottom_cabinet_49']\n['inside', 'spoon_97', 'bottom_cabinet_49']\n['inside', 'spoon_98', 'bottom_cabinet_49']\n['inside', 'spoon_99', 'bottom_cabinet_49']\n['inside', 'spoon_100', 'bottom_cabinet_49']\n\n\n",
+    "feedback": "Clean-dust spoon_98 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_101",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spoon_98",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0",
+          "Next to: spoon_98",
+          "Next to: spoon_99",
+          "Next to: spoon_97",
+          "Next to: spoon_100"
+        ]
+      },
+      {
+        "name": "rag_101",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "spoon_99",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: spoon_98",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "spoon_97",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: spoon_98",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99"
+        ]
+      },
+      {
+        "name": "spoon_100",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "spoon_99",
+      "thoughts": "spoon_99 is currently dusty and needs to be cleaned to meet the goal state of being not dusty. I am already holding the rag, so I can clean it directly."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'spoon_97']\n['not', 'dusty', 'spoon_98']\n['not', 'dusty', 'spoon_99']\n['not', 'dusty', 'spoon_100']\n['not', 'inside', 'rag_101', 'bottom_cabinet_49']\n['inside', 'spoon_97', 'bottom_cabinet_49']\n['inside', 'spoon_98', 'bottom_cabinet_49']\n['inside', 'spoon_99', 'bottom_cabinet_49']\n['inside', 'spoon_100', 'bottom_cabinet_49']\n\n\n",
+    "feedback": "Clean-dust spoon_99 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_101",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spoon_98",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0",
+          "Next to: spoon_98",
+          "Next to: spoon_99",
+          "Next to: spoon_97",
+          "Next to: spoon_100"
+        ]
+      },
+      {
+        "name": "rag_101",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "spoon_99",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: spoon_98",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "spoon_97",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: spoon_98",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99"
+        ]
+      },
+      {
+        "name": "spoon_100",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "spoon_100",
+      "thoughts": "spoon_100 is still dusty and needs to be cleaned to achieve the goal state. I am already holding the rag, so I can clean it directly."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'spoon_97']\n['not', 'dusty', 'spoon_98']\n['not', 'dusty', 'spoon_99']\n['not', 'dusty', 'spoon_100']\n['not', 'inside', 'rag_101', 'bottom_cabinet_49']\n['inside', 'spoon_97', 'bottom_cabinet_49']\n['inside', 'spoon_98', 'bottom_cabinet_49']\n['inside', 'spoon_99', 'bottom_cabinet_49']\n['inside', 'spoon_100', 'bottom_cabinet_49']\n\n\n",
+    "feedback": "Clean-dust spoon_100 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_101",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spoon_98",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0",
+          "Next to: spoon_98",
+          "Next to: spoon_99",
+          "Next to: spoon_97",
+          "Next to: spoon_100"
+        ]
+      },
+      {
+        "name": "rag_101",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "spoon_99",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: spoon_98",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "spoon_97",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: spoon_98",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99"
+        ]
+      },
+      {
+        "name": "spoon_100",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "spoon_100",
+      "thoughts": "spoon_100 is still dusty and needs to be cleaned. I am already holding the rag, so I can clean it directly to progress toward the goal state."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'spoon_97']\n['not', 'dusty', 'spoon_98']\n['not', 'dusty', 'spoon_99']\n['not', 'dusty', 'spoon_100']\n['not', 'inside', 'rag_101', 'bottom_cabinet_49']\n['inside', 'spoon_97', 'bottom_cabinet_49']\n['inside', 'spoon_98', 'bottom_cabinet_49']\n['inside', 'spoon_99', 'bottom_cabinet_49']\n['inside', 'spoon_100', 'bottom_cabinet_49']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_101",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spoon_98",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0",
+          "Next to: spoon_98",
+          "Next to: spoon_99",
+          "Next to: spoon_97",
+          "Next to: spoon_100"
+        ]
+      },
+      {
+        "name": "rag_101",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "spoon_99",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: spoon_98",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "spoon_97",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: spoon_98",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99"
+        ]
+      },
+      {
+        "name": "spoon_100",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "spoon_100",
+      "thoughts": "spoon_100 is still dusty, and I am holding a rag. Cleaning spoon_100 will move it toward the goal of being not dusty."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'spoon_97']\n['not', 'dusty', 'spoon_98']\n['not', 'dusty', 'spoon_99']\n['not', 'dusty', 'spoon_100']\n['not', 'inside', 'rag_101', 'bottom_cabinet_49']\n['inside', 'spoon_97', 'bottom_cabinet_49']\n['inside', 'spoon_98', 'bottom_cabinet_49']\n['inside', 'spoon_99', 'bottom_cabinet_49']\n['inside', 'spoon_100', 'bottom_cabinet_49']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_101",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spoon_98",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0",
+          "Next to: spoon_98",
+          "Next to: spoon_99",
+          "Next to: spoon_97",
+          "Next to: spoon_100"
+        ]
+      },
+      {
+        "name": "rag_101",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "spoon_99",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: spoon_98",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "spoon_97",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: spoon_98",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99"
+        ]
+      },
+      {
+        "name": "spoon_100",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "spoon_100",
+      "thoughts": "spoon_100 is still dusty, and I am holding a rag. Cleaning spoon_100 will help achieve the goal state where it is not dusty."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'spoon_97']\n['not', 'dusty', 'spoon_98']\n['not', 'dusty', 'spoon_99']\n['not', 'dusty', 'spoon_100']\n['not', 'inside', 'rag_101', 'bottom_cabinet_49']\n['inside', 'spoon_97', 'bottom_cabinet_49']\n['inside', 'spoon_98', 'bottom_cabinet_49']\n['inside', 'spoon_99', 'bottom_cabinet_49']\n['inside', 'spoon_100', 'bottom_cabinet_49']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_101",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spoon_98",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0",
+          "Next to: spoon_98",
+          "Next to: spoon_99",
+          "Next to: spoon_97",
+          "Next to: spoon_100"
+        ]
+      },
+      {
+        "name": "rag_101",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "spoon_99",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: spoon_98",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "spoon_97",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: spoon_98",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99"
+        ]
+      },
+      {
+        "name": "spoon_100",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "spoon_100",
+      "thoughts": "spoon_100 is still dusty according to the goal, and I am holding a rag. Attempting to clean spoon_100 will help achieve the target state."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'spoon_97']\n['not', 'dusty', 'spoon_98']\n['not', 'dusty', 'spoon_99']\n['not', 'dusty', 'spoon_100']\n['not', 'inside', 'rag_101', 'bottom_cabinet_49']\n['inside', 'spoon_97', 'bottom_cabinet_49']\n['inside', 'spoon_98', 'bottom_cabinet_49']\n['inside', 'spoon_99', 'bottom_cabinet_49']\n['inside', 'spoon_100', 'bottom_cabinet_49']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_101",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spoon_98",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0",
+          "Next to: spoon_98",
+          "Next to: spoon_99",
+          "Next to: spoon_97",
+          "Next to: spoon_100"
+        ]
+      },
+      {
+        "name": "rag_101",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spoon_99",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: spoon_98",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "spoon_97",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: spoon_98",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99"
+        ]
+      },
+      {
+        "name": "spoon_100",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "spoon_100",
+      "thoughts": "spoon_100 needs to be not dusty according to the goal. I am holding a rag, which is a cleaning tool, so I will attempt to clean spoon_100 to achieve the target state."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'spoon_97']\n['not', 'dusty', 'spoon_98']\n['not', 'dusty', 'spoon_99']\n['not', 'dusty', 'spoon_100']\n['not', 'inside', 'rag_101', 'bottom_cabinet_49']\n['inside', 'spoon_97', 'bottom_cabinet_49']\n['inside', 'spoon_98', 'bottom_cabinet_49']\n['inside', 'spoon_99', 'bottom_cabinet_49']\n['inside', 'spoon_100', 'bottom_cabinet_49']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_101",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spoon_98",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0",
+          "Next to: spoon_98",
+          "Next to: spoon_99",
+          "Next to: spoon_97",
+          "Next to: spoon_100"
+        ]
+      },
+      {
+        "name": "rag_101",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "spoon_99",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: spoon_98",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_97"
+        ]
+      },
+      {
+        "name": "spoon_97",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: spoon_98",
+          "Next to: bottom_cabinet_49",
+          "Next to: spoon_99"
+        ]
+      },
+      {
+        "name": "spoon_100",
+        "category": "spoon",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bottom_cabinet_49",
+          "Next to: bottom_cabinet_49"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "All spoons are already clean and not dusty, and all are inside the bottom cabinet as required. The rag is not inside the cabinet, as specified by the goal. Therefore, the environment matches the target state."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'spoon_97']\n['not', 'dusty', 'spoon_98']\n['not', 'dusty', 'spoon_99']\n['not', 'dusty', 'spoon_100']\n['not', 'inside', 'rag_101', 'bottom_cabinet_49']\n['inside', 'spoon_97', 'bottom_cabinet_49']\n['inside', 'spoon_98', 'bottom_cabinet_49']\n['inside', 'spoon_99', 'bottom_cabinet_49']\n['inside', 'spoon_100', 'bottom_cabinet_49']\n\n\n",
+    "feedback": ""
+  }
+]

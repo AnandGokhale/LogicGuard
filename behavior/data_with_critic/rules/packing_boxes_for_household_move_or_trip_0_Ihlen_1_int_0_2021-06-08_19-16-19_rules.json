@@ -1,0 +1,94 @@
+[
+    {
+        "rule": "G(!plate_0_in_hand -> X(!plate_0_place_inside_carton_0))",
+        "explanation": "Prevent placing plate 0 into Carton 0 when it's not actually held."
+    },
+    {
+        "rule": "G(plate_0_in_hand -> X(!left_grasp_plate_0))",
+        "explanation": "Prevent grasping plate 0 again if it's already in hand."
+    },
+    {
+        "rule": "G((plate_0_inside_carton_0 | plate_0_inside_carton_1) -> X(!(left_grasp_plate_0|right_grasp_plate_0)))",
+        "explanation": "Once plate 0 is in any carton, forbid grasping it again."
+    },
+    {
+        "rule": "G(!carton_0_is_open -> X(!plate_0_place_inside_carton_0))",
+        "explanation": "Ensure Carton 0 is open before attempting to place plate 0 inside."
+    },
+    {
+        "rule": "G(!plate_1_in_hand -> X(!plate_1_place_inside_carton_0))",
+        "explanation": "Prevent placing plate 1 into Carton 0 when it's not held."
+    },
+    {
+        "rule": "G(plate_1_in_hand -> X(!left_grasp_plate_1))",
+        "explanation": "Prevent re-grasping plate 1 if already in hand."
+    },
+    {
+        "rule": "G((plate_1_inside_carton_0 | plate_1_inside_carton_1) -> X(!(left_grasp_plate_1|right_grasp_plate_1)))",
+        "explanation": "Once plate 1 is in any carton, forbid grasping it again."
+    },
+    {
+        "rule": "G(plate_1_inside_carton_0 -> X(!plate_1_place_inside_carton_0))",
+        "explanation": "Once plate 1 is placed, forbid further placements."
+    },
+    {
+        "rule": "G(!carton_0_is_open -> X(!plate_1_place_inside_carton_0))",
+        "explanation": "Ensure Carton 0 is open before placing plate 1."
+    },
+    {
+        "rule": "G(!plate_2_in_hand -> X(!plate_2_place_inside_carton_0))",
+        "explanation": "Prevent placing plate 2 into Carton 0 when not held."
+    },
+    {
+        "rule": "G(plate_2_in_hand -> X(!left_grasp_plate_2))",
+        "explanation": "Prevent re-grasping plate 2 if already in hand."
+    },
+    {
+        "rule": "G(plate_2_inside_carton_0 -> X(!left_grasp_plate_2))",
+        "explanation": "Once plate 2 is in Carton 0, forbid re-grasping."
+    },
+    {
+        "rule": "G((plate_2_inside_carton_0 | plate_2_inside_carton_1) -> X(!(left_grasp_plate_2|right_grasp_plate_2)))",
+        "explanation": "Once plate 2 is in any carton, forbid grasping it again."
+    },
+    {
+        "rule": "G(!carton_0_is_open -> X(!plate_2_place_inside_carton_0))",
+        "explanation": "Ensure Carton 0 is open before placing plate 2."
+    },
+    {
+        "rule": "G(!plate_3_in_hand -> X(!plate_3_place_inside_carton_0))",
+        "explanation": "Prevent placing plate 3 into Carton 0 when not held."
+    },
+    {
+        "rule": "G(plate_3_in_hand -> X(!(left_grasp_plate_3|right_grasp_plate_3)))",
+        "explanation": "Prevent re-grasping plate 3 if already in hand."
+    },
+    {
+        "rule": "G(plate_3_inside_carton_0 -> X(!(left_grasp_plate_3|right_grasp_plate_3)))",
+        "explanation": "Once plate 3 is in Carton 0, forbid re-grasping."
+    },
+    {
+        "rule": "G((t_shirt_0_inside_carton_0|t_shirt_0_inside_carton_1) -> X(!(left_grasp_t_shirt_0|right_grasp_t_shirt_0)))",
+        "explanation": "Once t-shirt-0 is in Carton 0, forbid re-grasping."
+    },
+    {
+        "rule": "G((t_shirt_1_inside_carton_0|t_shirt_1_inside_carton_1) -> X(!(left_grasp_t_shirt_1|right_grasp_t_shirt_1)))",
+        "explanation": "Once t-shirt-1 is in Carton 0, forbid re-grasping."
+    },
+    {
+        "rule": "G((sweater_0_inside_carton_0|sweater_0_inside_carton_1) -> X(!(left_grasp_sweater_0|right_grasp_sweater_0)))",
+        "explanation": "Once sweater_0 is in Carton 0, forbid re-grasping."
+    },
+    {
+        "rule": "G(plate_3_inside_carton_0 -> X(!plate_3_place_inside_carton_0))",
+        "explanation": "Once plate 3 is placed, forbid further placements."
+    },
+    {
+        "rule": "G(!carton_0_is_open -> X(!plate_3_place_inside_carton_0))",
+        "explanation": "Ensure Carton 0 is open before placing plate 3."
+    },
+    {
+        "rule": "G((plate_0_inside_carton_0|plate_0_inside_carton_1)&(plate_1_inside_carton_0|plate_1_inside_carton_1)&(plate_2_inside_carton_0|plate_2_inside_carton_1)&(plate_3_inside_carton_0|plate_3_inside_carton_1)&(dishtowel_0_inside_carton_0|dishtowel_0_inside_carton_1)&(notebook_0_inside_carton_0|notebook_0_inside_carton_1)&(t_shirt_0_inside_carton_0|t_shirt_0_inside_carton_1)&(t_shirt_1_inside_carton_0|t_shirt_1_inside_carton_1)&(sweater_0_inside_carton_0|sweater_0_inside_carton_1))->X(done)",
+        "explanation": "Once every object satisfies an inside-carton condition, the next action must be `done`."
+    }
+]

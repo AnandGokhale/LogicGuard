@@ -1,0 +1,90 @@
+[
+    {
+        "rule": "G(room_floor_garage_0_is_dusty -> X(left_grasp_broom_0))",
+        "explanation": "If the garage floor is dusty, the very next action should be to grasp the broom."
+    },
+    {
+        "rule": "G(broom_0_in_hand -> X(clean_room_floor_garage_0))",
+        "explanation": "Once the broom is in hand, the next action should be to clean the garage floor."
+    },
+    {
+        "rule": "G(!room_floor_garage_0_is_dusty -> X(!clean_room_floor_garage_0))",
+        "explanation": "Do not attempt to clean the garage floor if it\u2019s not dusty."
+    },
+    {
+        "rule": "G(!broom_0_in_hand -> X(!clean_room_floor_garage_0))",
+        "explanation": "Do not clean the garage floor unless the broom is in hand."
+    },
+    {
+        "rule": "G((bottom_cabinet_15_is_dusty | bottom_cabinet_15_is_stained) -> X(grasp_rag_0))",
+        "explanation": "If the cabinet is dusty or stained, the next action should be to grasp the rag."
+    },
+    {
+        "rule": "G(rag_0_in_hand -> X(clean_bottom_cabinet_15))",
+        "explanation": "Once the rag is in hand, the next action should be to clean bottom_cabinet_15."
+    },
+    {
+        "rule": "G(!(bottom_cabinet_15_is_dusty | bottom_cabinet_15_is_stained) -> X(!clean_bottom_cabinet_15))",
+        "explanation": "Do not clean the cabinet if it is neither dusty nor stained."
+    },
+    {
+        "rule": "G(!rag_0_in_hand -> X(!clean_bottom_cabinet_15))",
+        "explanation": "Do not clean bottom_cabinet_15 unless the rag is in hand."
+    },
+    {
+        "rule": "G(newspaper_0_on_floor -> X(grasp_newspaper_0))",
+        "explanation": "If newspaper_0 is on the floor, the next action must be to grasp it."
+    },
+    {
+        "rule": "G(newspaper_0_in_hand -> X(newspaper_0_place_inside_trashcan_0))",
+        "explanation": "Once newspaper_0 is held, place it inside trashcan_0 next."
+    },
+    {
+        "rule": "G((newspaper_0_inside_trashcan_0 | !newspaper_0_on_floor) -> X(!grasp_newspaper_0))",
+        "explanation": "Once newspaper_0 is correctly placed (or not on the floor), do not grasp it again."
+    },
+    {
+        "rule": "G(newspaper_1_on_floor -> X(grasp_newspaper_1))",
+        "explanation": "If newspaper_1 is on the floor, the next action must be to grasp it."
+    },
+    {
+        "rule": "G(newspaper_1_in_hand -> X(newspaper_1_place_inside_trashcan_0))",
+        "explanation": "Once newspaper_1 is held, place it inside trashcan_0 next."
+    },
+    {
+        "rule": "G((newspaper_1_inside_trashcan_0 | !newspaper_1_on_floor) -> X(!grasp_newspaper_1))",
+        "explanation": "Once newspaper_1 is correctly placed (or not on the floor), do not grasp it again."
+    },
+    {
+        "rule": "G(cruet_0_on_floor -> X(grasp_cruet_0))",
+        "explanation": "If cruet_0 is on the floor, the next action must be to grasp it."
+    },
+    {
+        "rule": "G(cruet_0_in_hand -> X(cruet_0_place_ontop_breakfast_table_14))",
+        "explanation": "Once cruet_0 is held, place it on breakfast_table_14 next."
+    },
+    {
+        "rule": "G((cruet_0_on_top_of_breakfast_table_14 | breakfast_table_14_is_under_cruet_0) -> X(!grasp_cruet_0))",
+        "explanation": "Once cruet_0 is correctly on the table, do not grasp it again."
+    },
+    {
+        "rule": "G(cruet_1_on_floor -> X(grasp_cruet_1))",
+        "explanation": "If cruet_1 is on the floor, the next action must be to grasp it."
+    },
+    {
+        "rule": "G(cruet_1_in_hand -> X(cruet_1_place_ontop_breakfast_table_14))",
+        "explanation": "Once cruet_1 is held, place it on breakfast_table_14 next."
+    },
+    {
+        "rule": "G((cruet_1_on_top_of_breakfast_table_14 | breakfast_table_14_is_under_cruet_1) -> X(!grasp_cruet_1))",
+        "explanation": "Once cruet_1 is correctly on the table, do not grasp it again."
+    },
+    {
+        "rule": "G(!( !room_floor_garage_0_is_dusty & !bottom_cabinet_15_is_dusty & !bottom_cabinet_15_is_stained & (newspaper_0_inside_trashcan_0|!newspaper_0_on_floor) & (newspaper_1_inside_trashcan_0|!newspaper_1_on_floor) & (cruet_0_on_top_of_breakfast_table_14|breakfast_table_14_is_under_cruet_0) & (cruet_1_on_top_of_breakfast_table_14|breakfast_table_14_is_under_cruet_1)) -> X(!done))",
+        "explanation": "Block done until every subgoal is satisfied."
+    },
+    {
+        "rule": "G( !room_floor_garage_0_is_dusty & !bottom_cabinet_15_is_dusty & !bottom_cabinet_15_is_stained & (newspaper_0_inside_trashcan_0|!newspaper_0_on_floor) & (newspaper_1_inside_trashcan_0|!newspaper_1_on_floor) & (cruet_0_on_top_of_breakfast_table_14|breakfast_table_14_is_under_cruet_0) & (cruet_1_on_top_of_breakfast_table_14|breakfast_table_14_is_under_cruet_1) -> X(done))",
+        "explanation": "Once all subgoals hold, the next action may be done."
+    }
+]

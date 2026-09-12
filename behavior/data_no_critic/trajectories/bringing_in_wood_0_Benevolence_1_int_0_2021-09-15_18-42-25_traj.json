@@ -1,0 +1,2622 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plywood_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_1",
+          "Next to: plywood_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_2",
+      "thoughts": "The goal is to have all plywood objects on the kitchen floor. Currently, plywood_2 is on the living room floor. I will start by picking up plywood_2 so I can move it to the kitchen."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Grasp plywood_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plywood_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_1",
+          "Next to: plywood_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "I am holding plywood_2 in my left hand and need to place it onto the kitchen floor to achieve the goal of all plywood being on the kitchen floor."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Place ontop plywood_2 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plywood_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_1",
+          "Next to: plywood_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_1",
+      "thoughts": "To achieve the goal of all plywood being on the kitchen floor, I need to move plywood_1 from the living room floor to the kitchen floor. First, I will grasp plywood_1 with my left hand."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Teleport plywood_0 ONTOP plywood_1 successful: True\nGrasp plywood_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "I am holding plywood_1 in my left hand, and to achieve the goal of all plywood being on the kitchen floor, I need to place plywood_1 on top of the kitchen floor."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Teleport plywood_0 ONTOP plywood_1 successful: True\nPlace ontop plywood_1 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_1",
+          "Under: plywood_0",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_2",
+          "Under: plywood_0",
+          "Next to: plywood_2",
+          "Next to: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_2",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_1",
+      "thoughts": "To ensure all plywood are on the kitchen floor, I need to grasp plywood_1 so I can place it directly onto room_floor_kitchen_0."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Teleport plywood_0 ONTOP plywood_1 successful: True\nGrasp plywood_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "I am holding plywood_1 with my left hand and need to place it directly on the kitchen floor to satisfy the goal that all plywood are on the kitchen floor."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Teleport plywood_0 ONTOP plywood_1 successful: True\nPlace ontop plywood_1 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_1",
+          "Under: plywood_0",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_2",
+          "Under: plywood_0",
+          "Next to: plywood_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_2",
+          "On top of: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_1",
+      "thoughts": "To ensure plywood_1 is directly on the kitchen floor, I need to pick it up first so I can place it on the floor."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Teleport plywood_0 ONTOP plywood_1 successful: True\nGrasp plywood_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "I am currently holding plywood_1 in my left hand and need to place it directly on the kitchen floor to satisfy the goal that all plywood pieces are on the kitchen floor."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Teleport plywood_0 ONTOP plywood_1 successful: True\nPlace ontop plywood_1 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_1",
+          "Under: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_2",
+          "Under: plywood_0",
+          "Next to: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_2",
+          "On top of: plywood_1",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_1",
+      "thoughts": "To place plywood_1 directly on the kitchen floor, I first need to grasp it with my left hand."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Teleport plywood_0 ONTOP plywood_1 successful: True\nGrasp plywood_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "The goal is for all plywood to be on the kitchen floor. I am holding plywood_1 in my left hand, so I will place it directly on top of the room_floor_kitchen_0 to make progress toward the goal."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Teleport plywood_0 ONTOP plywood_1 successful: True\nPlace ontop plywood_1 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_1",
+          "Under: plywood_0",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_2",
+          "Under: plywood_0",
+          "Next to: plywood_2",
+          "Next to: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_2",
+          "On top of: plywood_1",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_0",
+      "thoughts": "To achieve the goal of all plywood pieces being on the kitchen floor, I need to move plywood_0 off the stack. I will grasp plywood_0 so I can place it directly on the floor."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Grasp plywood_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "I am holding plywood_0 in my left hand and need to place it on the kitchen floor to satisfy the goal that all plywood pieces are on the kitchen floor."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Place ontop plywood_0 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_1",
+          "Under: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_2",
+          "Under: plywood_0",
+          "Next to: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_2",
+          "On top of: plywood_1",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_1",
+      "thoughts": "To ensure all plywood pieces are directly on the kitchen floor, I will pick up plywood_1 so I can move it and place it directly on the floor, since it is currently on top of plywood_2."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Grasp plywood_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "I am holding plywood_1 and need to place it directly on the kitchen floor to satisfy the goal that all plywood pieces are on the floor."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Place ontop plywood_1 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_1",
+          "Under: plywood_0",
+          "Next to: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_2",
+          "Under: plywood_1",
+          "Next to: plywood_2",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_2",
+      "thoughts": "To ensure all plywood pieces are directly on the kitchen floor, I will start by grasping plywood_2 so I can move it if necessary."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Grasp plywood_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "The goal is for all plywood pieces to be directly on the kitchen floor. Since I am holding plywood_2, I should place it directly on top of room_floor_kitchen_0 to achieve this."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Place ontop plywood_2 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Under: plywood_2",
+          "Next to: plywood_2",
+          "Next to: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_2",
+          "Under: plywood_1",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_1",
+      "thoughts": "To achieve the goal where all plywood pieces are directly on the kitchen floor, I need to remove any plywood that is stacked on top of others. Grasping plywood_1 will allow me to move it off plywood_0 and plywood_2, and place it directly on the floor."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Grasp plywood_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "I am holding plywood_1 and need to place it directly on the kitchen floor to satisfy the goal that all plywood are on the kitchen floor."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Place ontop plywood_1 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Under: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_2",
+          "On top of: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_2",
+          "Under: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_2",
+      "thoughts": "I need to move plywood_2 so that it is directly on the kitchen floor, so I will grasp it first."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Grasp plywood_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Next to: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_1",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "I am holding plywood_2 in my left hand and need to place it directly on the kitchen floor to satisfy the goal that all plywood pieces are on the kitchen floor."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Place ontop plywood_2 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Under: plywood_1",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0",
+          "Inside: plywood_1"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plywood_2",
+          "On floor: room_floor_kitchen_0",
+          "Inside: plywood_2"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_2",
+          "Under: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_1",
+      "thoughts": "To achieve the goal, plywood_1 must be directly on the kitchen floor. Currently, it is inside plywood_2, so I will grasp plywood_1 to move it."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Grasp plywood_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "I am holding plywood_1 and need to place it directly on the kitchen floor to satisfy the goal that all plywood are on the kitchen floor."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Place ontop plywood_1 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Under: plywood_1",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_2",
+          "On top of: plywood_0",
+          "Next to: plywood_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_2",
+          "Under: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_1",
+      "thoughts": "To place plywood_1 directly on the kitchen floor, I first need to pick it up, since my hands are currently empty."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Grasp plywood_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "I am holding plywood_1 in my left hand and the goal is for all plywood to be on the kitchen floor. I should place plywood_1 directly on top of room_floor_kitchen_0 to achieve this."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Place ontop plywood_1 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_1",
+          "On top of: plywood_0",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Under: plywood_2",
+          "Next to: plywood_2",
+          "On floor: room_floor_kitchen_0",
+          "Inside: plywood_2"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_2",
+          "Under: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_2",
+      "thoughts": "To ensure all plywood pieces are on the kitchen floor, I need to move plywood_2. First, I will grasp plywood_2 so I can place it directly on the floor."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Grasp plywood_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Next to: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_1",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "I am holding plywood_2 in my left hand and need to place it on the kitchen floor to satisfy the goal that all plywood are on the kitchen floor."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Place ontop plywood_2 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Next to: plywood_1",
+          "Next to: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Under: plywood_2",
+          "Next to: plywood_2",
+          "On floor: room_floor_kitchen_0",
+          "Inside: plywood_2"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_2",
+          "Under: plywood_1",
+          "Next to: plywood_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_2",
+      "thoughts": "To ensure all plywood pieces are on the kitchen floor, I need to first grasp plywood_2 so I can place it appropriately if needed."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Grasp plywood_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Next to: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_1",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "The goal is for all plywood pieces to be on the kitchen floor. I am holding plywood_2 in my left hand, so I should place it on top of the kitchen floor to progress towards the goal."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Place ontop plywood_2 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_1",
+          "On top of: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Under: plywood_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_2",
+          "Under: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_1",
+      "thoughts": "To achieve the goal of all plywood being directly on the kitchen floor, I need to remove plywood_1 from on top of plywood_0. My hands are empty, so I will grasp plywood_1 with my left hand."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Grasp plywood_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "I am holding plywood_1 in my left hand, and to achieve the goal of all plywood being on the kitchen floor, I should place plywood_1 directly onto room_floor_kitchen_0."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Place ontop plywood_1 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0",
+          "Inside: plywood_1"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_2",
+          "On top of: plywood_0",
+          "Next to: plywood_2",
+          "Next to: plywood_0",
+          "On floor: room_floor_kitchen_0",
+          "Inside: plywood_2"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_2",
+          "Under: plywood_1",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_2",
+      "thoughts": "To ensure all plywood pieces are on the kitchen floor, I should grasp plywood_2 so I can place it directly on room_floor_kitchen_0."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Grasp plywood_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "I am holding plywood_2 in my left hand, and the goal is for all plywood pieces to be on the kitchen floor. I will place plywood_2 directly onto room_floor_kitchen_0 to achieve this."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Place ontop plywood_2 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Under: plywood_2",
+          "Next to: plywood_2",
+          "Next to: plywood_0",
+          "On floor: room_floor_kitchen_0",
+          "Inside: plywood_2"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_2",
+          "Under: plywood_1",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_1",
+      "thoughts": "To ensure all plywood pieces are directly on the kitchen floor, I need to remove plywood_1 from being inside plywood_2. I will grasp plywood_1 so I can place it directly onto the floor next."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Grasp plywood_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "I am holding plywood_1 in my left hand and need to place it directly onto the kitchen floor to satisfy the goal that all plywood is on the kitchen floor."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Place ontop plywood_1 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Under: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_2",
+          "On top of: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_2",
+          "Under: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_2",
+      "thoughts": "To ensure all plywood pieces are directly on the kitchen floor, I need to remove plywood_2 from on top of plywood_0. I will grasp plywood_2 to move it."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Grasp plywood_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "I am holding plywood_2 in my left hand. To achieve the goal of all plywood being on the kitchen floor, I will place plywood_2 directly on top of room_floor_kitchen_0."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Place ontop plywood_2 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_1",
+          "On top of: plywood_0",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Under: plywood_2",
+          "Next to: plywood_2",
+          "On floor: room_floor_kitchen_0",
+          "Inside: plywood_2"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_2",
+          "Under: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_2",
+      "thoughts": "To ensure all plywood pieces are on the kitchen floor, I need to move them if they are stacked. I will start by grasping the topmost plywood, plywood_2, with my left hand."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Grasp plywood_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plywood_0",
+          "Next to: plywood_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_1",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "Since I am holding plywood_2 in my left hand and the goal is for all plywood pieces to be on the kitchen floor, I will place plywood_2 directly onto the kitchen floor."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Place ontop plywood_2 room_floor_kitchen_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_1",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plywood_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_2",
+          "Under: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plywood_0",
+      "thoughts": "To ensure all plywood pieces are on the kitchen floor, I need to manipulate any that are not properly placed. Grasping plywood_0 will allow me to reposition it if necessary."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Grasp plywood_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plywood_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plywood_2",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plywood_1",
+          "Next to: plywood_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_1",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plywood_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "plywood_0",
+        "category": "plywood",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_kitchen_0",
+      "thoughts": "I am currently holding plywood_0 in my left hand. To satisfy the goal that all plywood pieces are on the kitchen floor, I should place plywood_0 onto room_floor_kitchen_0."
+    },
+    "goal": "target environment state:\n['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'room_floor_kitchen_0']\n\n\n",
+    "feedback": "Place ontop plywood_0 room_floor_kitchen_0 successful"
+  }
+]

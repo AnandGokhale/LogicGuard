@@ -1,0 +1,1109 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bathtub_35",
+          "Inside: bathtub_35"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_35",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: scrub_brush_0",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bathtub_35",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_0",
+      "thoughts": "The bathtub is stained, and there is a clean scrub brush available nearby. To clean the bathtub, I first need to pick up the scrub brush with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'bathtub_35']\n\n\n",
+    "feedback": "Grasp scrub_brush_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_35",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bathtub_35",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_38",
+      "thoughts": "The scrub brush is not soaked, but soaking it will make cleaning more effective. The sink is a water source and currently toggled off, so I will turn it on first to soak the scrub brush."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'bathtub_35']\n\n\n",
+    "feedback": "Toggleon sink_38 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_35",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bathtub_35",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "scrub_brush_0",
+      "thoughts": "The scrub brush is clean but not soaked. Since the sink is already toggled on, I should soak the scrub brush to prepare it for cleaning the stained bathtub."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'bathtub_35']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_35",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bathtub_35",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_38",
+      "thoughts": "The scrub brush must be placed inside the toggled on sink before it can be soaked. Since I am already holding the scrub brush in my left hand and the sink is on, I will place the scrub brush inside the sink to prepare for soaking."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'bathtub_35']\n\n\n",
+    "feedback": "Place inside scrub_brush_0 sink_38 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_38",
+          "Inside: sink_38"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_35",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bathtub_35",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_0",
+      "thoughts": "To clean the stained bathtub, I need a cleaning tool. The scrub brush is already clean and inside the sink. I will grasp the scrub brush with my left hand to prepare for soaking it in the water before cleaning the bathtub."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'bathtub_35']\n\n\n",
+    "feedback": "Grasp scrub_brush_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_35",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bathtub_35",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "scrub_brush_0",
+      "thoughts": "The scrub brush in my left hand is not soaked. I need to soak it in the toggled on sink before I can effectively clean the stained bathtub."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'bathtub_35']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_35",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bathtub_35",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_38",
+      "thoughts": "The scrub brush needs to be placed inside the toggled on sink so it can be soaked before I use it to clean the stained bathtub."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'bathtub_35']\n\n\n",
+    "feedback": "Place inside scrub_brush_0 sink_38 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_38",
+          "Inside: sink_38"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_35",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bathtub_35",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_0",
+      "thoughts": "The scrub brush is already inside the toggled on sink, but it is not soaked yet. To soak it, I need to grasp it first so I can perform the soak action next."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'bathtub_35']\n\n\n",
+    "feedback": "Grasp scrub_brush_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_35",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bathtub_35",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "scrub_brush_0",
+      "thoughts": "The scrub brush is currently not soaked. Since the sink is toggled on and the brush is already in my left hand, I will soak the scrub brush so it can be used to clean the stained bathtub next."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'bathtub_35']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_35",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bathtub_35",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_38",
+      "thoughts": "The scrub brush needs to be placed inside the toggled on sink before it can be soaked. I will place the scrub brush in the sink to prepare for soaking."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'bathtub_35']\n\n\n",
+    "feedback": "Place inside scrub_brush_0 sink_38 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_38",
+          "Inside: sink_38"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_35",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bathtub_35",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "scrub_brush_0",
+      "thoughts": "The scrub brush is already inside the toggled on sink, so I can now soak it to prepare it for cleaning the stained bathtub."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'bathtub_35']\n\n\n",
+    "feedback": "Soak scrub_brush_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_38",
+          "Inside: sink_38"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_35",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bathtub_35",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_0",
+      "thoughts": "The scrub brush is already soaked and clean, and I need to use it to clean the stained bathtub. First, I will pick it up with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'bathtub_35']\n\n\n",
+    "feedback": "Grasp scrub_brush_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_35",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bathtub_35",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "bathtub_35",
+      "thoughts": "The bathtub is stained and I am already holding a soaked scrub brush in my left hand, which is a suitable cleaning tool. I will use it to clean the bathtub to achieve the target state."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'bathtub_35']\n\n\n",
+    "feedback": "Clean-stain bathtub_35 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bathtub_35",
+        "category": "bathtub",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bathtub_35",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "The bathtub is already clean, and the goal state of \"not stained\" for bathtub_35 has been achieved. No further actions are needed."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'bathtub_35']\n\n\n",
+    "feedback": ""
+  }
+]

@@ -1,0 +1,1062 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_145",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: walker_144",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sandal_143",
+        "category": "sandal",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_67",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "walker_144",
+        "category": "walker",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: rag_145",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_145",
+      "thoughts": "To soak the rag, I first need to pick it up. I will grasp rag_145 with my left hand since both hands are currently free."
+    },
+    "goal": "target environment state:\n['nextto', 'rag_145', 'sink_67']\n['soaked', 'rag_145']\n['and', 'not', 'stained', 'sandal_143', 'not', 'stained', 'walker_144']\n\n\ninteractable objects:\n{'name': 'sandal_143', 'category': 'shoe.n.01'}\n{'name': 'walker_144', 'category': 'shoe.n.01'}\n{'name': 'rag_145', 'category': 'rag.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'sink_67', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Grasp rag_145 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_145",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_145",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_143",
+        "category": "sandal",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_67",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "walker_144",
+        "category": "walker",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_67",
+      "thoughts": "To soak the rag, the sink must be toggled on before I can use it as a water source. My left hand is already holding the rag, so I will turn on the sink next."
+    },
+    "goal": "target environment state:\n['nextto', 'rag_145', 'sink_67']\n['soaked', 'rag_145']\n['and', 'not', 'stained', 'sandal_143', 'not', 'stained', 'walker_144']\n\n\ninteractable objects:\n{'name': 'sandal_143', 'category': 'shoe.n.01'}\n{'name': 'walker_144', 'category': 'shoe.n.01'}\n{'name': 'rag_145', 'category': 'rag.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'sink_67', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Toggleon sink_67 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_145",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_145",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_143",
+        "category": "sandal",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_67",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "walker_144",
+        "category": "walker",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_67",
+      "thoughts": "To soak the rag, I first need to place it next to the sink. The sink is already toggled on, and my left hand is holding the rag, so I will place it next to the sink to prepare for soaking."
+    },
+    "goal": "target environment state:\n['nextto', 'rag_145', 'sink_67']\n['soaked', 'rag_145']\n['and', 'not', 'stained', 'sandal_143', 'not', 'stained', 'walker_144']\n\n\ninteractable objects:\n{'name': 'sandal_143', 'category': 'shoe.n.01'}\n{'name': 'walker_144', 'category': 'shoe.n.01'}\n{'name': 'rag_145', 'category': 'rag.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'sink_67', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Place next to rag_145 sink_67 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_145",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_67"
+        ]
+      },
+      {
+        "name": "sandal_143",
+        "category": "sandal",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_67",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_145",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "walker_144",
+        "category": "walker",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_145",
+      "thoughts": "The rag is currently next to the sink and not soaked. To soak it, I need to grasp it first so I can place it into the sink for soaking."
+    },
+    "goal": "target environment state:\n['nextto', 'rag_145', 'sink_67']\n['soaked', 'rag_145']\n['and', 'not', 'stained', 'sandal_143', 'not', 'stained', 'walker_144']\n\n\ninteractable objects:\n{'name': 'sandal_143', 'category': 'shoe.n.01'}\n{'name': 'walker_144', 'category': 'shoe.n.01'}\n{'name': 'rag_145', 'category': 'rag.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'sink_67', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Grasp rag_145 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_145",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_145",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_143",
+        "category": "sandal",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_67",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "walker_144",
+        "category": "walker",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_67",
+      "thoughts": "I need to place the rag next to the sink to satisfy the \"nextto\" condition and prepare for soaking it in the sink."
+    },
+    "goal": "target environment state:\n['nextto', 'rag_145', 'sink_67']\n['soaked', 'rag_145']\n['and', 'not', 'stained', 'sandal_143', 'not', 'stained', 'walker_144']\n\n\ninteractable objects:\n{'name': 'sandal_143', 'category': 'shoe.n.01'}\n{'name': 'walker_144', 'category': 'shoe.n.01'}\n{'name': 'rag_145', 'category': 'rag.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'sink_67', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Place next to rag_145 sink_67 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_145",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_67"
+        ]
+      },
+      {
+        "name": "sandal_143",
+        "category": "sandal",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_67",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_145",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "walker_144",
+        "category": "walker",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_145",
+      "thoughts": "The rag is next to the sink and needs to be soaked. I will grasp the rag so I can put it into the sink to soak it."
+    },
+    "goal": "target environment state:\n['nextto', 'rag_145', 'sink_67']\n['soaked', 'rag_145']\n['and', 'not', 'stained', 'sandal_143', 'not', 'stained', 'walker_144']\n\n\ninteractable objects:\n{'name': 'sandal_143', 'category': 'shoe.n.01'}\n{'name': 'walker_144', 'category': 'shoe.n.01'}\n{'name': 'rag_145', 'category': 'rag.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'sink_67', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Grasp rag_145 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_145",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_145",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_143",
+        "category": "sandal",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_67",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "walker_144",
+        "category": "walker",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_67",
+      "thoughts": "The goal requires the rag to be next to the sink before soaking it. I will place the rag next to the sink to satisfy this condition and prepare for soaking."
+    },
+    "goal": "target environment state:\n['nextto', 'rag_145', 'sink_67']\n['soaked', 'rag_145']\n['and', 'not', 'stained', 'sandal_143', 'not', 'stained', 'walker_144']\n\n\ninteractable objects:\n{'name': 'sandal_143', 'category': 'shoe.n.01'}\n{'name': 'walker_144', 'category': 'shoe.n.01'}\n{'name': 'rag_145', 'category': 'rag.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'sink_67', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Place next to rag_145 sink_67 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_145",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_67"
+        ]
+      },
+      {
+        "name": "sandal_143",
+        "category": "sandal",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_67",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_145",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "walker_144",
+        "category": "walker",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_145",
+      "thoughts": "Now that the rag is next to the sink and my hands are empty, I will grasp the rag with my left hand to prepare for placing it into the sink and soaking it."
+    },
+    "goal": "target environment state:\n['nextto', 'rag_145', 'sink_67']\n['soaked', 'rag_145']\n['and', 'not', 'stained', 'sandal_143', 'not', 'stained', 'walker_144']\n\n\ninteractable objects:\n{'name': 'sandal_143', 'category': 'shoe.n.01'}\n{'name': 'walker_144', 'category': 'shoe.n.01'}\n{'name': 'rag_145', 'category': 'rag.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'sink_67', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Grasp rag_145 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_145",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_145",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_143",
+        "category": "sandal",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_67",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "walker_144",
+        "category": "walker",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_67",
+      "thoughts": "To soak the rag, I need to place it next to the sink first, as the goal specifies rag_145 should be next to sink_67 and then soaked. My left hand is holding the rag, so I will place it next to the sink."
+    },
+    "goal": "target environment state:\n['nextto', 'rag_145', 'sink_67']\n['soaked', 'rag_145']\n['and', 'not', 'stained', 'sandal_143', 'not', 'stained', 'walker_144']\n\n\ninteractable objects:\n{'name': 'sandal_143', 'category': 'shoe.n.01'}\n{'name': 'walker_144', 'category': 'shoe.n.01'}\n{'name': 'rag_145', 'category': 'rag.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'sink_67', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Place next to rag_145 sink_67 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_145",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_67"
+        ]
+      },
+      {
+        "name": "sandal_143",
+        "category": "sandal",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_67",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_145",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "walker_144",
+        "category": "walker",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_145",
+      "thoughts": "To soak the rag, I must first pick it up so I can place it inside the sink. My left hand is empty, so I will grasp the rag with my left hand."
+    },
+    "goal": "target environment state:\n['nextto', 'rag_145', 'sink_67']\n['soaked', 'rag_145']\n['and', 'not', 'stained', 'sandal_143', 'not', 'stained', 'walker_144']\n\n\ninteractable objects:\n{'name': 'sandal_143', 'category': 'shoe.n.01'}\n{'name': 'walker_144', 'category': 'shoe.n.01'}\n{'name': 'rag_145', 'category': 'rag.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'sink_67', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Grasp rag_145 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_145",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_145",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_143",
+        "category": "sandal",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_67",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "walker_144",
+        "category": "walker",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_67",
+      "thoughts": "To soak the rag, I need to place it inside the toggled on sink. Since I am already holding the rag in my left hand, I will place it inside the sink now."
+    },
+    "goal": "target environment state:\n['nextto', 'rag_145', 'sink_67']\n['soaked', 'rag_145']\n['and', 'not', 'stained', 'sandal_143', 'not', 'stained', 'walker_144']\n\n\ninteractable objects:\n{'name': 'sandal_143', 'category': 'shoe.n.01'}\n{'name': 'walker_144', 'category': 'shoe.n.01'}\n{'name': 'rag_145', 'category': 'rag.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'sink_67', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Place inside rag_145 sink_67 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_145",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_bathroom_0",
+          "Next to: sink_67"
+        ]
+      },
+      {
+        "name": "sandal_143",
+        "category": "sandal",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_67",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_145",
+          "Under: rag_145",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "walker_144",
+        "category": "walker",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_145",
+      "thoughts": "The rag is now inside the toggled on sink, so I can perform the SOAK action to soak the rag, which is required before I can use it to clean the stained sandal and walker."
+    },
+    "goal": "target environment state:\n['nextto', 'rag_145', 'sink_67']\n['soaked', 'rag_145']\n['and', 'not', 'stained', 'sandal_143', 'not', 'stained', 'walker_144']\n\n\ninteractable objects:\n{'name': 'sandal_143', 'category': 'shoe.n.01'}\n{'name': 'walker_144', 'category': 'shoe.n.01'}\n{'name': 'rag_145', 'category': 'rag.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'sink_67', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Soak rag_145 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_145",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_bathroom_0",
+          "Next to: sink_67"
+        ]
+      },
+      {
+        "name": "sandal_143",
+        "category": "sandal",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_67",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_145",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "walker_144",
+        "category": "walker",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_145",
+      "thoughts": "The rag is now soaked and ready to be used for cleaning. I will grasp it with my left hand so I can use it to clean the stained sandal and walker."
+    },
+    "goal": "target environment state:\n['nextto', 'rag_145', 'sink_67']\n['soaked', 'rag_145']\n['and', 'not', 'stained', 'sandal_143', 'not', 'stained', 'walker_144']\n\n\ninteractable objects:\n{'name': 'sandal_143', 'category': 'shoe.n.01'}\n{'name': 'walker_144', 'category': 'shoe.n.01'}\n{'name': 'rag_145', 'category': 'rag.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'sink_67', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Grasp rag_145 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_145",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_145",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_143",
+        "category": "sandal",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_67",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "walker_144",
+        "category": "walker",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "sandal_143",
+      "thoughts": "The rag in my left hand is soaked and ready, and the sandal is stained. Cleaning the sandal first will help achieve the goal of both the sandal and walker being not stained."
+    },
+    "goal": "target environment state:\n['nextto', 'rag_145', 'sink_67']\n['soaked', 'rag_145']\n['and', 'not', 'stained', 'sandal_143', 'not', 'stained', 'walker_144']\n\n\ninteractable objects:\n{'name': 'sandal_143', 'category': 'shoe.n.01'}\n{'name': 'walker_144', 'category': 'shoe.n.01'}\n{'name': 'rag_145', 'category': 'rag.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'sink_67', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Clean-stain sandal_143 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_145",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_145",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_143",
+        "category": "sandal",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_67",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "walker_144",
+        "category": "walker",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "walker_144",
+      "thoughts": "The rag in my left hand is soaked and the walker is stained. Cleaning the walker will achieve the goal of both the sandal and walker being not stained."
+    },
+    "goal": "target environment state:\n['nextto', 'rag_145', 'sink_67']\n['soaked', 'rag_145']\n['and', 'not', 'stained', 'sandal_143', 'not', 'stained', 'walker_144']\n\n\ninteractable objects:\n{'name': 'sandal_143', 'category': 'shoe.n.01'}\n{'name': 'walker_144', 'category': 'shoe.n.01'}\n{'name': 'rag_145', 'category': 'rag.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'sink_67', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Clean-stain walker_144 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_145",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_145",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_67"
+        ]
+      },
+      {
+        "name": "sandal_143",
+        "category": "sandal",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "sink_67",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_145",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "walker_144",
+        "category": "walker",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_67",
+      "thoughts": "The critic says the remaining goal is to have rag_145 inside sink_67. Since the rag is currently in my left hand, I will place it inside the sink to achieve this."
+    },
+    "goal": "target environment state:\n['nextto', 'rag_145', 'sink_67']\n['soaked', 'rag_145']\n['and', 'not', 'stained', 'sandal_143', 'not', 'stained', 'walker_144']\n\n\ninteractable objects:\n{'name': 'sandal_143', 'category': 'shoe.n.01'}\n{'name': 'walker_144', 'category': 'shoe.n.01'}\n{'name': 'rag_145', 'category': 'rag.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'sink_67', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Place inside rag_145 sink_67 unsuccessful"
+  }
+]

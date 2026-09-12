@@ -1,0 +1,172 @@
+[
+  {
+    "timestep": 0,
+    "state_APs": [
+      "bucket_52_in_storage_room",
+      "bucket_52_on_top_of_breakfast_table_14",
+      "grill_50_in_garage",
+      "grill_50_is_stained",
+      "grill_50_is_dusty",
+      "grill_50_on_floor",
+      "sink_32_in_storage_room_0",
+      "rag_51_in_storage_room",
+      "rag_51_on_top_of_breakfast_table_14",
+      "breakfast_table_14_in_storage_room_0"
+    ],
+    "action_APs": "left_grasp_rag_51",
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Grasp rag_51 with left_hand successful"
+  },
+  {
+    "timestep": 1,
+    "state_APs": [
+      "rag_51_in_hand",
+      "bucket_52_in_storage_room",
+      "bucket_52_on_top_of_breakfast_table_14",
+      "grill_50_in_garage",
+      "grill_50_is_stained",
+      "grill_50_is_dusty",
+      "grill_50_on_floor",
+      "sink_32_in_storage_room_0",
+      "rag_51_in_storage_room",
+      "breakfast_table_14_in_storage_room_0"
+    ],
+    "action_APs": "right_grasp_grill_50",
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Grasp grill_50 with right_hand successful"
+  },
+  {
+    "timestep": 2,
+    "state_APs": [
+      "rag_51_in_hand",
+      "grill_50_in_hand",
+      "bucket_52_in_storage_room",
+      "bucket_52_on_top_of_breakfast_table_14",
+      "grill_50_in_None",
+      "grill_50_is_stained",
+      "grill_50_is_dusty",
+      "sink_32_in_storage_room_0",
+      "rag_51_in_None",
+      "rag_51_is_under_grill_50",
+      "breakfast_table_14_in_storage_room_0"
+    ],
+    "action_APs": "grill_50_release_grill_50",
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Release grill_50 from right_hand successful"
+  },
+  {
+    "timestep": 3,
+    "state_APs": [
+      "rag_51_in_hand",
+      "bucket_52_in_storage_room",
+      "bucket_52_on_top_of_breakfast_table_14",
+      "grill_50_in_None",
+      "grill_50_is_stained",
+      "grill_50_is_dusty",
+      "grill_50_is_under_rag_51",
+      "sink_32_in_storage_room_0",
+      "rag_51_in_None",
+      "breakfast_table_14_in_storage_room_0"
+    ],
+    "action_APs": "toggle_on_sink_32",
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Toggleon sink_32 success"
+  },
+  {
+    "timestep": 4,
+    "state_APs": [
+      "rag_51_in_hand",
+      "bucket_52_in_storage_room",
+      "bucket_52_on_top_of_breakfast_table_14",
+      "grill_50_in_None",
+      "grill_50_is_stained",
+      "grill_50_is_dusty",
+      "sink_32_in_storage_room_0",
+      "sink_32_is_toggled_on",
+      "rag_51_in_storage_room",
+      "breakfast_table_14_in_storage_room_0"
+    ],
+    "action_APs": "rag_51_place_inside_sink_32",
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Place inside rag_51 sink_32 unsuccessful"
+  },
+  {
+    "timestep": 5,
+    "state_APs": [
+      "bucket_52_in_storage_room",
+      "bucket_52_on_top_of_breakfast_table_14",
+      "grill_50_in_None",
+      "grill_50_is_stained",
+      "grill_50_is_dusty",
+      "sink_32_in_storage_room_0",
+      "sink_32_is_toggled_on",
+      "sink_32_is_under_rag_51",
+      "sink_32_next_to_rag_51",
+      "sink_32_inside_rag_51",
+      "rag_51_in_storage_room",
+      "rag_51_next_to_sink_32",
+      "breakfast_table_14_in_storage_room_0"
+    ],
+    "action_APs": "soak_rag_51",
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Soak rag_51 success"
+  },
+  {
+    "timestep": 6,
+    "state_APs": [
+      "bucket_52_in_storage_room",
+      "bucket_52_on_top_of_breakfast_table_14",
+      "grill_50_in_None",
+      "grill_50_is_stained",
+      "grill_50_is_dusty",
+      "sink_32_in_storage_room_0",
+      "sink_32_is_toggled_on",
+      "sink_32_next_to_rag_51",
+      "sink_32_inside_rag_51",
+      "rag_51_in_storage_room",
+      "rag_51_is_soaked",
+      "rag_51_next_to_sink_32",
+      "breakfast_table_14_in_storage_room_0"
+    ],
+    "action_APs": "left_grasp_rag_51",
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Grasp rag_51 with left_hand successful"
+  },
+  {
+    "timestep": 7,
+    "state_APs": [
+      "rag_51_in_hand",
+      "bucket_52_in_storage_room",
+      "bucket_52_on_top_of_breakfast_table_14",
+      "grill_50_in_None",
+      "grill_50_is_stained",
+      "grill_50_is_dusty",
+      "sink_32_in_storage_room_0",
+      "sink_32_is_toggled_on",
+      "rag_51_in_storage_room",
+      "rag_51_is_soaked",
+      "breakfast_table_14_in_storage_room_0"
+    ],
+    "action_APs": "clean_grill_50",
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Clean-dust grill_50 success\nClean-stain grill_50 success"
+  },
+  {
+    "timestep": 8,
+    "state_APs": [
+      "rag_51_in_hand",
+      "bucket_52_in_storage_room",
+      "bucket_52_on_top_of_breakfast_table_14",
+      "grill_50_in_None",
+      "grill_50_next_to_room_floor_garage_0",
+      "sink_32_in_storage_room_0",
+      "sink_32_is_toggled_on",
+      "rag_51_in_storage_room",
+      "rag_51_is_soaked",
+      "breakfast_table_14_in_storage_room_0"
+    ],
+    "action_APs": "done",
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": ""
+  }
+]

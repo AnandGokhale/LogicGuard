@@ -1,0 +1,2965 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_51",
+      "thoughts": "The grill is both stained and dusty and needs to be cleaned. The rag is a cleaning tool and is currently clean but not soaked. I will pick up the rag first so I can use it to clean the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Grasp rag_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_32",
+      "thoughts": "The rag is not soaked, and the sink is currently toggled off. I need to turn on the sink so I can soak the rag before using it to clean the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Toggleon sink_32 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_51",
+      "thoughts": "The rag is in my left hand and is not soaked. The sink is toggled on, so I can soak the rag to prepare it for cleaning the stained and dusty grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "The rag is in my left hand and needs to be placed inside the toggled on sink in order to soak it before I can use it to clean the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Place inside rag_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_51",
+          "Next to: rag_51"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_51",
+      "thoughts": "To clean the grill, I need a soaked rag. The rag is clean and next to the toggled on sink. I will grasp the rag first so I can soak it in the sink."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Grasp rag_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_51",
+      "thoughts": "The rag is already in my left hand and the sink is toggled on, so I can soak the rag to prepare it for cleaning the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "The rag in my left hand needs to be placed inside the toggled on sink before I can soak it. This is required before cleaning the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Place inside rag_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_51",
+          "Next to: rag_51",
+          "Inside: rag_51"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_51",
+      "thoughts": "To clean the grill, I need a soaked rag. The rag is next to the sink and not soaked. First, I will pick up the rag with my left hand so I can place it inside the sink to soak it."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Grasp rag_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "The rag in my left hand is not soaked. Since the sink is toggled on, I will place the rag inside the sink to soak it before cleaning the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Place inside rag_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_51"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_51",
+      "thoughts": "To clean the grill, I need a cleaning tool. I will grasp the rag with my left hand as the first step towards soaking it and then using it to clean the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Grasp rag_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "The rag in my left hand is not soaked. Since the sink is toggled on and is a water source, I will place the rag inside the sink to soak it, preparing it for cleaning the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Place inside rag_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_51",
+          "Next to: rag_51",
+          "Inside: rag_51"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_51",
+      "thoughts": "I need to soak the rag before cleaning the grill, so I will first grasp the rag with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Grasp rag_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_51",
+      "thoughts": "The rag in my left hand is not soaked. To clean the grill effectively, I need to soak the rag in the toggled-on sink first."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "The rag in my left hand is not soaked. I need to place it inside the toggled-on sink so I can soak it and use it to clean the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Place inside rag_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_51",
+          "Inside: rag_51"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_51",
+      "thoughts": "To clean the grill, I need a soaked rag. First, I need to pick up rag_51 with my left hand so I can soak it in the sink."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Grasp rag_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_51",
+      "thoughts": "The rag_51 is in my left hand and is not yet soaked. The sink_32 is toggled on, so I should soak the rag before using it to clean the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "The rag_51 in my left hand needs to be placed inside the toggled on sink_32 so I can soak it before cleaning the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Place inside rag_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_51"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_51",
+      "thoughts": "To clean the grill, I need a soaked rag. The rag is next to the sink and not yet soaked, so I will pick up rag_51 with my left hand to prepare for soaking it in the sink."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Grasp rag_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_51",
+      "thoughts": "The rag in my left hand is not soaked, but the sink is toggled on and available. I will soak the rag so I can use it to clean the stained and dusty grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "The rag in my left hand is not soaked. To soak it, I need to place it inside the toggled on sink first."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Place inside rag_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_51"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_51",
+      "thoughts": "To clean the grill, I need to first soak the rag. I will pick up the rag with my left hand so I can place it into the sink to soak it."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Grasp rag_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_51",
+      "thoughts": "The rag in my left hand is not soaked. To clean the stained and dusty grill, I need to soak the rag first. The sink is toggled on and available, so I will soak the rag now."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "The rag in my left hand needs to be placed inside the toggled on sink before I can soak it. This will allow me to soak the rag and then use it to clean the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Place inside rag_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_51",
+          "Next to: rag_51",
+          "Inside: rag_51"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_51",
+      "thoughts": "To clean the grill, I need a soaked rag. The first step is to pick up the rag with my left hand, as both hands are currently empty."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Grasp rag_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_51",
+      "thoughts": "The rag in my left hand is not soaked. Since there is a toggled on sink available, I should soak the rag before cleaning the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "The rag in my left hand needs to be placed inside the toggled on sink so I can soak it before using it to clean the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Place inside rag_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_51",
+          "Next to: rag_51",
+          "Inside: rag_51"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_51",
+      "thoughts": "The rag is a cleaning tool and is currently not soaked. To clean the grill, I need to soak the rag in the toggled on sink. First, I need to pick up the rag with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Grasp rag_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_51",
+      "thoughts": "The rag is in my left hand and is not soaked. The sink in the storage room is toggled on and can be used to soak the rag. Soaking the rag is necessary before I can effectively clean the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "The rag in my left hand is not soaked. I need to place it inside the toggled on sink before I can soak it and use it to clean the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Place inside rag_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_51",
+          "Inside: rag_51"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_51",
+      "thoughts": "To clean the grill, I need a soaked rag. The rag is currently not held, so I will grasp it with my left hand to prepare for soaking it in the sink."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Grasp rag_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_51",
+      "thoughts": "The rag is in my left hand and is currently not soaked. The sink is toggled on and clean, so I can soak the rag to prepare it for cleaning the stained and dusty grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "The rag in my left hand needs to be placed inside the toggled on sink before I can soak it. This is required to prepare the rag for cleaning the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Place inside rag_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_51",
+          "Next to: rag_51",
+          "Inside: rag_51"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_51",
+      "thoughts": "To clean the grill, I need a soaked rag. First, I need to pick up rag_51, which is next to the sink and not currently soaked."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Grasp rag_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_51",
+      "thoughts": "The rag is in my left hand and is not soaked. Since the sink is toggled on and can be used as a water source, I should soak the rag before using it to clean the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "The rag needs to be soaked before cleaning. I will place the rag in the toggled on sink first to prepare for soaking."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Place inside rag_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_51",
+          "Next to: rag_51"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_51",
+      "thoughts": "To clean the grill, I need to soak the rag first. I will pick up the rag with my left hand so I can place it in the sink to soak it."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Grasp rag_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_51",
+      "thoughts": "The rag in my left hand is not soaked yet, and the sink is toggled on. I need to soak the rag before using it to clean the stained and dusty grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "The rag in my left hand is not soaked yet. To soak it, I need to place it inside the toggled on sink first."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Place inside rag_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_51",
+          "Next to: rag_51",
+          "Inside: rag_51"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_51",
+      "thoughts": "I need to soak the rag before I can use it to clean the grill. First, I will pick up the rag with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Grasp rag_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "breakfast_table_14",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: storage_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_51",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "grill_50",
+        "category": "grill",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bucket_52",
+        "category": "bucket",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_14"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_51",
+      "thoughts": "The rag in my left hand is not soaked. Since there is a toggled-on sink available, I will soak the rag to prepare it for cleaning the grill."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'grill_50']\n['not', 'dusty', 'grill_50']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  }
+]

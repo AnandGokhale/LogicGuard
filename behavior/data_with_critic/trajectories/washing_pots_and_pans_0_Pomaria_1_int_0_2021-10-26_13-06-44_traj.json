@@ -1,0 +1,3310 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: kettle_79",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: scrub_brush_83",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_33",
+          "Next to: saucepan_81"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_31",
+          "Next to: saucepan_81",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: countertop_33",
+          "Next to: frying_pan_82",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_83",
+      "thoughts": "The goal is to clean all pans, the kettle, and the teapot, and then put them inside a cabinet. The scrub_brush_83 is already soaked and on the countertop, so I will grasp it with my left hand to begin cleaning the stained items."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp scrub_brush_83 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_33",
+          "Next to: saucepan_81"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_31",
+          "Next to: saucepan_81",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: countertop_33",
+          "Next to: frying_pan_82",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "teapot_78",
+      "thoughts": "The scrub_brush_83 is soaked and in my left hand. The teapot_78 is stained. I will clean the teapot first to make progress towards the goal of having all items clean."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Clean-stain teapot_78 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: pantry_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_33",
+          "Next to: saucepan_81"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_31",
+          "Next to: saucepan_81",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: countertop_33",
+          "Next to: frying_pan_82",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "kettle_79",
+      "thoughts": "The scrub_brush_83 is soaked and in my left hand, and kettle_79 is stained. Cleaning the kettle next will move toward the goal of all pans and kettles being clean."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Clean-stain kettle_79 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_33",
+          "Next to: saucepan_81"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_31",
+          "Next to: saucepan_81",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: countertop_33",
+          "Next to: frying_pan_82",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "saucepan_80",
+      "thoughts": "The scrub_brush_83 is soaked and in my left hand, and saucepan_80 is stained. Cleaning saucepan_80 will help achieve the goal of all pans being clean."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Clean-stain saucepan_80 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_33",
+          "Next to: saucepan_81"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_31",
+          "Next to: saucepan_81",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: countertop_33",
+          "Next to: frying_pan_82",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "saucepan_81",
+      "thoughts": "The scrub_brush_83 is soaked and in my left hand, and saucepan_81 is stained. Cleaning saucepan_81 will help achieve the goal of all pans being clean."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Clean-stain saucepan_81 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_33",
+          "Next to: saucepan_81"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_31",
+          "Next to: saucepan_81",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: countertop_33",
+          "Next to: frying_pan_82",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "frying_pan_82",
+      "thoughts": "The scrub_brush_83 is soaked and in my left hand, and frying_pan_82 is stained. Cleaning frying_pan_82 will help achieve the goal of all pans being clean."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Clean-stain frying_pan_82 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_33",
+          "Next to: saucepan_81"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_31",
+          "Next to: saucepan_81",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: countertop_33",
+          "Next to: frying_pan_82",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "countertop_31",
+      "thoughts": "I have finished cleaning the frying_pan_82. To manipulate other objects, I need to free up my left hand, so I will place the scrub_brush_83 next to countertop_31."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place next to scrub_brush_83 countertop_31 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_83",
+          "Next to: countertop_33",
+          "Next to: saucepan_81"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_31",
+          "Next to: saucepan_81",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: countertop_33",
+          "Next to: frying_pan_82",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "teapot_78",
+      "thoughts": "The goal is to place all pans, the kettle, and the teapot inside a cabinet. The teapot is currently on the countertop and not inside a cabinet. My hands are empty, so I will grasp the teapot to move it towards a cabinet."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp teapot_78 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "teapot_78",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_33",
+          "Next to: saucepan_81"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_31",
+          "Next to: saucepan_81",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: countertop_33",
+          "Next to: frying_pan_82",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_no_top_32",
+      "thoughts": "The goal is to put the teapot and other items inside a cabinet. The bottom cabinet is currently closed, and the critic has blocked placing anything inside while it is closed. My right hand is empty, so I will open the bottom cabinet first to allow placing objects inside."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Open bottom_cabinet_no_top_32 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "teapot_78",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_32",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_33",
+          "Next to: saucepan_81"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: scrub_brush_83",
+          "Next to: kettle_79",
+          "Next to: frying_pan_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_31",
+          "Next to: saucepan_81",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: countertop_33",
+          "Next to: frying_pan_82",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: saucepan_81",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_no_top_32",
+      "thoughts": "The bottom cabinet is now open and my left hand is holding the teapot. The goal is to put the teapot inside a cabinet. I will place the teapot inside the now open bottom cabinet to make progress toward the goal."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place inside teapot_78 bottom_cabinet_no_top_32 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_32",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: countertop_33",
+          "Inside: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_32",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_33",
+          "Next to: saucepan_81"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: scrub_brush_83",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: frying_pan_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: teapot_78"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: teapot_78",
+          "Next to: countertop_31",
+          "Next to: saucepan_81",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: countertop_33",
+          "Next to: frying_pan_82",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: saucepan_81",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "kettle_79",
+      "thoughts": "The next goal is to put the kettle inside a cabinet. Since the bottom cabinet is already open and accessible, I will grasp the kettle so I can place it inside the cabinet next."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp kettle_79 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "kettle_79"
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: room_floor_kitchen_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: countertop_33",
+          "Inside: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_33",
+          "Next to: saucepan_81"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: scrub_brush_83",
+          "Next to: teapot_78",
+          "Next to: frying_pan_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: teapot_78"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: teapot_78",
+          "Next to: countertop_31",
+          "Next to: saucepan_81",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: countertop_33",
+          "Next to: frying_pan_82",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: saucepan_81",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_INSIDE",
+      "object": "bottom_cabinet_no_top_32",
+      "thoughts": "The kettle is in my right hand and the bottom cabinet is open. To satisfy the goal of having the kettle inside a cabinet, I will place the kettle inside the bottom cabinet."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place inside kettle_79 bottom_cabinet_no_top_32 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_32",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: kettle_79",
+          "Next to: countertop_31",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: countertop_33",
+          "Inside: kettle_79",
+          "Inside: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: teapot_78",
+          "Next to: bottom_cabinet_no_top_32",
+          "Inside: teapot_78",
+          "Inside: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_81",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: teapot_78",
+          "Next to: countertop_33",
+          "Next to: saucepan_81"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: scrub_brush_83",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: frying_pan_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: teapot_78",
+          "Inside: kettle_79"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: teapot_78",
+          "Next to: countertop_31",
+          "Next to: saucepan_81",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: countertop_33",
+          "Next to: frying_pan_82",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: saucepan_81",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "saucepan_80",
+      "thoughts": "To achieve the goal, all pans must be placed inside a cabinet. I will grasp saucepan_80 with my left hand to prepare for placing it inside the open bottom cabinet."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp saucepan_80 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "saucepan_80",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: room_floor_kitchen_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: kettle_79",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: countertop_33",
+          "Inside: kettle_79",
+          "Inside: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: teapot_78",
+          "Next to: countertop_31",
+          "Next to: bottom_cabinet_no_top_32",
+          "Inside: teapot_78",
+          "Inside: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: kettle_79",
+          "Next to: countertop_33",
+          "Next to: saucepan_81"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: scrub_brush_83",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: frying_pan_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: teapot_78",
+          "Inside: kettle_79"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: teapot_78",
+          "Next to: countertop_31",
+          "Next to: saucepan_81",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_31",
+          "Next to: countertop_33",
+          "Next to: frying_pan_82",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: saucepan_81",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_no_top_32",
+      "thoughts": "I am holding saucepan_80 in my left hand and the bottom cabinet is open. To achieve the goal of placing all pans inside a cabinet, I will place saucepan_80 inside bottom_cabinet_no_top_32."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place inside saucepan_80 bottom_cabinet_no_top_32 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_32",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: kettle_79",
+          "Next to: saucepan_80",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: countertop_33",
+          "Inside: kettle_79",
+          "Inside: saucepan_80",
+          "Inside: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: teapot_78",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: bottom_cabinet_no_top_32",
+          "Inside: teapot_78",
+          "Inside: saucepan_80",
+          "Inside: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: bottom_cabinet_no_top_32",
+          "Inside: teapot_78",
+          "Inside: kettle_79",
+          "Inside: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: kettle_79",
+          "Next to: countertop_33",
+          "Next to: saucepan_81"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: scrub_brush_83",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: saucepan_80",
+          "Next to: frying_pan_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: teapot_78",
+          "Inside: kettle_79",
+          "Inside: saucepan_80"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: teapot_78",
+          "Next to: countertop_31",
+          "Next to: saucepan_81",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_31",
+          "Next to: countertop_33",
+          "Next to: frying_pan_82",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: saucepan_81",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "saucepan_81",
+      "thoughts": "To achieve the goal, all pans must be inside a cabinet. Saucepan_81 is currently on the countertop and not inside a cabinet. My left hand is now empty after placing saucepan_80, so I will grasp saucepan_81 to place it inside the cabinet next."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp saucepan_81 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "saucepan_81",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_32",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: kettle_79",
+          "Next to: saucepan_80",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: countertop_33",
+          "Inside: kettle_79",
+          "Inside: saucepan_80",
+          "Inside: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: teapot_78",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: bottom_cabinet_no_top_32",
+          "Inside: teapot_78",
+          "Inside: saucepan_80",
+          "Inside: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: bottom_cabinet_no_top_32",
+          "Inside: teapot_78",
+          "Inside: kettle_79",
+          "Inside: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: kettle_79",
+          "Next to: countertop_33"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: scrub_brush_83",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: saucepan_80",
+          "Next to: frying_pan_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: teapot_78",
+          "Inside: kettle_79",
+          "Inside: saucepan_80"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: teapot_78",
+          "Next to: countertop_31",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_32",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_no_top_32",
+      "thoughts": "The goal requires all pans to be inside a cabinet. I am currently holding saucepan_81 in my left hand, and bottom_cabinet_no_top_32 is open. I will place saucepan_81 inside this cabinet to make progress toward the goal."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place inside saucepan_81 bottom_cabinet_no_top_32 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_32",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: kettle_79",
+          "Next to: saucepan_80",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: countertop_33",
+          "Next to: saucepan_81",
+          "Inside: kettle_79",
+          "Inside: saucepan_80",
+          "Inside: bottom_cabinet_no_top_32",
+          "Inside: saucepan_81"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: teapot_78",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: countertop_33",
+          "Next to: saucepan_81",
+          "Inside: teapot_78",
+          "Inside: saucepan_80",
+          "Inside: bottom_cabinet_no_top_32",
+          "Inside: saucepan_81"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: saucepan_81",
+          "Inside: teapot_78",
+          "Inside: kettle_79",
+          "Inside: bottom_cabinet_no_top_32",
+          "Inside: saucepan_81"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: kettle_79",
+          "Next to: countertop_33"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: scrub_brush_83",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: saucepan_80",
+          "Next to: saucepan_81",
+          "Next to: frying_pan_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: teapot_78",
+          "Inside: kettle_79",
+          "Inside: saucepan_80",
+          "Inside: saucepan_81"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: countertop_31",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: saucepan_80",
+          "Next to: bottom_cabinet_no_top_32",
+          "Inside: teapot_78",
+          "Inside: kettle_79",
+          "Inside: saucepan_80",
+          "Inside: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_32",
+          "On top of: countertop_31",
+          "On top of: countertop_33"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "frying_pan_82",
+      "thoughts": "To achieve the goal, all pans must be inside a cabinet. Frying_pan_82 is not yet inside a cabinet and is accessible on the countertop, so I will grasp it next to prepare for placing it inside the open bottom cabinet."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp frying_pan_82 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "frying_pan_82",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_32",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: kettle_79",
+          "Next to: saucepan_80",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: countertop_33",
+          "Next to: saucepan_81",
+          "Inside: kettle_79",
+          "Inside: saucepan_80",
+          "Inside: bottom_cabinet_no_top_32",
+          "Inside: saucepan_81"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: teapot_78",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: countertop_33",
+          "Next to: saucepan_81",
+          "Inside: teapot_78",
+          "Inside: saucepan_80",
+          "Inside: bottom_cabinet_no_top_32",
+          "Inside: saucepan_81"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: saucepan_81",
+          "Inside: teapot_78",
+          "Inside: kettle_79",
+          "Inside: bottom_cabinet_no_top_32",
+          "Inside: saucepan_81"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: kettle_79",
+          "Next to: countertop_33"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: scrub_brush_83",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: saucepan_80",
+          "Next to: saucepan_81",
+          "On floor: room_floor_kitchen_0",
+          "Inside: teapot_78",
+          "Inside: kettle_79",
+          "Inside: saucepan_80",
+          "Inside: saucepan_81"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: countertop_31",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: saucepan_80",
+          "Next to: bottom_cabinet_no_top_32",
+          "Inside: teapot_78",
+          "Inside: kettle_79",
+          "Inside: saucepan_80",
+          "Inside: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_no_top_32",
+      "thoughts": "The goal requires all pans to be inside a cabinet. I am holding frying_pan_82 in my left hand and bottom_cabinet_no_top_32 is open, so I will place the frying_pan_82 inside this cabinet to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place inside frying_pan_82 bottom_cabinet_no_top_32 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: soap_84",
+          "Next to: soap_84",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_83",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_32",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_84",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "teapot_78",
+        "category": "teapot",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: kettle_79",
+          "Next to: saucepan_80",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: countertop_33",
+          "Next to: saucepan_81",
+          "Next to: frying_pan_82",
+          "Inside: kettle_79",
+          "Inside: saucepan_80",
+          "Inside: bottom_cabinet_no_top_32",
+          "Inside: saucepan_81",
+          "Inside: frying_pan_82"
+        ]
+      },
+      {
+        "name": "kettle_79",
+        "category": "kettle",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: teapot_78",
+          "Next to: saucepan_80",
+          "Next to: countertop_31",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: countertop_33",
+          "Next to: saucepan_81",
+          "Next to: frying_pan_82",
+          "Inside: teapot_78",
+          "Inside: saucepan_80",
+          "Inside: bottom_cabinet_no_top_32",
+          "Inside: saucepan_81",
+          "Inside: frying_pan_82"
+        ]
+      },
+      {
+        "name": "saucepan_80",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: saucepan_81",
+          "Next to: frying_pan_82",
+          "Inside: teapot_78",
+          "Inside: kettle_79",
+          "Inside: bottom_cabinet_no_top_32",
+          "Inside: saucepan_81",
+          "Inside: frying_pan_82"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: kettle_79",
+          "Next to: countertop_33"
+        ]
+      },
+      {
+        "name": "top_cabinet_27",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_32",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: scrub_brush_83",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: saucepan_80",
+          "Next to: saucepan_81",
+          "Next to: frying_pan_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: teapot_78",
+          "Inside: kettle_79",
+          "Inside: saucepan_80",
+          "Inside: saucepan_81",
+          "Inside: frying_pan_82"
+        ]
+      },
+      {
+        "name": "countertop_33",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: countertop_31",
+          "Next to: frying_pan_82",
+          "On top of: bottom_cabinet_no_top_32"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_81",
+        "category": "saucepan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: saucepan_80",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: frying_pan_82",
+          "Inside: teapot_78",
+          "Inside: kettle_79",
+          "Inside: saucepan_80",
+          "Inside: bottom_cabinet_no_top_32",
+          "Inside: frying_pan_82"
+        ]
+      },
+      {
+        "name": "frying_pan_82",
+        "category": "frying_pan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: countertop_33",
+          "Next to: teapot_78",
+          "Next to: kettle_79",
+          "Next to: saucepan_80",
+          "Next to: bottom_cabinet_no_top_32",
+          "Next to: countertop_33",
+          "Next to: saucepan_81",
+          "Inside: teapot_78",
+          "Inside: kettle_79",
+          "Inside: saucepan_80",
+          "Inside: bottom_cabinet_no_top_32",
+          "Inside: saucepan_81"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "All pans, the teapot, and the kettle are clean and stored inside a cabinet as required by the goal. The critic has instructed that as soon as all objects are clean and stored correctly, I must choose DONE."
+    },
+    "goal": "target environment state:\n['forall', 'pan.n.01', '-', 'pan.n.01', 'and', 'not', 'stained', 'pan.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'pan.n.01', 'cabinet.n.01']\n['forall', 'kettle.n.01', '-', 'kettle.n.01', 'and', 'not', 'stained', 'kettle.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'kettle.n.01', 'cabinet.n.01']\n['forall', 'teapot.n.01', '-', 'teapot.n.01', 'and', 'not', 'stained', 'teapot.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'teapot.n.01', 'cabinet.n.01']\n\n\ninteractable objects:\n{'name': 'teapot_78', 'category': 'teapot.n.01'}\n{'name': 'kettle_79', 'category': 'kettle.n.01'}\n{'name': 'saucepan_80', 'category': 'pan.n.01'}\n{'name': 'saucepan_81', 'category': 'pan.n.01'}\n{'name': 'frying_pan_82', 'category': 'pan.n.01'}\n{'name': 'countertop_31', 'category': 'countertop.n.01'}\n{'name': 'countertop_33', 'category': 'countertop.n.01'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'scrub_brush_83', 'category': 'scrub_brush.n.01'}\n{'name': 'soap_84', 'category': 'soap.n.01'}\n{'name': 'top_cabinet_27', 'category': 'cabinet.n.01'}\n{'name': 'bottom_cabinet_no_top_32', 'category': 'cabinet.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": ""
+  }
+]

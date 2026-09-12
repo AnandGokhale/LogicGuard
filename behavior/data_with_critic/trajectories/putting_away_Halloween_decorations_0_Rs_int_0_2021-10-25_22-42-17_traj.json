@@ -1,0 +1,2376 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pumpkin_0",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: candle_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_13",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "pumpkin_1",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sheet_0",
+        "category": "sheet",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Next to: sofa_2"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sofa_2",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_0",
+          "Next to: coffee_table_5",
+          "Next to: candle_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_5",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sheet_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sofa_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "cauldron_0",
+        "category": "cauldron",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_13",
+      "thoughts": "To put both pumpkins and candles inside the bottom cabinet, I must first open it since it is currently closed."
+    },
+    "goal": "target environment state:\n['forall', 'pumpkin.n.02', '-', 'pumpkin.n.02', 'inside', 'pumpkin.n.02', 'bottom_cabinet_13']\n['forall', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'bottom_cabinet_13']\n['or', 'nextto', 'sheet_0', 'coffee_table_5', 'ontop', 'sheet_0', 'coffee_table_5']\n['nextto', 'cauldron_0', 'coffee_table_5']\n\n\ninteractable objects:\n{'name': 'pumpkin_0', 'category': 'pumpkin.n.02'}\n{'name': 'pumpkin_1', 'category': 'pumpkin.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'cauldron_0', 'category': 'caldron.n.01'}\n{'name': 'sheet_0', 'category': 'sheet.n.03'}\n{'name': 'coffee_table_5', 'category': 'table.n.02'}\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'bottom_cabinet_13', 'category': 'cabinet.n.01'}\n{'name': 'sofa_2', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Open bottom_cabinet_13 failed"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pumpkin_0",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: candle_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_13",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "pumpkin_1",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sheet_0",
+        "category": "sheet",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Next to: sofa_2"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sofa_2",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_0",
+          "Next to: coffee_table_5",
+          "Next to: candle_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_5",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sheet_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sofa_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "cauldron_0",
+        "category": "cauldron",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pumpkin_0",
+      "thoughts": "To put the pumpkins inside the bottom cabinet as required by the goal state, I need to pick up one of the pumpkins first. I will start with pumpkin_0."
+    },
+    "goal": "target environment state:\n['forall', 'pumpkin.n.02', '-', 'pumpkin.n.02', 'inside', 'pumpkin.n.02', 'bottom_cabinet_13']\n['forall', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'bottom_cabinet_13']\n['or', 'nextto', 'sheet_0', 'coffee_table_5', 'ontop', 'sheet_0', 'coffee_table_5']\n['nextto', 'cauldron_0', 'coffee_table_5']\n\n\ninteractable objects:\n{'name': 'pumpkin_0', 'category': 'pumpkin.n.02'}\n{'name': 'pumpkin_1', 'category': 'pumpkin.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'cauldron_0', 'category': 'caldron.n.01'}\n{'name': 'sheet_0', 'category': 'sheet.n.03'}\n{'name': 'coffee_table_5', 'category': 'table.n.02'}\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'bottom_cabinet_13', 'category': 'cabinet.n.01'}\n{'name': 'sofa_2', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Grasp pumpkin_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pumpkin_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pumpkin_0",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_13",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "pumpkin_1",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sheet_0",
+        "category": "sheet",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Next to: sofa_2"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sofa_2",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_0",
+          "Next to: coffee_table_5",
+          "Next to: candle_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_5",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sheet_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sofa_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "cauldron_0",
+        "category": "cauldron",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_13",
+      "thoughts": "Since I am holding pumpkin_0 in my left hand and the bottom cabinet is open, I will place pumpkin_0 inside bottom_cabinet_13 to satisfy part of the goal state requiring all pumpkins to be inside the cabinet."
+    },
+    "goal": "target environment state:\n['forall', 'pumpkin.n.02', '-', 'pumpkin.n.02', 'inside', 'pumpkin.n.02', 'bottom_cabinet_13']\n['forall', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'bottom_cabinet_13']\n['or', 'nextto', 'sheet_0', 'coffee_table_5', 'ontop', 'sheet_0', 'coffee_table_5']\n['nextto', 'cauldron_0', 'coffee_table_5']\n\n\ninteractable objects:\n{'name': 'pumpkin_0', 'category': 'pumpkin.n.02'}\n{'name': 'pumpkin_1', 'category': 'pumpkin.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'cauldron_0', 'category': 'caldron.n.01'}\n{'name': 'sheet_0', 'category': 'sheet.n.03'}\n{'name': 'coffee_table_5', 'category': 'table.n.02'}\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'bottom_cabinet_13', 'category': 'cabinet.n.01'}\n{'name': 'sofa_2', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Place inside pumpkin_0 bottom_cabinet_13 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pumpkin_0",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_13",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "pumpkin_1",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sheet_0",
+        "category": "sheet",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Next to: sofa_2"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sofa_2",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_0",
+          "Next to: coffee_table_5",
+          "Next to: candle_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_5",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sheet_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sofa_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "cauldron_0",
+        "category": "cauldron",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pumpkin_1",
+      "thoughts": "The goal requires all pumpkins to be inside bottom_cabinet_13. Since pumpkin_1 is still on the floor, I will grasp it with my left hand as the next step towards placing it inside the cabinet."
+    },
+    "goal": "target environment state:\n['forall', 'pumpkin.n.02', '-', 'pumpkin.n.02', 'inside', 'pumpkin.n.02', 'bottom_cabinet_13']\n['forall', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'bottom_cabinet_13']\n['or', 'nextto', 'sheet_0', 'coffee_table_5', 'ontop', 'sheet_0', 'coffee_table_5']\n['nextto', 'cauldron_0', 'coffee_table_5']\n\n\ninteractable objects:\n{'name': 'pumpkin_0', 'category': 'pumpkin.n.02'}\n{'name': 'pumpkin_1', 'category': 'pumpkin.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'cauldron_0', 'category': 'caldron.n.01'}\n{'name': 'sheet_0', 'category': 'sheet.n.03'}\n{'name': 'coffee_table_5', 'category': 'table.n.02'}\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'bottom_cabinet_13', 'category': 'cabinet.n.01'}\n{'name': 'sofa_2', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Grasp pumpkin_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pumpkin_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pumpkin_0",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_13",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "pumpkin_1",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "sheet_0",
+        "category": "sheet",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Next to: sofa_2"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sofa_2",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_0",
+          "Next to: coffee_table_5",
+          "Next to: candle_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_5",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sheet_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sofa_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "cauldron_0",
+        "category": "cauldron",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_13",
+      "thoughts": "Since I am holding pumpkin_1 in my left hand and the cabinet is open, the next logical step is to place pumpkin_1 inside bottom_cabinet_13 to satisfy the goal that all pumpkins are inside the cabinet."
+    },
+    "goal": "target environment state:\n['forall', 'pumpkin.n.02', '-', 'pumpkin.n.02', 'inside', 'pumpkin.n.02', 'bottom_cabinet_13']\n['forall', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'bottom_cabinet_13']\n['or', 'nextto', 'sheet_0', 'coffee_table_5', 'ontop', 'sheet_0', 'coffee_table_5']\n['nextto', 'cauldron_0', 'coffee_table_5']\n\n\ninteractable objects:\n{'name': 'pumpkin_0', 'category': 'pumpkin.n.02'}\n{'name': 'pumpkin_1', 'category': 'pumpkin.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'cauldron_0', 'category': 'caldron.n.01'}\n{'name': 'sheet_0', 'category': 'sheet.n.03'}\n{'name': 'coffee_table_5', 'category': 'table.n.02'}\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'bottom_cabinet_13', 'category': 'cabinet.n.01'}\n{'name': 'sofa_2', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Place inside pumpkin_1 bottom_cabinet_13 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pumpkin_0",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Next to: pumpkin_1",
+          "Under: pumpkin_1",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_13",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: pumpkin_1",
+          "Inside: pumpkin_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "pumpkin_1",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "sheet_0",
+        "category": "sheet",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Next to: sofa_2"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sofa_2",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_0",
+          "Next to: coffee_table_5",
+          "Next to: candle_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_5",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sheet_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sofa_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "cauldron_0",
+        "category": "cauldron",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "candle_0",
+      "thoughts": "To satisfy the goal that all candles are inside bottom_cabinet_13, I will start by grasping candle_0 with my left hand, since my hands are currently empty and the cabinet is open."
+    },
+    "goal": "target environment state:\n['forall', 'pumpkin.n.02', '-', 'pumpkin.n.02', 'inside', 'pumpkin.n.02', 'bottom_cabinet_13']\n['forall', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'bottom_cabinet_13']\n['or', 'nextto', 'sheet_0', 'coffee_table_5', 'ontop', 'sheet_0', 'coffee_table_5']\n['nextto', 'cauldron_0', 'coffee_table_5']\n\n\ninteractable objects:\n{'name': 'pumpkin_0', 'category': 'pumpkin.n.02'}\n{'name': 'pumpkin_1', 'category': 'pumpkin.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'cauldron_0', 'category': 'caldron.n.01'}\n{'name': 'sheet_0', 'category': 'sheet.n.03'}\n{'name': 'coffee_table_5', 'category': 'table.n.02'}\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'bottom_cabinet_13', 'category': 'cabinet.n.01'}\n{'name': 'sofa_2', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Grasp candle_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "candle_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pumpkin_0",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Under: pumpkin_1",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_13",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: pumpkin_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "pumpkin_1",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "sheet_0",
+        "category": "sheet",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Next to: sofa_2"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sofa_2",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_0",
+          "Next to: coffee_table_5",
+          "Next to: candle_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_5",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sheet_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sofa_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "cauldron_0",
+        "category": "cauldron",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_13",
+      "thoughts": "I am currently holding candle_0 with my left hand and the cabinet is open. To achieve the goal of all candles being inside bottom_cabinet_13, I should place candle_0 inside the cabinet."
+    },
+    "goal": "target environment state:\n['forall', 'pumpkin.n.02', '-', 'pumpkin.n.02', 'inside', 'pumpkin.n.02', 'bottom_cabinet_13']\n['forall', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'bottom_cabinet_13']\n['or', 'nextto', 'sheet_0', 'coffee_table_5', 'ontop', 'sheet_0', 'coffee_table_5']\n['nextto', 'cauldron_0', 'coffee_table_5']\n\n\ninteractable objects:\n{'name': 'pumpkin_0', 'category': 'pumpkin.n.02'}\n{'name': 'pumpkin_1', 'category': 'pumpkin.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'cauldron_0', 'category': 'caldron.n.01'}\n{'name': 'sheet_0', 'category': 'sheet.n.03'}\n{'name': 'coffee_table_5', 'category': 'table.n.02'}\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'bottom_cabinet_13', 'category': 'cabinet.n.01'}\n{'name': 'sofa_2', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Place inside candle_0 bottom_cabinet_13 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pumpkin_0",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Under: candle_0",
+          "Under: pumpkin_1",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_13",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: candle_0",
+          "Next to: pumpkin_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_13",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "pumpkin_1",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Under: candle_0",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "sheet_0",
+        "category": "sheet",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Next to: sofa_2"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sofa_2",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_0",
+          "Next to: coffee_table_5",
+          "Next to: candle_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_5",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sheet_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sofa_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "cauldron_0",
+        "category": "cauldron",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "candle_2",
+      "thoughts": "The goal requires all candles to be inside bottom_cabinet_13. Candle_2 is currently on the floor, so I will pick it up next to place it inside the cabinet."
+    },
+    "goal": "target environment state:\n['forall', 'pumpkin.n.02', '-', 'pumpkin.n.02', 'inside', 'pumpkin.n.02', 'bottom_cabinet_13']\n['forall', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'bottom_cabinet_13']\n['or', 'nextto', 'sheet_0', 'coffee_table_5', 'ontop', 'sheet_0', 'coffee_table_5']\n['nextto', 'cauldron_0', 'coffee_table_5']\n\n\ninteractable objects:\n{'name': 'pumpkin_0', 'category': 'pumpkin.n.02'}\n{'name': 'pumpkin_1', 'category': 'pumpkin.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'cauldron_0', 'category': 'caldron.n.01'}\n{'name': 'sheet_0', 'category': 'sheet.n.03'}\n{'name': 'coffee_table_5', 'category': 'table.n.02'}\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'bottom_cabinet_13', 'category': 'cabinet.n.01'}\n{'name': 'sofa_2', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Grasp candle_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "candle_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pumpkin_0",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Under: candle_0",
+          "Under: pumpkin_1",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_13",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: candle_0",
+          "Next to: pumpkin_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_13",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pumpkin_1",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Under: candle_0",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "sheet_0",
+        "category": "sheet",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Next to: sofa_2"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sofa_2",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_0",
+          "Next to: coffee_table_5",
+          "Next to: candle_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_5",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sheet_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sofa_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "cauldron_0",
+        "category": "cauldron",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_13",
+      "thoughts": "I am holding candle_2 in my left hand and the cabinet is open, so I will place candle_2 inside bottom_cabinet_13 to satisfy the goal that all candles are inside the cabinet."
+    },
+    "goal": "target environment state:\n['forall', 'pumpkin.n.02', '-', 'pumpkin.n.02', 'inside', 'pumpkin.n.02', 'bottom_cabinet_13']\n['forall', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'bottom_cabinet_13']\n['or', 'nextto', 'sheet_0', 'coffee_table_5', 'ontop', 'sheet_0', 'coffee_table_5']\n['nextto', 'cauldron_0', 'coffee_table_5']\n\n\ninteractable objects:\n{'name': 'pumpkin_0', 'category': 'pumpkin.n.02'}\n{'name': 'pumpkin_1', 'category': 'pumpkin.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'cauldron_0', 'category': 'caldron.n.01'}\n{'name': 'sheet_0', 'category': 'sheet.n.03'}\n{'name': 'coffee_table_5', 'category': 'table.n.02'}\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'bottom_cabinet_13', 'category': 'cabinet.n.01'}\n{'name': 'sofa_2', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Place inside candle_2 bottom_cabinet_13 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pumpkin_0",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_0",
+          "Under: candle_0",
+          "Under: candle_2",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_13",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: candle_0",
+          "Next to: candle_2",
+          "Next to: pumpkin_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_2",
+          "Under: candle_2",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_0",
+          "Next to: pumpkin_1",
+          "On top of: pumpkin_1",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "pumpkin_1",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_2",
+          "Under: candle_0",
+          "Under: candle_2",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "sheet_0",
+        "category": "sheet",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Next to: sofa_2"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sofa_2",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_0",
+          "Next to: coffee_table_5",
+          "Next to: candle_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_5",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sheet_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sofa_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "cauldron_0",
+        "category": "cauldron",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "candle_1",
+      "thoughts": "To satisfy the goal that all candles are inside bottom_cabinet_13, I need to place candle_1 inside as well. I will grasp candle_1 with my left hand to prepare for this."
+    },
+    "goal": "target environment state:\n['forall', 'pumpkin.n.02', '-', 'pumpkin.n.02', 'inside', 'pumpkin.n.02', 'bottom_cabinet_13']\n['forall', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'bottom_cabinet_13']\n['or', 'nextto', 'sheet_0', 'coffee_table_5', 'ontop', 'sheet_0', 'coffee_table_5']\n['nextto', 'cauldron_0', 'coffee_table_5']\n\n\ninteractable objects:\n{'name': 'pumpkin_0', 'category': 'pumpkin.n.02'}\n{'name': 'pumpkin_1', 'category': 'pumpkin.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'cauldron_0', 'category': 'caldron.n.01'}\n{'name': 'sheet_0', 'category': 'sheet.n.03'}\n{'name': 'coffee_table_5', 'category': 'table.n.02'}\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'bottom_cabinet_13', 'category': 'cabinet.n.01'}\n{'name': 'sofa_2', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Grasp candle_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "candle_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pumpkin_0",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_0",
+          "Next to: pumpkin_1",
+          "Under: candle_2",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_13",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: candle_0",
+          "Next to: candle_2",
+          "Next to: pumpkin_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_2",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_0",
+          "On top of: pumpkin_0",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "pumpkin_1",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Under: candle_0",
+          "Inside: bottom_cabinet_13",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sheet_0",
+        "category": "sheet",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Next to: sofa_2"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sofa_2",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_0",
+          "Next to: coffee_table_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_5",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sheet_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cauldron_0",
+        "category": "cauldron",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_13",
+      "thoughts": "I am holding candle_1 in my left hand and the bottom_cabinet_13 is open. To achieve the goal of all candles being inside the cabinet, I will place candle_1 inside bottom_cabinet_13."
+    },
+    "goal": "target environment state:\n['forall', 'pumpkin.n.02', '-', 'pumpkin.n.02', 'inside', 'pumpkin.n.02', 'bottom_cabinet_13']\n['forall', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'bottom_cabinet_13']\n['or', 'nextto', 'sheet_0', 'coffee_table_5', 'ontop', 'sheet_0', 'coffee_table_5']\n['nextto', 'cauldron_0', 'coffee_table_5']\n\n\ninteractable objects:\n{'name': 'pumpkin_0', 'category': 'pumpkin.n.02'}\n{'name': 'pumpkin_1', 'category': 'pumpkin.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'cauldron_0', 'category': 'caldron.n.01'}\n{'name': 'sheet_0', 'category': 'sheet.n.03'}\n{'name': 'coffee_table_5', 'category': 'table.n.02'}\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'bottom_cabinet_13', 'category': 'cabinet.n.01'}\n{'name': 'sofa_2', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Place inside candle_1 bottom_cabinet_13 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pumpkin_0",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Next to: pumpkin_1",
+          "Under: candle_1",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_13",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: candle_0",
+          "Next to: candle_2",
+          "Next to: pumpkin_1",
+          "Next to: candle_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_2",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_0",
+          "Next to: pumpkin_1",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "pumpkin_1",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_2",
+          "Inside: bottom_cabinet_13",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sheet_0",
+        "category": "sheet",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Next to: sofa_2"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sofa_2",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_0",
+          "Next to: coffee_table_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_5",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sheet_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_13",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "cauldron_0",
+        "category": "cauldron",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sheet_0",
+      "thoughts": "To satisfy the goal that sheet_0 is either next to or on top of coffee_table_5, I will grasp sheet_0 so I can place it on top of or next to the coffee table in subsequent steps."
+    },
+    "goal": "target environment state:\n['forall', 'pumpkin.n.02', '-', 'pumpkin.n.02', 'inside', 'pumpkin.n.02', 'bottom_cabinet_13']\n['forall', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'bottom_cabinet_13']\n['or', 'nextto', 'sheet_0', 'coffee_table_5', 'ontop', 'sheet_0', 'coffee_table_5']\n['nextto', 'cauldron_0', 'coffee_table_5']\n\n\ninteractable objects:\n{'name': 'pumpkin_0', 'category': 'pumpkin.n.02'}\n{'name': 'pumpkin_1', 'category': 'pumpkin.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'cauldron_0', 'category': 'caldron.n.01'}\n{'name': 'sheet_0', 'category': 'sheet.n.03'}\n{'name': 'coffee_table_5', 'category': 'table.n.02'}\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'bottom_cabinet_13', 'category': 'cabinet.n.01'}\n{'name': 'sofa_2', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Grasp sheet_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sheet_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pumpkin_0",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_2",
+          "Next to: pumpkin_1",
+          "Under: candle_1",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_13",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: candle_0",
+          "Next to: candle_2",
+          "Next to: pumpkin_1",
+          "Next to: candle_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_13",
+          "Next to: pumpkin_1",
+          "Next to: candle_1",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Inside: bottom_cabinet_13",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "pumpkin_1",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_0",
+          "Inside: bottom_cabinet_13",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sheet_0",
+        "category": "sheet",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Next to: coffee_table_5"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sofa_2",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: coffee_table_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_5",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_0",
+          "Next to: sofa_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_0",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "cauldron_0",
+        "category": "cauldron",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "coffee_table_5",
+      "thoughts": "Placing sheet_0 on top of coffee_table_5 will directly satisfy the goal that sheet_0 is either next to or on top of coffee_table_5."
+    },
+    "goal": "target environment state:\n['forall', 'pumpkin.n.02', '-', 'pumpkin.n.02', 'inside', 'pumpkin.n.02', 'bottom_cabinet_13']\n['forall', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'bottom_cabinet_13']\n['or', 'nextto', 'sheet_0', 'coffee_table_5', 'ontop', 'sheet_0', 'coffee_table_5']\n['nextto', 'cauldron_0', 'coffee_table_5']\n\n\ninteractable objects:\n{'name': 'pumpkin_0', 'category': 'pumpkin.n.02'}\n{'name': 'pumpkin_1', 'category': 'pumpkin.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'cauldron_0', 'category': 'caldron.n.01'}\n{'name': 'sheet_0', 'category': 'sheet.n.03'}\n{'name': 'coffee_table_5', 'category': 'table.n.02'}\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'bottom_cabinet_13', 'category': 'cabinet.n.01'}\n{'name': 'sofa_2', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Place ontop sheet_0 coffee_table_5 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pumpkin_0",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_0",
+          "Next to: candle_2",
+          "Next to: pumpkin_1",
+          "Next to: candle_1",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_13",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: candle_0",
+          "Next to: candle_2",
+          "Next to: pumpkin_1",
+          "Next to: candle_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_2",
+          "Next to: pumpkin_1",
+          "Next to: candle_1",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_0",
+          "Inside: bottom_cabinet_13",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "pumpkin_1",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_0",
+          "Inside: bottom_cabinet_13",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sheet_0",
+        "category": "sheet",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sofa_2",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: coffee_table_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_5",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sheet_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_0",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "cauldron_0",
+        "category": "cauldron",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "cauldron_0",
+      "thoughts": "To satisfy the goal that cauldron_0 is next to coffee_table_5, I will first grasp cauldron_0 so I can move it next to coffee_table_5."
+    },
+    "goal": "target environment state:\n['forall', 'pumpkin.n.02', '-', 'pumpkin.n.02', 'inside', 'pumpkin.n.02', 'bottom_cabinet_13']\n['forall', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'bottom_cabinet_13']\n['or', 'nextto', 'sheet_0', 'coffee_table_5', 'ontop', 'sheet_0', 'coffee_table_5']\n['nextto', 'cauldron_0', 'coffee_table_5']\n\n\ninteractable objects:\n{'name': 'pumpkin_0', 'category': 'pumpkin.n.02'}\n{'name': 'pumpkin_1', 'category': 'pumpkin.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'cauldron_0', 'category': 'caldron.n.01'}\n{'name': 'sheet_0', 'category': 'sheet.n.03'}\n{'name': 'coffee_table_5', 'category': 'table.n.02'}\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'bottom_cabinet_13', 'category': 'cabinet.n.01'}\n{'name': 'sofa_2', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Grasp cauldron_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "cauldron_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pumpkin_0",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_0",
+          "Next to: candle_2",
+          "Next to: candle_1",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_13",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: candle_0",
+          "Next to: candle_2",
+          "Next to: pumpkin_1",
+          "Next to: candle_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Next to: pumpkin_1",
+          "Inside: bottom_cabinet_13",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Inside: bottom_cabinet_13",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "pumpkin_1",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_0",
+          "Inside: bottom_cabinet_13",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sheet_0",
+        "category": "sheet",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Next to: sofa_2",
+          "On top of: coffee_table_5"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sofa_2",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_0",
+          "Next to: coffee_table_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_5",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Under: sheet_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "cauldron_0",
+        "category": "cauldron",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "coffee_table_5",
+      "thoughts": "To achieve the goal of cauldron_0 being next to coffee_table_5, I will place the cauldron_0 (currently in my left hand) next to coffee_table_5."
+    },
+    "goal": "target environment state:\n['forall', 'pumpkin.n.02', '-', 'pumpkin.n.02', 'inside', 'pumpkin.n.02', 'bottom_cabinet_13']\n['forall', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'bottom_cabinet_13']\n['or', 'nextto', 'sheet_0', 'coffee_table_5', 'ontop', 'sheet_0', 'coffee_table_5']\n['nextto', 'cauldron_0', 'coffee_table_5']\n\n\ninteractable objects:\n{'name': 'pumpkin_0', 'category': 'pumpkin.n.02'}\n{'name': 'pumpkin_1', 'category': 'pumpkin.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'cauldron_0', 'category': 'caldron.n.01'}\n{'name': 'sheet_0', 'category': 'sheet.n.03'}\n{'name': 'coffee_table_5', 'category': 'table.n.02'}\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'bottom_cabinet_13', 'category': 'cabinet.n.01'}\n{'name': 'sofa_2', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Place next to cauldron_0 coffee_table_5 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pumpkin_0",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_0",
+          "Next to: candle_2",
+          "Next to: candle_1",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_13",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: candle_0",
+          "Next to: candle_2",
+          "Next to: pumpkin_1",
+          "Next to: candle_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Next to: pumpkin_1",
+          "Inside: bottom_cabinet_13",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Inside: bottom_cabinet_13",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "pumpkin_1",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_0",
+          "Inside: bottom_cabinet_13",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sheet_0",
+        "category": "sheet",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Next to: sofa_2",
+          "Next to: cauldron_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sofa_2",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_0",
+          "Next to: coffee_table_5",
+          "Next to: cauldron_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_5",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sofa_2",
+          "Next to: cauldron_0",
+          "Under: sheet_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "cauldron_0",
+        "category": "cauldron",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_0",
+          "Next to: sofa_2",
+          "Next to: coffee_table_5"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sheet_0",
+      "thoughts": "To satisfy the goal that sheet_0 is either next to or on top of coffee_table_5, I will first grasp sheet_0 so I can later place it accordingly."
+    },
+    "goal": "target environment state:\n['forall', 'pumpkin.n.02', '-', 'pumpkin.n.02', 'inside', 'pumpkin.n.02', 'bottom_cabinet_13']\n['forall', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'bottom_cabinet_13']\n['or', 'nextto', 'sheet_0', 'coffee_table_5', 'ontop', 'sheet_0', 'coffee_table_5']\n['nextto', 'cauldron_0', 'coffee_table_5']\n\n\ninteractable objects:\n{'name': 'pumpkin_0', 'category': 'pumpkin.n.02'}\n{'name': 'pumpkin_1', 'category': 'pumpkin.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'cauldron_0', 'category': 'caldron.n.01'}\n{'name': 'sheet_0', 'category': 'sheet.n.03'}\n{'name': 'coffee_table_5', 'category': 'table.n.02'}\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'bottom_cabinet_13', 'category': 'cabinet.n.01'}\n{'name': 'sofa_2', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Grasp sheet_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sheet_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pumpkin_0",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_0",
+          "Next to: candle_2",
+          "Next to: candle_1",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_13",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: candle_0",
+          "Next to: candle_2",
+          "Next to: pumpkin_1",
+          "Next to: candle_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_0",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Next to: pumpkin_1",
+          "Inside: bottom_cabinet_13",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_2",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Inside: bottom_cabinet_13",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "pumpkin_1",
+        "category": "pumpkin",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: bottom_cabinet_13",
+          "Next to: candle_0",
+          "Inside: bottom_cabinet_13",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sheet_0",
+        "category": "sheet",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Next to: coffee_table_5"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sofa_2",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: coffee_table_5",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_5",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_0",
+          "Next to: sofa_2",
+          "Next to: cauldron_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "candle_1",
+        "category": "candle",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: pumpkin_0",
+          "Next to: bottom_cabinet_13",
+          "Inside: bottom_cabinet_13"
+        ]
+      },
+      {
+        "name": "cauldron_0",
+        "category": "cauldron",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: coffee_table_5"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "According to the critic, all placement goals are already satisfied: both pumpkins and all candles are inside the bottom cabinet, sheet_0 is next to coffee_table_5, and cauldron_0 is next to coffee_table_5. Therefore, the task is complete and I should issue the DONE command."
+    },
+    "goal": "target environment state:\n['forall', 'pumpkin.n.02', '-', 'pumpkin.n.02', 'inside', 'pumpkin.n.02', 'bottom_cabinet_13']\n['forall', 'candle.n.01', '-', 'candle.n.01', 'inside', 'candle.n.01', 'bottom_cabinet_13']\n['or', 'nextto', 'sheet_0', 'coffee_table_5', 'ontop', 'sheet_0', 'coffee_table_5']\n['nextto', 'cauldron_0', 'coffee_table_5']\n\n\ninteractable objects:\n{'name': 'pumpkin_0', 'category': 'pumpkin.n.02'}\n{'name': 'pumpkin_1', 'category': 'pumpkin.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'cauldron_0', 'category': 'caldron.n.01'}\n{'name': 'sheet_0', 'category': 'sheet.n.03'}\n{'name': 'coffee_table_5', 'category': 'table.n.02'}\n{'name': 'candle_0', 'category': 'candle.n.01'}\n{'name': 'candle_1', 'category': 'candle.n.01'}\n{'name': 'candle_2', 'category': 'candle.n.01'}\n{'name': 'bottom_cabinet_13', 'category': 'cabinet.n.01'}\n{'name': 'sofa_2', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": ""
+  }
+]

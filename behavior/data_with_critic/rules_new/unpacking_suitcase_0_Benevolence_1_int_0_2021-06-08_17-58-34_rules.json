@@ -1,0 +1,26 @@
+[
+    {
+        "rule": "G((notebook_0_next_to_sofa_10 | notebook_0_on_top_of_sofa_10) -> X(!left_grasp_notebook_0))",
+        "explanation": "Once the notebook is correctly placed next to or on sofa_10, never grasp it again."
+    },
+    {
+        "rule": "G(!notebook_0_in_hand -> X(!notebook_0_place_ontop_sofa_10))",
+        "explanation": "Only place the notebook on the sofa if the robot is actually holding it."
+    },
+    {
+        "rule": "G((cologne_0_next_to_sofa_10 | cologne_0_on_top_of_sofa_10) -> X(!left_grasp_cologne_0 & !right_grasp_cologne_0))",
+        "explanation": "Once the cologne is placed next to or on sofa_10, blocking any further grasps avoids redundant moves."
+    },
+    {
+        "rule": "G(!cologne_0_in_hand -> X(!cologne_0_place_ontop_sofa_10))",
+        "explanation": "Ensure cologne_0 is in hand before attempting to place it on the sofa."
+    },
+    {
+        "rule": "G((toothbrush_0_next_to_sofa_10 | toothbrush_0_on_top_of_sofa_10) -> X(!right_grasp_toothbrush_0))",
+        "explanation": "After the toothbrush is correctly placed, prevent additional grasp attempts."
+    },
+    {
+        "rule": "G(!toothbrush_0_in_hand -> X(!toothbrush_0_place_ontop_sofa_10))",
+        "explanation": "Only place the toothbrush on the sofa when it is actually in hand."
+    }
+]

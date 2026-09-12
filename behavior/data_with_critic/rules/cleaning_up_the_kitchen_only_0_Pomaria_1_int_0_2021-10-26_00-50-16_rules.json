@@ -1,0 +1,62 @@
+[
+  {
+    "rule": "G(blender_83_on_top_of_countertop_31 -> X(!left_grasp_blender_83))",
+    "explanation": "Once the blender is correctly placed, block any further grasping of the blender."
+  },
+  {
+    "rule": "G(!blender_83_in_hand -> X(!blender_83_place_ontop_countertop_31))",
+    "explanation": "Prevent placing the blender onto the countertop unless the robot is holding it."
+  },
+  {
+    "rule": "G(!soap_79_next_to_sink_37 -> X(!plate_85_place_nextto_sink_37))",
+    "explanation": "Block placing the plate next to the sink until the soap is already next to the sink."
+  },
+  {
+    "rule": "G(!rag_80_in_hand -> X(!rag_80_place_nextto_sink_37))",
+    "explanation": "Ensure the rag must be grasped before attempting to place it next to the sink."
+  },
+  {
+    "rule": "G(olive_oil_86_inside_top_cabinet_27 -> X(!left_grasp_olive_oil_86))",
+    "explanation": "Once olive oil is stored in a cabinet, block further grasping of that oil."
+  },
+  {
+    "rule": "G(!top_cabinet_27_is_open -> X(!clean_top_cabinet_27))",
+    "explanation": "Prevent cleaning the inside of cabinet 27 unless it is open."
+  },
+  {
+    "rule": "G(plate_85_inside_top_cabinet_27 -> X(!left_grasp_plate_85))",
+    "explanation": "Once the plate is in the correct cabinet, block any further grasping of the plate."
+  },
+  {
+    "rule": "G(!top_cabinet_24_is_open -> X(!left_grasp_plate_85))",
+    "explanation": "Prevent grasping the plate to store in cabinet 24 unless that cabinet is open."
+  },
+  {
+    "rule": "G(!top_cabinet_24_is_dusty -> X(!clean_top_cabinet_24))",
+    "explanation": "Once cabinet 24 is clean, block redundant cleaning actions."
+  },
+  {
+    "rule": "G(!room_floor_kitchen_0_is_dusty -> X(!clean_room_floor_kitchen_0))",
+    "explanation": "Once the floor is clean, block further floor-cleaning actions."
+  },
+  {
+    "rule": "G(!plate_85_is_stained -> X(!clean_plate_85))",
+    "explanation": "Do not attempt to clean the plate if it is already unstained."
+  },
+  {
+    "rule": "G(rag_80_inside_sink_37 -> X(!rag_80_place_nextto_sink_37))",
+    "explanation": "Once the rag is inside the sink, block redundant placement next to the sink."
+  },
+  {
+    "rule": "G(sink_37_next_to_rag_80 -> X(!rag_80_place_inside_sink_37))",
+    "explanation": "Once the rag is already next to the sink, block placing it inside redundantly."
+  },
+  {
+    "rule": "G(casserole_84_inside_fridge_20 -> X(!left_grasp_casserole_84))",
+    "explanation": "After the casserole is stored in the fridge, block any further grasping of it."
+  },
+  {
+    "rule": "G(apple_87_inside_fridge_20 -> X(!left_grasp_apple_87))",
+    "explanation": "After the apple is stored in the fridge, block any further grasping of it."
+  }
+]

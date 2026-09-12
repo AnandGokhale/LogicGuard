@@ -1,0 +1,2752 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : False",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: rag_1",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_84"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Under: tray_0",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_no_top_80",
+      "thoughts": "To clean the trays and fridge, I will need a soaked rag. Both rags are inside the closed bottom cabinet. First, I need to open the bottom cabinet to access a rag."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Open bottom_cabinet_no_top_80 failed"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : False",
+          "Dust status: Clean",
+          "Heat source/sink? : True",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_84"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Under: tray_0",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_1",
+      "thoughts": "The bottom cabinet is now open, so I can grasp rag_1 with my left hand to prepare for soaking it in the sink."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Grasp rag_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : False",
+          "Dust status: Clean",
+          "Heat source/sink? : True",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_84"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Under: tray_0",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_82",
+      "thoughts": "To soak rag_1, I need to place it in a sink that is toggled on. I will turn on sink_82 first so I can soak the rag in it next."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Toggleon sink_82 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : False",
+          "Dust status: Clean",
+          "Heat source/sink? : True",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_84"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Under: tray_0",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_82",
+      "thoughts": "Now that sink_82 is toggled on and rag_1 is in my left hand, I should place rag_1 inside sink_82 so I can soak it and use it to clean the stained items."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Place inside rag_1 sink_82 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Under: sink_82",
+          "Inside: sink_82",
+          "Next to: sink_82"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : False",
+          "Dust status: Clean",
+          "Heat source/sink? : True",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_84"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Under: tray_0",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_1",
+      "thoughts": "Rag_1 is now inside the toggled on sink_82. I should soak rag_1 so I can use it as a cleaning tool to clean the stained trays and fridge."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Soak rag_1 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Under: sink_82",
+          "Inside: sink_82",
+          "Next to: sink_82"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : False",
+          "Dust status: Clean",
+          "Heat source/sink? : True",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_84"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Under: tray_0",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_1",
+      "thoughts": "Rag_1 is now soaked and ready to be used for cleaning. I will pick it up with my left hand so I can clean the stained trays and fridge next."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Grasp rag_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : False",
+          "Dust status: Clean",
+          "Heat source/sink? : True",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_84"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Under: tray_0",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "tray_1",
+      "thoughts": "Tray_1 is stained and I am holding a soaked rag, so I will clean tray_1 to progress towards the goal of having all trays unstained."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "tray_1 is inside closed fridge_97"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : False",
+          "Dust status: Clean",
+          "Heat source/sink? : True",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_84"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Under: tray_0",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "fridge_97",
+      "thoughts": "Tray_1 and tray_0 are both inside fridge_97, which is currently closed. To clean or move these trays or the bowl, I need to open fridge_97 first to access its contents."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Open fridge_97 failed"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: rag_1",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_84"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Under: tray_0",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "fridge_97",
+      "thoughts": "Fridge_97 is stained and accessible, and I am holding a soaked rag. Cleaning fridge_97 will help achieve the goal of it being not stained."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Clean-stain fridge_97 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: rag_1",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_84"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Under: tray_0",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "tray_1",
+      "thoughts": "Tray_1 is stained and accessible, and I am holding a soaked rag. Cleaning tray_1 will help achieve the goal of both trays being not stained."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Clean-stain tray_1 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: rag_1",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_84"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Under: tray_0",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "tray_0",
+      "thoughts": "Tray_0 is stained and accessible, and I am holding a soaked rag. Cleaning tray_0 will help achieve the goal of both trays being not stained."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Clean-stain tray_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: rag_1",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_84"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Under: tray_0",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "bowl_0",
+      "thoughts": "Bowl_0 is dusty and accessible, and I am holding a soaked rag. Cleaning bowl_0 will help achieve the goal of the bowl being not dusty."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Clean-dust bowl_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: rag_1",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_84"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: tray_0",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_82",
+      "thoughts": "The goal requires all rags to be next to sink_82. I am holding rag_1, so I will place it next to sink_82 to help achieve this condition."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Place next to rag_1 sink_82 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_84"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: tray_0",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "soap_0",
+      "thoughts": "The goal requires soap_0 to be inside sink_82. To achieve this, I need to pick up soap_0 first, which is currently on top of countertop_84."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Grasp soap_0 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "soap_0"
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: tray_0",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_INSIDE",
+      "object": "sink_82",
+      "thoughts": "The goal requires soap_0 to be inside sink_82. Since I am currently holding soap_0 in my right hand and sink_82 is toggled on and accessible, I should place soap_0 inside sink_82 to progress towards the goal."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Place inside soap_0 sink_82 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "Next to: soap_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Under: sink_82",
+          "Inside: sink_82",
+          "Next to: room_floor_kitchen_0",
+          "Next to: sink_82"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: tray_0",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bowl_0",
+      "thoughts": "The goal requires bowl_0 to be next to sink_82, but currently it is inside fridge_97. I need to move bowl_0. First, I will grasp bowl_0 with my left hand to remove it from the fridge and place it next to sink_82."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Grasp bowl_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bowl_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "Next to: soap_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Under: sink_82",
+          "Inside: sink_82",
+          "Next to: sink_82"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fridge_97"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_82",
+      "thoughts": "To achieve the goal of bowl_0 being next to sink_82, I will place the bowl_0 (currently in my left hand) next to sink_82."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Place next to bowl_0 sink_82 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "Next to: soap_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Inside: bottom_cabinet_no_top_80",
+          "Next to: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Under: sink_82",
+          "Inside: sink_82",
+          "Next to: sink_82"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_82"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The only remaining goal is for rag_0 to be next to sink_82. Currently, rag_0 is inside bottom_cabinet_no_top_80. I need to grasp rag_0 first so I can move it next to sink_82."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "Next to: soap_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Under: sink_82",
+          "Inside: sink_82",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_82"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_82",
+      "thoughts": "Now that rag_0 is in my left hand, I should place it next to sink_82 to satisfy the goal that all rags are next to the sink."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": "Place next to rag_0 sink_82 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_97",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: tray_1",
+          "Next to: tray_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_1",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "Next to: bowl_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_84",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "tray_0",
+        "category": "tray",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: fridge_97",
+          "Next to: fridge_97"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_82"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Under: sink_82",
+          "Inside: sink_82",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: sink_82"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "All goal conditions are satisfied: both rags are next to sink_82, both trays are inside fridge_97 and clean, bowl_0 is next to sink_82 and clean, soap_0 is inside sink_82, and fridge_97 is not stained. No further actions are needed."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'nextto', 'rag.n.01', 'sink_82']\n['inside', 'soap_0', 'sink_82']\n['forall', 'tray.n.01', '-', 'tray.n.01', 'inside', 'tray.n.01', 'fridge_97']\n['not', 'stained', 'tray_0']\n['not', 'stained', 'tray_1']\n['nextto', 'bowl_0', 'sink_82']\n['not', 'dusty', 'bowl_0']\n['not', 'stained', 'fridge_97']\n\n\n",
+    "feedback": ""
+  }
+]

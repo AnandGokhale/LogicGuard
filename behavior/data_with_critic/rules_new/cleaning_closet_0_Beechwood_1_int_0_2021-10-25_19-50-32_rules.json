@@ -1,0 +1,18 @@
+[
+    {
+        "rule": "G((bottom_cabinet_30_in_hand) -> X(!left_grasp_bottom_cabinet_30))",
+        "explanation": "Once the robot is holding cabinet 30, do not grasp it again."
+    },
+    {
+        "rule": "G((!bottom_cabinet_30_in_hand) -> X(!bottom_cabinet_30_release_bottom_cabinet_30))",
+        "explanation": "Prevent releasing cabinet 30 when it is not in hand."
+    },
+    {
+        "rule": "G((shelf_31_in_closet_0) -> X(!clean_shelf_31))",
+        "explanation": "Do not attempt to clean shelf 31 when it is inside the closet and not accessible."
+    },
+    {
+        "rule": "G((!shelf_31_is_dusty) -> X(!clean_shelf_31))",
+        "explanation": "Once shelf 31 is clean, block any further clean_shelf_31 actions."
+    }
+]

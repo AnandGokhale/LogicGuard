@@ -1,0 +1,180 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "breakfast_table_37",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "facsimile_0",
+        "category": "facsimile",
+        "State description ": [
+          "Location: home_office",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_home_office_0",
+          "Next to: room_floor_home_office_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "facsimile_0",
+      "thoughts": "The facsimile needs to be placed on top of the breakfast table and toggled on. First, I need to grasp the facsimile to move it."
+    },
+    "goal": "target environment state:\n['ontop', 'facsimile_0', 'breakfast_table_37']\n['toggled_on', 'facsimile_0']\n\n\n",
+    "feedback": "Grasp facsimile_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "facsimile_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "breakfast_table_37",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "facsimile_0",
+        "category": "facsimile",
+        "State description ": [
+          "Location: home_office",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "breakfast_table_37",
+      "thoughts": "The facsimile must be on top of the breakfast table before toggling it on. Since I am already holding the facsimile in my left hand, I will place it on top of the table next."
+    },
+    "goal": "target environment state:\n['ontop', 'facsimile_0', 'breakfast_table_37']\n['toggled_on', 'facsimile_0']\n\n\n",
+    "feedback": "Place ontop facsimile_0 breakfast_table_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "breakfast_table_37",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: facsimile_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "facsimile_0",
+        "category": "facsimile",
+        "State description ": [
+          "Location: home_office",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_37"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "facsimile_0",
+      "thoughts": "The facsimile is already on top of the breakfast table as required. The next step to reach the goal state is to toggle it on."
+    },
+    "goal": "target environment state:\n['ontop', 'facsimile_0', 'breakfast_table_37']\n['toggled_on', 'facsimile_0']\n\n\n",
+    "feedback": "Toggleon facsimile_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "breakfast_table_37",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: facsimile_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "facsimile_0",
+        "category": "facsimile",
+        "State description ": [
+          "Location: home_office",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: breakfast_table_37"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "The facsimile is already on top of the breakfast table and toggled on, which matches the target environment state. No further actions are needed."
+    },
+    "goal": "target environment state:\n['ontop', 'facsimile_0', 'breakfast_table_37']\n['toggled_on', 'facsimile_0']\n\n\n",
+    "feedback": ""
+  }
+]

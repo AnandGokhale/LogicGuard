@@ -1,0 +1,78 @@
+[
+    {
+        "rule": "G(rag_37_in_hand -> X(!left_grasp_rag_37))",
+        "explanation": "If the rag is already in hand, block any further grasping of the rag."
+    },
+    {
+        "rule": "G(!rag_37_in_hand -> X(!rag_37_place_inside_sink_18))",
+        "explanation": "Only allow placing the rag inside the sink if the rag is currently held."
+    },
+    {
+        "rule": "G(sink_18_is_toggled_on -> X(!toggle_on_sink_18))",
+        "explanation": "If the sink is already on, block redundant toggling."
+    },
+    {
+        "rule": "G((sink_18_inside_rag_37 & sink_18_is_toggled_on) -> X(!soak_rag_37))",
+        "explanation": "Block soaking the rag again once it is already in the on\u2010state sink."
+    },
+    {
+        "rule": "G((!rag_37_in_hand | !sink_18_is_toggled_on) -> X(!soak_rag_37))",
+        "explanation": "Only permit soaking when the rag is in hand and the sink is on."
+    },
+    {
+        "rule": "G((!rag_37_in_hand | rag_37_inside_sink_18) -> X(!soak_rag_37))",
+        "explanation": "Prevent soaking the rag if it is not held or already placed inside the sink."
+    },
+    {
+        "rule": "G(!rag_37_in_hand -> X(!clean_sandal_39))",
+        "explanation": "Block cleaning sandal_39 unless the rag is in hand."
+    },
+    {
+        "rule": "G(!sandal_39_is_stained -> X(!clean_sandal_39))",
+        "explanation": "Do not attempt to clean sandal_39 if it is not stained."
+    },
+    {
+        "rule": "G(!sandal_39_is_dusty -> X(!clean_sandal_39))",
+        "explanation": "Do not attempt to clean sandal_39 if it is not dusty."
+    },
+    {
+        "rule": "G(!rag_37_in_hand -> X(!clean_sandal_40))",
+        "explanation": "Block cleaning sandal_40 unless the rag is in hand."
+    },
+    {
+        "rule": "G(!sandal_40_is_stained -> X(!clean_sandal_40))",
+        "explanation": "Do not attempt to clean sandal_40 if it is not stained."
+    },
+    {
+        "rule": "G(!sandal_40_is_dusty -> X(!clean_sandal_40))",
+        "explanation": "Do not attempt to clean sandal_40 if it is not dusty."
+    },
+    {
+        "rule": "G(!rag_37_in_hand -> X(!clean_sandal_41))",
+        "explanation": "Block cleaning sandal_41 unless the rag is in hand."
+    },
+    {
+        "rule": "G(!sandal_41_is_stained -> X(!clean_sandal_41))",
+        "explanation": "Do not attempt to clean sandal_41 if it is not stained."
+    },
+    {
+        "rule": "G(!sandal_41_is_dusty -> X(!clean_sandal_41))",
+        "explanation": "Do not attempt to clean sandal_41 if it is not dusty."
+    },
+    {
+        "rule": "G(!rag_37_in_hand -> X(!clean_walker_42))",
+        "explanation": "Block cleaning walker_42 unless the rag is in hand."
+    },
+    {
+        "rule": "G(!walker_42_is_stained -> X(!clean_walker_42))",
+        "explanation": "Do not attempt to clean walker_42 if it is not stained."
+    },
+    {
+        "rule": "G(!walker_42_is_dusty -> X(!clean_walker_42))",
+        "explanation": "Do not attempt to clean walker_42 if it is not dusty."
+    },
+    {
+        "rule": "G(paper_towel_38_in_bedroom & paper_towel_38_on_floor -> X(done))",
+        "explanation": "Once the paper towel is on the bedroom floor and all other cleanliness goals hold, declare the task done."
+    }
+]

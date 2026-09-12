@@ -1,0 +1,694 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_49",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: toilet_47",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toilet_47",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_49",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_49",
+          "Next to: soap_0",
+          "Next to: bath_towel_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "shower_32",
+        "category": "shower",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bath_towel_0",
+        "category": "bath_towel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bed_33",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "bath_towel_0",
+      "thoughts": "To clean the stained and dusty bathroom floor, I need a cleaning tool. The bath towel is a cleaning tool and is currently available. I will pick it up first."
+    },
+    "goal": "target environment state:\n['not', 'or', 'dusty', 'room_floor_bathroom_0', 'stained', 'room_floor_bathroom_0']\n\n\ninteractable objects:\n{'name': 'bucket_0', 'category': 'bucket.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'soap_0', 'category': 'soap.n.01'}\n{'name': 'bath_towel_0', 'category': 'towel.n.01'}\n{'name': 'shower_32', 'category': 'shower.n.01'}\n{'name': 'toilet_47', 'category': 'toilet.n.02'}\n{'name': 'bed_33', 'category': 'bed.n.01'}\n{'name': 'sink_49', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Grasp bath_towel_0 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "bath_towel_0"
+    },
+    "object_state": [
+      {
+        "name": "sink_49",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: toilet_47",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toilet_47",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_49",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_49",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "shower_32",
+        "category": "shower",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bath_towel_0",
+        "category": "bath_towel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bed_33",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_49",
+      "thoughts": "To clean the stained and dusty bathroom floor, I need to soak the bath towel. First, I need to turn on the sink to use it as a water source for soaking."
+    },
+    "goal": "target environment state:\n['not', 'or', 'dusty', 'room_floor_bathroom_0', 'stained', 'room_floor_bathroom_0']\n\n\ninteractable objects:\n{'name': 'bucket_0', 'category': 'bucket.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'soap_0', 'category': 'soap.n.01'}\n{'name': 'bath_towel_0', 'category': 'towel.n.01'}\n{'name': 'shower_32', 'category': 'shower.n.01'}\n{'name': 'toilet_47', 'category': 'toilet.n.02'}\n{'name': 'bed_33', 'category': 'bed.n.01'}\n{'name': 'sink_49', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Toggleon sink_49 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "bath_towel_0"
+    },
+    "object_state": [
+      {
+        "name": "sink_49",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: toilet_47",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toilet_47",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_49",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_49",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "shower_32",
+        "category": "shower",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bath_towel_0",
+        "category": "bath_towel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bed_33",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_INSIDE",
+      "object": "sink_49",
+      "thoughts": "Now that the sink is toggled on and the bath towel is in my right hand, I should place the bath towel into the sink to prepare for soaking it."
+    },
+    "goal": "target environment state:\n['not', 'or', 'dusty', 'room_floor_bathroom_0', 'stained', 'room_floor_bathroom_0']\n\n\ninteractable objects:\n{'name': 'bucket_0', 'category': 'bucket.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'soap_0', 'category': 'soap.n.01'}\n{'name': 'bath_towel_0', 'category': 'towel.n.01'}\n{'name': 'shower_32', 'category': 'shower.n.01'}\n{'name': 'toilet_47', 'category': 'toilet.n.02'}\n{'name': 'bed_33', 'category': 'bed.n.01'}\n{'name': 'sink_49', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Place inside bath_towel_0 sink_49 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_49",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: toilet_47",
+          "Next to: bucket_0",
+          "Next to: bath_towel_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toilet_47",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_49",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_49",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "shower_32",
+        "category": "shower",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bath_towel_0",
+        "category": "bath_towel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_49"
+        ]
+      },
+      {
+        "name": "bed_33",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "bath_towel_0",
+      "thoughts": "The bath towel is now inside the toggled on sink, so I should soak it to prepare it for cleaning the stained and dusty bathroom floor."
+    },
+    "goal": "target environment state:\n['not', 'or', 'dusty', 'room_floor_bathroom_0', 'stained', 'room_floor_bathroom_0']\n\n\ninteractable objects:\n{'name': 'bucket_0', 'category': 'bucket.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'soap_0', 'category': 'soap.n.01'}\n{'name': 'bath_towel_0', 'category': 'towel.n.01'}\n{'name': 'shower_32', 'category': 'shower.n.01'}\n{'name': 'toilet_47', 'category': 'toilet.n.02'}\n{'name': 'bed_33', 'category': 'bed.n.01'}\n{'name': 'sink_49', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Soak bath_towel_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_49",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: toilet_47",
+          "Next to: bucket_0",
+          "Next to: bath_towel_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toilet_47",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_49",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_49",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "shower_32",
+        "category": "shower",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bath_towel_0",
+        "category": "bath_towel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_49"
+        ]
+      },
+      {
+        "name": "bed_33",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bath_towel_0",
+      "thoughts": "The bath towel is now soaked and ready to be used for cleaning. I need to grasp it so I can clean the stained and dusty bathroom floor."
+    },
+    "goal": "target environment state:\n['not', 'or', 'dusty', 'room_floor_bathroom_0', 'stained', 'room_floor_bathroom_0']\n\n\ninteractable objects:\n{'name': 'bucket_0', 'category': 'bucket.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'soap_0', 'category': 'soap.n.01'}\n{'name': 'bath_towel_0', 'category': 'towel.n.01'}\n{'name': 'shower_32', 'category': 'shower.n.01'}\n{'name': 'toilet_47', 'category': 'toilet.n.02'}\n{'name': 'bed_33', 'category': 'bed.n.01'}\n{'name': 'sink_49', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Grasp bath_towel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bath_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_49",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: toilet_47",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toilet_47",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_49",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_49",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "shower_32",
+        "category": "shower",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bath_towel_0",
+        "category": "bath_towel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bed_33",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "room_floor_bathroom_0",
+      "thoughts": "I am holding a soaked bath towel in my left hand, which is a cleaning tool. The bathroom floor is both stained and dusty, so I will use the towel to clean it and move towards the goal state."
+    },
+    "goal": "target environment state:\n['not', 'or', 'dusty', 'room_floor_bathroom_0', 'stained', 'room_floor_bathroom_0']\n\n\ninteractable objects:\n{'name': 'bucket_0', 'category': 'bucket.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'soap_0', 'category': 'soap.n.01'}\n{'name': 'bath_towel_0', 'category': 'towel.n.01'}\n{'name': 'shower_32', 'category': 'shower.n.01'}\n{'name': 'toilet_47', 'category': 'toilet.n.02'}\n{'name': 'bed_33', 'category': 'bed.n.01'}\n{'name': 'sink_49', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": "Clean-dust floors success\nClean-stain floors success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bath_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_49",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: toilet_47",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "toilet_47",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_49",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_49",
+          "Next to: soap_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: bucket_0",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "shower_32",
+        "category": "shower",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "bath_towel_0",
+        "category": "bath_towel",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bed_33",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "The bathroom floor is now clean and dust-free, matching the goal state. No further actions are needed."
+    },
+    "goal": "target environment state:\n['not', 'or', 'dusty', 'room_floor_bathroom_0', 'stained', 'room_floor_bathroom_0']\n\n\ninteractable objects:\n{'name': 'bucket_0', 'category': 'bucket.n.01'}\n{'name': 'room_floor_bathroom_0', 'category': 'floor.n.01'}\n{'name': 'soap_0', 'category': 'soap.n.01'}\n{'name': 'bath_towel_0', 'category': 'towel.n.01'}\n{'name': 'shower_32', 'category': 'shower.n.01'}\n{'name': 'toilet_47', 'category': 'toilet.n.02'}\n{'name': 'bed_33', 'category': 'bed.n.01'}\n{'name': 'sink_49', 'category': 'sink.n.01'}\n\n\n",
+    "feedback": ""
+  }
+]

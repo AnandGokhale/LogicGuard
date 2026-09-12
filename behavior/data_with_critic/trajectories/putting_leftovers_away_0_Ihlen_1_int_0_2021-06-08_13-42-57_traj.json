@@ -1,0 +1,2719 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_3",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: spaghetti_sauce_1",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_1",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_2",
+          "Next to: spaghetti_sauce_1",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_0",
+          "Next to: pasta_1",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: spaghetti_sauce_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0",
+          "Under: pasta_1"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "fridge_61",
+      "thoughts": "The goal is to put all pasta and sauce objects inside the fridge. The fridge is currently closed, so the first step is to open it so I can place items inside."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": "Open fridge_61 failed"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_3",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: spaghetti_sauce_1",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_1",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_2",
+          "Next to: spaghetti_sauce_1",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_0",
+          "Next to: pasta_1",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: spaghetti_sauce_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0",
+          "Under: pasta_1"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pasta_0",
+      "thoughts": "Now that the fridge is open, I need to start moving the pasta and sauce objects inside. I will start by grasping pasta_0 with my left hand."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": "Grasp pasta_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pasta_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_3",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: None",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_1",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_2",
+          "Next to: spaghetti_sauce_1",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_1",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: spaghetti_sauce_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0",
+          "Under: pasta_1"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_61",
+      "thoughts": "I am holding pasta_0 in my left hand and the fridge is open, so I will place pasta_0 inside the fridge to make progress towards the goal of having all pasta and sauce inside the fridge."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": "Place inside pasta_0 fridge_61 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_3",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_61",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_1",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_2",
+          "Next to: spaghetti_sauce_1",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_1",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: spaghetti_sauce_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0",
+          "Under: pasta_1"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pasta_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pasta_1",
+      "thoughts": "I have just placed pasta_0 inside the fridge. To achieve the goal of having all pasta and sauce inside the fridge, I will now grasp pasta_1 so I can place it inside the fridge next."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": "Grasp pasta_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pasta_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_3",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: dining_room",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: spaghetti_sauce_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pasta_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_61",
+      "thoughts": "I am currently holding pasta_1 in my left hand and the fridge is open. To achieve the goal of all pasta being inside the fridge, I will place pasta_1 inside fridge_61."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": "Place inside pasta_1 fridge_61 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_3",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "Under: pasta_1",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_61",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: spaghetti_sauce_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pasta_0",
+          "Next to: pasta_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pasta_2",
+      "thoughts": "To achieve the goal, all pasta needs to be inside the fridge. Pasta_2 is currently on the countertop. My hands are empty, so I will grasp pasta_2 with my left hand to prepare to place it inside the fridge."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": "Grasp pasta_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pasta_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_3",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "Under: pasta_1",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: None",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_61",
+          "On top of: pasta_0",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: spaghetti_sauce_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pasta_0",
+          "Next to: pasta_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_61",
+      "thoughts": "I am holding pasta_2 in my left hand and the fridge_61 is open. To progress towards the goal of having all pasta inside the fridge, I will place pasta_2 inside fridge_61."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": "Place inside pasta_2 fridge_61 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_3",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "Under: pasta_2",
+          "Under: pasta_1",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_61",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_61",
+          "On top of: pasta_0",
+          "Under: pasta_2",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: spaghetti_sauce_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pasta_0",
+          "Next to: pasta_2",
+          "Next to: pasta_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pasta_3",
+      "thoughts": "pasta_3 is currently on the countertop and not inside the fridge. To satisfy the goal of having all pasta inside the fridge, I need to grasp pasta_3 so I can place it inside fridge_61."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": "Grasp pasta_3 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pasta_3",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "Under: pasta_2",
+          "Under: pasta_1",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "On top of: pasta_1",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_61",
+          "On top of: pasta_0",
+          "Under: pasta_2",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: dining_room",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pasta_0",
+          "Next to: pasta_2",
+          "Next to: pasta_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_61",
+      "thoughts": "I am currently holding pasta_3 in my left hand and the fridge is open. To achieve the goal of having all pasta inside the fridge, I should place pasta_3 inside fridge_61."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": "Place inside pasta_3 fridge_61 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: pasta_3",
+          "Next to: fridge_61",
+          "Under: pasta_2",
+          "Under: pasta_1",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "On top of: pasta_1",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_61",
+          "On top of: pasta_0",
+          "Under: pasta_2",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_0",
+          "Next to: fridge_61",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pasta_0",
+          "Next to: pasta_2",
+          "Next to: pasta_1",
+          "Next to: pasta_3",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "spaghetti_sauce_0",
+      "thoughts": "All sauces need to be inside the fridge. spaghetti_sauce_0 is currently on top of the countertop, so I will grasp it with my left hand to prepare to place it inside fridge_61."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": "Grasp spaghetti_sauce_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "spaghetti_sauce_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "Under: pasta_2",
+          "Under: pasta_1",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "On top of: pasta_1",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_61",
+          "On top of: pasta_0",
+          "Under: pasta_2",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "On top of: pasta_1",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pasta_0",
+          "Next to: pasta_2",
+          "Next to: pasta_1",
+          "Next to: pasta_3",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_61",
+      "thoughts": "I am holding spaghetti_sauce_0 in my left hand, and the fridge is open. To achieve the goal of having all sauces inside the fridge, I will place spaghetti_sauce_0 inside fridge_61."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": "Place inside spaghetti_sauce_0 fridge_61 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_61",
+          "On top of: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "Under: spaghetti_sauce_0",
+          "Under: pasta_2",
+          "Under: pasta_1",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "On top of: pasta_1",
+          "Under: spaghetti_sauce_0",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_61",
+          "On top of: pasta_0",
+          "Under: spaghetti_sauce_0",
+          "Under: pasta_2",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "On top of: pasta_2",
+          "Under: spaghetti_sauce_0",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: spaghetti_sauce_0",
+          "Next to: pasta_0",
+          "Next to: pasta_2",
+          "Next to: pasta_1",
+          "Next to: pasta_3",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "spaghetti_sauce_1",
+      "thoughts": "To achieve the goal, all sauces must be inside the fridge. Spaghetti_sauce_1 is currently on the countertop, so I will grasp it with my left hand to move it into the fridge."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": "Grasp spaghetti_sauce_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "spaghetti_sauce_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_61",
+          "On top of: pasta_2",
+          "On top of: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "Under: spaghetti_sauce_0",
+          "Under: pasta_2",
+          "Under: pasta_1",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "On top of: pasta_1",
+          "Under: spaghetti_sauce_0",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_61",
+          "On top of: pasta_0",
+          "Under: spaghetti_sauce_0",
+          "Under: pasta_2",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: dining_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "On top of: pasta_2",
+          "Under: spaghetti_sauce_0",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: spaghetti_sauce_0",
+          "Next to: pasta_0",
+          "Next to: pasta_2",
+          "Next to: pasta_1",
+          "Next to: pasta_3",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_61",
+      "thoughts": "I am currently holding spaghetti_sauce_1 with my left hand, and the fridge is open. To achieve the goal of having all sauces inside the fridge, I will place spaghetti_sauce_1 inside fridge_61."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": "Place inside spaghetti_sauce_1 fridge_61 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: spaghetti_sauce_1",
+          "Next to: pasta_3",
+          "Next to: fridge_61",
+          "On top of: pasta_2",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "Under: pasta_2",
+          "Under: pasta_1",
+          "Under: spaghetti_sauce_1",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: spaghetti_sauce_1",
+          "Next to: fridge_61",
+          "On top of: pasta_1",
+          "Under: spaghetti_sauce_1",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_61",
+          "On top of: pasta_0",
+          "Under: pasta_2",
+          "Under: spaghetti_sauce_1",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: spaghetti_sauce_0",
+          "Next to: pasta_2",
+          "Next to: fridge_61",
+          "On top of: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: spaghetti_sauce_0",
+          "Next to: fridge_61",
+          "On top of: pasta_2",
+          "Under: spaghetti_sauce_1",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: spaghetti_sauce_0",
+          "Next to: pasta_0",
+          "Next to: pasta_2",
+          "Next to: pasta_1",
+          "Next to: spaghetti_sauce_1",
+          "Next to: pasta_3",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_79"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "spaghetti_sauce_2",
+      "thoughts": "To achieve the goal, all sauces must be inside the fridge. Spaghetti_sauce_2 is currently on the countertop, so I will grasp it with my left hand to prepare to place it inside the fridge."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": "Grasp spaghetti_sauce_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "spaghetti_sauce_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_2",
+          "Next to: pasta_3",
+          "Next to: fridge_61",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "Under: pasta_2",
+          "Under: pasta_1",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: spaghetti_sauce_0",
+          "Next to: spaghetti_sauce_1",
+          "Next to: fridge_61",
+          "On top of: pasta_1",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_61",
+          "On top of: pasta_0",
+          "Under: pasta_2",
+          "Under: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_2",
+          "Next to: fridge_61",
+          "On top of: pasta_2",
+          "On top of: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: spaghetti_sauce_0",
+          "Next to: fridge_61",
+          "On top of: pasta_2",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: spaghetti_sauce_0",
+          "Next to: pasta_0",
+          "Next to: pasta_2",
+          "Next to: pasta_1",
+          "Next to: spaghetti_sauce_1",
+          "Next to: pasta_3",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_61",
+      "thoughts": "I am holding spaghetti_sauce_2 in my left hand, and the fridge is open. To achieve the goal of having all sauces inside the fridge, I will place spaghetti_sauce_2 inside fridge_61."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": "Place inside spaghetti_sauce_2 fridge_61 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_1",
+          "Next to: pasta_3",
+          "Next to: fridge_61",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_61",
+          "Under: pasta_2",
+          "Under: pasta_1",
+          "Under: pasta_3",
+          "Under: spaghetti_sauce_2",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: spaghetti_sauce_1",
+          "Next to: fridge_61",
+          "Next to: spaghetti_sauce_2",
+          "On top of: pasta_1",
+          "Under: pasta_3",
+          "Under: spaghetti_sauce_2",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: spaghetti_sauce_0",
+          "Next to: fridge_61",
+          "On top of: pasta_0",
+          "Under: pasta_2",
+          "Under: pasta_3",
+          "Under: spaghetti_sauce_2",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: pasta_2",
+          "Next to: pasta_3",
+          "Next to: fridge_61",
+          "Next to: spaghetti_sauce_2",
+          "On top of: pasta_2",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: spaghetti_sauce_0",
+          "Next to: spaghetti_sauce_1",
+          "Next to: fridge_61",
+          "On top of: pasta_2",
+          "Under: spaghetti_sauce_2",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: spaghetti_sauce_0",
+          "Next to: pasta_0",
+          "Next to: pasta_2",
+          "Next to: pasta_1",
+          "Next to: spaghetti_sauce_1",
+          "Next to: pasta_3",
+          "Next to: spaghetti_sauce_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_2",
+          "Next to: spaghetti_sauce_1",
+          "Next to: fridge_61",
+          "On top of: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_79"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "mayonnaise_0",
+      "thoughts": "All pasta and spaghetti_sauce objects are already inside the fridge, but mayonnaise_0 is a sauce and is still on top of the countertop. To achieve the goal that all sauces are inside the fridge, I will grasp mayonnaise_0 so I can put it inside fridge_61 next."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": "Grasp mayonnaise_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "mayonnaise_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_0",
+          "Next to: pasta_2",
+          "Next to: pasta_1",
+          "Next to: pasta_3",
+          "Next to: fridge_61",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: spaghetti_sauce_0",
+          "Next to: spaghetti_sauce_1",
+          "Next to: fridge_61",
+          "Under: pasta_2",
+          "Under: pasta_1",
+          "Under: pasta_3",
+          "Under: spaghetti_sauce_2",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: spaghetti_sauce_0",
+          "Next to: spaghetti_sauce_1",
+          "Next to: fridge_61",
+          "Next to: spaghetti_sauce_2",
+          "On top of: pasta_1",
+          "Under: pasta_3",
+          "Under: spaghetti_sauce_2",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: spaghetti_sauce_0",
+          "Next to: spaghetti_sauce_1",
+          "Next to: fridge_61",
+          "On top of: pasta_0",
+          "Under: pasta_2",
+          "Under: pasta_3",
+          "Under: spaghetti_sauce_2",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: pasta_0",
+          "Next to: pasta_2",
+          "Next to: pasta_1",
+          "Next to: fridge_61",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: spaghetti_sauce_0",
+          "Next to: fridge_61",
+          "On top of: pasta_2",
+          "On top of: spaghetti_sauce_1",
+          "Under: spaghetti_sauce_2",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: spaghetti_sauce_0",
+          "Next to: pasta_0",
+          "Next to: pasta_2",
+          "Next to: pasta_1",
+          "Next to: spaghetti_sauce_1",
+          "Next to: pasta_3",
+          "Next to: spaghetti_sauce_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_2",
+          "Next to: fridge_61",
+          "On top of: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_61",
+      "thoughts": "I am currently holding mayonnaise_0 in my left hand, and the fridge_61 is open. To achieve the goal that all sauces are inside the fridge, I will place mayonnaise_0 inside fridge_61."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": "Place inside mayonnaise_0 fridge_61 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_0",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_0",
+          "Next to: pasta_2",
+          "Next to: pasta_1",
+          "Next to: pasta_3",
+          "Next to: fridge_61",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_0",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: spaghetti_sauce_0",
+          "Next to: fridge_61",
+          "Under: pasta_2",
+          "Under: pasta_1",
+          "Under: pasta_3",
+          "Under: mayonnaise_0",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_2",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: spaghetti_sauce_0",
+          "Next to: fridge_61",
+          "Next to: mayonnaise_0",
+          "On top of: pasta_1",
+          "Under: pasta_3",
+          "Under: mayonnaise_0",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_1",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: spaghetti_sauce_0",
+          "Next to: spaghetti_sauce_1",
+          "Next to: fridge_61",
+          "On top of: pasta_0",
+          "Under: pasta_2",
+          "Under: pasta_3",
+          "Under: mayonnaise_0",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_1",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: pasta_1",
+          "Next to: fridge_61",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "pasta_3",
+        "category": "pasta",
+        "State description ": [
+          "Location: kitchen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: spaghetti_sauce_0",
+          "Next to: fridge_61",
+          "On top of: pasta_2",
+          "Under: mayonnaise_0",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "countertop_79",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_61",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: spaghetti_sauce_0",
+          "Next to: pasta_0",
+          "Next to: pasta_2",
+          "Next to: pasta_1",
+          "Next to: spaghetti_sauce_1",
+          "Next to: pasta_3",
+          "Next to: spaghetti_sauce_2",
+          "Next to: mayonnaise_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "spaghetti_sauce_2",
+        "category": "spaghetti_sauce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_61",
+          "Next to: mayonnaise_0",
+          "On top of: pasta_3",
+          "Inside: fridge_61"
+        ]
+      },
+      {
+        "name": "mayonnaise_0",
+        "category": "mayonnaise",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: pasta_2",
+          "Next to: fridge_61",
+          "Next to: spaghetti_sauce_2",
+          "On top of: pasta_3",
+          "Inside: fridge_61"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "All pasta and sauce objects are already inside fridge_61, which satisfies the goal state. No further actions are needed."
+    },
+    "goal": "target environment state:\n['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'fridge_61']\n['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'fridge_61']\n\n\ninteractable objects:\n{'name': 'pasta_0', 'category': 'pasta.n.02'}\n{'name': 'pasta_1', 'category': 'pasta.n.02'}\n{'name': 'pasta_2', 'category': 'pasta.n.02'}\n{'name': 'pasta_3', 'category': 'pasta.n.02'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n{'name': 'spaghetti_sauce_0', 'category': 'sauce.n.01'}\n{'name': 'mayonnaise_0', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_1', 'category': 'sauce.n.01'}\n{'name': 'spaghetti_sauce_2', 'category': 'sauce.n.01'}\n{'name': 'fridge_61', 'category': 'electric_refrigerator.n.01'}\n{'name': 'countertop_79', 'category': 'countertop.n.01'}\n\n\n",
+    "feedback": ""
+  }
+]

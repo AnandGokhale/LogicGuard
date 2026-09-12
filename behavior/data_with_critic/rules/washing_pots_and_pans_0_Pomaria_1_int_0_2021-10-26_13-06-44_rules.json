@@ -1,0 +1,111 @@
+[
+    {
+        "rule": "G(!saucepan_80_is_stained -> X(!clean_saucepan_80))",
+        "explanation": "Prevent cleaning saucepan_80 if it is already clean."
+    },
+    {
+        "rule": "G(!scrub_brush_83_in_hand -> X(!clean_saucepan_80))",
+        "explanation": "Block cleaning saucepan_80 unless the scrub brush is in hand."
+    },
+    {
+        "rule": "G(!saucepan_81_is_stained -> X(!clean_saucepan_81))",
+        "explanation": "Prevent cleaning saucepan_81 if it is already clean."
+    },
+    {
+        "rule": "G(!scrub_brush_83_in_hand -> X(!clean_saucepan_81))",
+        "explanation": "Block cleaning saucepan_81 unless the scrub brush is in hand."
+    },
+    {
+        "rule": "G(!frying_pan_82_is_stained -> X(!clean_frying_pan_82))",
+        "explanation": "Prevent cleaning frying_pan_82 if it is already clean."
+    },
+    {
+        "rule": "G(!scrub_brush_83_in_hand -> X(!clean_frying_pan_82))",
+        "explanation": "Block cleaning frying_pan_82 unless the scrub brush is in hand."
+    },
+    {
+        "rule": "G(!teapot_78_is_stained -> X(!clean_teapot_78))",
+        "explanation": "Prevent cleaning teapot_78 if it is already clean."
+    },
+    {
+        "rule": "G(!scrub_brush_83_in_hand -> X(!clean_teapot_78))",
+        "explanation": "Block cleaning teapot_78 unless the scrub brush is in hand."
+    },
+    {
+        "rule": "G(!kettle_79_is_stained -> X(!clean_kettle_79))",
+        "explanation": "Prevent cleaning kettle_79 if it is already clean."
+    },
+    {
+        "rule": "G(!scrub_brush_83_in_hand -> X(!clean_kettle_79))",
+        "explanation": "Block cleaning kettle_79 unless the scrub brush is in hand."
+    },
+    {
+        "rule": "G((saucepan_80_inside_top_cabinet_27 & saucepan_81_inside_top_cabinet_27 & frying_pan_82_inside_top_cabinet_27) -> X(!(saucepan_80_place_inside_top_cabinet_27 | saucepan_81_place_inside_top_cabinet_27 | frying_pan_82_place_inside_top_cabinet_27)))",
+        "explanation": "Once all three are in the top cabinet, forbid further top\u2010cabinet placements for them."
+    },
+    {
+        "rule": "G((saucepan_80_inside_bottom_cabinet_no_top_32 & saucepan_81_inside_bottom_cabinet_no_top_32 & frying_pan_82_inside_bottom_cabinet_no_top_32) -> X(!(saucepan_80_place_inside_bottom_cabinet_no_top_32 | saucepan_81_place_inside_bottom_cabinet_no_top_32 | frying_pan_82_place_inside_bottom_cabinet_no_top_32)))",
+        "explanation": "Once all three are in the bottom cabinet, forbid further bottom\u2010cabinet placements for them."
+    },
+    {
+        "rule": "G((teapot_78_inside_top_cabinet_27 | teapot_78_inside_bottom_cabinet_no_top_32) -> X(!(teapot_78_place_inside_top_cabinet_27 | teapot_78_place_inside_bottom_cabinet_no_top_32)))",
+        "explanation": "Once teapot_78 is stored, block any more placement attempts."
+    },
+    {
+        "rule": "G((kettle_79_inside_top_cabinet_27 | kettle_79_inside_bottom_cabinet_no_top_32) -> X(!(kettle_79_place_inside_top_cabinet_27 | kettle_79_place_inside_bottom_cabinet_no_top_32)))",
+        "explanation": "Once kettle_79 is stored, block any more placement attempts."
+    },
+    {
+        "rule": "G(!bottom_cabinet_no_top_32_is_open -> X(!(saucepan_80_place_inside_bottom_cabinet_no_top_32 | saucepan_81_place_inside_bottom_cabinet_no_top_32 | frying_pan_82_place_inside_bottom_cabinet_no_top_32 | teapot_78_place_inside_bottom_cabinet_no_top_32 | kettle_79_place_inside_bottom_cabinet_no_top_32)))",
+        "explanation": "Require the bottom cabinet to be open before placing any item inside it."
+    },
+    {
+        "rule": "G(!scrub_brush_83_in_hand -> X(!scrub_brush_83_place_inside_bottom_cabinet_no_top_32))",
+        "explanation": "Block placing the scrub brush unless it is actually held."
+    },
+    {
+        "rule": "G((!saucepan_80_is_stained & !saucepan_81_is_stained & !frying_pan_82_is_stained & !teapot_78_is_stained & !kettle_79_is_stained & ((saucepan_80_inside_top_cabinet_27 & saucepan_81_inside_top_cabinet_27 & frying_pan_82_inside_top_cabinet_27)|(saucepan_80_inside_bottom_cabinet_no_top_32 & saucepan_81_inside_bottom_cabinet_no_top_32 & frying_pan_82_inside_bottom_cabinet_no_top_32)) & (teapot_78_inside_top_cabinet_27|teapot_78_inside_bottom_cabinet_no_top_32) & (kettle_79_inside_top_cabinet_27|kettle_79_inside_bottom_cabinet_no_top_32)) -> X(done))",
+        "explanation": "As soon as all objects are clean and stored correctly, the next action must be `done`."
+    },
+
+    {
+        "rule": "G((teapot_78_inside_top_cabinet_27 | teapot_78_inside_bottom_cabinet_no_top_32) -> X(!left_grasp_teapot_78 & !right_grasp_teapot_78))",
+        "explanation": "Prevent grasping the teapot once it is already stored."
+    },
+    {
+        "rule": "G((kettle_79_inside_top_cabinet_27 | kettle_79_inside_bottom_cabinet_no_top_32) -> X(!left_grasp_kettle_79 & !right_grasp_kettle_79))",
+        "explanation": "Prevent grasping the kettle once it is already stored."
+    },
+    {
+        "rule": "G((saucepan_80_inside_top_cabinet_27 | saucepan_80_inside_bottom_cabinet_no_top_32) -> X(!left_grasp_saucepan_80 & !right_grasp_saucepan_80))",
+        "explanation": "Prevent grasping saucepan_80 once it is already stored."
+    },
+    {
+        "rule": "G((saucepan_81_inside_top_cabinet_27 | saucepan_81_inside_bottom_cabinet_no_top_32) -> X(!left_grasp_saucepan_81 & !right_grasp_saucepan_81))",
+        "explanation": "Prevent grasping saucepan_81 once it is already stored."
+    },
+    {
+        "rule": "G((frying_pan_82_inside_top_cabinet_27 | frying_pan_82_inside_bottom_cabinet_no_top_32) -> X(!left_grasp_frying_pan_82))",
+        "explanation": "Prevent grasping the frying pan once it is already stored."
+    },
+    {
+        "rule": "G(!teapot_78_in_hand -> X(!teapot_78_place_inside_top_cabinet_27 & !teapot_78_place_inside_bottom_cabinet_no_top_32))",
+        "explanation": "Only place the teapot if it is actually in hand."
+    },
+    {
+        "rule": "G(!kettle_79_in_hand -> X(!kettle_79_place_inside_top_cabinet_27 & !kettle_79_place_inside_bottom_cabinet_no_top_32))",
+        "explanation": "Only place the kettle if it is actually in hand."
+    },
+    {
+        "rule": "G(!saucepan_80_in_hand -> X(!saucepan_80_place_inside_top_cabinet_27 & !saucepan_80_place_inside_bottom_cabinet_no_top_32))",
+        "explanation": "Only place saucepan_80 if it is in hand."
+    },
+    {
+        "rule": "G(!saucepan_81_in_hand -> X(!saucepan_81_place_inside_top_cabinet_27 & !saucepan_81_place_inside_bottom_cabinet_no_top_32))",
+        "explanation": "Only place saucepan_81 if it is in hand."
+    },
+    {
+        "rule": "G(!frying_pan_82_in_hand -> X(!frying_pan_82_place_inside_top_cabinet_27 & !frying_pan_82_place_inside_bottom_cabinet_no_top_32))",
+        "explanation": "Only place the frying pan if it is in hand."
+    }
+]

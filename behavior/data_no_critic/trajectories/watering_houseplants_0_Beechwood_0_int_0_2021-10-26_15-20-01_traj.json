@@ -1,0 +1,2087 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: dining_room",
+          "Soaked? : False",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: dining_room",
+          "Soaked? : False",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_64",
+      "thoughts": "All pot plants need to be soaked. The sink is a water source but is currently toggled off. I need to turn on the sink before I can soak the pot plants."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Toggleon sink_64 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: dining_room",
+          "Soaked? : False",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: dining_room",
+          "Soaked? : False",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pot_plant_0",
+      "thoughts": "To soak the pot plants, I need to pick one up first. I will grasp pot_plant_0 with my left hand to bring it to the sink."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Grasp pot_plant_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pot_plant_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: None",
+          "Soaked? : False"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: dining_room",
+          "Soaked? : False",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_64",
+      "thoughts": "I am holding pot_plant_0 in my left hand, and the sink is toggled on (providing water). Placing the pot plant inside the sink will allow me to soak it in the next step."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Place inside pot_plant_0 sink_64 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: dining_room",
+          "Soaked? : False",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: pot_plant_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "pot_plant_0",
+      "thoughts": "pot_plant_0 is already inside a toggled on sink, so soaking it will make it soaked and progress towards the goal of soaking all pot plants."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Soak pot_plant_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: dining_room",
+          "Soaked? : False",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: pot_plant_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pot_plant_1",
+      "thoughts": "pot_plant_1 is not soaked, so I need to move it to the sink to soak it. First, I will pick it up with my left hand."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Grasp pot_plant_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pot_plant_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: None",
+          "Soaked? : False"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: pot_plant_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_64",
+      "thoughts": "I am holding pot_plant_1 in my left hand. To soak it, I need to put it inside the sink (sink_64), which is toggled on and contains water."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Place inside pot_plant_1 sink_64 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Inside: pot_plant_1",
+          "Inside: sink_64",
+          "Next to: pot_plant_1",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "Under: sink_64",
+          "Inside: pot_plant_0",
+          "Inside: sink_64",
+          "Next to: pot_plant_0",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: pot_plant_0",
+          "Inside: pot_plant_1",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pot_plant_1",
+      "thoughts": "To soak pot_plant_1, I need to first pick it up so I can place it into the sink_64, which is toggled on and contains water."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Grasp pot_plant_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pot_plant_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: pot_plant_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_64",
+      "thoughts": "I am holding pot_plant_1 in my left hand. To soak it, I need to place it inside the sink_64, which is already toggled on and contains water."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Place inside pot_plant_1 sink_64 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: pot_plant_1",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "Under: pot_plant_0",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: pot_plant_0",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: pot_plant_0",
+          "Inside: pot_plant_1",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pot_plant_1",
+      "thoughts": "To soak pot_plant_1, which is currently not soaked, I need to first grasp it so I can interact with it and place it in the sink."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Grasp pot_plant_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pot_plant_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: pot_plant_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_64",
+      "thoughts": "To soak pot_plant_1, I need to place it inside the sink, which is toggled on and can soak objects. I am currently holding pot_plant_1 in my left hand, so I will place it inside sink_64."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Place inside pot_plant_1 sink_64 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Inside: pot_plant_1",
+          "Inside: sink_64",
+          "Next to: pot_plant_1",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: pot_plant_0",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: pot_plant_0",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: pot_plant_0",
+          "Inside: pot_plant_1",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pot_plant_2",
+      "thoughts": "The goal is for all pot plants to be soaked. pot_plant_2 is not soaked, while the others are. I need to soak pot_plant_2, so I will first grasp it with my left hand to move it to the sink."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Grasp pot_plant_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pot_plant_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Inside: pot_plant_1",
+          "Inside: sink_64",
+          "Next to: pot_plant_1",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: pot_plant_0",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: pot_plant_0",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: pot_plant_0",
+          "Inside: pot_plant_1",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_64",
+      "thoughts": "I am holding pot_plant_2 in my left hand and need to soak it. The other pot plants are soaked and are inside the sink. Placing pot_plant_2 inside the sink will allow it to be soaked as well."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Place inside pot_plant_2 sink_64 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Under: pot_plant_2",
+          "Inside: pot_plant_1",
+          "Inside: sink_64",
+          "Next to: pot_plant_1",
+          "Next to: sink_64",
+          "Next to: pot_plant_2"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: pot_plant_0",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Inside: pot_plant_2",
+          "Next to: pot_plant_0",
+          "Next to: sink_64",
+          "Next to: pot_plant_2"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: pot_plant_0",
+          "Inside: pot_plant_1",
+          "Inside: pot_plant_2",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1",
+          "Next to: pot_plant_2"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "Under: pot_plant_0",
+          "Under: sink_64",
+          "Inside: pot_plant_1",
+          "Inside: sink_64",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pot_plant_2",
+      "thoughts": "pot_plant_2 is not soaked, while the others are. To soak it, I need to put it into the toggled on sink. First, I need to pick up pot_plant_2."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Grasp pot_plant_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pot_plant_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: pot_plant_1",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: pot_plant_0",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: pot_plant_0",
+          "Inside: pot_plant_1",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_64",
+      "thoughts": "I am holding pot_plant_2 in my left hand, and to soak it, I need to place it inside the toggled on sink_64."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Place inside pot_plant_2 sink_64 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Under: pot_plant_2",
+          "Inside: sink_64",
+          "Next to: pot_plant_1",
+          "Next to: sink_64",
+          "Next to: pot_plant_2"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: pot_plant_0",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Inside: pot_plant_2",
+          "Next to: pot_plant_0",
+          "Next to: sink_64",
+          "Next to: pot_plant_2"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: pot_plant_0",
+          "Inside: pot_plant_1",
+          "Inside: pot_plant_2",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1",
+          "Next to: pot_plant_2"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "Under: pot_plant_0",
+          "Under: sink_64",
+          "Inside: pot_plant_1",
+          "Inside: sink_64",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pot_plant_2",
+      "thoughts": "pot_plant_2 is not soaked, so I need to grasp it before placing it inside the toggled on sink_64 to soak it."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Grasp pot_plant_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pot_plant_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: pot_plant_1",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: pot_plant_0",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: pot_plant_0",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: pot_plant_0",
+          "Inside: pot_plant_1",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_64",
+      "thoughts": "pot_plant_2 is not soaked yet. Since I am holding pot_plant_2 in my left hand and sink_64 is toggled on and can soak objects, I should place pot_plant_2 inside sink_64 to soak it."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Place inside pot_plant_2 sink_64 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Under: pot_plant_2",
+          "Inside: sink_64",
+          "Next to: pot_plant_1",
+          "Next to: sink_64",
+          "Next to: pot_plant_2"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: pot_plant_0",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Inside: pot_plant_2",
+          "Next to: pot_plant_0",
+          "Next to: sink_64",
+          "Next to: pot_plant_2"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: pot_plant_0",
+          "Inside: pot_plant_1",
+          "Inside: pot_plant_2",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1",
+          "Next to: pot_plant_2"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "Under: pot_plant_0",
+          "Under: sink_64",
+          "Inside: pot_plant_1",
+          "Inside: sink_64",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pot_plant_2",
+      "thoughts": "pot_plant_2 is the only pot plant that is not soaked. To soak it, I need to first pick it up with my left hand so I can place it in the sink."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Grasp pot_plant_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pot_plant_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: pot_plant_1",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: pot_plant_0",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: pot_plant_0",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: pot_plant_0",
+          "Inside: pot_plant_1",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_64",
+      "thoughts": "I am holding pot_plant_2 in my left hand. To soak it, I need to place it inside the sink, which is currently toggled on and can act as a water source."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Place inside pot_plant_2 sink_64 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Under: pot_plant_2",
+          "Inside: sink_64",
+          "Next to: pot_plant_1",
+          "Next to: sink_64",
+          "Next to: pot_plant_2"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: pot_plant_0",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Inside: pot_plant_2",
+          "Next to: pot_plant_0",
+          "Next to: sink_64",
+          "Next to: pot_plant_2"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: pot_plant_0",
+          "Inside: pot_plant_1",
+          "Inside: pot_plant_2",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1",
+          "Next to: pot_plant_2"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False",
+          "Under: pot_plant_0",
+          "Under: sink_64",
+          "Inside: pot_plant_1",
+          "Inside: sink_64",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pot_plant_2",
+      "thoughts": "To soak pot_plant_2, I first need to pick it up with my left hand so that I can interact with it and place it in the sink."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Grasp pot_plant_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pot_plant_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: pot_plant_1",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: pot_plant_0",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: pot_plant_0",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: pot_plant_0",
+          "Inside: pot_plant_1",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : False"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_64",
+      "thoughts": "To soak pot_plant_2, I need to place it inside the sink, which is currently toggled on and suitable for soaking."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": "Place inside pot_plant_2 sink_64 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "pot_plant_0",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Next to: pot_plant_1",
+          "Next to: sink_64",
+          "Next to: pot_plant_2"
+        ]
+      },
+      {
+        "name": "pot_plant_1",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: pot_plant_0",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "Inside: pot_plant_2",
+          "Next to: pot_plant_0",
+          "Next to: sink_64",
+          "Next to: pot_plant_2"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: pot_plant_0",
+          "Under: pot_plant_1",
+          "Inside: pot_plant_2",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1",
+          "Next to: pot_plant_2"
+        ]
+      },
+      {
+        "name": "breakfast_table_16",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "pot_plant_2",
+        "category": "pot_plant",
+        "State description ": [
+          "Location: kitchen",
+          "Soaked? : True",
+          "Under: pot_plant_0",
+          "Under: sink_64",
+          "Inside: pot_plant_1",
+          "Inside: sink_64",
+          "Next to: pot_plant_0",
+          "Next to: pot_plant_1",
+          "Next to: sink_64"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "All pot plants (pot_plant_0, pot_plant_1, pot_plant_2) are already soaked, as required by the goal state. No further action is needed."
+    },
+    "goal": "target environment state:\n['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']\n\n\n",
+    "feedback": ""
+  }
+]

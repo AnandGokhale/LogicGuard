@@ -1,0 +1,74 @@
+[
+    {
+        "rule": "G(!plate_0_in_hand -> X(!plate_0_place_inside_top_cabinet_62))",
+        "explanation": "Block placing plate_0 unless it is actually in hand."
+    },
+    {
+        "rule": "G(plate_0_inside_top_cabinet_62 -> X(!left_grasp_plate_0))",
+        "explanation": "Don't re-grasp plate_0 once it is already inside the cabinet."
+    },
+    {
+        "rule": "G(!plate_1_in_hand -> X(!plate_1_place_inside_top_cabinet_62))",
+        "explanation": "Block placing plate_1 unless it is in hand."
+    },
+    {
+        "rule": "G(plate_1_inside_top_cabinet_62 -> X(!left_grasp_plate_1))",
+        "explanation": "Prevent re-grasp of plate_1 after successful placement."
+    },
+    {
+        "rule": "G(!plate_2_in_hand -> X(!plate_2_place_inside_top_cabinet_62))",
+        "explanation": "Ensure plate_2 is held before trying to place it inside."
+    },
+    {
+        "rule": "G(plate_2_inside_top_cabinet_62 -> X(!left_grasp_plate_2))",
+        "explanation": "Once plate_2 is inside, block any further grasp attempts."
+    },
+    {
+        "rule": "G(!plate_3_in_hand -> X(!plate_3_place_inside_top_cabinet_62))",
+        "explanation": "Block placing plate_3 unless it is actually in hand."
+    },
+    {
+        "rule": "G(plate_3_inside_top_cabinet_62 -> X(!left_grasp_plate_3))",
+        "explanation": "Don't re-grasp plate_3 once stocked."
+    },
+    {
+        "rule": "G(!plate_4_in_hand -> X(!plate_4_place_inside_top_cabinet_62))",
+        "explanation": "Prevent placing plate_4 when it is not held."
+    },
+    {
+        "rule": "G(plate_4_inside_top_cabinet_62 -> X(!left_grasp_plate_4))",
+        "explanation": "Stop re-grasping plate_4 after it is inside."
+    },
+    {
+        "rule": "G(!plate_5_in_hand -> X(!plate_5_place_inside_top_cabinet_62))",
+        "explanation": "Block place-inside for plate_5 unless held."
+    },
+    {
+        "rule": "G(plate_5_inside_top_cabinet_62 -> X(!left_grasp_plate_5))",
+        "explanation": "Prevent re-grasp of plate_5 once inside."
+    },
+    {
+        "rule": "G(!plate_6_in_hand -> X(!plate_6_place_inside_top_cabinet_62))",
+        "explanation": "Ensure plate_6 is in hand before placement."
+    },
+    {
+        "rule": "G(plate_6_inside_top_cabinet_62 -> X(!left_grasp_plate_6))",
+        "explanation": "Block further grasps of plate_6 after it is stored."
+    },
+    {
+        "rule": "G(!plate_7_in_hand -> X(!plate_7_place_inside_top_cabinet_62))",
+        "explanation": "Don't attempt to place plate_7 unless it is in hand."
+    },
+    {
+        "rule": "G(plate_7_inside_top_cabinet_62 -> X(!left_grasp_plate_7))",
+        "explanation": "Once plate_7 is inside, re-grasp should be blocked."
+    },
+    {
+        "rule": "G(top_cabinet_62_is_open -> X(!open_top_cabinet_62))",
+        "explanation": "Prevent re-opening the cabinet when it\u2019s already open."
+    },
+    {
+        "rule": "G((plate_0_inside_top_cabinet_62 & plate_1_inside_top_cabinet_62 & plate_2_inside_top_cabinet_62 & plate_3_inside_top_cabinet_62 & plate_4_inside_top_cabinet_62 & plate_5_inside_top_cabinet_62 & plate_6_inside_top_cabinet_62 & plate_7_inside_top_cabinet_62) -> X(done))",
+        "explanation": "Once all plates are stocked, the next action must be done."
+    }
+]

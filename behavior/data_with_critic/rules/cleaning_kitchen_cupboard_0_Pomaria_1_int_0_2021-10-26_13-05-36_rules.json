@@ -1,0 +1,38 @@
+[
+    {
+        "rule": "G(!paper_towel_0_in_hand -> X(!clean_top_cabinet_24 & !clean_top_cabinet_25))",
+        "explanation": "Don\u2019t clean any cabinet unless the paper towel is already grasped."
+    },
+    {
+        "rule": "G(!top_cabinet_24_is_open -> X(!clean_top_cabinet_24 & !cup_0_place_inside_top_cabinet_24 & !cup_1_place_inside_top_cabinet_24 & !bowl_0_place_inside_top_cabinet_24 & !bowl_1_place_inside_top_cabinet_24))",
+        "explanation": "Block any clean or place-inside actions for cabinet 24 unless it is open."
+    },
+    {
+        "rule": "G(!top_cabinet_25_is_open -> X(!clean_top_cabinet_25 & !cup_0_place_inside_top_cabinet_25 & !cup_1_place_inside_top_cabinet_25 & !bowl_0_place_inside_top_cabinet_25 & !bowl_1_place_inside_top_cabinet_25))",
+        "explanation": "Block any clean or place-inside actions for cabinet 25 unless it is open."
+    },
+    {
+        "rule": "G(!top_cabinet_24_is_dusty -> X(!clean_top_cabinet_24))",
+        "explanation": "Once cabinet 24 is dust-free, forbid further cleaning attempts."
+    },
+    {
+        "rule": "G(!top_cabinet_25_is_dusty -> X(!clean_top_cabinet_25))",
+        "explanation": "Once cabinet 25 is dust-free, forbid further cleaning attempts."
+    },
+    {
+        "rule": "G(cup_0_inside_top_cabinet_24 -> X(!left_grasp_cup_0 & !right_grasp_cup_0))",
+        "explanation": "Don\u2019t grasp cup_0 if it is already correctly stored in cabinet 24."
+    },
+    {
+        "rule": "G(cup_1_inside_top_cabinet_24 -> X(!left_grasp_cup_1 & !right_grasp_cup_1))",
+        "explanation": "Don\u2019t grasp cup_1 if it is already correctly stored in cabinet 24."
+    },
+    {
+        "rule": "G(bowl_0_inside_top_cabinet_25 -> X(!left_grasp_bowl_0 & !right_grasp_bowl_0))",
+        "explanation": "Don\u2019t grasp bowl_0 if it is already correctly stored in cabinet 25."
+    },
+    {
+        "rule": "G(bowl_1_inside_top_cabinet_25 -> X(!left_grasp_bowl_1 & !right_grasp_bowl_1))",
+        "explanation": "Don\u2019t grasp bowl_1 if it is already correctly stored in cabinet 25."
+    }
+]

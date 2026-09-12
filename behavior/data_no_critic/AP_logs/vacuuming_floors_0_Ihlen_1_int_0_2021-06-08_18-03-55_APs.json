@@ -1,0 +1,84 @@
+[
+  {
+    "timestep": 0,
+    "state_APs": [
+      "vacuum_0_in_bedroom",
+      "vacuum_0_on_floor",
+      "trash_can_0_in_bedroom",
+      "trash_can_0_on_floor",
+      "room_floor_bedroom_0_is_dusty"
+    ],
+    "action_APs": "toggle_on_vacuum_0",
+    "goal": "target environment state:\n['not', 'dusty', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Toggleon vacuum_0 success"
+  },
+  {
+    "timestep": 1,
+    "state_APs": [
+      "vacuum_0_in_bedroom",
+      "vacuum_0_is_toggled_on",
+      "vacuum_0_on_floor",
+      "trash_can_0_in_bedroom",
+      "trash_can_0_on_floor",
+      "room_floor_bedroom_0_is_dusty"
+    ],
+    "action_APs": "clean_room_floor_bedroom_0",
+    "goal": "target environment state:\n['not', 'dusty', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Clean-dust failed, please place object in a toggled on cleaner or get a cleaner first"
+  },
+  {
+    "timestep": 2,
+    "state_APs": [
+      "vacuum_0_in_bedroom",
+      "vacuum_0_is_toggled_on",
+      "vacuum_0_on_floor",
+      "trash_can_0_in_bedroom",
+      "trash_can_0_on_floor",
+      "room_floor_bedroom_0_is_dusty"
+    ],
+    "action_APs": "right_grasp_vacuum_0",
+    "goal": "target environment state:\n['not', 'dusty', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp vacuum_0 with hand successful"
+  },
+  {
+    "timestep": 3,
+    "state_APs": [
+      "vacuum_0_in_hand",
+      "vacuum_0_in_bedroom",
+      "vacuum_0_is_toggled_on",
+      "vacuum_0_next_to_room_floor_bedroom_0",
+      "trash_can_0_in_bedroom",
+      "trash_can_0_on_floor",
+      "room_floor_bedroom_0_is_dusty"
+    ],
+    "action_APs": "clean_room_floor_bedroom_0",
+    "goal": "target environment state:\n['not', 'dusty', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Clean-dust floors success"
+  },
+  {
+    "timestep": 4,
+    "state_APs": [
+      "vacuum_0_in_hand",
+      "vacuum_0_in_None",
+      "vacuum_0_is_toggled_on",
+      "trash_can_0_in_bedroom",
+      "trash_can_0_on_floor"
+    ],
+    "action_APs": "clean_room_floor_bedroom_0",
+    "goal": "target environment state:\n['not', 'dusty', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "timestep": 5,
+    "state_APs": [
+      "vacuum_0_in_hand",
+      "vacuum_0_in_None",
+      "vacuum_0_is_toggled_on",
+      "trash_can_0_in_bedroom",
+      "trash_can_0_on_floor"
+    ],
+    "action_APs": "done",
+    "goal": "target environment state:\n['not', 'dusty', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": ""
+  }
+]

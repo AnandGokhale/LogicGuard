@@ -1,0 +1,3540 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On top of: shelf_16"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "On top of: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To put the rag inside the bucket as required by the goal state, I first need to pick up the rag from the shelf. My left hand is empty, so I will grasp the rag with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "On top of: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The rag is already in my left hand, and the goal state requires it to be inside the bucket. Placing the rag inside the bucket will progress towards the goal."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: rag_0",
+          "On floor: room_floor_garage_0",
+          "Inside: rag_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "On top of: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "soap_0",
+      "thoughts": "To achieve the goal of having the soap inside the bucket, I need to pick up the soap first. Since both my hands are empty, I will use my left hand to grasp the soap."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp soap_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "soap_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: rag_0",
+          "On floor: room_floor_garage_0",
+          "Inside: rag_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The soap needs to be inside the bucket according to the goal state. Since I am holding soap_0 in my left hand and bucket_0 is accessible, I will place the soap inside the bucket to progress towards the goal."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside soap_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Under: rag_0",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The goal requires rag_0 to be inside bucket_0, and it is currently inside bucket_0. However, the car_0 is dusty, and to clean it, I need a cleaning tool. I will grasp rag_0 to prepare for cleaning car_0."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The goal requires rag_0 to be inside bucket_0. Since I am currently holding rag_0 in my left hand and bucket_0 is in the environment, I will place rag_0 inside bucket_0 to satisfy this part of the goal."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Under: rag_0",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "soap_0",
+      "thoughts": "The next goal is to clean the dust off car_0. To do this, I will need to have the rag soaked, which typically involves using soap and water. First, I will grasp the soap_0 so I can later use it with the rag and a water source."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp soap_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "soap_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: rag_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: None"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "Since the goal requires soap_0 to be inside bucket_0 and I am currently holding soap_0 in my left hand, I will place it inside bucket_0 first to satisfy one of the goal conditions."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside soap_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Under: rag_0",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The goal requires rag_0 to be inside bucket_0, and it is currently inside bucket_0, so this goal is already satisfied. The remaining unsatisfied goal is that car_0 should not be dusty. To clean the car, I will need to have a cleaning tool such as rag_0, and ideally it should be soaked. First, I will grasp rag_0 so I can soak it or use it for cleaning."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The goal state requires rag_0 to be inside bucket_0. Since I am currently holding rag_0 in my left hand and bucket_0 is accessible, I will place rag_0 inside bucket_0 to satisfy this goal condition."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Under: rag_0",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To clean the dusty car_0, I need to first pick up the rag_0. The rag is currently inside the bucket and not soaked, but I will need it in hand to proceed with soaking or cleaning."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "To achieve the goal state, the rag_0 needs to be inside bucket_0. Since I am already holding rag_0 in my left hand, I will place it inside bucket_0 as the next step."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0",
+          "On top of: soap_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Under: rag_0",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To clean the dusty car_0, I need to first grasp the rag_0 so I can soak it and use it for cleaning."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The goal state requires rag_0 to be inside bucket_0. Since I am already holding rag_0 in my left hand, I should place it inside bucket_0 to progress towards the goal."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0",
+          "Inside: rag_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Under: rag_0",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag_0 needs to be cleaned before it can be used to clean the dusty car_0. First, I need to grasp rag_0 so I can transport it to a water source for soaking."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The goal state requires rag_0 to be inside bucket_0. Since I am already holding rag_0 in my left hand and bucket_0 is accessible, I will place rag_0 inside bucket_0 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Next to: soap_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Under: rag_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag_0 needs to be inside bucket_0 and will be needed to clean the dusty car_0. First, I need to pick up rag_0 with my left hand so I can use it in subsequent actions."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The rag_0 is in my left hand and needs to be inside bucket_0 according to the goal state. Placing it inside the bucket will fulfill one of the goal conditions and prepare it for soaking or cleaning."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0",
+          "On top of: soap_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0",
+          "Inside: rag_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Under: rag_0",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag_0 needs to be soaked to clean the dusty car, and I will need to hold it first. Grasping rag_0 with my left hand is the first step."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "To soak the rag, I need to place rag_0 inside bucket_0. This also satisfies the goal condition of having rag_0 inside bucket_0."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0",
+          "On top of: soap_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0",
+          "Inside: rag_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Under: rag_0",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag_0 needs to be soaked to clean the car, but first I need to pick it up so I can carry it to a water source."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "To achieve the goal state, both rag_0 and soap_0 need to be inside bucket_0. Since I am already holding rag_0 in my left hand and bucket_0 is accessible, I will place rag_0 inside bucket_0 as the next step."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Under: rag_0",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To clean the dusty car, I need a cleaning tool. I will first pick up rag_0 with my left hand so I can use it to clean car_0."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The goal requires rag_0 to be inside bucket_0. Since I am already holding rag_0 in my left hand, I will place it inside bucket_0 to progress towards the goal state."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0",
+          "On top of: soap_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Under: rag_0",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To clean the car and achieve the goal of making it not dusty, I need the rag. First, I will grasp rag_0 with my left hand to prepare for cleaning."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The goal specifies that rag_0 should be inside bucket_0. Since I am holding rag_0 in my left hand and bucket_0 is accessible, I will place rag_0 inside bucket_0 to progress towards the goal."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Under: rag_0",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag_0 needs to be used to clean the dusty car_0. First, I need to pick up rag_0 so I can proceed to soak it or use it for cleaning."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The rag_0 needs to be inside the bucket_0 according to the goal state. Since I am already holding rag_0 with my left hand, I will place it inside bucket_0 to move towards the target state."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Under: rag_0",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag_0 needs to be used to clean the dusty car_0. First, I need to pick up rag_0 so I can proceed to soak it and use it for cleaning."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The rag_0 needs to be inside the bucket_0 according to the goal state. Since I am already holding rag_0 in my left hand and bucket_0 is accessible, I will place rag_0 inside bucket_0 as the next step."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Under: rag_0",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To clean the dust from car_0, I need a cleaning tool. I will grasp rag_0 with my left hand to prepare for cleaning."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The goal state requires rag_0 to be inside bucket_0. Since I am already holding rag_0 in my left hand, I will place it inside bucket_0 to progress towards the goal."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Under: rag_0",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag_0 needs to be used as a cleaning tool to clean the dusty car_0. Since both rag_0 and soap_0 are already inside bucket_0, and the car_0 is still dusty, I need to grasp rag_0 first so I can use it to clean the car_0."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "car_0",
+      "thoughts": "I am holding rag_0 in my left hand, which is a cleaning tool. The car_0 is dusty and needs to be cleaned to achieve the goal state. Therefore, I will use the rag_0 to clean car_0."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Clean-dust car_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: car_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The goal state requires rag_0 to be inside bucket_0. Since I am already holding rag_0 in my left hand and bucket_0 is accessible, I will place rag_0 inside bucket_0 to progress towards the goal."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0",
+          "Inside: rag_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag_0 needs to be soaked to clean the car_0. First, I need to grasp rag_0 so that I can move it to the sink to soak it, as it is currently inside bucket_0."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "The goal requires rag_0 to be inside bucket_0 along with soap_0. Since I am already holding rag_0, I should place it inside bucket_0 to satisfy that part of the goal."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Under: rag_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To place rag_0 inside bucket_0 as required by the goal, I first need to pick up rag_0 since both of my hands are currently empty."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "I am currently holding rag_0 in my left hand, and the goal is to have rag_0 inside bucket_0. Therefore, I will place rag_0 inside bucket_0."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bucket_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: rag_0",
+          "Next to: rag_0",
+          "Next to: soap_0",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "car_0",
+        "category": "car",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: garage",
+          "Under: rag_0",
+          "Next to: rag_0",
+          "Next to: bucket_0",
+          "On floor: room_floor_garage_0",
+          "Inside: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "soap_0",
+      "thoughts": "The goal requires soap_0 to be inside bucket_0. Since the robot is not holding anything, I will grasp soap_0 with my left hand to prepare for placing it inside bucket_0."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'car_0']\n['inside', 'soap_0', 'bucket_0']\n['inside', 'rag_0', 'bucket_0']\n\n\n",
+    "feedback": "Grasp soap_0 with left_hand successful"
+  }
+]

@@ -1,0 +1,3054 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: scrub_brush_51",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_51",
+      "thoughts": "The goal requires scrub_brush_51 to be on top of shelf_16, but currently it is on the floor. The first step is to pick up scrub_brush_51 with my left hand so I can place it on the shelf."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp scrub_brush_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "shelf_16",
+      "thoughts": "I am already holding scrub_brush_51 in my left hand, and the goal requires it to be on top of shelf_16, so I will place it there now."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place ontop scrub_brush_51 shelf_16 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: shelf_16"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "The goal requires pool_50 to be not stained. There is a clean scrub_brush_51 available, but it is currently on top of shelf_16. First, I need to grasp scrub_brush_51 so I can use it to clean pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted\nClean-stain failed, please place object in a toggled on cleaner or get a soaked cleaner first"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: shelf_16"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "scrub_brush_51",
+      "thoughts": "I need to use the scrub brush to clean the stained pool. First, I will grasp scrub_brush_51 so I can proceed to soak it and then clean pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp scrub_brush_51 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "scrub_brush_51"
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_ONTOP",
+      "object": "shelf_16",
+      "thoughts": "One of the goals is for scrub_brush_51 to be on top of shelf_16. Since I am already holding scrub_brush_51 in my right hand, I will place it on top of shelf_16 to achieve that part of the goal state."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place ontop scrub_brush_51 shelf_16 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: shelf_16"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "scrub_brush_51",
+      "thoughts": "To clean the stained pool_50, I need to use a cleaning tool. I will grasp scrub_brush_51 to prepare for cleaning pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp scrub_brush_51 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "scrub_brush_51"
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "The pool_50 is stained, and the goal state requires it to be not stained. I am already holding a clean scrub_brush_51 in my right hand, which is a cleaning tool, so I can attempt to clean pool_50 now."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted\nClean-stain failed, please place object in a toggled on cleaner or get a soaked cleaner first"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "scrub_brush_51"
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_32",
+      "thoughts": "To clean the stained pool_50, I need a soaked cleaning tool. The scrub_brush_51 is not soaked, so I will first toggle on the sink_32 to prepare to soak the brush."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Toggleon sink_32 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "scrub_brush_51"
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "scrub_brush_51",
+      "thoughts": "The scrub_brush_51 is not soaked, but it is already held in my right hand and the sink_32 is toggled on. I will soak the brush to prepare it for cleaning the stained pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "scrub_brush_51"
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "The scrub_brush_51 needs to be placed inside the toggled on sink_32 before I can soak it. This action will allow me to soak the brush in the next step."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside scrub_brush_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_51",
+          "Inside: scrub_brush_51"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_51",
+      "thoughts": "To make progress towards placing the scrub_brush_51 on top of shelf_16, I need to first pick it up. The brush is currently inside the sink, so I will grasp it with my left hand."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp scrub_brush_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "shelf_16",
+      "thoughts": "I am currently holding scrub_brush_51 in my left hand, and the goal is to have it on top of shelf_16. Placing it on top of the shelf will satisfy this goal condition."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place ontop scrub_brush_51 shelf_16 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: shelf_16"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "detergent_52",
+      "thoughts": "To clean the stained pool_50, I will need both a cleaning tool (scrub_brush_51) and detergent. The detergent is currently on the floor and not in my hand, so I will grasp detergent_52 with my left hand to prepare for the cleaning task."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp detergent_52 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "detergent_52",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: shelf_16"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_RELEASE",
+      "object": "detergent_52",
+      "thoughts": "The detergent_52 is currently in my left hand, but the goal state requires it to be on the floor of the garage. I will release it to achieve this part of the goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Release detergent_52 from left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: shelf_16"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_51",
+      "thoughts": "To clean the stained pool_50, I need a cleaning tool. The scrub_brush_51 is on top of the shelf_16 and is clean, but not soaked. I will grasp the scrub_brush_51 so I can proceed to soak it and then clean the pool."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp scrub_brush_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "shelf_16",
+      "thoughts": "One of the goal conditions is for the scrub_brush_51 to be on top of shelf_16. Since I am already holding scrub_brush_51 in my left hand, I will place it on top of shelf_16 to satisfy this part of the goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place ontop scrub_brush_51 shelf_16 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: shelf_16"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "detergent_52",
+      "thoughts": "The detergent_52 needs to be on the garage floor according to the goal state, but currently it is in the living room. I need to pick it up first so I can move it to the garage."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp detergent_52 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "detergent_52",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: shelf_16"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_garage_0",
+      "thoughts": "The goal state requires detergent_52 to be on the garage floor. Since I am already holding detergent_52 in my left hand, I will place it on top of room_floor_garage_0 to achieve this part of the goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place ontop detergent_52 room_floor_garage_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: shelf_16"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_51",
+      "thoughts": "To clean the stained pool_50, I will need the scrub_brush_51, which is a cleaning tool and currently on top of shelf_16. Grasping it is the next logical step."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp scrub_brush_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "The pool_50 needs to be cleaned to achieve the target state. I am holding the scrub_brush_51, which is a cleaning tool, so I can attempt to clean the pool_50 now."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted\nClean-stain failed, please place object in a toggled on cleaner or get a soaked cleaner first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "scrub_brush_51",
+      "thoughts": "The scrub_brush_51 is not soaked, and the previous feedback indicates I need a soaked cleaner to clean the pool_50. I will soak the scrub_brush_51 in the toggled on sink_32 before attempting to clean."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "To soak the scrub_brush_51, I need to place it inside the toggled on sink_32 first."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside scrub_brush_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_51",
+          "Inside: scrub_brush_51"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_51",
+      "thoughts": "To place scrub_brush_51 on top of shelf_16 as required by the goal, I first need to pick it up. My left hand is empty, so I will grasp scrub_brush_51 with my left hand."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp scrub_brush_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "shelf_16",
+      "thoughts": "The goal requires scrub_brush_51 to be on top of shelf_16. Since I am already holding scrub_brush_51 in my left hand, I will place it on top of shelf_16 to satisfy this part of the goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place ontop scrub_brush_51 shelf_16 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: shelf_16"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_51",
+      "thoughts": "To clean the stained pool_50, I need to use the scrub_brush_51. First, I will pick up the scrub_brush_51 from the shelf_16."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp scrub_brush_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "The pool_50 is stained and needs to be cleaned using the scrub_brush_51, which I am already holding in my left hand. Cleaning the pool is the next step towards achieving the goal state."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted\nClean-stain failed, please place object in a toggled on cleaner or get a soaked cleaner first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "scrub_brush_51",
+      "thoughts": "The scrub_brush_51 needs to be soaked before it can be used to clean the stained pool_50. Since I am already holding the scrub_brush_51 and there is a toggled on sink available, soaking the brush is the next logical step."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "To soak the scrub_brush_51, I need to place it inside the toggled on sink_32 first. This prepares the brush for cleaning the stained pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside scrub_brush_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_51",
+          "Inside: scrub_brush_51"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_51",
+      "thoughts": "I need to grasp the scrub_brush_51 with my left hand so that I can place it inside the sink_32 to soak it, which is necessary for cleaning the stained pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp scrub_brush_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "shelf_16",
+      "thoughts": "One of the goal conditions is for scrub_brush_51 to be on top of shelf_16. Since I am already holding scrub_brush_51 in my left hand, I should place it on top of the shelf to satisfy this goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place ontop scrub_brush_51 shelf_16 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: shelf_16"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_51",
+      "thoughts": "To clean the stained pool_50, I need to have the scrub_brush_51 in hand. Since both my hands are empty and the brush is on the shelf, I will grasp it with my left hand as the next step."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp scrub_brush_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "The pool_50 is stained and needs to be cleaned to achieve the goal state. I am already holding the scrub_brush_51, which is a cleaning tool, so I can attempt to clean the pool_50 now."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted\nClean-stain failed, please place object in a toggled on cleaner or get a soaked cleaner first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "scrub_brush_51",
+      "thoughts": "The scrub brush is not soaked yet, and the feedback indicates I need a soaked cleaner to clean the pool. Since I am holding the scrub brush, I should soak it in the toggled on sink before attempting to clean."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "The scrub brush must be placed inside the toggled on sink in order to soak it. I am holding the scrub brush in my left hand, so I will place it inside sink_32."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside scrub_brush_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_51",
+          "Inside: scrub_brush_51"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_51",
+      "thoughts": "To clean the stained pool_50, I will need the scrub brush. First, I need to pick up scrub_brush_51 with my left hand."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp scrub_brush_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "The pool_50 is stained and needs to be cleaned to match the target state. I am already holding the scrub_brush_51 in my left hand, which is a cleaning tool, so I can attempt to clean the pool_50 now."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted\nClean-stain failed, please place object in a toggled on cleaner or get a soaked cleaner first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "scrub_brush_51",
+      "thoughts": "The scrub_brush_51 is not soaked, but I need a soaked cleaning tool to clean the stained pool_50. The sink_32 is toggled on and can be used to soak the brush, so I should soak the scrub_brush_51 first."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_32",
+      "thoughts": "To soak the scrub_brush_51, I need to place it inside the toggled on sink_32 first, as the previous feedback indicated this step is required before soaking."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside scrub_brush_51 sink_32 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_32"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_51",
+          "Inside: scrub_brush_51"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_51",
+      "thoughts": "To soak the scrub_brush_51 in the sink, I need to first pick it up with my left hand since both hands are free."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp scrub_brush_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_32",
+        "category": "sink",
+        "State description ": [
+          "Location: storage_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "detergent_52",
+        "category": "detergent",
+        "State description ": [
+          "Location: garage",
+          "Frozen status: Not frozen",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: detergent_52",
+          "On floor: room_floor_garage_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "shelf_16",
+      "thoughts": "The target state requires scrub_brush_51 to be on top of shelf_16. Since I am already holding scrub_brush_51 in my left hand, I should place it on top of shelf_16 next."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n['ontop', 'scrub_brush_51', 'shelf_16']\n['onfloor', 'detergent_52', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place ontop scrub_brush_51 shelf_16 successful"
+  }
+]

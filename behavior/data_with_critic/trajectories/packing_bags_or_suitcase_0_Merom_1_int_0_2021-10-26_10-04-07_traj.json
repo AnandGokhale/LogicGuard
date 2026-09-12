@@ -1,0 +1,3363 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: underwear_102",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: toothbrush_98",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "backpack_97",
+      "thoughts": "To put objects inside the backpack, I need to first open it. I will grasp the backpack so I can open it next."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp backpack_97 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "backpack_97",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: underwear_102",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: toothbrush_98",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "backpack_97",
+      "thoughts": "The backpack must be open before I can place any objects inside it. Since I am already holding the backpack, I will open it next."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "No openable joint metadata found for object backpack_97\nNo openable joint metadata found for object backpack_97\nOpen backpack_97 failed"
+  },
+  {
+    "robot_state": {
+      "left_hand": "backpack_97",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: underwear_102",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: toothbrush_98",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_7",
+      "thoughts": "Since I cannot open the backpack (there is no openable joint), I should place the backpack down to free my hand so I can start picking up other objects to eventually gather them together."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place ontop backpack_97 bed_7 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: backpack_97",
+          "Next to: underwear_102",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: toothbrush_98",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "underwear_101",
+      "thoughts": "The goal is to put all underwear and several other items inside backpack_97. Since my hands are empty, I will start by grasping underwear_101 so I can later place it inside the backpack."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp underwear_101 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "underwear_101",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: backpack_97",
+          "Next to: underwear_102",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: toothbrush_98",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "backpack_97",
+      "thoughts": "The backpack needs to be open before I can place underwear_101 (and other items) inside it. My right hand is empty, so I can open backpack_97 now."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "backpack_97 is already opened"
+  },
+  {
+    "robot_state": {
+      "left_hand": "underwear_101",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: backpack_97",
+          "Next to: underwear_102",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "backpack_97",
+      "thoughts": "The backpack is now open and I am holding underwear_101 in my left hand. The goal is to put all underwear items inside the backpack, so I will place underwear_101 inside backpack_97."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside underwear_101 backpack_97 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: backpack_97",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_7",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: bed_7",
+          "Next to: underwear_101",
+          "Next to: toothbrush_98",
+          "Inside: underwear_101"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_7",
+          "Next to: backpack_97"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "underwear_102",
+      "thoughts": "I need to put all underwear items into the backpack. Since my hands are empty now, I will grasp underwear_102 so I can place it inside backpack_97 next."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp underwear_102 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "underwear_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: underwear_101",
+          "Under: backpack_97",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: hardback_100"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_7",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: shampoo_99"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: bed_7",
+          "Next to: underwear_101"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "backpack_97",
+      "thoughts": "The backpack is currently closed. I need to open it before I can place underwear_102 inside."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "backpack_97 is already opened"
+  },
+  {
+    "robot_state": {
+      "left_hand": "underwear_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: hardback_100"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_7",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: shampoo_99"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: underwear_101"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "backpack_97",
+      "thoughts": "The backpack is now open and I am already holding underwear_102 in my left hand. I should place the underwear inside the backpack to satisfy part of the goal state."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside underwear_102 backpack_97 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: hardback_100"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: underwear_101",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: underwear_102",
+          "Next to: underwear_102",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: shampoo_99"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On top of: toothbrush_98",
+          "Next to: underwear_102",
+          "Next to: underwear_101"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "toothbrush_98",
+      "thoughts": "To make progress towards the goal of putting all required items inside the backpack, I will grasp the toothbrush_98 with my right hand, since it is currently outside the backpack and my right hand is free."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp toothbrush_98 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "toothbrush_98"
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hardback_100",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: hardback_100"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: underwear_101",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: underwear_102",
+          "Next to: underwear_102",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_7",
+          "Next to: shampoo_99"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: underwear_102",
+          "Next to: underwear_101"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "backpack_97",
+      "thoughts": "The backpack is currently closed, so before I can place anything inside it, I need to open it. This will allow me to put the toothbrush and other required items inside."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "backpack_97 is already opened"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "toothbrush_98"
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: shampoo_99",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7",
+          "Next to: hardback_100"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: underwear_101",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: underwear_102",
+          "Next to: underwear_102",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: shampoo_99"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: underwear_102",
+          "Next to: underwear_101"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_INSIDE",
+      "object": "backpack_97",
+      "thoughts": "Now that the backpack is open and I am holding the toothbrush in my right hand, I should place the toothbrush inside the backpack to satisfy part of the goal state."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside toothbrush_98 backpack_97 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: underwear_101",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: underwear_102",
+          "Next to: underwear_102",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothbrush_98"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: underwear_102",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "shampoo_99",
+      "thoughts": "To achieve the goal, I need to put shampoo_99 inside backpack_97. Since both my hands are now empty after placing the toothbrush, I will grasp shampoo_99 with my left hand as the next step."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp shampoo_99 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "shampoo_99",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: shampoo_99",
+          "Next to: hardback_100"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: underwear_101",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: underwear_102",
+          "Next to: underwear_102",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothbrush_98"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "backpack_97",
+      "thoughts": "To put shampoo_99 inside backpack_97, the backpack must be open. Currently, backpack_97 is closed, so the next step is to open it."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "backpack_97 is already opened"
+  },
+  {
+    "robot_state": {
+      "left_hand": "shampoo_99",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: underwear_101",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: underwear_102",
+          "Next to: underwear_102",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothbrush_98"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: underwear_101",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "backpack_97",
+      "thoughts": "Now that backpack_97 is open and I am holding shampoo_99 in my left hand, I should place shampoo_99 inside backpack_97 to satisfy one of the goal conditions."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside shampoo_99 backpack_97 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Under: toothbrush_98",
+          "Next to: underwear_102",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: shampoo_99",
+          "Next to: underwear_101",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: underwear_102",
+          "Next to: underwear_102",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_7",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: underwear_102",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothbrush_98",
+          "Inside: underwear_101"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: underwear_102",
+          "Next to: shampoo_99",
+          "Next to: underwear_101",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hardback_100",
+      "thoughts": "To satisfy the goal of having hardback_100 inside backpack_97, I should first grasp hardback_100 so that I can place it inside backpack_97."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp hardback_100 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hardback_100",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: toothpaste_103",
+          "Next to: toothbrush_98",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7",
+          "Next to: underwear_101",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_7",
+          "Next to: underwear_101",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Under: underwear_101",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothbrush_98"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: underwear_101",
+          "Next to: bed_7",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "backpack_97",
+      "thoughts": "To place hardback_100 inside backpack_97, I need to open the backpack first since it is currently closed."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "backpack_97 is already opened"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hardback_100",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7",
+          "Next to: underwear_101",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_7",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Next to: bed_7",
+          "Next to: shampoo_99",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Under: underwear_101",
+          "Next to: bed_7",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothbrush_98"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_7",
+          "Next to: shampoo_99",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "backpack_97",
+      "thoughts": "The backpack is now open and I am holding hardback_100 in my left hand, so I can place it inside the backpack to satisfy one of the goal conditions."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside hardback_100 backpack_97 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7",
+          "Next to: underwear_101",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "On top of: hardback_100",
+          "Next to: bed_7",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Next to: bed_7",
+          "Next to: shampoo_99",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Under: underwear_101",
+          "Next to: bed_7",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Under: underwear_101",
+          "Next to: bed_7",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: hardback_100",
+          "Next to: toothbrush_98"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "toothpaste_103",
+      "thoughts": "To make progress towards the goal, I need to put toothpaste_103 inside backpack_97. Since my left hand is now empty after placing hardback_100, I will grasp toothpaste_103 next."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp toothpaste_103 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "toothpaste_103",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7",
+          "Next to: underwear_101",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "On top of: hardback_100",
+          "Next to: bed_7",
+          "Next to: underwear_101",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Next to: bed_7",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Under: underwear_101",
+          "Next to: bed_7",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Under: underwear_101",
+          "Next to: bed_7",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: hardback_100",
+          "Next to: toothbrush_98"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_7",
+          "Next to: underwear_102",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "backpack_97",
+      "thoughts": "I am holding toothpaste_103 in my left hand and need to place it inside backpack_97 to satisfy the goal state. The backpack is currently closed, so this action may not succeed, but I will attempt it to see if it is allowed."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside toothpaste_103 backpack_97 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "On top of: hardback_100",
+          "Next to: underwear_101",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Next to: bed_7",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: toothpaste_103",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Under: underwear_101",
+          "Next to: bed_7",
+          "Next to: shampoo_99",
+          "Next to: underwear_101",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Under: underwear_101",
+          "Under: toothpaste_103",
+          "Next to: bed_7",
+          "Next to: toothpaste_103",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Under: underwear_101",
+          "Under: toothpaste_103",
+          "Next to: bed_7",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: toothbrush_98"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "backpack_97",
+      "thoughts": "The backpack is currently closed, but to place objects inside it as required by the goal state, I need to open it first."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "backpack_97 is already opened"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bed_7",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "On top of: hardback_100",
+          "Next to: bed_7",
+          "Next to: underwear_101",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Next to: bed_7",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Under: underwear_101",
+          "Next to: bed_7",
+          "Next to: shampoo_99",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Under: underwear_101",
+          "Under: toothpaste_103",
+          "Next to: bed_7",
+          "Next to: toothpaste_103",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Under: underwear_101",
+          "Under: toothpaste_103",
+          "Next to: bed_7",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: toothbrush_98"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_7",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "backpack_97",
+      "thoughts": "Now that the backpack is open, I need to place it on the bed or on the floor as required by the goal state. To do that, I need to grasp the backpack first."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Teleport underwear_101 INSIDE backpack_97 successful: True\nTeleport underwear_102 INSIDE backpack_97 successful: True\nTeleport toothbrush_98 INSIDE backpack_97 successful: True\nTeleport shampoo_99 INSIDE backpack_97 successful: True\nTeleport hardback_100 INSIDE backpack_97 successful: True\nTeleport toothpaste_103 INSIDE backpack_97 successful: True\nGrasp backpack_97 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "backpack_97",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Under: toothbrush_98",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: shampoo_99",
+          "Next to: shampoo_99",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: underwear_101",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: shampoo_99",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: underwear_102",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Under: shampoo_99",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: underwear_102",
+          "Inside: underwear_101",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Under: underwear_101",
+          "Under: toothpaste_103",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: shampoo_99",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: toothbrush_98",
+          "Inside: underwear_102",
+          "Inside: underwear_101"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: underwear_102",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Inside: underwear_102",
+          "Inside: underwear_101",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_7",
+      "thoughts": "The goal state allows the backpack to be either on the bed or on the floor. Since I am already holding the backpack and the bed is available, I will place the backpack on top of the bed to satisfy the goal condition."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Teleport underwear_101 INSIDE backpack_97 successful: True\nTeleport underwear_102 INSIDE backpack_97 successful: True\nTeleport toothbrush_98 INSIDE backpack_97 successful: True\nTeleport shampoo_99 INSIDE backpack_97 successful: True\nTeleport hardback_100 INSIDE backpack_97 successful: True\nTeleport toothpaste_103 INSIDE backpack_97 successful: True\nPlace ontop backpack_97 bed_7 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: hardback_100",
+          "Under: backpack_97",
+          "Next to: toothbrush_98",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_99",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Under: underwear_102",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: underwear_101",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_102",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: shampoo_99",
+          "Next to: shampoo_99",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: underwear_101",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "underwear_101",
+        "category": "underwear",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: shampoo_99",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: underwear_102",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "toothpaste_103",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Under: shampoo_99",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: underwear_102",
+          "Inside: underwear_101",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "hardback_100",
+        "category": "hardback",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Under: underwear_101",
+          "Under: toothpaste_103",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: backpack_97",
+          "Next to: toothbrush_98",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "backpack_97",
+        "category": "backpack",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: shampoo_99",
+          "Under: underwear_102",
+          "Under: underwear_101",
+          "Under: toothpaste_103",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: toothbrush_98"
+        ]
+      },
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "toothbrush_98",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: underwear_102",
+          "Next to: bed_7",
+          "Next to: shampoo_99",
+          "Next to: underwear_102",
+          "Next to: underwear_101",
+          "Next to: toothpaste_103",
+          "Next to: hardback_100",
+          "Next to: backpack_97",
+          "Inside: underwear_102",
+          "Inside: underwear_101",
+          "Inside: backpack_97"
+        ]
+      },
+      {
+        "name": "window_79",
+        "category": "window",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "All goal conditions are satisfied: all underwear, toothbrush, shampoo, hardback, and toothpaste are inside backpack_97, and backpack_97 is on top of bed_7, which is an allowed location. No further actions are needed."
+    },
+    "goal": "target environment state:\n['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack_97']\n['inside', 'toothbrush_98', 'backpack_97']\n['inside', 'shampoo_99', 'backpack_97']\n['inside', 'hardback_100', 'backpack_97']\n['inside', 'toothpaste_103', 'backpack_97']\n['or', 'ontop', 'backpack_97', 'bed_7', 'onfloor', 'backpack_97', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": ""
+  }
+]

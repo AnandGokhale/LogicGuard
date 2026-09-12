@@ -1,0 +1,70 @@
+[
+    {
+        "rule": "G((dustpan_0_next_to_fridge_57 | fridge_57_next_to_dustpan_0) -> X(!left_grasp_dustpan_0))",
+        "explanation": "Once the dustpan is next to the fridge, do not grasp it again."
+    },
+    {
+        "rule": "G(!dustpan_0_in_hand -> X(!dustpan_0_place_nextto_fridge_57))",
+        "explanation": "Only place the dustpan next to the fridge if it is currently held."
+    },
+    {
+        "rule": "G((bucket_0_next_to_countertop_56 | countertop_56_next_to_bucket_0) -> X(!left_grasp_bucket_0))",
+        "explanation": "Once the bucket is next to the countertop, do not grasp it again."
+    },
+    {
+        "rule": "G(!bucket_0_in_hand -> X(!bucket_0_place_nextto_countertop_56))",
+        "explanation": "Only place the bucket next to the countertop if it is currently held."
+    },
+    {
+        "rule": "G((scraper_0_on_top_of_fridge_57 | fridge_57_is_under_scraper_0) -> X(!left_grasp_scraper_0))",
+        "explanation": "Once the scraper is on top of the fridge, do not grasp it again."
+    },
+    {
+        "rule": "G(!scraper_0_in_hand -> X(!scraper_0_place_ontop_fridge_57))",
+        "explanation": "Only place the scraper on the fridge if it is currently held."
+    },
+    {
+        "rule": "G(!paper_towel_0_in_kitchen -> X(!paper_towel_0_place_ontop_countertop_56))",
+        "explanation": "Only place the paper towel on the countertop if it is in the kitchen (i.e., available)."
+    },
+    {
+        "rule": "G((rag_0_inside_sink_64) -> X(!rag_0_place_inside_sink_64))",
+        "explanation": "Once the rag is inside the sink, do not place it there again."
+    },
+    {
+        "rule": "G(!rag_0_in_hand -> X(!rag_0_place_inside_sink_64))",
+        "explanation": "Only place the rag inside the sink if the robot is holding it."
+    },
+    {
+        "rule": "G((rag_0_is_soaked) -> X(!soak_rag_0))",
+        "explanation": "Once the rag is soaked, do not soak it again."
+    },
+    {
+        "rule": "G(!sink_64_is_toggled_on -> X(!soak_rag_0))",
+        "explanation": "Only soak the rag if the sink is currently toggled on."
+    },
+    {
+        "rule": "G((pomelo_0_inside_bucket_0) -> X(!left_grasp_bucket_0))",
+        "explanation": "After the pomelo is in the bucket, do not grasp the bucket just for that fruit again."
+    },
+    {
+        "rule": "G((pomelo_0_inside_bucket_0) -> X(!bucket_0_place_nextto_countertop_56))",
+        "explanation": "Once the pomelo is in the bucket, no need to reposition the bucket for that purpose."
+    },
+    {
+        "rule": "G((pear_0_inside_bucket_0) -> X(!left_grasp_bucket_0))",
+        "explanation": "After the pear is in the bucket, do not grasp the bucket again for that fruit."
+    },
+    {
+        "rule": "G((pear_0_inside_bucket_0) -> X(!bucket_0_place_nextto_countertop_56))",
+        "explanation": "Once the pear is in the bucket, avoid repositioning the bucket again for that fruit."
+    },
+    {
+        "rule": "G((pea_0_inside_bucket_0) -> X(!left_grasp_bucket_0))",
+        "explanation": "After the pea is in the bucket, do not grasp the bucket again for that fruit."
+    },
+    {
+        "rule": "G((pea_0_inside_bucket_0) -> X(!bucket_0_place_nextto_countertop_56))",
+        "explanation": "Once the pea is in the bucket, avoid repositioning the bucket again for that fruit."
+    }
+]

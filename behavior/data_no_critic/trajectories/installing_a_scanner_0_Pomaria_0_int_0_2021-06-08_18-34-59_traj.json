@@ -1,0 +1,90 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scanner_0",
+        "category": "scanner",
+        "State description ": [
+          "Location: home_office",
+          "Toggled on? : False",
+          "Dust status: Clean",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "breakfast_table_3",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: scanner_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "scanner_0",
+      "thoughts": "The goal state requires the scanner to be toggled on, and it is currently toggled off. The scanner is already on top of the breakfast table as required, so toggling it on is the next logical step."
+    },
+    "goal": "target environment state:\n['toggled_on', 'scanner_0']\n['under', 'scanner_0', 'breakfast_table_3']\n\n\n",
+    "feedback": "Toggleon scanner_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scanner_0",
+        "category": "scanner",
+        "State description ": [
+          "Location: home_office",
+          "Toggled on? : True",
+          "Dust status: Clean",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "breakfast_table_3",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: scanner_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "The scanner is already toggled on and on top of the breakfast table, which matches the goal state. No further actions are required."
+    },
+    "goal": "target environment state:\n['toggled_on', 'scanner_0']\n['under', 'scanner_0', 'breakfast_table_3']\n\n\n",
+    "feedback": ""
+  }
+]

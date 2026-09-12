@@ -1,0 +1,4550 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_144",
+          "Next to: newspaper_150",
+          "Next to: newspaper_149",
+          "On top of: envelope_145",
+          "On top of: newspaper_149"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "Under: sofa_39",
+          "On floor: room_floor_living_room_0",
+          "Next to: newspaper_150"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: sofa_39",
+          "Next to: newspaper_150"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: sofa_39",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "On top of: envelope_145",
+          "On top of: envelope_144"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: sofa_39"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_146",
+      "thoughts": "To achieve the goal, all envelopes must be next to each other (envelope_143, envelope_144, envelope_145, envelope_146). Envelope_146 is currently not next to the others, so I will pick it up to move it next to the group."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_146 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_146",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: newspaper_150",
+          "Next to: newspaper_149",
+          "On top of: envelope_145",
+          "On top of: newspaper_149"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "Under: sofa_39",
+          "On floor: room_floor_living_room_0",
+          "Next to: sofa_39",
+          "Next to: newspaper_150"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: sofa_39",
+          "Next to: newspaper_150"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: sofa_39",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "On top of: envelope_145",
+          "On top of: envelope_144"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: sofa_39"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_143",
+      "thoughts": "Envelope_146 is in my left hand and needs to be placed next to the group of envelopes (envelope_143, envelope_144, envelope_145) to satisfy the goal state. Placing it next to envelope_143 will help achieve this."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_146 envelope_143 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: newspaper_150",
+          "Next to: newspaper_149",
+          "On top of: envelope_145",
+          "On top of: newspaper_149"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "Under: sofa_39",
+          "On floor: room_floor_living_room_0",
+          "Next to: sofa_39",
+          "Next to: newspaper_150"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: sofa_39",
+          "Next to: newspaper_150"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: sofa_39",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "On top of: envelope_145",
+          "On top of: envelope_144"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: sofa_39"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_144",
+      "thoughts": "To satisfy the goal that all envelopes are next to each other, I should grasp envelope_144 so I can place it next to the other envelopes, forming the required cluster."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_144 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_144",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: newspaper_150"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: newspaper_150"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: sofa_39",
+          "Next to: envelope_145",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_143",
+      "thoughts": "To satisfy the goal that all envelopes are next to each other, I will place envelope_144 (currently in my left hand) next to envelope_143, which is already part of the envelope group."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_144 envelope_143 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: newspaper_150"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "Inside: envelope_146",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_143",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_144",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "Under: envelope_144",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "On top of: envelope_143"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_145",
+      "thoughts": "To group all envelopes next to each other, I will pick up envelope_145 so I can place it next to the other envelopes."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Remove sofa_39 ONTOP envelope_145 because it's too big\nRemove newspaper_150 ONTOP envelope_145 because it's too big\nGrasp envelope_145 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_145",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "Inside: envelope_146",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_143",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_144",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "Under: envelope_144",
+          "Inside: envelope_144",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "On top of: envelope_143"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_143",
+      "thoughts": "I am holding envelope_145 in my left hand and the goal is for all envelopes to be next to each other. Placing envelope_145 next to envelope_143 will help achieve this grouping."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_145 envelope_143 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "Under: envelope_144",
+          "Under: envelope_146",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "On top of: envelope_143"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "Under: envelope_146",
+          "Inside: envelope_146",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_143"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "On top of: envelope_145",
+          "On top of: envelope_144"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_144",
+      "thoughts": "To ensure all envelopes are next to each other, I will grasp envelope_144 so I can place it next to the other envelopes if needed."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_144 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_144",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: envelope_144"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "Under: envelope_146",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "Next to: sofa_39"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_146",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_143",
+          "On top of: envelope_145",
+          "On top of: envelope_143"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_143",
+      "thoughts": "The goal is for all envelopes to be next to each other. Envelope_143 is already next to envelope_145 and envelope_146. Placing envelope_144 next to envelope_143 will help group the envelopes together, making progress towards the goal state."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_144 envelope_143 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "Under: envelope_146",
+          "Inside: envelope_144",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_144",
+          "On top of: envelope_143"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "Under: envelope_145",
+          "Under: envelope_146",
+          "Inside: envelope_145",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143",
+          "On top of: envelope_143"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143",
+          "On top of: envelope_145",
+          "On top of: envelope_144",
+          "On top of: envelope_143"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_145",
+      "thoughts": "Envelope_145 is currently on top of envelope_144 and envelope_143. Grasping envelope_145 will allow me to reposition it next to the other envelopes, helping to achieve the goal that all envelopes are next to each other."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_145 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_145",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "Under: envelope_146",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_144"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_143",
+          "On top of: envelope_144",
+          "On top of: envelope_143"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_144",
+      "thoughts": "The goal state requires all envelopes to be next to each other. I am currently holding envelope_145 in my left hand, and placing it next to envelope_144 will help achieve the required adjacency among the envelopes."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_145 envelope_144 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_144"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "Under: envelope_146",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_144"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_143",
+          "On top of: envelope_144",
+          "On top of: envelope_143"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_146",
+      "thoughts": "To achieve the goal of all envelopes being next to each other, I should start by picking up envelope_146, so I can arrange it to be next to the other envelopes."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_146 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_146",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_144"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_144",
+          "On top of: envelope_144"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_145",
+      "thoughts": "I am holding envelope_146 in my left hand. To achieve the goal where all envelopes are next to each other, I should place envelope_146 next to envelope_145, which will help form the required cluster of envelopes."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_146 envelope_145 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_144",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_144",
+          "On top of: envelope_144"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_145"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_143",
+      "thoughts": "To cluster all envelopes together as required by the goal, I should start by picking up envelope_143, which is currently on top of envelope_144 and next to envelope_144. This will allow me to reposition it if needed to be next to the other envelopes."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_143 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_143",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_144",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "Next to: sofa_39"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_145"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_144",
+      "thoughts": "The goal requires all envelopes to be next to each other. Envelope_144 is already next to envelope_145, and envelope_143 is in my left hand. Placing envelope_143 next to envelope_144 will help cluster the envelopes together as required by the goal state."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_143 envelope_144 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_145",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_144"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_145",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_145",
+      "thoughts": "Envelope_145 is currently inside envelope_143 and not physically next to the others. Grasping envelope_145 will allow me to place it next to the other envelopes, progressing towards the goal of having all envelopes next to each other."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_145 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_145",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_144"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_144",
+      "thoughts": "To achieve the goal of all envelopes being next to each other, I will place envelope_145 (currently in my left hand) next to envelope_144, which is already next to envelope_143 and on the floor."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_145 envelope_144 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_145",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_144"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_145",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_146",
+      "thoughts": "To ensure all envelopes are next to each other, I need to move envelope_146 from its current location (not on the floor) to be next to the other envelopes. First, I will grasp envelope_146."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_146 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_146",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Next to: envelope_144",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_145",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "On top of: envelope_145",
+          "On top of: envelope_144"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_144",
+      "thoughts": "To satisfy the goal that all envelopes are next to each other, I will place envelope_146 (currently in my left hand) next to envelope_144, which is already next to the other envelopes."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_146 envelope_144 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_145",
+          "Inside: envelope_146",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_144",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_145",
+          "Inside: envelope_143",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_143",
+      "thoughts": "To further satisfy the goal of all envelopes being next to each other, I should grasp envelope_143 so I can position it next to the other envelopes if needed."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_143 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_143",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_145",
+          "Next to: envelope_144"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_144",
+      "thoughts": "To fulfill the goal of all envelopes being next to each other, I should place envelope_143 (currently in my left hand) next to envelope_144, which is already next to envelope_145 and envelope_146. This will help group all envelopes together as required."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_143 envelope_144 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_145",
+          "Inside: envelope_146",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_143",
+      "thoughts": "To make progress towards having all envelopes next to each other, I need to pick up envelope_143 so I can place it next to the others."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_143 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_143",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_144",
+      "thoughts": "The goal is to have all envelopes next to each other. Since I am holding envelope_143 in my left hand, I will place it next to envelope_144, which is already next to the other envelopes, to help achieve the target arrangement."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_143 envelope_144 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_145",
+          "Inside: envelope_146",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_144",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_143",
+      "thoughts": "To arrange all envelopes next to each other, I need to start by picking up envelope_143, which is currently inside other envelopes and not in the living room. Grasping it will allow me to place it next to the others."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_143 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_143",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_144",
+      "thoughts": "I am holding envelope_143 in my left hand, and to achieve the goal of having all envelopes next to each other, I should place envelope_143 next to envelope_144, which is already next to the other envelopes."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_143 envelope_144 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_145",
+          "Inside: envelope_146",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_145",
+      "thoughts": "To satisfy the goal, all envelopes must be next to each other. Envelope_145 is currently inside other envelopes and not placed next to the others. I will grasp envelope_145 to move it next to the other envelopes."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_145 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_145",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_143",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Next to: envelope_144",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_144",
+      "thoughts": "To achieve the goal of having all envelopes next to each other, I will place envelope_145 (currently in my left hand) next to envelope_144, which is already next to envelope_143 and envelope_146. This will help group the envelopes together."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_145 envelope_144 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_145",
+          "Inside: envelope_146",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_144",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_143",
+      "thoughts": "To achieve the goal, all envelopes need to be next to each other. Envelope_143 is not physically present in the living room, so I will grasp it to move it next to the others."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_143 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_143",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_145",
+          "Next to: envelope_144"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_144",
+      "thoughts": "To achieve the goal, all envelopes must be next to each other. I am holding envelope_143 in my left hand, and envelope_144 is already in the living room next to other envelopes. Placing envelope_143 next to envelope_144 will help group the envelopes together as required by the goal."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_143 envelope_144 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_145",
+          "Inside: envelope_146",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_143",
+      "thoughts": "To achieve the goal of having all envelopes next to each other, I need to move envelope_143, which is currently inside other envelopes and not in the living room. Grasping envelope_143 will allow me to reposition it next to the other envelopes."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_143 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_143",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_145",
+          "Next to: envelope_144"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_144",
+      "thoughts": "To satisfy the goal condition of all envelopes being next to each other, I will place envelope_143 (currently in my left hand) next to envelope_144, which is already next to the other envelopes. This action helps group the envelopes together as required."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_143 envelope_144 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_145",
+          "Inside: envelope_146",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_143",
+      "thoughts": "To continue grouping all envelopes together as required by the goal, I will first grasp envelope_143 so I can move it next to the other envelopes if needed."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_143 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_143",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_145",
+          "Next to: envelope_144"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_144",
+      "thoughts": "The goal is to have all envelopes next to each other. I am holding envelope_143 in my left hand and envelope_144 is already next to the other envelopes. Placing envelope_143 next to envelope_144 will help achieve the goal configuration."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_143 envelope_144 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_145",
+          "Inside: envelope_146",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_144",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_143",
+      "thoughts": "To arrange all envelopes next to each other, I need to move envelope_143. Since both hands are empty, I will grasp envelope_143 with my left hand first."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_143 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_143",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_144",
+      "thoughts": "The goal is to have all envelopes next to each other. Since I am holding envelope_143 in my left hand, I will place it next to envelope_144, which is already next to the other envelopes, to cluster them together."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_143 envelope_144 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_145",
+          "Inside: envelope_146",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_143",
+      "thoughts": "To ensure all envelopes are next to each other, I will start by picking up envelope_143 so I can place it next to the other envelopes."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_143 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_143",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_144",
+      "thoughts": "I am holding envelope_143 in my left hand and the goal is to have all envelopes next to each other. Placing envelope_143 next to envelope_144 will help achieve this arrangement."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_143 envelope_144 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_145",
+          "Inside: envelope_146",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_146",
+      "thoughts": "To achieve the goal of all envelopes being next to each other, I need to manipulate envelope_146. Since both of my hands are empty, I will grasp envelope_146 with my left hand to prepare to place it next to the other envelopes."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_146 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_146",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Next to: envelope_144",
+          "Next to: envelope_143"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143",
+          "On top of: envelope_143"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_145",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_144",
+      "thoughts": "I am holding envelope_146 in my left hand. To group all envelopes together as required by the goal (all envelopes next to each other), I will place envelope_146 next to envelope_144, which is already next to envelope_143 and envelope_145."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_146 envelope_144 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_143",
+          "Next to: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_145",
+          "Inside: envelope_146",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_145",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_143",
+          "Next to: envelope_145",
+          "Next to: envelope_144",
+          "Next to: envelope_143",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "envelope_143",
+      "thoughts": "To ensure all envelopes are next to each other as required by the goal, I will grasp envelope_143 so I can place it next to the other envelopes if needed."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Grasp envelope_143 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "envelope_143",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sofa_39",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_145",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Inside: envelope_146",
+          "Next to: envelope_144",
+          "Next to: envelope_146",
+          "On top of: envelope_146"
+        ]
+      },
+      {
+        "name": "envelope_144",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room",
+          "On floor: room_floor_living_room_0",
+          "Next to: envelope_145",
+          "Next to: envelope_146",
+          "On top of: envelope_145"
+        ]
+      },
+      {
+        "name": "envelope_143",
+        "category": "envelope",
+        "State description ": [
+          "Location: living_room"
+        ]
+      },
+      {
+        "name": "newspaper_148",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "envelope_146",
+        "category": "envelope",
+        "State description ": [
+          "Location: None",
+          "Next to: envelope_145",
+          "Next to: envelope_144"
+        ]
+      },
+      {
+        "name": "newspaper_147",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_150",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "newspaper_149",
+        "category": "newspaper",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "envelope_144",
+      "thoughts": "The goal requires all envelopes (envelope_143, envelope_144, envelope_145, envelope_146) to be next to each other. Currently, envelope_144 is in the living room and next to both envelope_145 and envelope_146. Placing envelope_143 next to envelope_144 will help achieve the goal condition that all envelopes are next to each other."
+    },
+    "goal": "target environment state:\n['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'nextto', 'envelope.n.01', 'envelope_143', 'nextto', 'envelope.n.01', 'envelope_144', 'nextto', 'envelope.n.01', 'envelope_145', 'nextto', 'envelope.n.01', 'envelope_146']\n['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'nextto', 'newspaper.n.03', 'newspaper_147', 'nextto', 'newspaper.n.03', 'newspaper_148', 'nextto', 'newspaper.n.03', 'newspaper_149', 'nextto', 'newspaper.n.03', 'newspaper_150']\n\n\n",
+    "feedback": "Place next to envelope_143 envelope_144 successful"
+  }
+]

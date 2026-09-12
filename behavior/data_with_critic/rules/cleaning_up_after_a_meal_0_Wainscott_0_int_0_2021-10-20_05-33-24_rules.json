@@ -1,0 +1,58 @@
+[
+    {
+        "rule": "G((bowl_143_place_inside_dishwasher_83 | bowl_144_place_inside_dishwasher_83 | plate_146_place_inside_dishwasher_83 | plate_147_place_inside_dishwasher_83 | plate_148_place_inside_dishwasher_83 | plate_149_place_inside_dishwasher_83 | cup_150_place_inside_dishwasher_83 | cup_151_place_inside_dishwasher_83) & !dishwasher_83_is_open -> X(open_dishwasher_83))",
+        "explanation": "Block any placement into the dishwasher unless it is open."
+    },
+    {
+        "rule": "G((bowl_143_is_stained | bowl_144_is_stained) & dishwasher_83_is_open -> X(bowl_143_place_inside_dishwasher_83 | bowl_144_place_inside_dishwasher_83))",
+        "explanation": "Whenever a bowl is stained and the dishwasher is open, immediately place it inside to clean."
+    },
+    {
+        "rule": "G((plate_146_is_stained | plate_147_is_stained | plate_148_is_stained | plate_149_is_stained) & dishwasher_83_is_open -> X(plate_146_place_inside_dishwasher_83 | plate_147_place_inside_dishwasher_83 | plate_148_place_inside_dishwasher_83 | plate_149_place_inside_dishwasher_83))",
+        "explanation": "Whenever any plate is stained and the dishwasher is open, place it inside to clean."
+    },
+    {
+        "rule": "G((cup_150_is_stained | cup_151_is_stained) & dishwasher_83_is_open -> X(cup_150_place_inside_dishwasher_83))",
+        "explanation": "Whenever a cup is stained and the dishwasher is open, place it inside to clean."
+    },
+    {
+        "rule": "G((bowl_143_place_inside_dishwasher_83 | bowl_144_place_inside_dishwasher_83 | plate_146_place_inside_dishwasher_83 | plate_147_place_inside_dishwasher_83 | plate_148_place_inside_dishwasher_83 | plate_149_place_inside_dishwasher_83 | cup_150_place_inside_dishwasher_83 | cup_151_place_inside_dishwasher_83) & dishwasher_83_is_open -> X(close_dishwasher_83))",
+        "explanation": "Once an item goes in, close the dishwasher before toggling."
+    },
+    {
+        "rule": "G((!bowl_143_is_stained & !bowl_144_is_stained & !plate_146_is_stained & !plate_147_is_stained & !plate_148_is_stained & !plate_149_is_stained & !cup_150_is_stained & !cup_151_is_stained) & dishwasher_83_is_open -> X(toggle_on_dishwasher_83))",
+        "explanation": "After all stained items are loaded, start the dishwasher."
+    },
+    {
+        "rule": "G((!hamburger_152_inside_paper_bag_145 | !hamburger_153_inside_paper_bag_145) -> X(!done))",
+        "explanation": "Block completion until both hamburgers are inside the paper bag."
+    },
+    {
+        "rule": "G(!paper_bag_145_on_floor -> X(!done))",
+        "explanation": "Ensure the bag is placed on the floor before considering the task done."
+    },
+    {
+        "rule": "G(!paper_bag_145_in_dining_room -> X(!done))",
+        "explanation": "Ensure the bag is in the dining room before completion."
+    },
+    {
+        "rule": "G(room_floor_dining_room_0_is_stained -> X(!done))",
+        "explanation": "Prevent finishing if the dining-room floor is still stained."
+    },
+    {
+        "rule": "G(straight_chair_3_is_stained -> X(!done))",
+        "explanation": "Prevent finishing if straight chair 3 is still stained."
+    },
+    {
+        "rule": "G(breakfast_table_1_is_stained -> X(!done))",
+        "explanation": "Prevent finishing if the breakfast table is still stained."
+    },
+    {
+        "rule": "G((!bowl_143_is_stained & !bowl_144_is_stained & !plate_146_is_stained & !plate_147_is_stained & !plate_148_is_stained & !plate_149_is_stained & !cup_150_is_stained & !cup_151_is_stained & hamburger_152_inside_paper_bag_145 & hamburger_153_inside_paper_bag_145 & paper_bag_145_on_floor & paper_bag_145_in_dining_room & !room_floor_dining_room_0_is_stained & !straight_chair_3_is_stained & !breakfast_table_1_is_stained) -> X(done))",
+        "explanation": "Only issue `done` when every subgoal is satisfied."
+    },
+    {
+        "rule": "G(done -> X(!left_grasp_bowl_143 & !left_grasp_bowl_144 & !left_grasp_plate_146 & !left_grasp_plate_147 & !left_grasp_plate_148 & !left_grasp_plate_149 & !left_grasp_cup_150 & !left_grasp_plate_149))",
+        "explanation": "After completion, block any further grasps to avoid undoing progress."
+    }
+]

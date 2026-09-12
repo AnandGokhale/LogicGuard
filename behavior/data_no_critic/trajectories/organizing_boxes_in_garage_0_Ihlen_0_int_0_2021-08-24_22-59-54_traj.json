@@ -1,0 +1,5695 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "Under: plate_0",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_0",
+          "Inside: shelf_16",
+          "Next to: shelf_16",
+          "Next to: saucepan_0",
+          "On top of: plate_1"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_1",
+          "Next to: bottom_cabinet_15",
+          "Next to: plate_2",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: plate_2",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "ball_0",
+      "thoughts": "The goal is to put all balls and plates inside a carton, and then the carton inside the saucepan. First, I need to pick up a ball to start transferring it into a carton."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp ball_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "ball_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "Under: plate_0",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_0",
+          "Inside: shelf_16",
+          "Next to: shelf_16",
+          "Next to: saucepan_0",
+          "On top of: plate_1"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_1",
+          "Next to: bottom_cabinet_15",
+          "Next to: plate_2",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: plate_2",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "I am holding ball_0 in my left hand, and the goal is to put all balls inside a carton. carton_0 is open and available. I will place ball_0 inside carton_0 to start fulfilling the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside ball_0 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "Under: plate_0",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_0",
+          "Inside: shelf_16",
+          "Next to: shelf_16",
+          "Next to: saucepan_0",
+          "On top of: plate_1"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_1",
+          "Next to: bottom_cabinet_15",
+          "Next to: plate_2",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: plate_2",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_1",
+      "thoughts": "The goal requires all plates to be inside a carton, which is not currently the case. I will start by grasping plate_1 with my left hand so I can later place it inside one of the open cartons."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Teleport plate_2 ONTOP plate_1 successful: True\nGrasp plate_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_2"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: plate_1"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "I am holding plate_1 in my left hand and carton_0 is open and in the garage. Placing plate_1 inside carton_0 will make progress towards the goal of having all plates inside a carton."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Teleport plate_2 ONTOP plate_1 successful: True\nTeleport plate_2 ONTOP plate_1 successful: True\nPlace inside plate_1 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_2",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: plate_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_1",
+      "thoughts": "To place plate_1 inside carton_0, I first need to pick up plate_1 since both my hands are empty."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Teleport plate_2 ONTOP plate_1 successful: True\nGrasp plate_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "Next to: plate_2",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_1",
+          "On top of: plate_1"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: plate_1",
+          "Under: plate_2",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "The goal is to have all plates inside a carton, which should then be inside the saucepan. I am currently holding plate_1 in my left hand, and carton_0 is open and accessible. The next logical step is to place plate_1 inside carton_0 to work toward the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Teleport plate_2 ONTOP plate_1 successful: True\nPlace inside plate_1 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: carton_0",
+          "On top of: plate_1"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_1",
+      "thoughts": "To achieve the goal of having all plates inside a carton, I need to first grasp plate_1 so I can place it inside carton_0, as the robot is currently not holding anything."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Teleport plate_2 ONTOP plate_1 successful: True\nGrasp plate_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_1",
+          "On top of: plate_1"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: plate_1",
+          "Under: plate_2",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "The robot is holding plate_1 in its left hand. To achieve the goal of having all plates inside a carton, the next step is to place plate_1 inside carton_0, which is open and accessible."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Teleport plate_2 ONTOP plate_1 successful: True\nPlace inside plate_1 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_2",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: plate_1",
+          "Next to: carton_0",
+          "On top of: plate_1"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_2",
+      "thoughts": "To achieve the goal, all plates need to be inside a carton. Since neither hand is holding anything, I will grasp plate_2 so I can place it inside carton_0 next."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp plate_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "I am currently holding plate_2 in my left hand, and the goal requires all plates to be inside a carton. Since carton_0 is open and accessible, I will place plate_2 inside carton_0 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside plate_2 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_2",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_1",
+      "thoughts": "All plates need to be inside a carton. Plate_1 is not currently being held, so I will grasp it with my left hand in order to place it inside carton_0 next."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp plate_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_1",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: plate_1",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "I am currently holding plate_1 in my left hand, and the goal is to have all plates inside a carton. Carton_0 is open and available, so I will place plate_1 inside carton_0 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside plate_1 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: plate_2",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_2",
+      "thoughts": "To achieve the goal of having all plates inside a carton, I need to grasp plate_2 so I can place it inside carton_0, as plate_1 is already inside and carton_0 is open."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp plate_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0",
+          "Next to: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "I am currently holding plate_2 in my left hand, and carton_0 is open and accessible. Since the goal is to have all plates inside a carton, I should place plate_2 inside carton_0 to progress towards the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside plate_2 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0",
+          "Next to: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: carton_0",
+          "On top of: ball_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_1",
+      "thoughts": "To achieve the goal of having all plates inside a carton, I should first pick up plate_1 so I can place it inside carton_0, as plate_2 is already inside and plate_1 is accessible."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp plate_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_2",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: plate_1",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "I am holding plate_1 in my left hand, and carton_0 is open and accessible. To progress towards the goal of all plates being inside a carton, I should place plate_1 inside carton_0."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside plate_1 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_2",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_1"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_2",
+      "thoughts": "To achieve the goal of all plates being inside a carton, I need to put plate_2 inside a carton. First, I need to pick up plate_2."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp plate_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_1"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "I am currently holding plate_2 in my left hand and need to put all plates inside a carton. carton_0 is open and accessible, so I will place plate_2 inside carton_0 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside plate_2 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_1"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_1",
+      "thoughts": "To achieve the goal of having all plates inside a carton, I will grasp plate_1 with my left hand so I can place it inside carton_0 next."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp plate_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: plate_1",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "I am holding plate_1 in my left hand and need to place it inside carton_0 to work towards the goal of all plates being inside a carton."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside plate_1 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: carton_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_1"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_2",
+      "thoughts": "The goal requires all plates to be inside a carton. Plate_2 is not yet being manipulated, so I will grasp plate_2 with my left hand to prepare to place it inside a carton."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp plate_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: carton_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_1"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "The goal requires all plates to be inside a carton. I am holding plate_2 with my left hand, and carton_0 is open and accessible. Placing plate_2 inside carton_0 is the next logical step."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside plate_2 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: carton_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_1"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_1",
+      "thoughts": "All plates need to be inside a carton. Plate_1 is currently not in hand and is inside carton_0, but may need to be moved or confirmed. Grasping plate_1 allows me to manipulate it as needed."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp plate_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_2",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_1",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: plate_1",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "The goal requires all plates to be inside a carton. I am holding plate_1 in my left hand and carton_0 is open, so I will place plate_1 inside carton_0 to progress towards the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside plate_1 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_2",
+      "thoughts": "To achieve the goal of having all plates inside a carton, I will grasp plate_2 with my left hand so I can place it inside an open carton next."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp plate_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "I am currently holding plate_2 with my left hand, and carton_0 is open and accessible. The goal is to have all plates inside a carton, so I will place plate_2 inside carton_0 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside plate_2 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: plate_2",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_1",
+      "thoughts": "To achieve the goal of having all plates inside a carton, I need to place plate_1 inside carton_0. My hands are empty, so I will grasp plate_1 first."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp plate_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: plate_1",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "I am currently holding plate_1 in my left hand, and the goal is to have all plates inside a carton. Carton_0 is open and accessible, so I will place plate_1 inside carton_0 to progress towards the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside plate_1 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_2",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_2",
+      "thoughts": "I need to put all plates inside a carton. Plate_2 is not yet in hand, so I will grasp it with my left hand to prepare for placing it inside carton_0."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp plate_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "The goal is to have all plates and balls inside a carton. I am currently holding plate_2 in my left hand, and carton_0 is open and accessible. The next logical step is to place plate_2 inside carton_0."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside plate_2 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: carton_0",
+          "On top of: plate_1"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "ball_1",
+      "thoughts": "To achieve the goal, all balls must be inside a carton. Ball_1 is currently on the floor and not inside any carton, so I will grasp ball_1 to place it inside a carton next."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp ball_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "ball_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "The goal is to have all balls inside a carton. I am already holding ball_1 in my left hand, and carton_0 is open and in the garage. I will place ball_1 inside carton_0 to progress towards the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside ball_1 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: plate_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2",
+          "Next to: ball_1"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "ball_0",
+      "thoughts": "Both balls need to be inside a carton. ball_1 is already inside carton_0. ball_0 is also inside carton_0 but not explicitly confirmed as placed; to ensure correctness, I will grasp ball_0 to prepare to place it inside carton_0 if needed."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp ball_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "ball_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: ball_1",
+          "Next to: carton_0",
+          "On top of: plate_1"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_1",
+          "Next to: plate_2",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: ball_0",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2",
+          "Next to: ball_1"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "The goal requires all balls to be inside a carton. I am holding ball_0 in my left hand and carton_0 is open. I will place ball_0 inside carton_0 to ensure both balls are inside the carton as required by the target state."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside ball_0 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: plate_1",
+          "Next to: plate_2",
+          "Next to: carton_0",
+          "On top of: plate_2"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: ball_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: ball_0",
+          "Next to: ball_1",
+          "Next to: carton_0",
+          "On top of: plate_1"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_1",
+          "Next to: plate_2",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2",
+          "Next to: ball_1"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_1",
+      "thoughts": "To achieve the goal, all plates must be inside a carton. Plate_1 is currently inside carton_0, but to nest all plates inside the carton and then put the carton inside the saucepan as required, I will start by grasping plate_1 to prepare for further manipulation."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp plate_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_2",
+          "Next to: ball_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: ball_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_2",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: plate_1",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_2",
+          "Next to: ball_1"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "Since I am already holding plate_1 with my left hand and carton_0 is open and accessible, I will place plate_1 inside carton_0 to satisfy the requirement that all plates be inside a carton."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside plate_1 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_2",
+          "Next to: ball_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: carton_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: ball_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_2",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_1"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2",
+          "Next to: ball_1"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_2",
+      "thoughts": "To achieve the goal of all plates being inside a carton, I need to grasp plate_2 so I can place it inside carton_0, since plate_2 is currently not held and is accessible inside carton_0."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp plate_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: carton_1",
+          "Next to: carton_0",
+          "Next to: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_1"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: plate_2",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: ball_1"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "I am holding plate_2 in my left hand, and carton_0 is open and accessible. The goal requires all plates to be inside a carton, so placing plate_2 inside carton_0 progresses towards that."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside plate_2 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_2",
+          "Next to: ball_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "Next to: plate_2",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: ball_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_2",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_1",
+          "Next to: plate_2",
+          "Next to: ball_1"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_1",
+      "thoughts": "The goal requires all plates to be inside a carton. Plate_1 is currently inside carton_0, but I need to verify this by grasping it to potentially move it if needed. Also, grasping plate_1 will allow me to ensure it is correctly placed if any adjustment is necessary."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Grasp plate_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "ball_0",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: plate_2",
+          "Next to: ball_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_15",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: shelf_16",
+          "Next to: saucepan_0"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: ball_1",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "shelf_16",
+        "category": "shelf",
+        "State description ": [
+          "Location: garage_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0",
+          "Next to: bottom_cabinet_15",
+          "Next to: saucepan_0",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "ball_1",
+        "category": "ball",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: carton_0",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_2",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: garage",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: plate_1",
+          "On floor: room_floor_garage_0",
+          "Next to: ball_0",
+          "Next to: plate_2",
+          "Next to: ball_1"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "saucepan_0",
+        "category": "saucepan",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: bottom_cabinet_15",
+          "Next to: shelf_16"
+        ]
+      },
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: shelf_16",
+          "Next to: shelf_16"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "The goal requires all plates to be inside a carton. I am currently holding plate_1 with my left hand, and carton_0 is open and accessible. Placing plate_1 inside carton_0 will help achieve the goal state."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'ball.n.01', '-', 'ball.n.01', 'inside', 'ball.n.01', 'carton.n.02', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'saucepan_0', 'carton.n.02']\n['forall', 'carton.n.02', '-', 'carton.n.02', 'onfloor', 'carton.n.02', 'room_floor_garage_0']\n\n\n",
+    "feedback": "Place inside plate_1 carton_0 successful"
+  }
+]

@@ -1,0 +1,758 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: paper_towel_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "highchair_0",
+        "category": "highchair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_no_top_80",
+      "thoughts": "The paper towel, which is a cleaning tool, is inside the bottom cabinet that is currently closed. To access the paper towel and use it for cleaning the dusty highchair, I need to open the cabinet first."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'highchair_0']\n\n\n",
+    "feedback": "Open bottom_cabinet_no_top_80 failed"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: paper_towel_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "highchair_0",
+        "category": "highchair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "paper_towel_0",
+      "thoughts": "The bottom cabinet is already open, so I can directly grasp the paper towel with my left hand to prepare for cleaning the dusty highchair."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'highchair_0']\n\n\n",
+    "feedback": "Grasp paper_towel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "paper_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "highchair_0",
+        "category": "highchair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "highchair_0",
+      "thoughts": "The highchair is dusty and my goal is to make it not dusty. I am already holding a clean paper towel, which is a cleaning tool. Therefore, I can use it to clean the highchair."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'highchair_0']\n\n\n",
+    "feedback": "Clean-dust highchair_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "paper_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "highchair_0",
+        "category": "highchair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "highchair_0",
+      "thoughts": "The goal is for the highchair to not be dusty. I am already holding a clean paper towel in my left hand, which is a cleaning tool. I will use it to clean the highchair to remove the dust."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'highchair_0']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "paper_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "highchair_0",
+        "category": "highchair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "highchair_0",
+      "thoughts": "The goal is for the highchair to not be dusty. I am holding a clean paper towel, which is a cleaning tool, so I will attempt to clean the highchair to ensure it is not dusty."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'highchair_0']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "paper_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "highchair_0",
+        "category": "highchair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "highchair_0",
+      "thoughts": "The goal is for the highchair to not be dusty. The paper towel is a cleaning tool and I am holding it. Even though the highchair is already clean according to the state, I will attempt to clean it in case the \"not dusty\" goal requires a cleaning action."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'highchair_0']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "paper_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "highchair_0",
+        "category": "highchair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "highchair_0",
+      "thoughts": "The goal is for the highchair to not be dusty. I am holding a clean paper towel, which is a cleaning tool. Even though the highchair appears clean, I will attempt to clean it to ensure it is not dusty, as per the goal state."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'highchair_0']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "paper_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "highchair_0",
+        "category": "highchair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "highchair_0",
+      "thoughts": "The goal is for the highchair to not be dusty. Although the state says it is clean, the goal may require an explicit cleaning action to remove dust. I am holding a clean paper towel, which is a valid cleaning tool, so I will attempt to clean the highchair."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'highchair_0']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "paper_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "highchair_0",
+        "category": "highchair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "highchair_0",
+      "thoughts": "The goal is for the highchair to not be dusty. I am holding a clean paper towel, which is a cleaning tool. I will attempt to clean the highchair to explicitly ensure it is not dusty, as required by the goal."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'highchair_0']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "paper_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "highchair_0",
+        "category": "highchair",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "The highchair is already not dusty as per the current state. The previous attempt to clean failed because it was already clean. The goal is achieved."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'highchair_0']\n\n\n",
+    "feedback": ""
+  }
+]

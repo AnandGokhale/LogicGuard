@@ -1,0 +1,97 @@
+[
+    {
+        "rule": "G((!bottom_cabinet_30_is_open) -> X(!necklace_0_place_inside_bottom_cabinet_30))",
+        "explanation": "Do not place necklace 0 inside cabinet 30 unless it is open."
+    },
+    {
+        "rule": "G((!necklace_0_in_hand) -> X(!necklace_0_place_inside_bottom_cabinet_30))",
+        "explanation": "Do not place necklace 0 unless the robot is actually holding it."
+    },
+    {
+        "rule": "G((necklace_0_inside_bottom_cabinet_30) -> X(!(left_grasp_necklace_0|right_grasp_necklace_0)))",
+        "explanation": "Do not pick up necklace 0 once it is in its final location."
+    },
+    {
+        "rule": "G((bracelet_0_inside_bottom_cabinet_30) -> X(!(left_grasp_bracelet_0|right_grasp_bracelet_0)))",
+        "explanation": "Do not pick up bracelet 0 once it is in its final location."
+    },
+    {
+        "rule": "G((!bottom_cabinet_30_is_open) -> X(!bracelet_0_place_inside_bottom_cabinet_30))",
+        "explanation": "Do not place bracelet 0 inside cabinet 30 unless it is open."
+    },
+    {
+        "rule": "G((!bracelet_0_in_hand) -> X(!bracelet_0_place_inside_bottom_cabinet_30))",
+        "explanation": "Do not place bracelet 0 unless the robot is actually holding it."
+    },
+    {
+        "rule": "G((umbrella_0_in_hand) -> X(!umbrella_0_place_inside_bottom_cabinet_30))",
+        "explanation": "Prevent placing umbrella 0 into cabinet 30 under any circumstances."
+    },
+    {
+        "rule": "G((umbrella_0_next_to_bottom_cabinet_30) -> X(!left_grasp_umbrella_0))",
+        "explanation": "Do not even pick up umbrella 0 next to cabinet 30, since it must not go inside."
+    },
+    {
+        "rule": "G((!bottom_cabinet_44_is_open) -> X(!hat_0_place_inside_bottom_cabinet_44))",
+        "explanation": "Do not place hat 0 into cabinet 44 unless it is open."
+    },
+    {
+        "rule": "G((!hat_0_in_hand) -> X(!hat_0_place_inside_bottom_cabinet_44))",
+        "explanation": "Do not place hat 0 into cabinet 44 unless the robot is holding it."
+    },
+    {
+        "rule": "G((!sandal_0_in_hand) -> X(!sandal_0_place_nextto_shelf_31))",
+        "explanation": "Do not place sandal 0 next to shelf 31 unless you are holding it."
+    },
+    {
+        "rule": "G((sandal_0_next_to_shelf_31 & sandal_0_on_floor & sandal_0_in_closet) -> X(!left_grasp_sandal_0))",
+        "explanation": "Once sandal 0 is correctly positioned, do not pick it up again."
+    },
+    {
+        "rule": "G((!sandal_1_in_hand) -> X(!sandal_1_place_nextto_shelf_31))",
+        "explanation": "Do not place sandal 1 next to shelf 31 unless you are holding it."
+    },
+    {
+        "rule": "G((sandal_1_next_to_shelf_31 & sandal_1_on_floor & sandal_1_in_closet) -> X(!left_grasp_sandal_1))",
+        "explanation": "Once sandal 1 is correctly positioned, do not pick it up again."
+    },
+    {
+        "rule": "G((!bottom_cabinet_30_is_dusty & bottom_cabinet_30_is_open) -> X(!clean_bottom_cabinet_30))",
+        "explanation": "Once cabinet 30 is clean, do not waste time cleaning it again."
+    },
+    {
+        "rule": "G((shelf_31_is_dusty) -> X(!done))",
+        "explanation": "Prevent signaling completion if shelf 31 is still dusty."
+    },
+    {
+        "rule": "G((!shelf_31_is_dusty) -> X(!clean_shelf_31))",
+        "explanation": "Do not clean shelf 31 again once it is clean."
+    },
+    {
+        "rule": "G((room_floor_closet_0_is_dusty) -> X(!done))",
+        "explanation": "Prevent signaling completion if the closet floor is still dusty."
+    },
+    {
+        "rule": "G((!room_floor_closet_0_is_dusty) -> X(!clean_room_floor_closet_0))",
+        "explanation": "Do not clean the closet floor again once it is clean."
+    },
+    {
+        "rule": "G(bottom_cabinet_44_is_open -> X(!open_bottom_cabinet_44))",
+        "explanation": "Prevent attempting to open cabinet 44 if it is already open."
+    },
+    {
+        "rule": "G(bottom_cabinet_30_is_open -> X(!open_bottom_cabinet_30))",
+        "explanation": "Prevent attempting to open cabinet 30 if it is already open."
+    },
+    {
+        "rule": "G((!bottom_cabinet_30_is_open) -> X(!clean_bottom_cabinet_30))",
+        "explanation": "Do not clean cabinet 30 unless it is open\u2014enforces the precondition for cleaning."
+    },    {
+        "rule": "G(paper_towel_0_in_hand -> X(!right_grasp_paper_towel_0))",
+        "explanation": "Once the paper towel is in hand, do not attempt to grasp it again with the right gripper."
+    },
+    {
+        "rule": "G(paper_towel_0_in_hand -> X(!left_grasp_paper_towel_0))",
+        "explanation": "Once the paper towel is in hand, do not attempt to grasp it again with the left gripper."
+    }
+]

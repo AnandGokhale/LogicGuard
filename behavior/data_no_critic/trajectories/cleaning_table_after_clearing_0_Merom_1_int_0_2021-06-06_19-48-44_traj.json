@@ -1,0 +1,780 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_53",
+          "Next to: dishtowel_0",
+          "Under: dishtowel_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_49",
+          "Inside: bottom_cabinet_49",
+          "Under: dishtowel_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_53",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "breakfast_table_20",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_49",
+          "Inside: bottom_cabinet_49"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_49",
+      "thoughts": "The dishtowel (a cleaning tool) is inside the closed bottom cabinet. I need to open the cabinet first to access the dishtowel, which will be used to clean the stained breakfast table."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'breakfast_table_20']\n\n\n",
+    "feedback": "Open bottom_cabinet_49 failed"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_53",
+          "Next to: dishtowel_0",
+          "Under: dishtowel_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_49",
+          "Inside: bottom_cabinet_49",
+          "Under: dishtowel_0"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_53",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "breakfast_table_20",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_49",
+          "Inside: bottom_cabinet_49"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dishtowel_0",
+      "thoughts": "The dishtowel is a cleaning tool and is accessible since the bottom cabinet is already open. I will pick up the dishtowel with my left hand to prepare for cleaning the stained breakfast table."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'breakfast_table_20']\n\n\n",
+    "feedback": "Grasp dishtowel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_53"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_49",
+          "Inside: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_53",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "breakfast_table_20",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "breakfast_table_20",
+      "thoughts": "I am holding a clean dishtowel in my left hand, which is a cleaning tool. The breakfast table is stained, and my goal is to clean it. The dishtowel is not soaked, but since it is clean and accessible, I will attempt to clean the breakfast table with it."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'breakfast_table_20']\n\n\n",
+    "feedback": "Clean-stain failed, please place object in a toggled on cleaner or get a soaked cleaner first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_53"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_49",
+          "Inside: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_53",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "breakfast_table_20",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_53",
+      "thoughts": "The dishtowel needs to be soaked before cleaning the breakfast table. To soak it, the sink must be toggled on first."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'breakfast_table_20']\n\n\n",
+    "feedback": "Toggleon sink_53 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_53"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_49",
+          "Inside: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_53",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "breakfast_table_20",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "dishtowel_0",
+      "thoughts": "The dishtowel is not soaked, and the sink is already toggled on. I am holding the dishtowel in my left hand, so I will soak it in the sink to prepare it for cleaning the stained breakfast table."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'breakfast_table_20']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_53"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_49",
+          "Inside: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_53",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "breakfast_table_20",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_53",
+      "thoughts": "The dishtowel must be placed inside the toggled on sink before it can be soaked. I am holding the dishtowel in my left hand, so I will place it inside the sink to prepare it for soaking."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'breakfast_table_20']\n\n\n",
+    "feedback": "Place inside dishtowel_0 sink_53 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_53"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_49",
+          "Inside: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_53",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_49",
+          "Next to: dishtowel_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_20",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_53",
+          "Inside: sink_53",
+          "Under: sink_53"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "dishtowel_0",
+      "thoughts": "The dishtowel is already inside the toggled on sink, so the next step is to soak it to prepare it for cleaning the stained breakfast table."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'breakfast_table_20']\n\n\n",
+    "feedback": "Soak dishtowel_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_53"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_49",
+          "Inside: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_53",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_49",
+          "Next to: dishtowel_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_20",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_53",
+          "Inside: sink_53",
+          "Under: sink_53"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dishtowel_0",
+      "thoughts": "The dishtowel is already soaked and ready for cleaning. I need to pick it up with my left hand so I can use it to clean the stained breakfast table."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'breakfast_table_20']\n\n\n",
+    "feedback": "Grasp dishtowel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_53"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_49",
+          "Inside: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_53",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "breakfast_table_20",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "breakfast_table_20",
+      "thoughts": "I am holding a soaked dishtowel in my left hand, which is a cleaning tool. The breakfast table is stained, so I will use the dishtowel to clean it and achieve the goal state."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'breakfast_table_20']\n\n\n",
+    "feedback": "Clean-stain breakfast_table_20 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bottom_cabinet_49",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_53"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_49",
+          "Inside: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "room_floor_dining_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_53",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_49"
+        ]
+      },
+      {
+        "name": "breakfast_table_20",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_dining_room_0"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "The breakfast table has been cleaned as required by the goal state. No further actions are needed."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'breakfast_table_20']\n\n\n",
+    "feedback": ""
+  }
+]

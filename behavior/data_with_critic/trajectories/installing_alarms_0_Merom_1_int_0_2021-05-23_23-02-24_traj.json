@@ -1,0 +1,206 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_27",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: alarm_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_20",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "alarm_1",
+        "category": "alarm",
+        "State description ": [
+          "Location: living_room",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: coffee_table_27",
+          "Next to: alarm_0"
+        ]
+      },
+      {
+        "name": "alarm_0",
+        "category": "alarm",
+        "State description ": [
+          "Location: living_room",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: coffee_table_27",
+          "Next to: coffee_table_27",
+          "Next to: alarm_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "alarm_1",
+      "thoughts": "The goal requires all alarms to be toggled on. Both alarms are already on top of the coffee table, so I will start by toggling on alarm_1."
+    },
+    "goal": "target environment state:\n['forpairs', 'alarm.n.02', '-', 'alarm.n.02', 'table.n.02', '-', 'table.n.02', 'ontop', 'alarm.n.02', 'table.n.02']\n['forall', 'alarm.n.02', '-', 'alarm.n.02', 'toggled_on', 'alarm.n.02']\n\n\n",
+    "feedback": "Toggleon alarm_1 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_27",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: alarm_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_20",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "alarm_1",
+        "category": "alarm",
+        "State description ": [
+          "Location: living_room",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: coffee_table_27",
+          "Next to: alarm_0"
+        ]
+      },
+      {
+        "name": "alarm_0",
+        "category": "alarm",
+        "State description ": [
+          "Location: living_room",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: coffee_table_27",
+          "Next to: coffee_table_27",
+          "Next to: alarm_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "alarm_0",
+      "thoughts": "The goal requires all alarms to be toggled on. alarm_0 is currently toggled off, so I will toggle it on to meet the goal condition."
+    },
+    "goal": "target environment state:\n['forpairs', 'alarm.n.02', '-', 'alarm.n.02', 'table.n.02', '-', 'table.n.02', 'ontop', 'alarm.n.02', 'table.n.02']\n['forall', 'alarm.n.02', '-', 'alarm.n.02', 'toggled_on', 'alarm.n.02']\n\n\n",
+    "feedback": "Toggleon alarm_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_27",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: alarm_0"
+        ]
+      },
+      {
+        "name": "breakfast_table_20",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: dining_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "alarm_1",
+        "category": "alarm",
+        "State description ": [
+          "Location: living_room",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: coffee_table_27",
+          "Next to: alarm_0"
+        ]
+      },
+      {
+        "name": "alarm_0",
+        "category": "alarm",
+        "State description ": [
+          "Location: living_room",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: coffee_table_27",
+          "Next to: coffee_table_27",
+          "Next to: alarm_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "All alarms (alarm_0 and alarm_1) are toggled on and both are on top of a table (coffee_table_27), satisfying the goal conditions. No further actions are needed."
+    },
+    "goal": "target environment state:\n['forpairs', 'alarm.n.02', '-', 'alarm.n.02', 'table.n.02', '-', 'table.n.02', 'ontop', 'alarm.n.02', 'table.n.02']\n['forall', 'alarm.n.02', '-', 'alarm.n.02', 'toggled_on', 'alarm.n.02']\n\n\n",
+    "feedback": ""
+  }
+]

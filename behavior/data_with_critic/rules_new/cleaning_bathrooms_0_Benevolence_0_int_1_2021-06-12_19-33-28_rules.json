@@ -1,0 +1,34 @@
+[
+    {
+        "rule": "G((!rag_0_is_under_soap_0 | !rag_0_in_hand) -> X(!soak_rag_0))",
+        "explanation": "Only allow soak_rag_0 when the rag is both held and dipped under soap; blocks futile or premature soaks."
+    },
+    {
+        "rule": "G(rag_0_in_hand & sink_7_inside_rag_0 -> X(!rag_0_place_inside_sink_7))",
+        "explanation": "Once the rag is already placed into the sink for cleaning, avoid repeating the place_inside_sink_7 action."
+    },
+    {
+        "rule": "G(!rag_0_in_hand -> X(!rag_0_place_inside_sink_7))",
+        "explanation": "Prevent placing the rag into the sink unless the robot is actually holding the rag."
+    },
+    {
+        "rule": "G(sink_7_is_toggled_on -> X(!toggle_on_sink_7))",
+        "explanation": "Block redundant toggles once the sink is already on, to avoid wasting steps."
+    },
+    {
+        "rule": "G((!bucket_0_in_hand) -> X(!bucket_0_place_inside_sink_7))",
+        "explanation": "Only allow placing the bucket in the sink when the robot is holding the bucket."
+    },
+    {
+        "rule": "G(bucket_0_inside_sink_7 -> X(!bucket_0_place_inside_sink_7))",
+        "explanation": "Prevent placing the bucket into the sink again once it is already inside."
+    },
+    {
+        "rule": "G(rag_0_in_hand -> X(!left_grasp_rag_0))",
+        "explanation": "Do not attempt to grasp the rag with the left gripper if it is already held."
+    },
+    {
+        "rule": "G(rag_0_in_hand -> X(!right_grasp_rag_0))",
+        "explanation": "Do not attempt to grasp the rag with the right gripper if it is already held."
+    }
+]

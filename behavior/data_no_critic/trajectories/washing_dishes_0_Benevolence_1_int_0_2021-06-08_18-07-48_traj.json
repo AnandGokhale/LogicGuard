@@ -1,0 +1,1194 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0",
+          "Next to: scrub_brush_63"
+        ]
+      },
+      {
+        "name": "scrub_brush_63",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Inside: sink_19",
+          "Next to: sink_19"
+        ]
+      },
+      {
+        "name": "cup_61",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_62",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: plate_60",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_60",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bowl_62",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_59",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On top of: countertop_18"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_19",
+      "thoughts": "The sink needs to be toggled on so I can soak the scrub brush, which I will use to clean the stained dishes."
+    },
+    "goal": "target environment state:\n['forall', 'plate.n.04', '-', 'plate.n.04', 'not', 'stained', 'plate.n.04']\n['not', 'stained', 'cup_61']\n['not', 'stained', 'bowl_62']\n\n\n",
+    "feedback": "Toggleon sink_19 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0",
+          "Next to: scrub_brush_63"
+        ]
+      },
+      {
+        "name": "scrub_brush_63",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Inside: sink_19",
+          "Next to: sink_19"
+        ]
+      },
+      {
+        "name": "cup_61",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_62",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: plate_60",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_60",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bowl_62",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_59",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On top of: countertop_18"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_63",
+      "thoughts": "The scrub brush is a cleaning tool and is inside the sink, but it is not soaked yet. I need to grasp it first so I can soak it in the toggled-on sink, preparing it for cleaning the stained dishes."
+    },
+    "goal": "target environment state:\n['forall', 'plate.n.04', '-', 'plate.n.04', 'not', 'stained', 'plate.n.04']\n['not', 'stained', 'cup_61']\n['not', 'stained', 'bowl_62']\n\n\n",
+    "feedback": "Grasp scrub_brush_63 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_63",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_63",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "cup_61",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_62",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: plate_60",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_60",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bowl_62",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_59",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On top of: countertop_18"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "scrub_brush_63",
+      "thoughts": "The scrub brush is already in my left hand and the sink is toggled on, so I should soak the scrub brush to prepare it for cleaning the stained dishes."
+    },
+    "goal": "target environment state:\n['forall', 'plate.n.04', '-', 'plate.n.04', 'not', 'stained', 'plate.n.04']\n['not', 'stained', 'cup_61']\n['not', 'stained', 'bowl_62']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_63",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_63",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "cup_61",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_62",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: plate_60",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_60",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bowl_62",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_59",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On top of: countertop_18"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_19",
+      "thoughts": "To soak the scrub brush, I need to place it inside the toggled on sink first. This will allow me to soak it in the next step."
+    },
+    "goal": "target environment state:\n['forall', 'plate.n.04', '-', 'plate.n.04', 'not', 'stained', 'plate.n.04']\n['not', 'stained', 'cup_61']\n['not', 'stained', 'bowl_62']\n\n\n",
+    "feedback": "Place inside scrub_brush_63 sink_19 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0",
+          "Next to: scrub_brush_63"
+        ]
+      },
+      {
+        "name": "scrub_brush_63",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sink_19",
+          "Inside: sink_19",
+          "Next to: sink_19"
+        ]
+      },
+      {
+        "name": "cup_61",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_62",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: plate_60",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_60",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bowl_62",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_59",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On top of: countertop_18"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "scrub_brush_63",
+      "thoughts": "The scrub brush is now inside the toggled on sink, so I can soak it. A soaked cleaning tool will be needed to clean the stained dishes and achieve the target state."
+    },
+    "goal": "target environment state:\n['forall', 'plate.n.04', '-', 'plate.n.04', 'not', 'stained', 'plate.n.04']\n['not', 'stained', 'cup_61']\n['not', 'stained', 'bowl_62']\n\n\n",
+    "feedback": "Soak scrub_brush_63 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0",
+          "Next to: scrub_brush_63"
+        ]
+      },
+      {
+        "name": "scrub_brush_63",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sink_19",
+          "Inside: sink_19",
+          "Next to: sink_19"
+        ]
+      },
+      {
+        "name": "cup_61",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_62",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: plate_60",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_60",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bowl_62",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_59",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On top of: countertop_18"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_63",
+      "thoughts": "The scrub brush is now soaked and ready to be used for cleaning. I will grasp it with my left hand so I can use it to clean the stained dishes next."
+    },
+    "goal": "target environment state:\n['forall', 'plate.n.04', '-', 'plate.n.04', 'not', 'stained', 'plate.n.04']\n['not', 'stained', 'cup_61']\n['not', 'stained', 'bowl_62']\n\n\n",
+    "feedback": "Grasp scrub_brush_63 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_63",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_63",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "cup_61",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_62",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: plate_60",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_60",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bowl_62",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_59",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On top of: countertop_18"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "cup_61",
+      "thoughts": "The scrub brush is soaked and in my left hand. The cup is stained and needs to be cleaned to achieve the goal state, so I will clean the cup first."
+    },
+    "goal": "target environment state:\n['forall', 'plate.n.04', '-', 'plate.n.04', 'not', 'stained', 'plate.n.04']\n['not', 'stained', 'cup_61']\n['not', 'stained', 'bowl_62']\n\n\n",
+    "feedback": "Clean-stain cup_61 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_63",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_63",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "cup_61",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_62",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: plate_60",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_60",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bowl_62",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_59",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On top of: countertop_18"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "bowl_62",
+      "thoughts": "The scrub brush is soaked and in my left hand. The bowl is stained and needs to be cleaned to achieve the goal state, so I will clean the bowl next."
+    },
+    "goal": "target environment state:\n['forall', 'plate.n.04', '-', 'plate.n.04', 'not', 'stained', 'plate.n.04']\n['not', 'stained', 'cup_61']\n['not', 'stained', 'bowl_62']\n\n\n",
+    "feedback": "Clean-stain bowl_62 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_63",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_63",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "cup_61",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_62",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_60",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_60",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bowl_62",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_59",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On top of: countertop_18"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "plate_60",
+      "thoughts": "The scrub brush is soaked and in my left hand. Plate_60 is stained and needs to be cleaned to meet the goal state, so I will clean plate_60 next."
+    },
+    "goal": "target environment state:\n['forall', 'plate.n.04', '-', 'plate.n.04', 'not', 'stained', 'plate.n.04']\n['not', 'stained', 'cup_61']\n['not', 'stained', 'bowl_62']\n\n\n",
+    "feedback": "Clean-stain plate_60 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_63",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_63",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "cup_61",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_62",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_60",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_60",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_62",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_59",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On top of: countertop_18"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "plate_59",
+      "thoughts": "Plate_59 is stained and needs to be cleaned to satisfy the goal state. I am holding a soaked scrub brush, so I can clean plate_59 now."
+    },
+    "goal": "target environment state:\n['forall', 'plate.n.04', '-', 'plate.n.04', 'not', 'stained', 'plate.n.04']\n['not', 'stained', 'cup_61']\n['not', 'stained', 'bowl_62']\n\n\n",
+    "feedback": "Clean-stain plate_59 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_63",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_63",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "cup_61",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_62",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_60",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_60",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_62",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_59",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_18"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "plate_60",
+      "thoughts": "Plate_60 is a plate and must be clean according to the goal state. I am holding a soaked scrub brush, so I can clean plate_60 now."
+    },
+    "goal": "target environment state:\n['forall', 'plate.n.04', '-', 'plate.n.04', 'not', 'stained', 'plate.n.04']\n['not', 'stained', 'cup_61']\n['not', 'stained', 'bowl_62']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_63",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_63",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "cup_61",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_62",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_60",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_60",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bowl_62",
+          "On top of: countertop_18"
+        ]
+      },
+      {
+        "name": "plate_59",
+        "category": "plate",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_18"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "All plates, the cup, and the bowl are already clean and unstained according to the current environment state. The goal state has been achieved."
+    },
+    "goal": "target environment state:\n['forall', 'plate.n.04', '-', 'plate.n.04', 'not', 'stained', 'plate.n.04']\n['not', 'stained', 'cup_61']\n['not', 'stained', 'bowl_62']\n\n\n",
+    "feedback": ""
+  }
+]

@@ -1,0 +1,985 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_43",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: mousetrap_100",
+          "Next to: mousetrap_103",
+          "Next to: mousetrap_101"
+        ]
+      },
+      {
+        "name": "mousetrap_100",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Inside: bed_43",
+          "Next to: bed_43"
+        ]
+      },
+      {
+        "name": "sink_73",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "mousetrap_103",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_43"
+        ]
+      },
+      {
+        "name": "toilet_64",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "mousetrap_101",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_43"
+        ]
+      },
+      {
+        "name": "mousetrap_102",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "mousetrap_100",
+      "thoughts": "To move mousetrap_100 onto the room_floor_corridor_0 as required by the goal state, I need to pick it up first. My hands are currently empty, so I will grasp mousetrap_100 with my left hand."
+    },
+    "goal": "target environment state:\n['onfloor', 'mousetrap_100', 'room_floor_corridor_0']\n['onfloor', 'mousetrap_101', 'room_floor_corridor_0']\n['nextto', 'mousetrap_102', 'toilet_64']\n['nextto', 'mousetrap_103', 'toilet_64']\n\n\n",
+    "feedback": "Grasp mousetrap_100 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "mousetrap_100",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_43",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: mousetrap_103",
+          "Next to: mousetrap_101"
+        ]
+      },
+      {
+        "name": "mousetrap_100",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_73",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "mousetrap_103",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_43"
+        ]
+      },
+      {
+        "name": "toilet_64",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "mousetrap_101",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_43"
+        ]
+      },
+      {
+        "name": "mousetrap_102",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_corridor_0",
+      "thoughts": "I am holding mousetrap_100 in my left hand and the goal requires it to be on the room_floor_corridor_0. I will place it on top of the room_floor_corridor_0 to achieve this part of the goal state."
+    },
+    "goal": "target environment state:\n['onfloor', 'mousetrap_100', 'room_floor_corridor_0']\n['onfloor', 'mousetrap_101', 'room_floor_corridor_0']\n['nextto', 'mousetrap_102', 'toilet_64']\n['nextto', 'mousetrap_103', 'toilet_64']\n\n\n",
+    "feedback": "Place ontop mousetrap_100 room_floor_corridor_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_43",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: mousetrap_103",
+          "Next to: mousetrap_101"
+        ]
+      },
+      {
+        "name": "mousetrap_100",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: corridor",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_73",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "mousetrap_103",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_43"
+        ]
+      },
+      {
+        "name": "toilet_64",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "mousetrap_101",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_43"
+        ]
+      },
+      {
+        "name": "mousetrap_102",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "mousetrap_101",
+      "thoughts": "To move mousetrap_101 onto the room_floor_corridor_0 as required by the goal state, I need to first pick it up. My left hand is empty, so I will grasp mousetrap_101 with my left hand."
+    },
+    "goal": "target environment state:\n['onfloor', 'mousetrap_100', 'room_floor_corridor_0']\n['onfloor', 'mousetrap_101', 'room_floor_corridor_0']\n['nextto', 'mousetrap_102', 'toilet_64']\n['nextto', 'mousetrap_103', 'toilet_64']\n\n\n",
+    "feedback": "Grasp mousetrap_101 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "mousetrap_101",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_43",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: mousetrap_103"
+        ]
+      },
+      {
+        "name": "mousetrap_100",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: corridor",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_73",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "mousetrap_103",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_43"
+        ]
+      },
+      {
+        "name": "toilet_64",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "mousetrap_101",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "mousetrap_102",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_corridor_0",
+      "thoughts": "I am currently holding mousetrap_101 in my left hand, and the goal is for it to be on the room_floor_corridor_0. Placing it on top of the floor will achieve this part of the goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'mousetrap_100', 'room_floor_corridor_0']\n['onfloor', 'mousetrap_101', 'room_floor_corridor_0']\n['nextto', 'mousetrap_102', 'toilet_64']\n['nextto', 'mousetrap_103', 'toilet_64']\n\n\n",
+    "feedback": "Place ontop mousetrap_101 room_floor_corridor_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_43",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: mousetrap_103"
+        ]
+      },
+      {
+        "name": "mousetrap_100",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: corridor",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: mousetrap_101",
+          "On floor: room_floor_corridor_0",
+          "Next to: mousetrap_101"
+        ]
+      },
+      {
+        "name": "sink_73",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "mousetrap_103",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_43"
+        ]
+      },
+      {
+        "name": "toilet_64",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "mousetrap_101",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: corridor",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: mousetrap_100",
+          "On floor: room_floor_corridor_0",
+          "Next to: mousetrap_100"
+        ]
+      },
+      {
+        "name": "mousetrap_102",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "mousetrap_102",
+      "thoughts": "To achieve the goal state where mousetrap_102 is next to toilet_64, I first need to pick up mousetrap_102 so I can move it to the bathroom and place it next to the toilet."
+    },
+    "goal": "target environment state:\n['onfloor', 'mousetrap_100', 'room_floor_corridor_0']\n['onfloor', 'mousetrap_101', 'room_floor_corridor_0']\n['nextto', 'mousetrap_102', 'toilet_64']\n['nextto', 'mousetrap_103', 'toilet_64']\n\n\n",
+    "feedback": "Grasp mousetrap_102 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "mousetrap_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_43",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: mousetrap_103"
+        ]
+      },
+      {
+        "name": "mousetrap_100",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: corridor",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: mousetrap_101",
+          "On floor: room_floor_corridor_0",
+          "Next to: mousetrap_101"
+        ]
+      },
+      {
+        "name": "sink_73",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "mousetrap_103",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_43"
+        ]
+      },
+      {
+        "name": "toilet_64",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "mousetrap_101",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: corridor",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: mousetrap_100",
+          "On floor: room_floor_corridor_0",
+          "Next to: mousetrap_100"
+        ]
+      },
+      {
+        "name": "mousetrap_102",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "toilet_64",
+      "thoughts": "I am holding mousetrap_102 in my left hand and need to place it next to toilet_64 in the bathroom to satisfy the goal state."
+    },
+    "goal": "target environment state:\n['onfloor', 'mousetrap_100', 'room_floor_corridor_0']\n['onfloor', 'mousetrap_101', 'room_floor_corridor_0']\n['nextto', 'mousetrap_102', 'toilet_64']\n['nextto', 'mousetrap_103', 'toilet_64']\n\n\n",
+    "feedback": "Place next to mousetrap_102 toilet_64 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_43",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: mousetrap_103"
+        ]
+      },
+      {
+        "name": "mousetrap_100",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: corridor",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: mousetrap_101",
+          "On floor: room_floor_corridor_0",
+          "Next to: mousetrap_101"
+        ]
+      },
+      {
+        "name": "sink_73",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "mousetrap_103",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_43"
+        ]
+      },
+      {
+        "name": "toilet_64",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: mousetrap_102"
+        ]
+      },
+      {
+        "name": "mousetrap_101",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: corridor",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: mousetrap_100",
+          "On floor: room_floor_corridor_0",
+          "Next to: mousetrap_100"
+        ]
+      },
+      {
+        "name": "mousetrap_102",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bathroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: toilet_64"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "mousetrap_103",
+      "thoughts": "To achieve the goal state of mousetrap_103 being next to toilet_64, I need to grasp mousetrap_103 first so I can move it to the bathroom and place it next to the toilet."
+    },
+    "goal": "target environment state:\n['onfloor', 'mousetrap_100', 'room_floor_corridor_0']\n['onfloor', 'mousetrap_101', 'room_floor_corridor_0']\n['nextto', 'mousetrap_102', 'toilet_64']\n['nextto', 'mousetrap_103', 'toilet_64']\n\n\n",
+    "feedback": "Grasp mousetrap_103 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "mousetrap_103",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_43",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "mousetrap_100",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: corridor",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: mousetrap_101",
+          "On floor: room_floor_corridor_0",
+          "Next to: mousetrap_101"
+        ]
+      },
+      {
+        "name": "sink_73",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "mousetrap_103",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "toilet_64",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: mousetrap_102"
+        ]
+      },
+      {
+        "name": "mousetrap_101",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: corridor",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: mousetrap_100",
+          "On floor: room_floor_corridor_0",
+          "Next to: mousetrap_100"
+        ]
+      },
+      {
+        "name": "mousetrap_102",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bathroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: toilet_64"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "toilet_64",
+      "thoughts": "I am already holding mousetrap_103 in my left hand, and the goal is for mousetrap_103 to be next to toilet_64. Placing mousetrap_103 next to toilet_64 will achieve this part of the goal state."
+    },
+    "goal": "target environment state:\n['onfloor', 'mousetrap_100', 'room_floor_corridor_0']\n['onfloor', 'mousetrap_101', 'room_floor_corridor_0']\n['nextto', 'mousetrap_102', 'toilet_64']\n['nextto', 'mousetrap_103', 'toilet_64']\n\n\n",
+    "feedback": "Place next to mousetrap_103 toilet_64 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "bed_43",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "mousetrap_100",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: corridor",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: mousetrap_101",
+          "On floor: room_floor_corridor_0",
+          "Next to: mousetrap_101"
+        ]
+      },
+      {
+        "name": "sink_73",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "mousetrap_103",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bathroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: toilet_64"
+        ]
+      },
+      {
+        "name": "toilet_64",
+        "category": "toilet",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: mousetrap_103",
+          "Next to: mousetrap_102"
+        ]
+      },
+      {
+        "name": "mousetrap_101",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: corridor",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: mousetrap_100",
+          "On floor: room_floor_corridor_0",
+          "Next to: mousetrap_100"
+        ]
+      },
+      {
+        "name": "mousetrap_102",
+        "category": "mousetrap",
+        "State description ": [
+          "Location: bathroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: mousetrap_103",
+          "On floor: room_floor_bathroom_0",
+          "Next to: toilet_64"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "All mousetraps are in their correct locations and relationships as per the goal state. No further actions are needed."
+    },
+    "goal": "target environment state:\n['onfloor', 'mousetrap_100', 'room_floor_corridor_0']\n['onfloor', 'mousetrap_101', 'room_floor_corridor_0']\n['nextto', 'mousetrap_102', 'toilet_64']\n['nextto', 'mousetrap_103', 'toilet_64']\n\n\n",
+    "feedback": ""
+  }
+]

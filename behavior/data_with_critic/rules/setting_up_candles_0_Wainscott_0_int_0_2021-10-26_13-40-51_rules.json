@@ -1,0 +1,18 @@
+[
+    {
+        "rule": "G(!candle_0_in_hand -> X(!candle_0_place_ontop_coffee_table_33))",
+        "explanation": "Do not attempt to place candle 0 on the coffee table unless it is already in hand."
+    },
+    {
+        "rule": "G(candle_0_on_top_of_coffee_table_33 -> X(!left_grasp_candle_0))",
+        "explanation": "Once candle 0 is correctly on the coffee table, block any further grasp of candle 0 (avoids redundant actions)."
+    },
+    {
+        "rule": "G(!candle_1_in_hand -> X(!candle_1_place_ontop_breakfast_table_1))",
+        "explanation": "Do not attempt to place candle 1 on the breakfast table unless it is already in hand."
+    },
+    {
+        "rule": "G(candle_1_on_top_of_breakfast_table_1 -> X(!left_grasp_candle_1))",
+        "explanation": "Once candle 1 is correctly on the breakfast table, block any further grasp of candle 1."
+    }
+]

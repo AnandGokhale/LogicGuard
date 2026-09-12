@@ -1,0 +1,1386 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sock_1",
+          "Next to: toothbrush_0",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sock_1",
+        "category": "sock",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: notebook_0",
+          "Next to: carton_0",
+          "Next to: cologne_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: notebook_0",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: notebook_0",
+          "Next to: sock_1",
+          "Next to: toothbrush_0",
+          "Next to: sock_0",
+          "Next to: cologne_0",
+          "Next to: sofa_10",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sock_0",
+        "category": "sock",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "cologne_0",
+        "category": "cologne",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Next to: sock_1",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sofa_10",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "notebook_0",
+      "thoughts": "The goal is to place notebook_0 on top of sofa_10, but currently it is inside carton_0 and on the floor. I will first grasp notebook_0 so I can move it to the sofa."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_0', 'room_floor_living_room_0']\n['forall', 'sock.n.01', '-', 'sock.n.01', 'ontop', 'sock.n.01', 'sofa_10']\n['ontop', 'cologne_0', 'sofa_10']\n['ontop', 'toothbrush_0', 'sofa_10']\n['ontop', 'notebook_0', 'sofa_10']\n\n\ninteractable objects:\n{'name': 'sock_0', 'category': 'sock.n.01'}\n{'name': 'sock_1', 'category': 'sock.n.01'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'cologne_0', 'category': 'perfume.n.02'}\n{'name': 'toothbrush_0', 'category': 'toothbrush.n.01'}\n{'name': 'notebook_0', 'category': 'notebook.n.01'}\n{'name': 'sofa_10', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Grasp notebook_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "notebook_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sock_1",
+        "category": "sock",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_living_room_0",
+          "Next to: carton_0",
+          "Next to: cologne_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: carton_0",
+          "Next to: sofa_10",
+          "Under: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: sock_1",
+          "Next to: toothbrush_0",
+          "Next to: sock_0",
+          "Next to: cologne_0",
+          "Next to: sofa_10",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sock_0",
+        "category": "sock",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "cologne_0",
+        "category": "cologne",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Next to: sock_1",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sofa_10",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "Next to: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "sofa_10",
+      "thoughts": "I am holding notebook_0 in my left hand and the goal is to have it on top of sofa_10. Placing it on top of the sofa will satisfy this part of the goal state."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_0', 'room_floor_living_room_0']\n['forall', 'sock.n.01', '-', 'sock.n.01', 'ontop', 'sock.n.01', 'sofa_10']\n['ontop', 'cologne_0', 'sofa_10']\n['ontop', 'toothbrush_0', 'sofa_10']\n['ontop', 'notebook_0', 'sofa_10']\n\n\ninteractable objects:\n{'name': 'sock_0', 'category': 'sock.n.01'}\n{'name': 'sock_1', 'category': 'sock.n.01'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'cologne_0', 'category': 'perfume.n.02'}\n{'name': 'toothbrush_0', 'category': 'toothbrush.n.01'}\n{'name': 'notebook_0', 'category': 'notebook.n.01'}\n{'name': 'sofa_10', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Place ontop notebook_0 sofa_10 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "sock_1",
+        "category": "sock",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: room_floor_living_room_0",
+          "Next to: carton_0",
+          "Next to: cologne_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: carton_0",
+          "Next to: sofa_10",
+          "Under: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: sock_1",
+          "Next to: toothbrush_0",
+          "Next to: sock_0",
+          "Next to: cologne_0",
+          "Next to: sofa_10",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sock_0",
+        "category": "sock",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "cologne_0",
+        "category": "cologne",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Next to: sock_1",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sofa_10",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: notebook_0",
+          "Next to: toothbrush_0",
+          "Next to: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "toothbrush_0",
+      "thoughts": "To achieve the goal state, toothbrush_0 needs to be placed on top of sofa_10. Since neither hand is holding anything, I will grasp toothbrush_0 with my left hand so I can place it on the sofa next."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_0', 'room_floor_living_room_0']\n['forall', 'sock.n.01', '-', 'sock.n.01', 'ontop', 'sock.n.01', 'sofa_10']\n['ontop', 'cologne_0', 'sofa_10']\n['ontop', 'toothbrush_0', 'sofa_10']\n['ontop', 'notebook_0', 'sofa_10']\n\n\ninteractable objects:\n{'name': 'sock_0', 'category': 'sock.n.01'}\n{'name': 'sock_1', 'category': 'sock.n.01'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'cologne_0', 'category': 'perfume.n.02'}\n{'name': 'toothbrush_0', 'category': 'toothbrush.n.01'}\n{'name': 'notebook_0', 'category': 'notebook.n.01'}\n{'name': 'sofa_10', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Grasp toothbrush_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "toothbrush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "sock_1",
+        "category": "sock",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: cologne_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: sock_1",
+          "Next to: sock_0",
+          "Next to: cologne_0",
+          "Next to: sofa_10",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sock_0",
+        "category": "sock",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "cologne_0",
+        "category": "cologne",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Next to: sock_1",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sofa_10",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: notebook_0",
+          "Next to: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "sofa_10",
+      "thoughts": "I am currently holding toothbrush_0 in my left hand and the goal requires toothbrush_0 to be on top of sofa_10. Placing it on top of the sofa will satisfy this part of the goal state."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_0', 'room_floor_living_room_0']\n['forall', 'sock.n.01', '-', 'sock.n.01', 'ontop', 'sock.n.01', 'sofa_10']\n['ontop', 'cologne_0', 'sofa_10']\n['ontop', 'toothbrush_0', 'sofa_10']\n['ontop', 'notebook_0', 'sofa_10']\n\n\ninteractable objects:\n{'name': 'sock_0', 'category': 'sock.n.01'}\n{'name': 'sock_1', 'category': 'sock.n.01'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'cologne_0', 'category': 'perfume.n.02'}\n{'name': 'toothbrush_0', 'category': 'toothbrush.n.01'}\n{'name': 'notebook_0', 'category': 'notebook.n.01'}\n{'name': 'sofa_10', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Place ontop toothbrush_0 sofa_10 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sofa_10",
+          "Under: toothbrush_0"
+        ]
+      },
+      {
+        "name": "sock_1",
+        "category": "sock",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: cologne_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: sock_1",
+          "Next to: sock_0",
+          "Next to: cologne_0",
+          "Next to: sofa_10",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sock_0",
+        "category": "sock",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "cologne_0",
+        "category": "cologne",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Next to: sock_1",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sofa_10",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: notebook_0",
+          "Next to: toothbrush_0",
+          "Next to: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "cologne_0",
+      "thoughts": "The goal requires cologne_0 to be on top of sofa_10, but it is currently inside carton_0 and on the floor. I need to pick up cologne_0 so I can place it on top of sofa_10."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_0', 'room_floor_living_room_0']\n['forall', 'sock.n.01', '-', 'sock.n.01', 'ontop', 'sock.n.01', 'sofa_10']\n['ontop', 'cologne_0', 'sofa_10']\n['ontop', 'toothbrush_0', 'sofa_10']\n['ontop', 'notebook_0', 'sofa_10']\n\n\ninteractable objects:\n{'name': 'sock_0', 'category': 'sock.n.01'}\n{'name': 'sock_1', 'category': 'sock.n.01'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'cologne_0', 'category': 'perfume.n.02'}\n{'name': 'toothbrush_0', 'category': 'toothbrush.n.01'}\n{'name': 'notebook_0', 'category': 'notebook.n.01'}\n{'name': 'sofa_10', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Grasp cologne_0 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "cologne_0"
+    },
+    "object_state": [
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sofa_10",
+          "Under: toothbrush_0"
+        ]
+      },
+      {
+        "name": "sock_1",
+        "category": "sock",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: sock_1",
+          "Next to: sock_0",
+          "Next to: sofa_10",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sock_0",
+        "category": "sock",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "cologne_0",
+        "category": "cologne",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "sofa_10",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: notebook_0",
+          "Next to: toothbrush_0",
+          "Next to: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_ONTOP",
+      "object": "sofa_10",
+      "thoughts": "The goal requires cologne_0 to be on top of sofa_10. Since I am already holding cologne_0 in my right hand, I should place it on top of sofa_10 to achieve this part of the target state."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_0', 'room_floor_living_room_0']\n['forall', 'sock.n.01', '-', 'sock.n.01', 'ontop', 'sock.n.01', 'sofa_10']\n['ontop', 'cologne_0', 'sofa_10']\n['ontop', 'toothbrush_0', 'sofa_10']\n['ontop', 'notebook_0', 'sofa_10']\n\n\ninteractable objects:\n{'name': 'sock_0', 'category': 'sock.n.01'}\n{'name': 'sock_1', 'category': 'sock.n.01'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'cologne_0', 'category': 'perfume.n.02'}\n{'name': 'toothbrush_0', 'category': 'toothbrush.n.01'}\n{'name': 'notebook_0', 'category': 'notebook.n.01'}\n{'name': 'sofa_10', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Place ontop cologne_0 sofa_10 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sofa_10",
+          "Under: cologne_0"
+        ]
+      },
+      {
+        "name": "sock_1",
+        "category": "sock",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sofa_10",
+          "Under: cologne_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: sock_1",
+          "Next to: sock_0",
+          "Next to: sofa_10",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sock_0",
+        "category": "sock",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "cologne_0",
+        "category": "cologne",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "sofa_10",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: notebook_0",
+          "Next to: toothbrush_0",
+          "Next to: carton_0",
+          "Next to: cologne_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "toothbrush_0",
+      "thoughts": "The goal requires toothbrush_0 to be on top of sofa_10. To do this, I first need to pick up toothbrush_0 with my left hand so I can place it on top of the sofa in a subsequent action."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_0', 'room_floor_living_room_0']\n['forall', 'sock.n.01', '-', 'sock.n.01', 'ontop', 'sock.n.01', 'sofa_10']\n['ontop', 'cologne_0', 'sofa_10']\n['ontop', 'toothbrush_0', 'sofa_10']\n['ontop', 'notebook_0', 'sofa_10']\n\n\ninteractable objects:\n{'name': 'sock_0', 'category': 'sock.n.01'}\n{'name': 'sock_1', 'category': 'sock.n.01'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'cologne_0', 'category': 'perfume.n.02'}\n{'name': 'toothbrush_0', 'category': 'toothbrush.n.01'}\n{'name': 'notebook_0', 'category': 'notebook.n.01'}\n{'name': 'sofa_10', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Grasp toothbrush_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "toothbrush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sofa_10",
+          "Under: cologne_0"
+        ]
+      },
+      {
+        "name": "sock_1",
+        "category": "sock",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: sock_1",
+          "Next to: sock_0",
+          "Next to: sofa_10",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sock_0",
+        "category": "sock",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "cologne_0",
+        "category": "cologne",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "sofa_10",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: notebook_0",
+          "Next to: carton_0",
+          "Next to: cologne_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "sofa_10",
+      "thoughts": "I am holding toothbrush_0 in my left hand and the goal requires toothbrush_0 to be on top of sofa_10. The next logical step is to place toothbrush_0 on top of sofa_10."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_0', 'room_floor_living_room_0']\n['forall', 'sock.n.01', '-', 'sock.n.01', 'ontop', 'sock.n.01', 'sofa_10']\n['ontop', 'cologne_0', 'sofa_10']\n['ontop', 'toothbrush_0', 'sofa_10']\n['ontop', 'notebook_0', 'sofa_10']\n\n\ninteractable objects:\n{'name': 'sock_0', 'category': 'sock.n.01'}\n{'name': 'sock_1', 'category': 'sock.n.01'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'cologne_0', 'category': 'perfume.n.02'}\n{'name': 'toothbrush_0', 'category': 'toothbrush.n.01'}\n{'name': 'notebook_0', 'category': 'notebook.n.01'}\n{'name': 'sofa_10', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Place ontop toothbrush_0 sofa_10 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "Next to: sofa_10",
+          "Under: toothbrush_0",
+          "Under: cologne_0"
+        ]
+      },
+      {
+        "name": "sock_1",
+        "category": "sock",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: notebook_0",
+          "Next to: cologne_0",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: sock_1",
+          "Next to: sock_0",
+          "Next to: sofa_10",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sock_0",
+        "category": "sock",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "cologne_0",
+        "category": "cologne",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Next to: toothbrush_0",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "sofa_10",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: notebook_0",
+          "Next to: toothbrush_0",
+          "Next to: carton_0",
+          "Next to: cologne_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "sock_1",
+      "thoughts": "The goal requires all socks to be on top of sofa_10. sock_1 is currently inside carton_0 and on the floor. Since my hands are empty, I will grasp sock_1 to prepare for placing it on top of sofa_10."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_0', 'room_floor_living_room_0']\n['forall', 'sock.n.01', '-', 'sock.n.01', 'ontop', 'sock.n.01', 'sofa_10']\n['ontop', 'cologne_0', 'sofa_10']\n['ontop', 'toothbrush_0', 'sofa_10']\n['ontop', 'notebook_0', 'sofa_10']\n\n\ninteractable objects:\n{'name': 'sock_0', 'category': 'sock.n.01'}\n{'name': 'sock_1', 'category': 'sock.n.01'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'cologne_0', 'category': 'perfume.n.02'}\n{'name': 'toothbrush_0', 'category': 'toothbrush.n.01'}\n{'name': 'notebook_0', 'category': 'notebook.n.01'}\n{'name': 'sofa_10', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Grasp sock_1 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "sock_1"
+    },
+    "object_state": [
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sofa_10",
+          "Under: toothbrush_0"
+        ]
+      },
+      {
+        "name": "sock_1",
+        "category": "sock",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: cologne_0",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: sock_0",
+          "Next to: sofa_10",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sock_0",
+        "category": "sock",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "cologne_0",
+        "category": "cologne",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Next to: toothbrush_0",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "sofa_10",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: notebook_0",
+          "Next to: toothbrush_0",
+          "Next to: carton_0",
+          "Next to: cologne_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_ONTOP",
+      "object": "sofa_10",
+      "thoughts": "sock_1 is in my right hand and the goal requires all socks to be on top of sofa_10. I will place sock_1 on top of sofa_10 to move towards the goal state."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_0', 'room_floor_living_room_0']\n['forall', 'sock.n.01', '-', 'sock.n.01', 'ontop', 'sock.n.01', 'sofa_10']\n['ontop', 'cologne_0', 'sofa_10']\n['ontop', 'toothbrush_0', 'sofa_10']\n['ontop', 'notebook_0', 'sofa_10']\n\n\ninteractable objects:\n{'name': 'sock_0', 'category': 'sock.n.01'}\n{'name': 'sock_1', 'category': 'sock.n.01'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'cologne_0', 'category': 'perfume.n.02'}\n{'name': 'toothbrush_0', 'category': 'toothbrush.n.01'}\n{'name': 'notebook_0', 'category': 'notebook.n.01'}\n{'name': 'sofa_10', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Place ontop sock_1 sofa_10 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sock_1",
+          "Next to: sofa_10",
+          "Under: sock_1"
+        ]
+      },
+      {
+        "name": "sock_1",
+        "category": "sock",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: notebook_0",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: cologne_0",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: sock_0",
+          "Next to: sofa_10",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sock_0",
+        "category": "sock",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "cologne_0",
+        "category": "cologne",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Next to: toothbrush_0",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "sofa_10",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: notebook_0",
+          "Next to: sock_1",
+          "Next to: toothbrush_0",
+          "Next to: carton_0",
+          "Next to: cologne_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sock_0",
+      "thoughts": "The goal requires all socks to be on top of sofa_10. sock_0 is currently inside carton_0 in the dining_room, so I will grasp sock_0 with my left hand to move it towards sofa_10."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_0', 'room_floor_living_room_0']\n['forall', 'sock.n.01', '-', 'sock.n.01', 'ontop', 'sock.n.01', 'sofa_10']\n['ontop', 'cologne_0', 'sofa_10']\n['ontop', 'toothbrush_0', 'sofa_10']\n['ontop', 'notebook_0', 'sofa_10']\n\n\ninteractable objects:\n{'name': 'sock_0', 'category': 'sock.n.01'}\n{'name': 'sock_1', 'category': 'sock.n.01'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'cologne_0', 'category': 'perfume.n.02'}\n{'name': 'toothbrush_0', 'category': 'toothbrush.n.01'}\n{'name': 'notebook_0', 'category': 'notebook.n.01'}\n{'name': 'sofa_10', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Grasp sock_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sock_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: cologne_0",
+          "Next to: sofa_10",
+          "Under: sock_1"
+        ]
+      },
+      {
+        "name": "sock_1",
+        "category": "sock",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cologne_0",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: cologne_0",
+          "Next to: sofa_10",
+          "Under: sock_1"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: sofa_10",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sock_0",
+        "category": "sock",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cologne_0",
+        "category": "cologne",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Next to: notebook_0",
+          "Next to: sock_1",
+          "Next to: toothbrush_0",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "sofa_10",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: notebook_0",
+          "Next to: sock_1",
+          "Next to: toothbrush_0",
+          "Next to: carton_0",
+          "Next to: cologne_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "sofa_10",
+      "thoughts": "The goal requires all socks to be on top of sofa_10. I am currently holding sock_0 in my left hand, so I will place it on top of sofa_10 to satisfy part of the goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_0', 'room_floor_living_room_0']\n['forall', 'sock.n.01', '-', 'sock.n.01', 'ontop', 'sock.n.01', 'sofa_10']\n['ontop', 'cologne_0', 'sofa_10']\n['ontop', 'toothbrush_0', 'sofa_10']\n['ontop', 'notebook_0', 'sofa_10']\n\n\ninteractable objects:\n{'name': 'sock_0', 'category': 'sock.n.01'}\n{'name': 'sock_1', 'category': 'sock.n.01'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'cologne_0', 'category': 'perfume.n.02'}\n{'name': 'toothbrush_0', 'category': 'toothbrush.n.01'}\n{'name': 'notebook_0', 'category': 'notebook.n.01'}\n{'name': 'sofa_10', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": "Place ontop sock_0 sofa_10 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: sock_0",
+          "Next to: cologne_0",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "sock_1",
+        "category": "sock",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: toothbrush_0",
+          "Next to: sock_0",
+          "Next to: cologne_0",
+          "Next to: sofa_10",
+          "On top of: notebook_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "toothbrush_0",
+        "category": "toothbrush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sock_1",
+          "Next to: cologne_0",
+          "Next to: sofa_10",
+          "Under: sock_1",
+          "Under: sock_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: sofa_10",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sock_0",
+        "category": "sock",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: notebook_0",
+          "Next to: sock_1",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "cologne_0",
+        "category": "cologne",
+        "State description ": [
+          "Location: living_room",
+          "Frozen status: Not frozen",
+          "Next to: notebook_0",
+          "Next to: sock_1",
+          "Next to: toothbrush_0",
+          "Next to: sofa_10"
+        ]
+      },
+      {
+        "name": "sofa_10",
+        "category": "sofa",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: notebook_0",
+          "Next to: sock_1",
+          "Next to: toothbrush_0",
+          "Next to: carton_0",
+          "Next to: sock_0",
+          "Next to: cologne_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "Based on the critic\u2019s feedback, all required objects (socks, cologne, toothbrush, notebook) are now on top of sofa_10 or in their correct positions. Attempting to grasp sock_1 again is blocked by the critic. Therefore, the task is complete."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_0', 'room_floor_living_room_0']\n['forall', 'sock.n.01', '-', 'sock.n.01', 'ontop', 'sock.n.01', 'sofa_10']\n['ontop', 'cologne_0', 'sofa_10']\n['ontop', 'toothbrush_0', 'sofa_10']\n['ontop', 'notebook_0', 'sofa_10']\n\n\ninteractable objects:\n{'name': 'sock_0', 'category': 'sock.n.01'}\n{'name': 'sock_1', 'category': 'sock.n.01'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'cologne_0', 'category': 'perfume.n.02'}\n{'name': 'toothbrush_0', 'category': 'toothbrush.n.01'}\n{'name': 'notebook_0', 'category': 'notebook.n.01'}\n{'name': 'sofa_10', 'category': 'sofa.n.01'}\n\n\n",
+    "feedback": ""
+  }
+]

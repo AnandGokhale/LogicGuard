@@ -1,0 +1,4450 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: rag_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: rag_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: rag_0",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_no_top_80",
+      "thoughts": "Both rags needed for cleaning are inside the closed bottom cabinet. I need to open the cabinet first to access the rags."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Open bottom_cabinet_no_top_80 failed"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: rag_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: rag_1",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: toothpaste_0",
+          "Next to: rag_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: rag_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: rag_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: rag_0",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The cabinet is already open, so I can directly grasp rag_0 to start the process of soaking it for cleaning."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: toothpaste_0"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: rag_1",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_82",
+      "thoughts": "To soak rag_0, I need to use the sink, which is currently toggled off. I will toggle on the sink so I can soak the rag."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Toggleon sink_82 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: rag_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: toothpaste_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: toothpaste_0"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: rag_1",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_0",
+      "thoughts": "The sink is toggled on and I am holding rag_0 in my left hand. To progress toward soaking rag_0 as required by the goal state, I will soak rag_0."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: rag_1",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_82",
+      "thoughts": "The sink is toggled on and I am holding rag_0. I need to place rag_0 inside the sink before I can soak it, as per the previous feedback."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Place inside rag_0 sink_82 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: rag_1",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_0",
+      "thoughts": "Rag_0 is already inside the toggled on sink, so I can now soak it to achieve the goal state where rag_0 is soaked."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Soak rag_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: rag_1",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_1",
+      "thoughts": "Rag_1 needs to be soaked, so I will first pick it up to move it into the sink."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Grasp rag_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_82",
+      "thoughts": "Rag_1 needs to be soaked, so the next step is to place it inside the toggled-on sink_82 to prepare for soaking."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Place inside rag_1 sink_82 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_1",
+      "thoughts": "Rag_1 is now inside the toggled-on sink_82, so I can execute the SOAK action to soak rag_1, which is required by the goal state."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Soak rag_1 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_133",
+      "thoughts": "Rag_0 and rag_1 are both soaked and can be used as cleaning tools. Window_133 is dusty and needs to be cleaned to meet the goal state. I will clean window_133 next."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean-dust failed, please place object in a toggled on cleaner or get a cleaner first"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "Rag_0 is already soaked and can be used to clean window_133. I will grasp rag_0 with my left hand to prepare for cleaning."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_133",
+      "thoughts": "Rag_0 is already soaked and in my left hand, and window_133 is dusty. Cleaning window_133 will make progress toward the goal of having both windows not dusty."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean-dust window_133 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_119",
+      "thoughts": "Rag_0 is already soaked and in my left hand. Window_119 is dusty and needs to be cleaned to achieve the goal state where both windows are not dusty."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean-dust window_119 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_119",
+      "thoughts": "Rag_0 is already soaked and in my left hand. Window_119 needs to be cleaned to remove its dust, which is required for the goal state."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_133",
+      "thoughts": "Rag_0 is already soaked and in my left hand. Window_133 needs to be cleaned to ensure it is not dusty as required by the goal state."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_living_room_0",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_133",
+      "thoughts": "Rag_0 is already soaked and in my left hand. Window_133 needs to be cleaned to ensure it is not dusty as required by the goal state."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_living_room_0",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_133",
+      "thoughts": "Rag_0 is already soaked and in my left hand. Window_133 needs to be cleaned to ensure it is not dusty as required by the goal state."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_133",
+      "thoughts": "Window_133 is required to be not dusty in the goal state. Since I am holding a soaked rag_0, I can use it to clean window_133 to remove any possible dust."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_133",
+      "thoughts": "I am holding a soaked rag_0, and window_133 needs to be not dusty in the goal state. Cleaning window_133 with the soaked rag will ensure it is not dusty."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_133",
+      "thoughts": "I am holding a soaked rag_0, and window_133 needs to be not dusty. Cleaning window_133 with the soaked rag will help achieve the goal state."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_133",
+      "thoughts": "I am holding a soaked rag_0, and window_133 needs to be not dusty. Cleaning window_133 with the soaked rag will help achieve the goal state."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_133",
+      "thoughts": "I am holding a soaked rag_0, and window_133 needs to be not dusty. Cleaning window_133 with the soaked rag will help achieve the goal state."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_133",
+      "thoughts": "I am holding a soaked rag_0, and window_133 needs to be not dusty, so I will clean window_133 to achieve the goal state."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_133",
+      "thoughts": "I am holding a soaked rag_0, and window_133 is required to be not dusty in the goal state. Although it is already clean, the goal might refer specifically to dust, so I will attempt to clean it to ensure it is not dusty."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_133",
+      "thoughts": "The goal specifies that window_133 should not be dusty. Even though it is already clean, attempting to clean it with the soaked rag_0 I am holding will ensure it meets the target state."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_133",
+      "thoughts": "Although window_133 is already clean, the goal explicitly requires it to not be dusty. Using the soaked rag_0 in my left hand to clean window_133 will ensure it satisfies the goal state."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_133",
+      "thoughts": "I am holding a soaked rag_0 in my left hand, and the goal specifies that window_133 should not be dusty. Cleaning window_133 with the soaked rag_0 will ensure it meets the goal state."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_133",
+      "thoughts": "I am holding a soaked rag_0 and the goal requires window_133 to not be dusty. Although the current state shows it is already clean, cleaning it again will ensure it matches the goal."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "window_133",
+      "thoughts": "I am holding a soaked rag_0 and the goal requires window_133 to be not dusty. Even though it is already clean, attempting to clean it again will ensure the goal is satisfied."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      },
+      {
+        "name": "window_119",
+        "category": "window",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_1",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "dishtowel_1",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: dishtowel_0",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "coffee_table_33",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: toothpaste_0",
+          "Next to: dishtowel_0",
+          "Next to: dishtowel_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "window_133",
+        "category": "window",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "Both rags are soaked and both windows are already not dusty and clean. The goal state has already been achieved, so no further actions are required."
+    },
+    "goal": "target environment state:\n['and', 'soaked', 'rag_0', 'soaked', 'rag_1']\n['and', 'not', 'dusty', 'window_133', 'not', 'dusty', 'window_119']\n\n\n",
+    "feedback": ""
+  }
+]

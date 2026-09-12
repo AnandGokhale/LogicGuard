@@ -1,0 +1,82 @@
+[
+    {
+        "rule": "G(highlighter_0_on_top_of_breakfast_table_3 -> X(!left_grasp_highlighter_0))",
+        "explanation": "Once the highlighter is on the table, don\u2019t grasp it again."
+    },
+    {
+        "rule": "G(!highlighter_0_in_hand -> X(!highlighter_0_place_ontop_breakfast_table_3))",
+        "explanation": "You can only place the highlighter on the table if you are holding it."
+    },
+    {
+        "rule": "G(bottom_cabinet_no_top_21_is_open -> X(!open_bottom_cabinet_no_top_21))",
+        "explanation": "Avoid reopening the cabinet when it\u2019s already open."
+    },
+    {
+        "rule": "G(!bottom_cabinet_no_top_21_is_open -> X(!document_0_place_inside_bottom_cabinet_no_top_21))",
+        "explanation": "Block placing document_0 inside unless the cabinet is open."
+    },
+    {
+        "rule": "G(!document_0_in_hand -> X(!document_0_place_inside_bottom_cabinet_no_top_21))",
+        "explanation": "Document_0 must be in hand before placing it inside the cabinet."
+    },
+    {
+        "rule": "G(document_0_inside_bottom_cabinet_no_top_21 -> X(!left_grasp_document_0))",
+        "explanation": "Once document_0 is inside, don\u2019t grasp it again."
+    },
+    {
+        "rule": "G(!bottom_cabinet_no_top_21_is_open -> X(!document_1_place_inside_bottom_cabinet_no_top_21))",
+        "explanation": "Block placing document_1 unless the cabinet is open."
+    },
+    {
+        "rule": "G(!document_1_in_hand -> X(!document_1_place_inside_bottom_cabinet_no_top_21))",
+        "explanation": "Document_1 must be in hand before placing it inside."
+    },
+    {
+        "rule": "G(document_1_inside_bottom_cabinet_no_top_21 -> X(!left_grasp_document_1))",
+        "explanation": "Once document_1 is inside the cabinet, don\u2019t grasp it again."
+    },
+    {
+        "rule": "G(!bottom_cabinet_no_top_21_is_open -> X(!folder_0_place_inside_bottom_cabinet_no_top_21))",
+        "explanation": "Block placing folder_0 unless the cabinet is open."
+    },
+    {
+        "rule": "G(!folder_0_in_hand -> X(!folder_0_place_inside_bottom_cabinet_no_top_21))",
+        "explanation": "Folder_0 must be in hand before placing it inside."
+    },
+    {
+        "rule": "G(folder_0_inside_bottom_cabinet_no_top_21 -> X(!left_grasp_folder_0))",
+        "explanation": "Once folder_0 is inside, don\u2019t grasp it again."
+    },
+    {
+        "rule": "G(!bottom_cabinet_no_top_21_is_open -> X(!document_2_place_inside_bottom_cabinet_no_top_21))",
+        "explanation": "Block placing document_2 unless the cabinet is open."
+    },
+    {
+        "rule": "G(!document_2_in_hand -> X(!document_2_place_inside_bottom_cabinet_no_top_21))",
+        "explanation": "Document_2 must be in hand before placing it inside."
+    },
+    {
+        "rule": "G(document_2_inside_bottom_cabinet_no_top_21 -> X(!left_grasp_document_2))",
+        "explanation": "Once document_2 is inside the cabinet, don\u2019t grasp it again."
+    },
+    {
+        "rule": "G(!bottom_cabinet_no_top_21_is_open -> X(!folder_1_place_inside_bottom_cabinet_no_top_21))",
+        "explanation": "Block placing folder_1 unless the cabinet is open."
+    },
+    {
+        "rule": "G(!folder_1_in_hand -> X(!folder_1_place_inside_bottom_cabinet_no_top_21))",
+        "explanation": "Folder_1 must be in hand before placing it inside."
+    },
+    {
+        "rule": "G(folder_1_inside_bottom_cabinet_no_top_21 -> X(!left_grasp_folder_1))",
+        "explanation": "Once folder_1 is inside, don\u2019t grasp it again."
+    },
+    {
+        "rule": "G((highlighter_0_on_top_of_breakfast_table_3 & document_0_inside_bottom_cabinet_no_top_21 & document_1_inside_bottom_cabinet_no_top_21 & document_2_inside_bottom_cabinet_no_top_21 & document_3_inside_bottom_cabinet_no_top_21 & folder_0_inside_bottom_cabinet_no_top_21 & folder_1_inside_bottom_cabinet_no_top_21) -> X(done))",
+        "explanation": "Only fire `done` when all placement goals are satisfied."
+    },
+    {
+        "rule": "G(!(highlighter_0_on_top_of_breakfast_table_3 & document_0_inside_bottom_cabinet_no_top_21 & document_1_inside_bottom_cabinet_no_top_21 & document_2_inside_bottom_cabinet_no_top_21 & document_3_inside_bottom_cabinet_no_top_21 & folder_0_inside_bottom_cabinet_no_top_21 & folder_1_inside_bottom_cabinet_no_top_21) -> X(!done))",
+        "explanation": "Prevent premature completion before all goals are met."
+    }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_89",
+        "category": "door",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLOSE",
+      "object": "door_85",
+      "thoughts": "The goal state requires both door_85 and door_89 to be closed. Both are currently open. I will start by closing door_85."
+    },
+    "goal": "target environment state:\n['not', 'open', 'door_85']\n['not', 'open', 'door_89']\n\n\n",
+    "feedback": "Close door_85 failed"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_89",
+        "category": "door",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLOSE",
+      "object": "door_89",
+      "thoughts": "Both doors need to be closed. door_85 is already closed, so I will close door_89, which is currently open, to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['not', 'open', 'door_85']\n['not', 'open', 'door_89']\n\n\n",
+    "feedback": "Close door_89 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "door_85",
+        "category": "door",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_89",
+        "category": "door",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bed_7",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "Both door_85 and door_89 are already closed, which matches the target environment state. No further actions are needed."
+    },
+    "goal": "target environment state:\n['not', 'open', 'door_85']\n['not', 'open', 'door_89']\n\n\n",
+    "feedback": ""
+  }
+]

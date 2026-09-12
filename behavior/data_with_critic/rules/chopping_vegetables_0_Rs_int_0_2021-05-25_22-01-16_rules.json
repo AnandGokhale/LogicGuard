@@ -1,0 +1,146 @@
+[
+    {
+        "rule": "G(!tomato_61_in_hand -> X(!slice_tomato_61))",
+        "explanation": "Don\u2019t slice tomato 61 unless you\u2019re holding it."
+    },
+    {
+        "rule": "G(tomato_61_is_sliced -> X(!slice_tomato_61))",
+        "explanation": "Once tomato 61 is sliced, block any further slice_tomato_61."
+    },
+    {
+        "rule": "G(!tomato_62_in_hand -> X(!slice_tomato_62))",
+        "explanation": "Don\u2019t slice tomato 62 unless you\u2019re holding it."
+    },
+    {
+        "rule": "G(tomato_62_is_sliced -> X(!slice_tomato_62))",
+        "explanation": "Once tomato 62 is sliced, block any further slice_tomato_62."
+    },
+    {
+        "rule": "G(!(mushroom_63_part_0_in_hand|mushroom_63_part_1_in_hand) -> X(!slice_mushroom_63))",
+        "explanation": "Don\u2019t slice mushroom 63 unless holding one of its parts."
+    },
+    {
+        "rule": "G(mushroom_63_is_sliced -> X(!slice_mushroom_63))",
+        "explanation": "Once mushroom 63 is sliced, block re-slicing."
+    },
+    {
+        "rule": "G(!(mushroom_64_part_0_in_hand|mushroom_64_part_1_in_hand) -> X(!slice_mushroom_64))",
+        "explanation": "Don\u2019t slice mushroom 64 unless holding one of its parts."
+    },
+    {
+        "rule": "G(mushroom_64_is_sliced -> X(!slice_mushroom_64))",
+        "explanation": "Once mushroom 64 is sliced, block re-slicing."
+    },
+    {
+        "rule": "G(!(chestnut_65_part_0_in_hand|chestnut_65_part_1_in_hand) -> X(!slice_chestnut_65))",
+        "explanation": "Don\u2019t slice chestnut 65 unless holding one of its parts."
+    },
+    {
+        "rule": "G(chestnut_65_is_sliced -> X(!slice_chestnut_65))",
+        "explanation": "Once chestnut 65 is sliced, block re-slicing."
+    },
+    {
+        "rule": "G(!(chestnut_66_part_0_in_hand|chestnut_66_part_1_in_hand) -> X(!slice_chestnut_66))",
+        "explanation": "Don\u2019t slice chestnut 66 unless holding one of its parts."
+    },
+    {
+        "rule": "G(chestnut_66_is_sliced -> X(!slice_chestnut_66))",
+        "explanation": "Once chestnut 66 is sliced, block re-slicing."
+    },
+    {
+        "rule": "G(!fridge_40_is_open -> X(!left_grasp_vidalia_onion_67))",
+        "explanation": "Must open the fridge before grasping Vidalia onion 67."
+    },
+    {
+        "rule": "G(vidalia_onion_67_is_sliced -> X(!slice_vidalia_onion_67))",
+        "explanation": "Once Vidalia onion 67 is sliced, block further slicing."
+    },
+    {
+        "rule": "G(!fridge_40_is_open -> X(!left_grasp_vidalia_onion_68))",
+        "explanation": "Must open the fridge before grasping Vidalia onion 68."
+    },
+    {
+        "rule": "G(vidalia_onion_68_is_sliced -> X(!slice_vidalia_onion_68))",
+        "explanation": "Once Vidalia onion 68 is sliced, block further slicing."
+    },
+    {
+        "rule": "G(!tomato_61_part_0_in_hand -> X(!tomato_61_part_0_place_inside_casserole_70))",
+        "explanation": "Don\u2019t place tomato 61 part 0 into casserole 70 unless you\u2019re holding it."
+    },
+    {
+        "rule": "G(tomato_61_part_0_inside_casserole_70 -> X(!tomato_61_part_0_place_inside_casserole_70))",
+        "explanation": "Once tomato 61 part 0 is inside casserole 70, block further placements."
+    },
+    {
+        "rule": "G(!tomato_61_part_1_in_hand -> X(!tomato_61_part_1_place_inside_casserole_70))",
+        "explanation": "Don\u2019t place tomato 61 part 1 into casserole 70 unless you\u2019re holding it."
+    },
+    {
+        "rule": "G(tomato_61_part_1_inside_casserole_70 -> X(!tomato_61_part_1_place_inside_casserole_70))",
+        "explanation": "Once tomato 61 part 1 is inside casserole 70, block further placements."
+    },
+    {
+        "rule": "G(!tomato_62_part_0_in_hand -> X(!tomato_62_part_0_place_inside_casserole_70))",
+        "explanation": "Don\u2019t place tomato 62 part 0 into casserole 70 unless you\u2019re holding it."
+    },
+    {
+        "rule": "G(tomato_62_part_0_inside_casserole_70 -> X(!tomato_62_part_0_place_inside_casserole_70))",
+        "explanation": "Once tomato 62 part 0 is inside casserole 70, block further placements."
+    },
+    {
+        "rule": "G(!tomato_62_part_1_in_hand -> X(!tomato_62_part_1_place_inside_casserole_70))",
+        "explanation": "Don\u2019t place tomato 62 part 1 into casserole 70 unless you\u2019re holding it."
+    },
+    {
+        "rule": "G(tomato_62_part_1_inside_casserole_70 -> X(!tomato_62_part_1_place_inside_casserole_70))",
+        "explanation": "Once tomato 62 part 1 is inside casserole 70, block further placements."
+    },
+    {
+        "rule": "G(!(mushroom_63_part_0_in_hand) -> X(!mushroom_63_part_0_place_inside_casserole_70))",
+        "explanation": "Block placing mushroom 63 part 0 into casserole 70 unless in hand."
+    },
+    {
+        "rule": "G(mushroom_63_part_0_inside_casserole_70 -> X(!mushroom_63_part_0_place_inside_casserole_70))",
+        "explanation": "Once mushroom 63 part 0 is placed, block further placements."
+    },
+    {
+        "rule": "G(!(mushroom_63_part_1_in_hand) -> X(!mushroom_63_part_1_place_inside_casserole_70))",
+        "explanation": "Block placing mushroom 63 part 1 into casserole 70 unless in hand."
+    },
+    {
+        "rule": "G(mushroom_63_part_1_inside_casserole_70 -> X(!mushroom_63_part_1_place_inside_casserole_70))",
+        "explanation": "Once mushroom 63 part 1 is placed, block further placements."
+    },
+    {
+        "rule": "G(!(chestnut_65_part_0_in_hand) -> X(!chestnut_65_part_0_place_inside_casserole_70))",
+        "explanation": "Block placing chestnut 65 part 0 into casserole 70 unless in hand."
+    },
+    {
+        "rule": "G(chestnut_65_part_0_inside_casserole_70 -> X(!chestnut_65_part_0_place_inside_casserole_70))",
+        "explanation": "Once chestnut 65 part 0 is placed, block further placements."
+    },
+    {
+        "rule": "G(!(chestnut_65_part_1_in_hand) -> X(!chestnut_65_part_1_place_inside_casserole_70))",
+        "explanation": "Block placing chestnut 65 part 1 into casserole 70 unless in hand."
+    },
+    {
+        "rule": "G(chestnut_65_part_1_inside_casserole_70 -> X(!chestnut_65_part_1_place_inside_casserole_70))",
+        "explanation": "Once chestnut 65 part 1 is placed, block further placements."
+    },
+    {
+        "rule": "G(!(vidalia_onion_67_part_0_in_hand) -> X(!vidalia_onion_67_part_0_place_inside_casserole_70))",
+        "explanation": "Block placing Vidalia onion 67 part 0 into casserole 70 unless in hand."
+    },
+    {
+        "rule": "G(vidalia_onion_67_part_0_inside_casserole_70 -> X(!vidalia_onion_67_part_0_place_inside_casserole_70))",
+        "explanation": "Once Vidalia onion 67 part 0 is placed, block further placements."
+    },
+    {
+        "rule": "G(!(vidalia_onion_67_part_1_in_hand) -> X(!vidalia_onion_67_part_1_place_inside_casserole_70))",
+        "explanation": "Block placing Vidalia onion 67 part 1 into casserole 70 unless in hand."
+    },
+    {
+        "rule": "G(vidalia_onion_67_part_1_inside_casserole_70 -> X(!vidalia_onion_67_part_1_place_inside_casserole_70))",
+        "explanation": "Once Vidalia onion 67 part 1 is placed, block further placements."
+    }
+]

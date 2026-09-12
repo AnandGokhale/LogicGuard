@@ -1,0 +1,3406 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bucket_0",
+      "thoughts": "To achieve the goal of placing the bucket next to the sink, I first need to pick up the bucket. The left hand is free, so I'll grasp the bucket with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Grasp bucket_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_28",
+      "thoughts": "The bucket needs to be next to the sink according to the goal state. Since I am holding the bucket in my left hand, I will place it next to the sink to satisfy this goal condition."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Place next to bucket_0 sink_28 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "soap_0",
+      "thoughts": "To achieve the goal state of having soap_0 inside bucket_0, I need to pick up soap_0 first since my hands are both empty."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Grasp soap_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "soap_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bucket_0",
+      "thoughts": "I am currently holding soap_0 in my left hand and need to put it inside bucket_0 to satisfy the goal condition that soap_0 is inside bucket_0."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Place inside soap_0 bucket_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bucket_0",
+      "thoughts": "To clean the stained bathroom floor, I need a cleaning tool. The dishtowel is in the bathroom and is a cleaning tool, so I should pick it up next. Grasping bucket_0 would allow me to move it next to the sink as required by the goal state."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Teleport soap_0 INSIDE bucket_0 successful: True\nGrasp bucket_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_28",
+      "thoughts": "I am currently holding bucket_0 in my left hand, and the goal state requires bucket_0 to be next to sink_28. Placing it next to the sink progresses toward this goal condition."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Teleport soap_0 INSIDE bucket_0 successful: True\nPlace next to bucket_0 sink_28 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bathroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dishtowel_0",
+      "thoughts": "To clean the stained room_floor_bathroom_0, I need a cleaning tool. The dishtowel_0 is a cleaning tool and is currently on the bathroom floor, so I will pick it up with my left hand to prepare for cleaning."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Grasp dishtowel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "dishtowel_0",
+      "thoughts": "To effectively clean the stained room_floor_bathroom_0, the dishtowel should be soaked first. The sink_28 is a water source and is nearby, so soaking the dishtowel is the next logical step."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: sink_28",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: soap_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_28",
+      "thoughts": "The dishtowel needs to be soaked before cleaning the stained bathroom floor. The sink must be toggled on first to allow soaking. I am holding the dishtowel in my left hand and my right hand is empty, so I can toggle on the sink now."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Toggleon sink_28 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: sink_28",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: soap_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "dishtowel_0",
+      "thoughts": "The dishtowel is a cleaning tool and needs to be soaked before it can be used to clean the stained bathroom floor. The sink is already toggled on, and I am holding the dishtowel in my left hand, so soaking it is the next logical step."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: sink_28",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: soap_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_28",
+      "thoughts": "The dishtowel needs to be placed inside the toggled on sink before it can be soaked. I am holding the dishtowel in my left hand, so I will place it inside the sink first."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Place inside dishtowel_0 sink_28 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: sink_28",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: soap_0",
+          "Next to: bucket_0",
+          "Next to: dishtowel_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_bathroom_0",
+          "Next to: sink_28",
+          "Next to: room_floor_corridor_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dishtowel_0",
+      "thoughts": "To clean the stained bathroom floor, I need a cleaning tool. The dishtowel is a cleaning tool and is not soaked. First, I will pick up the dishtowel so I can soak it in the sink and then use it to clean the floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Grasp dishtowel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "dishtowel_0",
+      "thoughts": "I am holding the dishtowel in my left hand, and the sink is toggled on. The dishtowel is not soaked. I will soak the dishtowel in the sink to prepare it for cleaning the stained bathroom floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_28",
+      "thoughts": "To soak the dishtowel, I need to place it inside the toggled on sink first. This will allow me to perform the SOAK action afterwards."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Place inside dishtowel_0 sink_28 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: sink_28",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: soap_0",
+          "Next to: bucket_0",
+          "Next to: dishtowel_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_28"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dishtowel_0",
+      "thoughts": "To soak the dishtowel for cleaning the stained bathroom floor, I need to first pick up dishtowel_0 with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Grasp dishtowel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: sink_28",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: soap_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "dishtowel_0",
+      "thoughts": "The dishtowel is in my left hand, and the sink is toggled on. I need to soak the dishtowel so I can use it to clean the stained bathroom floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: sink_28",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: soap_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_28",
+      "thoughts": "To soak the dishtowel, I need to place it inside the toggled-on sink first. This will allow me to perform the soak action afterwards."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Place inside dishtowel_0 sink_28 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: sink_28",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: soap_0",
+          "Next to: bucket_0",
+          "Next to: dishtowel_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_bathroom_0",
+          "Next to: sink_28",
+          "Next to: room_floor_corridor_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dishtowel_0",
+      "thoughts": "I need to soak the dishtowel so I can use it to clean the stained bathroom floor. First, I need to pick up the dishtowel with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Grasp dishtowel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "dishtowel_0",
+      "thoughts": "The dishtowel is already in my left hand and the sink is toggled on, so I can soak the dishtowel in the sink to prepare it for cleaning the stained floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_28",
+      "thoughts": "To soak the dishtowel, I need to first place it inside the toggled on sink. This will allow me to use it for cleaning the stained bathroom floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Place inside dishtowel_0 sink_28 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0",
+          "Next to: dishtowel_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_bathroom_0",
+          "Next to: sink_28",
+          "Next to: room_floor_corridor_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dishtowel_0",
+      "thoughts": "To soak the dishtowel in the sink for cleaning, I must first pick it up with my left hand since both hands are currently empty."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Grasp dishtowel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "dishtowel_0",
+      "thoughts": "The dishtowel is in my left hand, the sink is toggled on, and soaking the dishtowel will prepare it for cleaning the stained bathroom floor, which is a goal state requirement."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_28",
+      "thoughts": "I need to place the dishtowel into the toggled on sink before I can soak it, as per the previous feedback."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Place inside dishtowel_0 sink_28 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0",
+          "Next to: dishtowel_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_bathroom_0",
+          "Next to: sink_28",
+          "Next to: room_floor_corridor_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dishtowel_0",
+      "thoughts": "To clean the stained bathroom floor, I need a cleaning tool. The dishtowel is a cleaning tool and needs to be soaked before use. First, I will pick up the dishtowel with my left hand to prepare for soaking it in the sink."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Grasp dishtowel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "dishtowel_0",
+      "thoughts": "The dishtowel is already in my left hand and the sink is toggled on, so I should soak the dishtowel to prepare it for cleaning the stained bathroom floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_28",
+      "thoughts": "The dishtowel needs to be inside the toggled on sink before I can soak it. I will place the dishtowel into the sink first."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Place inside dishtowel_0 sink_28 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0",
+          "Next to: dishtowel_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_bathroom_0",
+          "Next to: sink_28",
+          "Next to: room_floor_corridor_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dishtowel_0",
+      "thoughts": "To soak the dishtowel and use it to clean the stained bathroom floor, I first need to pick it up. My left hand is empty, so I will grasp the dishtowel with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Grasp dishtowel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "dishtowel_0",
+      "thoughts": "The dishtowel is a cleaning tool and currently not soaked. Since the sink in the bathroom is toggled on, I should soak the dishtowel in the sink so it can be used to clean the stained bathroom floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_28",
+      "thoughts": "To soak the dishtowel, I need to place it inside the toggled on sink first. This prepares the dishtowel for cleaning the stained bathroom floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Place inside dishtowel_0 sink_28 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0",
+          "Next to: dishtowel_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_28"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dishtowel_0",
+      "thoughts": "To soak the dishtowel, I need to first pick it up with my left hand so I can place it inside the toggled on sink."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Grasp dishtowel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_28",
+      "thoughts": "The dishtowel is in my left hand and the sink is toggled on. Placing the dishtowel inside the sink will soak it, preparing it for cleaning the stained floor as required by the goal state."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Place inside dishtowel_0 sink_28 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0",
+          "Next to: dishtowel_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28",
+          "Next to: dishtowel_0"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_28",
+          "Next to: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dishtowel_0",
+      "thoughts": "To clean the stained bathroom floor, I need a cleaning tool. The dishtowel is a cleaning tool and currently not soaked. I will grasp it with my left hand so I can soak it in the sink and then use it for cleaning."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Grasp dishtowel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "dishtowel_0",
+      "thoughts": "The dishtowel is a cleaning tool and needs to be soaked before I can use it to clean the stained bathroom floor. The sink is toggled on, so I can soak the dishtowel now."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_28",
+      "thoughts": "The dishtowel needs to be placed inside the toggled on sink to soak it. This is necessary before I can use it to clean the stained bathroom floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Place inside dishtowel_0 sink_28 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: dishtowel_0",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0",
+          "Next to: dishtowel_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_28"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dishtowel_0",
+      "thoughts": "I need to soak the dishtowel in the sink to prepare it for cleaning the stained bathroom floor. First, I will pick up the dishtowel with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Grasp dishtowel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "dishtowel_0",
+      "thoughts": "The dishtowel is already in my left hand and the sink is toggled on. I need to soak the dishtowel to prepare it for cleaning the stained bathroom floor, which is a goal condition."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_28",
+      "thoughts": "The dishtowel needs to be placed inside the toggled on sink before I can soak it. This will prepare it for cleaning the stained bathroom floor, which is a goal condition."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Place inside dishtowel_0 sink_28 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0",
+          "Next to: dishtowel_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28",
+          "Next to: dishtowel_0"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_28",
+          "Next to: bucket_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dishtowel_0",
+      "thoughts": "I need to soak the dishtowel in the sink to use it for cleaning the stained bathroom floor. First, I will grasp the dishtowel with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Grasp dishtowel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "dishtowel_0",
+      "thoughts": "The dishtowel is in my left hand and not soaked. Since the sink is toggled on, I will soak the dishtowel so I can use it to clean the stained bathroom floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: corridor",
+          "Inside: bucket_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "broom_0",
+        "category": "broom",
+        "State description ": [
+          "Location: corridor",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "sink_28",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_28"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_28",
+      "thoughts": "The dishtowel must be placed inside the toggled on sink before it can be soaked. This will allow me to soak it and then use it to clean the stained bathroom floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_bathroom_0']\n['nextto', 'bucket_0', 'sink_28']\n['inside', 'soap_0', 'bucket_0']\n['nextto', 'broom_0', 'sink_28']\n\n\n",
+    "feedback": "Place inside dishtowel_0 sink_28 unsuccessful"
+  }
+]

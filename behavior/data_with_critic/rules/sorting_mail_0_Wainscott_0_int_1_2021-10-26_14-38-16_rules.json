@@ -1,0 +1,54 @@
+[
+    {
+        "rule": "G((envelope_143_next_to_envelope_144 | envelope_143_next_to_envelope_145 | envelope_143_next_to_envelope_146) -> X(!left_grasp_envelope_143))",
+        "explanation": "Once envelope_143 is next to any of 144/145/146, never grasp it again."
+    },
+    {
+        "rule": "G(!envelope_143_in_hand -> X(!envelope_143_place_nextto_envelope_144))",
+        "explanation": "Block placing 143 next to 144 unless it is already in hand."
+    },
+    {
+        "rule": "G((envelope_144_next_to_envelope_145 | envelope_144_next_to_envelope_146) -> X(!left_grasp_envelope_144))",
+        "explanation": "Once envelope_144 is next to 145 or 146, never grasp it again."
+    },
+    {
+        "rule": "G(!envelope_144_in_hand -> X(!envelope_144_place_nextto_envelope_145))",
+        "explanation": "Block placing 144 next to 145 unless it is in hand."
+    },
+    {
+        "rule": "G(envelope_145_next_to_envelope_146 -> X(!left_grasp_envelope_145))",
+        "explanation": "Once envelope_145 is next to 146, never grasp it again."
+    },
+    {
+        "rule": "G(!envelope_145_in_hand -> X(!envelope_145_place_nextto_envelope_146))",
+        "explanation": "Block placing 145 next to 146 unless it is in hand."
+    },
+    {
+        "rule": "G((newspaper_147_next_to_newspaper_148 | newspaper_147_next_to_newspaper_149 | newspaper_147_next_to_newspaper_150) -> X(!left_grasp_newspaper_147))",
+        "explanation": "Once newspaper_147 is next to any of 148/149/150, never grasp it again."
+    },
+    {
+        "rule": "G(!newspaper_147_in_hand -> X(!newspaper_147_place_nextto_newspaper_148))",
+        "explanation": "Block placing 147 next to 148 unless it is in hand."
+    },
+    {
+        "rule": "G((newspaper_148_next_to_newspaper_149 | newspaper_147_next_to_newspaper_150) -> X(!left_grasp_newspaper_148))",
+        "explanation": "Once newspaper_148 is next to 149 (or 147 is next to 150), never grasp 148 again."
+    },
+    {
+        "rule": "G(!newspaper_148_in_hand -> X(!newspaper_148_place_nextto_newspaper_149))",
+        "explanation": "Block placing 148 next to 149 unless it is in hand."
+    },
+    {
+        "rule": "G(newspaper_149_next_to_newspaper_150 -> X(!left_grasp_newspaper_149))",
+        "explanation": "Once newspaper_149 is next to 150, never grasp it again."
+    },
+    {
+        "rule": "G(!newspaper_149_in_hand -> X(!newspaper_149_place_nextto_newspaper_150))",
+        "explanation": "Block placing 149 next to 150 unless it is in hand."
+    },
+    {
+        "rule": "G(((envelope_143_next_to_envelope_144 | envelope_143_next_to_envelope_145 | envelope_143_next_to_envelope_146) & (envelope_144_next_to_envelope_145 | envelope_144_next_to_envelope_146) & envelope_145_next_to_envelope_146 & (newspaper_147_next_to_newspaper_148 | newspaper_147_next_to_newspaper_149 | newspaper_147_next_to_newspaper_150) & (newspaper_148_next_to_newspaper_149 | newspaper_147_next_to_newspaper_150) & newspaper_149_next_to_newspaper_150) -> X(done))",
+        "explanation": "When all adjacency conditions for envelopes and newspapers are satisfied, signal task completion with `done`."
+    }
+]

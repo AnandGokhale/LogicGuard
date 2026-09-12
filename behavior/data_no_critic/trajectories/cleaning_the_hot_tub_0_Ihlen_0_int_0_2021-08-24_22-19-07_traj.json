@@ -1,0 +1,2210 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: pool_50",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "Next to: scrub_brush_51",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_51",
+      "thoughts": "To clean the stained pool_50, I need to use the scrub_brush_51, which is a cleaning tool. First, I will pick it up with my left hand."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Grasp scrub_brush_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am already holding the scrub_brush_51 in my left hand, which is a cleaning tool. Although it is not soaked, I can attempt to clean pool_50 with it to try to remove the stain and achieve the goal state."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted\nClean-stain failed, please place object in a toggled on cleaner or get a soaked cleaner first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_38",
+      "thoughts": "The scrub_brush_51 must be soaked before it can be used to clean the stained pool_50. The sink_38 is a water source and currently toggled off, so I will turn it on to prepare for soaking the brush."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Toggleon sink_38 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "scrub_brush_51",
+      "thoughts": "The scrub_brush_51 is a cleaning tool and must be soaked before cleaning the stained pool_50. The sink_38 is toggled on, so I can now soak the brush to prepare for cleaning."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_38",
+      "thoughts": "The scrub_brush_51 needs to be placed inside the toggled on sink_38 in order to soak it and prepare for cleaning the stained pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Place inside scrub_brush_51 sink_38 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_38"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_51",
+          "Inside: scrub_brush_51"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "scrub_brush_51",
+      "thoughts": "The scrub brush is already inside the toggled on sink, so I can soak it to prepare for cleaning the stained pool."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Soak scrub_brush_51 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_38"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_51"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_51",
+      "thoughts": "The scrub brush is soaked and clean, and I need to use it to clean the stained pool. I will pick it up with my left hand to prepare for cleaning."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Grasp scrub_brush_51 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: storage_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Stained",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush in my left hand, which is an appropriate cleaning tool. The pool is stained and needs to be cleaned to achieve the target state. Therefore, I will use the CLEAN action on pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted\nClean-stain pool_50 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush in my left hand, which is a cleaning tool, and the pool needs to be cleaned to achieve the goal state."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush in my left hand, which is a cleaning tool, and the pool needs to be cleaned to achieve the goal state."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is a cleaning tool, and the pool needs to be cleaned to ensure it is not stained as required by the goal state."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is a cleaning tool, and the goal requires pool_50 to be not stained. Using the CLEAN action on pool_50 should achieve this."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is a cleaning tool, and the goal requires pool_50 to be not stained. Using the CLEAN action on pool_50 should achieve this."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is a cleaning tool, and the goal requires pool_50 to be not stained. Cleaning pool_50 with the scrub brush should achieve the goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is appropriate for cleaning stains. The goal is for pool_50 to be not stained, so I will use the scrub brush to clean pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is suitable for cleaning stains. The goal is for pool_50 to be not stained, so I will use the scrub brush to clean pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is a suitable tool to clean stains. The goal is for pool_50 to be not stained, so I will use the scrub brush to clean pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush in my left hand, which is suitable for cleaning stains. The goal requires pool_50 to be not stained, so I will use the scrub brush to clean pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush in my left hand, which is appropriate for cleaning stains. The goal is for pool_50 to be not stained, so I will use the scrub brush to clean pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush in my left hand, which is suitable for cleaning stains. The goal requires pool_50 to be not stained, so I will use the scrub brush to clean pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is suitable for cleaning stains. The goal is for pool_50 to be not stained, so I will use the CLEAN action on pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is suitable for cleaning stains. The goal is for pool_50 to be not stained, so I will use the CLEAN action on pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is suitable for cleaning stains. The goal is for pool_50 to be not stained, so I will use the CLEAN action on pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is a suitable cleaning tool. The goal is for pool_50 to be not stained, so I will use the CLEAN action on pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is a cleaning tool. The goal is for pool_50 to be not stained, so I will use the CLEAN action on pool_50."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is a cleaning tool, and the goal is for pool_50 to be not stained. Therefore, I will use the CLEAN action on pool_50 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is a cleaning tool, and the goal is for pool_50 to be not stained. Using the CLEAN action on pool_50 should help achieve this goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is a cleaning tool, and the goal is for pool_50 to be not stained. Using the CLEAN action on pool_50 should help achieve this goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is a cleaning tool, and the goal is for pool_50 to be not stained. Using the CLEAN action on pool_50 should help achieve this goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is a suitable cleaning tool, and the goal is for pool_50 to be not stained. Using the CLEAN action on pool_50 should help achieve this goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is an appropriate cleaning tool, and the goal is for pool_50 to be not stained. Using the CLEAN action on pool_50 should help achieve this goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush in my left hand, which is suitable for cleaning. The goal requires pool_50 to be not stained, so I will use the CLEAN action on pool_50 to achieve this."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush in my left hand, which is an appropriate cleaning tool. The goal requires pool_50 to be not stained, so I will use the CLEAN action on pool_50 to achieve this."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush in my left hand, which is an appropriate cleaning tool. The goal requires pool_50 to be not stained, so I will use the CLEAN action on pool_50 to achieve this."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush in my left hand, which is suitable for cleaning. The goal requires pool_50 to be not stained, so I will use the CLEAN action on pool_50 to work towards this goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush in my left hand, which is a cleaning tool. The goal is for pool_50 to be not stained, so I will use the CLEAN action on pool_50 to achieve this."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is a suitable cleaning tool, and the goal is for pool_50 to be not stained. Using the CLEAN action on pool_50 should help achieve the target state."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is a cleaning tool, and the goal is for pool_50 to be not stained. Using the CLEAN action on pool_50 should remove any stains and move towards the goal state."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is a cleaning tool. The goal is for pool_50 to be not stained, so using the CLEAN action on pool_50 is the correct next step."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_51",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scrub_brush_51",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "pool_50",
+        "category": "pool",
+        "State description ": [
+          "Location: garage",
+          "Stain status: Clean",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_garage_0"
+        ]
+      },
+      {
+        "name": "room_floor_garage_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "pool_50",
+      "thoughts": "I am holding a soaked scrub brush, which is a cleaning tool. The goal is for pool_50 to be not stained (clean), so using the CLEAN action on pool_50 is the correct next step."
+    },
+    "goal": "target environment state:\n['onfloor', 'pool_50', 'room_floor_garage_0']\n['not', 'stained', 'pool_50']\n\n\n",
+    "feedback": "Clean-dust failed, object cannot be clean-dusted"
+  }
+]

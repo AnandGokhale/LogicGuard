@@ -1,0 +1,34 @@
+[
+    {
+        "rule": "G((ice_cube_0_inside_stocking_0|ice_cube_0_inside_stocking_1|ice_cube_0_inside_stocking_2|ice_cube_0_inside_stocking_3) -> X(!(left_grasp_ice_cube_0|right_grasp_ice_cube_0)))",
+        "explanation": "Once ice_cube_0 is in any stocking, block further grasps of ice_cube_0 to avoid redundant handling."
+    },
+    {
+        "rule": "G(!ice_cube_0_in_hand -> X(!(ice_cube_0_place_inside_stocking_0|ice_cube_0_place_inside_stocking_1|ice_cube_0_place_inside_stocking_2|ice_cube_0_place_inside_stocking_3)))",
+        "explanation": "Prevent placing ice_cube_0 unless it is currently held."
+    },
+    {
+        "rule": "G((pen_0_inside_stocking_0|pen_0_inside_stocking_1|pen_0_inside_stocking_2|pen_0_inside_stocking_3) -> X(!left_grasp_pen_0))",
+        "explanation": "Once pen_0 has been placed in a stocking, block any further grasps of pen_0."
+    },
+    {
+        "rule": "G(!pen_0_in_hand -> X(!(pen_0_place_inside_stocking_0|pen_0_place_inside_stocking_1|pen_0_place_inside_stocking_2|pen_0_place_inside_stocking_3)))",
+        "explanation": "Ensure pen_0 can only be placed when the robot is actually holding it."
+    },
+    {
+        "rule": "G((lollipop_0_inside_stocking_0|lollipop_0_inside_stocking_1|lollipop_0_inside_stocking_2|lollipop_0_inside_stocking_3) -> X(!left_grasp_stocking_0))",
+        "explanation": "After lollipop_0 ends up in stocking_0, block any further grasps of stocking_0 to avoid redundant stocking handling."
+    },
+    {
+        "rule": "G(!lollipop_0_in_hand -> X(!(lollipop_0_place_inside_stocking_0|lollipop_0_place_inside_stocking_1|lollipop_0_place_inside_stocking_2|lollipop_0_place_inside_stocking_3)))",
+        "explanation": "Prevent placing lollipop_0 unless it is in the robot's hand."
+    },
+    {
+        "rule": "G((candy_cane_0_inside_stocking_0|candy_cane_0_inside_stocking_1|candy_cane_0_inside_stocking_2|candy_cane_0_inside_stocking_3) -> X(!left_grasp_stocking_1))",
+        "explanation": "Once candy_cane_0 is in any stocking, avoid further unnecessary stocking grasps (use stocking_1 here as representative)."
+    },
+    {
+        "rule": "G(((ice_cube_0_inside_stocking_0|ice_cube_0_inside_stocking_1|ice_cube_0_inside_stocking_2|ice_cube_0_inside_stocking_3) & (ice_cube_1_inside_stocking_0|ice_cube_1_inside_stocking_1|ice_cube_1_inside_stocking_2|ice_cube_1_inside_stocking_3) & (ice_cube_2_inside_stocking_0|ice_cube_2_inside_stocking_1|ice_cube_2_inside_stocking_2|ice_cube_2_inside_stocking_3) & (ice_cube_3_inside_stocking_0|ice_cube_3_inside_stocking_1|ice_cube_3_inside_stocking_2|ice_cube_3_inside_stocking_3) & (pen_0_inside_stocking_0|pen_0_inside_stocking_1|pen_0_inside_stocking_2|pen_0_inside_stocking_3) & (pen_1_inside_stocking_0|pen_1_inside_stocking_1|pen_1_inside_stocking_2|pen_1_inside_stocking_3) & (pen_2_inside_stocking_0|pen_2_inside_stocking_1|pen_2_inside_stocking_2|pen_2_inside_stocking_3) & (pen_3_inside_stocking_0|pen_3_inside_stocking_1|pen_3_inside_stocking_2|pen_3_inside_stocking_3) & (lollipop_0_inside_stocking_0|lollipop_0_inside_stocking_1|lollipop_0_inside_stocking_2|lollipop_0_inside_stocking_3) & (lollipop_1_inside_stocking_0|lollipop_1_inside_stocking_1|lollipop_1_inside_stocking_2|lollipop_1_inside_stocking_3) & (lollipop_2_inside_stocking_0|lollipop_2_inside_stocking_1|lollipop_2_inside_stocking_2|lollipop_2_inside_stocking_3) & (candy_cane_0_inside_stocking_0|candy_cane_0_inside_stocking_1|candy_cane_0_inside_stocking_2|candy_cane_0_inside_stocking_3)) -> X(done))",
+        "explanation": "When all ice_cubes, pens, lollipops and candy_cane_0 are inside some stocking, immediately fire done to terminate the task."
+    }
+]

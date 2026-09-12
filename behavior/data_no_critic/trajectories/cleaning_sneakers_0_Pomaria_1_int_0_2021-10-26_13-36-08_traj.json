@@ -1,0 +1,5986 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: scrub_brush_84",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: soap_82"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_83",
+          "Next to: countertop_31",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "gym_shoe_78",
+      "thoughts": "To achieve the goal, all gym shoes must be clean (not stained or dusty) and moved to the living room floor, some next to and some under the coffee table. I will start by picking up a stained gym shoe (gym_shoe_78) so I can clean it."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Grasp gym_shoe_78 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "gym_shoe_78",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: scrub_brush_84",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: soap_82"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_83",
+          "Next to: countertop_31",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "countertop_31",
+      "thoughts": "I need to clean gym_shoe_78, and to do so I need to free my left hand to grasp a cleaning tool. I will place gym_shoe_78 on the countertop first."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Place ontop gym_shoe_78 countertop_31 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: scrub_brush_84",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: soap_82"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_83",
+          "Next to: countertop_31",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_83",
+      "thoughts": "I need a cleaning tool to clean the stained and dusty gym shoes. The hand_towel_83 is clean and on the countertop, so I will grasp it with my left hand to prepare for cleaning."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Grasp hand_towel_83 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: soap_82"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: countertop_31",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "countertop_31",
+      "thoughts": "The goal requires hand_towel_83 to be on top of countertop_31 and next to scrub_brush_84. Placing the towel on the countertop will help achieve both the ontop and nextto relations."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Place ontop hand_towel_83 countertop_31 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: scrub_brush_84",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: soap_82"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84",
+          "Under: hand_towel_83",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_83",
+          "Next to: countertop_31",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_84",
+      "thoughts": "To achieve the goal where scrub_brush_84 is next to hand_towel_83 (which is on countertop_31), I need to move scrub_brush_84 next to the towel. Grasping it first allows me to reposition it as needed."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Grasp scrub_brush_84 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_84",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_31",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: soap_82"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: gym_shoe_78",
+          "Under: hand_towel_83",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "hand_towel_83",
+      "thoughts": "To achieve the goal of scrub_brush_84 being next to hand_towel_83, I will place the scrub_brush_84 (currently in my left hand) next to the hand_towel_83."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Place next to scrub_brush_84 hand_towel_83 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "Next to: scrub_brush_84",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: hand_towel_83",
+          "Next to: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: soap_82"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: gym_shoe_78",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_83"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "soap_82",
+      "thoughts": "To achieve the goal of placing soap_82 inside sink_37, I need to first grasp soap_82 so I can move it from the cabinet to the sink."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "soap_82 is inside closed top_cabinet_24"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: soap_82"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "top_cabinet_24",
+      "thoughts": "soap_82 is currently inside the closed top_cabinet_24, so I must open the cabinet first before I can grasp the soap and move it to the sink."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Open top_cabinet_24 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_82"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "soap_82",
+      "thoughts": "The top_cabinet_24 is already open, so I can now grasp soap_82 with my right hand to move it towards the sink as required by the goal state."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Grasp soap_82 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "soap_82"
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: hand_towel_83",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_INSIDE",
+      "object": "sink_37",
+      "thoughts": "The goal state requires the soap to be inside the sink. Since I am already holding soap_82 in my right hand and the sink is accessible, I will place the soap inside the sink to satisfy this part of the goal."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Place inside soap_82 sink_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "Next to: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: hand_towel_83"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_83",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_83",
+      "thoughts": "To achieve the goal of having hand_towel_83 on top of countertop_31 and scrub_brush_84 next to hand_towel_83, I need to first pick up hand_towel_83. This will allow me to later place it on top of the countertop."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Grasp hand_towel_83 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "countertop_31",
+      "thoughts": "I am currently holding hand_towel_83 in my left hand. To fulfill the goal of having hand_towel_83 on top of countertop_31, I should place it there now."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Place ontop hand_towel_83 countertop_31 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "Inside: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: hand_towel_83"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: hand_towel_83",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_84",
+      "thoughts": "To achieve the goal of scrub_brush_84 being next to hand_towel_83, I need to move scrub_brush_84 closer. First, I will pick up scrub_brush_84 so I can place it next to hand_towel_83, which is on top of countertop_31."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Grasp scrub_brush_84 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_84",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "Inside: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: hand_towel_83"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: hand_towel_83",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "hand_towel_83",
+      "thoughts": "I am currently holding scrub_brush_84 in my left hand and need to place it next to hand_towel_83 to satisfy the goal state that requires scrub_brush_84 to be next to hand_towel_83."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Place next to scrub_brush_84 hand_towel_83 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "Next to: scrub_brush_84",
+          "Inside: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: hand_towel_83",
+          "Next to: scrub_brush_84"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: hand_towel_83",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_83",
+          "Next to: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_83",
+      "thoughts": "To achieve the goal state, I need to manipulate cleaning tools. Grasping hand_towel_83 allows me to soak it or use it to clean the gym shoes, which are currently stained and/or dusty."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Grasp hand_towel_83 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_37",
+      "thoughts": "To clean or soak the hand_towel_83, I need the sink_37 to be toggled on so I can soak the towel and then use it to clean the gym shoes. Toggling on the sink is the necessary first step."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Toggleon sink_37 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "hand_towel_83",
+      "thoughts": "The hand_towel_83 is currently clean but not soaked. To clean the dusty and stained gym shoes, the towel should be soaked first, and the sink_37 is already toggled on. Therefore, soaking the hand towel is the correct next step."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_37",
+      "thoughts": "To soak the hand towel, I need to place it inside the toggled on sink first. This will allow me to perform the SOAK action afterwards."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Place inside hand_towel_83 sink_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37",
+          "Under: hand_towel_83"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_83",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "hand_towel_83",
+      "thoughts": "The hand towel is now inside the toggled-on sink, so I can soak it to prepare for cleaning the gym shoes, which need to be dust-free and stain-free in the goal state."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Soak hand_towel_83 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: soap_82",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: hand_towel_83",
+          "Next to: sink_37",
+          "Inside: sink_37",
+          "Under: hand_towel_83"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_83",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_83",
+      "thoughts": "The hand towel is soaked and ready to be used for cleaning. I will pick it up with my left hand so I can start cleaning the gym shoes, which need to be dust-free and stain-free as per the goal state."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Grasp hand_towel_83 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "gym_shoe_81",
+      "thoughts": "I am holding a soaked hand towel, which is a cleaning tool. I will use it to clean gym_shoe_81, which is currently dusty, to progress toward the goal of all gym shoes being dust-free."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Clean-dust gym_shoe_81 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "gym_shoe_80",
+      "thoughts": "I am holding a soaked hand towel, which allows me to clean. gym_shoe_80 is currently dusty, and the goal is for all gym shoes to be not dusty. Cleaning gym_shoe_80 will progress toward that goal."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Clean-dust gym_shoe_80 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "gym_shoe_78",
+      "thoughts": "gym_shoe_78 is stained, and the goal is for all gym shoes to be not stained or dusty. I am holding a soaked hand towel, so I can clean gym_shoe_78 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Clean-stain gym_shoe_78 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: pantry_room",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "gym_shoe_79",
+      "thoughts": "gym_shoe_79 is stained, and the goal requires all gym shoes to be clean. I am holding a soaked hand towel, which is a cleaning tool, so I will clean gym_shoe_79 next."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Clean-stain gym_shoe_79 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "gym_shoe_79",
+      "thoughts": "I am holding a soaked hand towel, which is a cleaning tool, and gym_shoe_79 needs to be clean according to the goal state. Cleaning it will help satisfy the forall clean condition for gym shoes."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "countertop_31",
+      "thoughts": "The goal state requires hand_towel_83 to be on top of countertop_31 and next to scrub_brush_84. Placing the hand towel on the countertop will help achieve both the ontop and nextto requirements."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Place ontop hand_towel_83 countertop_31 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: hand_towel_83",
+          "Under: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "gym_shoe_79",
+      "thoughts": "To achieve the goal of having two gym shoes next to and under coffee_table_4 and on the living room floor, I need to move a gym shoe from the kitchen to the living room. I will start by picking up gym_shoe_79."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Grasp gym_shoe_79 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "gym_shoe_79",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_UNDER",
+      "object": "coffee_table_4",
+      "thoughts": "I am holding gym_shoe_79 in my left hand. To achieve the goal of having two gym shoes under coffee_table_4 and on the living room floor, I will place gym_shoe_79 under coffee_table_4 as the next step."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Place under gym_shoe_79 coffee_table_4 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "On top of: gym_shoe_79"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "gym_shoe_80",
+      "thoughts": "To satisfy the goal of having two gym shoes under coffee_table_4 and on the living room floor, I need to move another gym shoe to the living room and under the coffee table. I will start by grasping gym_shoe_80, which is currently on the kitchen floor."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Grasp gym_shoe_80 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "gym_shoe_80",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "On top of: gym_shoe_79"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_UNDER",
+      "object": "coffee_table_4",
+      "thoughts": "I am currently holding gym_shoe_80 in my left hand. To achieve the goal state where two gym shoes are under the coffee table and on the living room floor, I need to place gym_shoe_80 under coffee_table_4, which is already in the living room."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Place under gym_shoe_80 coffee_table_4 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_84",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: gym_shoe_79",
+          "On floor: room_floor_living_room_0",
+          "Under: gym_shoe_79",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: gym_shoe_80",
+          "On floor: room_floor_living_room_0",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "On top of: gym_shoe_80",
+          "On top of: gym_shoe_79"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "gym_shoe_79",
+      "thoughts": "To satisfy the goal of having two gym shoes under the coffee table and on the living room floor, I need to move gym_shoe_79. Grasping it is the first step before placing it under coffee_table_4."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Grasp gym_shoe_79 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "gym_shoe_79",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_31",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: gym_shoe_78"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "On top of: gym_shoe_80"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_UNDER",
+      "object": "coffee_table_4",
+      "thoughts": "I am currently holding gym_shoe_79 in my left hand, and to satisfy the goal of having two gym shoes under coffee_table_4 and on the living room floor, I should place this shoe under the coffee table now."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Place under gym_shoe_79 coffee_table_4 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: gym_shoe_79",
+          "On floor: room_floor_living_room_0",
+          "Under: gym_shoe_79",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: gym_shoe_80",
+          "On floor: room_floor_living_room_0",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "On top of: gym_shoe_80",
+          "On top of: gym_shoe_79"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_83",
+      "thoughts": "To achieve the goal of having the hand_towel_83 on top of countertop_31 and next to scrub_brush_84, I need to pick up the hand_towel_83 first. My left hand is empty, so I can grasp it now."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Grasp hand_towel_83 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: gym_shoe_79",
+          "On floor: room_floor_living_room_0",
+          "Under: gym_shoe_79",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: gym_shoe_80",
+          "On floor: room_floor_living_room_0",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "On top of: gym_shoe_80",
+          "On top of: gym_shoe_79"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "scrub_brush_84",
+      "thoughts": "I am currently holding hand_towel_83 in my left hand. To satisfy the goal where hand_towel_83 is on top of countertop_31 and next to scrub_brush_84, I should place hand_towel_83 next to scrub_brush_84, which is already on top of countertop_31. This will achieve both the \"ontop\" and \"nextto\" conditions for hand_towel_83."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Place next to hand_towel_83 scrub_brush_84 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: countertop_31",
+          "Next to: scrub_brush_84"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: gym_shoe_79",
+          "On floor: room_floor_living_room_0",
+          "Under: gym_shoe_79",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_83"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: gym_shoe_80",
+          "On floor: room_floor_living_room_0",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "On top of: gym_shoe_80",
+          "On top of: gym_shoe_79"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_83",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_83",
+      "thoughts": "To place hand_towel_83 on top of countertop_31 and next to scrub_brush_84, I need to pick it up first since both hands are empty."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Grasp hand_towel_83 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_83",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: gym_shoe_79",
+          "On floor: room_floor_living_room_0",
+          "Under: gym_shoe_79",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: gym_shoe_80",
+          "On floor: room_floor_living_room_0",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "On top of: gym_shoe_80",
+          "On top of: gym_shoe_79"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO_ONTOP",
+      "object": "scrub_brush_84,countertop_31",
+      "thoughts": "I am currently holding hand_towel_83 in my left hand. To satisfy the goal of having hand_towel_83 on top of countertop_31 and next to scrub_brush_84, I will place it next to scrub_brush_84 and on top of countertop_31."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Place next to hand_towel_83 scrub_brush_84 on top of countertop_31 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "Next to: scrub_brush_84",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_83",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: gym_shoe_79",
+          "On floor: room_floor_living_room_0",
+          "Under: gym_shoe_79",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: gym_shoe_80",
+          "On floor: room_floor_living_room_0",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "On top of: gym_shoe_80",
+          "On top of: gym_shoe_79"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_83",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "gym_shoe_80",
+      "thoughts": "To satisfy the goal that two gym shoes are next to and under coffee_table_4 and on the living room floor, I will start by picking up gym_shoe_80, which is in the living room and currently under the coffee table."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Grasp gym_shoe_80 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "gym_shoe_80",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "Next to: scrub_brush_84",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_83",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "On top of: gym_shoe_79"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_83",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_UNDER",
+      "object": "coffee_table_4",
+      "thoughts": "I am holding gym_shoe_80 in my left hand, and the goal requires two gym shoes to be under and next to coffee_table_4 on the living room floor. Placing gym_shoe_80 under the coffee table will move towards fulfilling that requirement."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Place under gym_shoe_80 coffee_table_4 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "Next to: scrub_brush_84",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_83",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: gym_shoe_79",
+          "On floor: room_floor_living_room_0",
+          "Under: gym_shoe_79",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: gym_shoe_80",
+          "On floor: room_floor_living_room_0",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "On top of: gym_shoe_80",
+          "On top of: gym_shoe_79"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_83",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "gym_shoe_79",
+      "thoughts": "To satisfy the goal of having two gym shoes under and next to the coffee table in the living room, I need to move gym_shoe_79. Grasping gym_shoe_79 with my left hand is the first step towards placing it under or next to coffee_table_4."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Grasp gym_shoe_79 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "gym_shoe_79",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "hand_towel_83",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: gym_shoe_78",
+          "Next to: scrub_brush_84",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "soap_82",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_81",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "gym_shoe_78",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_83",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_80",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Under: coffee_table_4"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "gym_shoe_79",
+        "category": "gym_shoe",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_4",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "On top of: gym_shoe_80"
+        ]
+      },
+      {
+        "name": "scrub_brush_84",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_83",
+          "On top of: countertop_31"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_UNDER",
+      "object": "coffee_table_4",
+      "thoughts": "I am holding gym_shoe_79 in my left hand, and to satisfy the goal of having two gym shoes under the coffee table, I will place gym_shoe_79 under coffee_table_4."
+    },
+    "goal": "target environment state:\n['ontop', 'hand_towel_83', 'countertop_31']\n['nextto', 'scrub_brush_84', 'hand_towel_83']\n['inside', 'soap_82', 'sink_37']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'dusty', 'gym_shoe.n.01']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'not', 'stained', 'gym_shoe.n.01']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'nextto', 'gym_shoe.n.01', 'coffee_table_4']\n['forn', '2', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'under', 'gym_shoe.n.01', 'coffee_table_4']\n['forall', 'gym_shoe.n.01', '-', 'gym_shoe.n.01', 'onfloor', 'gym_shoe.n.01', 'room_floor_living_room_0']\n\n\n",
+    "feedback": "Place under gym_shoe_79 coffee_table_4 successful"
+  }
+]

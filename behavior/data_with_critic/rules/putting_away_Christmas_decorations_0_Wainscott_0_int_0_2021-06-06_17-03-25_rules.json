@@ -1,0 +1,74 @@
+[
+    {
+        "rule": "G(wreath_0_next_to_bottom_cabinet_79 -> X(!left_grasp_wreath_0))",
+        "explanation": "Once wreath_0 is in place, prevent the robot from re-grasping it."
+    },
+    {
+        "rule": "G(wreath_0_next_to_bottom_cabinet_79 -> X(!wreath_0_place_nextto_bottom_cabinet_79))",
+        "explanation": "Once wreath_0 is correctly placed, block redundant place actions."
+    },
+    {
+        "rule": "G(wreath_1_next_to_bottom_cabinet_79 -> X(!left_grasp_wreath_1))",
+        "explanation": "Once wreath_1 is in place, prevent re-grasping."
+    },
+    {
+        "rule": "G(wreath_1_next_to_bottom_cabinet_79 -> X(!wreath_1_place_nextto_bottom_cabinet_79))",
+        "explanation": "Once wreath_1 is correctly placed, block redundant placements."
+    },
+    {
+        "rule": "G(bow_0_next_to_bottom_cabinet_79 -> X(!left_grasp_bow_0))",
+        "explanation": "Once bow_0 is in place, prevent re-grasping it."
+    },
+    {
+        "rule": "G(bow_0_next_to_bottom_cabinet_79 -> X(!bow_0_place_nextto_bottom_cabinet_79))",
+        "explanation": "Once bow_0 is correctly placed, block redundant place actions."
+    },
+    {
+        "rule": "G(bow_1_next_to_bottom_cabinet_79 -> X(!left_grasp_bow_1))",
+        "explanation": "Once bow_1 is in place, prevent re-grasping it."
+    },
+    {
+        "rule": "G(bow_1_next_to_bottom_cabinet_79 -> X(!bow_1_place_nextto_bottom_cabinet_79))",
+        "explanation": "Once bow_1 is correctly placed, block redundant placements."
+    },
+    {
+        "rule": "G(bow_2_next_to_bottom_cabinet_79 -> X(!left_grasp_bow_2))",
+        "explanation": "Prevent attempts to grasp bow_2 once it is (or would be) in place; no such action exists to place it."
+    },
+    {
+        "rule": "G(bow_2_next_to_bottom_cabinet_79 -> X(!bow_2_place_nextto_bottom_cabinet_79))",
+        "explanation": "Block any hypothetical place for bow_2 to avoid endless failure."
+    },
+    {
+        "rule": "G(!bottom_cabinet_79_is_open -> X(!ribbon_0_place_inside_bottom_cabinet_79))",
+        "explanation": "Ensure the cabinet is open before placing ribbon_0 inside."
+    },
+    {
+        "rule": "G(ribbon_0_inside_bottom_cabinet_79 -> X(!left_grasp_ribbon_0))",
+        "explanation": "Once ribbon_0 is stored, block re-grasping it."
+    },
+    {
+        "rule": "G(!bottom_cabinet_79_is_open -> X(!ribbon_1_place_inside_bottom_cabinet_79))",
+        "explanation": "Ensure the cabinet is open before placing ribbon_1 inside."
+    },
+    {
+        "rule": "G(ribbon_1_inside_bottom_cabinet_79 -> X(!left_grasp_ribbon_1))",
+        "explanation": "Once ribbon_1 is stored, block re-grasping it."
+    },
+    {
+        "rule": "G(!bottom_cabinet_79_is_open -> X(!ribbon_2_place_inside_bottom_cabinet_79))",
+        "explanation": "Ensure the cabinet is open before placing ribbon_2 inside."
+    },
+    {
+        "rule": "G(ribbon_2_inside_bottom_cabinet_79 -> X(!left_grasp_ribbon_2))",
+        "explanation": "Once ribbon_2 is stored, block re-grasping it."
+    },
+    {
+        "rule": "G((wreath_0_next_to_bottom_cabinet_79 & wreath_1_next_to_bottom_cabinet_79 & bow_0_next_to_bottom_cabinet_79 & bow_1_next_to_bottom_cabinet_79 & bow_2_next_to_bottom_cabinet_79 & ribbon_0_inside_bottom_cabinet_79 & ribbon_1_inside_bottom_cabinet_79 & ribbon_2_inside_bottom_cabinet_79) -> X(done))",
+        "explanation": "When all subgoals are satisfied, allow the robot to terminate with `done`."
+    },
+    {
+        "rule": "G((wreath_0_next_to_bottom_cabinet_79 & wreath_1_next_to_bottom_cabinet_79 & bow_0_next_to_bottom_cabinet_79 & bow_1_next_to_bottom_cabinet_79 & bow_2_next_to_bottom_cabinet_79 & ribbon_0_inside_bottom_cabinet_79 & ribbon_1_inside_bottom_cabinet_79 & ribbon_2_inside_bottom_cabinet_79) -> X(!left_grasp_wreath_0 & !left_grasp_wreath_1 & !left_grasp_bow_0 & !left_grasp_bow_1 & !left_grasp_bow_2 & !left_grasp_ribbon_0 & !left_grasp_ribbon_1 & !left_grasp_ribbon_2))",
+        "explanation": "Once everything is done, block any further grasp actions to lock in the final state."
+    }
+]

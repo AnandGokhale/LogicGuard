@@ -1,0 +1,82 @@
+[
+    {
+        "rule": "G(sink_82_next_to_rag_0 -> X(!left_grasp_rag_0))",
+        "explanation": "Once rag 0 is next to sink 82, do not grasp it again (avoids redundant grasps)."
+    },
+    {
+        "rule": "G(rag_0_in_hand & sink_82_next_to_rag_0 -> X(!rag_0_place_nextto_sink_82))",
+        "explanation": "If rag 0 is already next to the sink, do not place it there again."
+    },
+    {
+        "rule": "G(sink_82_next_to_rag_1 -> X(!left_grasp_rag_1))",
+        "explanation": "Once rag 1 is next to sink 82, do not grasp it again."
+    },
+    {
+        "rule": "G(rag_1_in_hand & sink_82_next_to_rag_1 -> X(!rag_1_place_nextto_sink_82))",
+        "explanation": "If rag 1 is already next to the sink, do not place it there again."
+    },
+    {
+        "rule": "G(!soap_0_in_hand -> X(!soap_0_place_inside_sink_82))",
+        "explanation": "Only place soap 0 inside sink 82 when it is actually in hand."
+    },
+    {
+        "rule": "G(soap_0_inside_sink_82 -> X(!left_grasp_soap_0))",
+        "explanation": "Once soap 0 is inside sink 82, avoid re\u2010grasping it unnecessarily."
+    },
+    {
+        "rule": "G(!fridge_97_is_open & tray_0_in_hand -> X(!tray_0_place_inside_fridge_97))",
+        "explanation": "Prevent placing tray 0 into fridge 97 unless the fridge is open."
+    },
+    {
+        "rule": "G(tray_0_inside_fridge_97 -> X(!left_grasp_tray_0))",
+        "explanation": "Once tray 0 is inside the fridge, do not grasp it again."
+    },
+    {
+        "rule": "G(!fridge_97_is_open & tray_1_in_hand -> X(!tray_1_place_inside_fridge_97))",
+        "explanation": "Prevent placing tray 1 into fridge 97 unless the fridge is open."
+    },
+    {
+        "rule": "G(tray_1_inside_fridge_97 -> X(!left_grasp_tray_1))",
+        "explanation": "Once tray 1 is inside the fridge, do not grasp it again."
+    },
+    {
+        "rule": "G(tray_0_is_stained -> X(clean_tray_0))",
+        "explanation": "If tray 0 becomes stained, immediately perform a cleaning action."
+    },
+    {
+        "rule": "G(tray_0_inside_fridge_97 & tray_0_is_stained -> X(clean_tray_0))",
+        "explanation": "Ensure tray 0 is cleaned right after it\u2019s placed if still stained."
+    },
+    {
+        "rule": "G(tray_1_is_stained -> X(clean_tray_1))",
+        "explanation": "If tray 1 becomes stained, immediately perform a cleaning action."
+    },
+    {
+        "rule": "G(tray_1_inside_fridge_97 & tray_1_is_stained -> X(clean_tray_1))",
+        "explanation": "Ensure tray 1 is cleaned right after it\u2019s placed if still stained."
+    },
+    {
+        "rule": "G(bowl_0_next_to_sink_82 -> X(!left_grasp_bowl_0))",
+        "explanation": "Once bowl 0 is next to sink 82, do not grasp it again."
+    },
+    {
+        "rule": "G(bowl_0_in_hand & bowl_0_next_to_sink_82 -> X(!bowl_0_place_nextto_sink_82))",
+        "explanation": "If bowl 0 is already next to the sink, do not place it there again."
+    },
+    {
+        "rule": "G(bowl_0_is_dusty -> X(clean_bowl_0))",
+        "explanation": "Whenever bowl 0 is dusty, immediately perform a cleaning action."
+    },
+    {
+        "rule": "G(bowl_0_is_dusty -> X(!done))",
+        "explanation": "Prevent finishing until bowl 0 is no longer dusty."
+    },
+    {
+        "rule": "G(fridge_97_is_stained -> X(clean_fridge_97))",
+        "explanation": "If the fridge is stained, immediately perform a cleaning action."
+    },
+    {
+        "rule": "G(fridge_97_is_stained -> X(!done))",
+        "explanation": "Prevent finishing until fridge 97 is no longer stained."
+    }
+]

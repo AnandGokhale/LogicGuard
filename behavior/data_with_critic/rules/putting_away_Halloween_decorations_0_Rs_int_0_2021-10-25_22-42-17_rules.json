@@ -1,0 +1,62 @@
+[
+    {
+        "rule": "G(!bottom_cabinet_13_is_open -> X(!pumpkin_0_place_inside_bottom_cabinet_13))",
+        "explanation": "Prevent placing pumpkin_0 inside if the cabinet is closed."
+    },
+    {
+        "rule": "G(pumpkin_0_inside_bottom_cabinet_13 -> X(!left_grasp_pumpkin_0))",
+        "explanation": "Avoid re-grasping pumpkin_0 once it\u2019s correctly placed."
+    },
+    {
+        "rule": "G(!bottom_cabinet_13_is_open -> X(!pumpkin_1_place_inside_bottom_cabinet_13))",
+        "explanation": "Prevent placing pumpkin_1 inside if the cabinet is closed."
+    },
+    {
+        "rule": "G(pumpkin_1_inside_bottom_cabinet_13 -> X(!left_grasp_pumpkin_1))",
+        "explanation": "Avoid re-grasping pumpkin_1 once it\u2019s correctly placed."
+    },
+    {
+        "rule": "G(!bottom_cabinet_13_is_open -> X(!candle_0_place_inside_bottom_cabinet_13))",
+        "explanation": "Prevent placing candle_0 inside if the cabinet is closed."
+    },
+    {
+        "rule": "G(candle_0_inside_bottom_cabinet_13 -> X(!left_grasp_candle_0))",
+        "explanation": "Avoid re-grasping candle_0 once it\u2019s correctly placed."
+    },
+    {
+        "rule": "G(!bottom_cabinet_13_is_open -> X(!candle_1_place_inside_bottom_cabinet_13))",
+        "explanation": "Prevent placing candle_1 inside if the cabinet is closed."
+    },
+    {
+        "rule": "G(candle_1_inside_bottom_cabinet_13 -> X(!left_grasp_candle_1))",
+        "explanation": "Avoid re-grasping candle_1 once it\u2019s correctly placed."
+    },
+    {
+        "rule": "G(!bottom_cabinet_13_is_open -> X(!candle_2_place_inside_bottom_cabinet_13))",
+        "explanation": "Prevent placing candle_2 inside if the cabinet is closed."
+    },
+    {
+        "rule": "G(candle_2_inside_bottom_cabinet_13 -> X(!left_grasp_candle_2))",
+        "explanation": "Avoid re-grasping candle_2 once it\u2019s correctly placed."
+    },
+    {
+        "rule": "G(cauldron_0_in_hand -> X(cauldron_0_place_nextto_coffee_table_5))",
+        "explanation": "Only allow placing the cauldron next to the table if the robot is holding it."
+    },
+    {
+        "rule": "G(!cauldron_0_in_hand -> X(!cauldron_0_place_nextto_coffee_table_5))",
+        "explanation": "Prevent cauldron placement when it is not in hand."
+    },
+    {
+        "rule": "G(sheet_0_on_top_of_coffee_table_5 -> X(!cauldron_0_place_nextto_coffee_table_5))",
+        "explanation": "Avoid placing the cauldron under the sheet, which would displace it."
+    },
+    {
+        "rule": "G((!sheet_0_next_to_coffee_table_5 & !sheet_0_on_top_of_coffee_table_5) -> X(!done))",
+        "explanation": "Don\u2019t terminate the task until the sheet is in a goal-satisfying position."
+    },
+    {
+        "rule": "G((pumpkin_0_inside_bottom_cabinet_13 & pumpkin_1_inside_bottom_cabinet_13 & candle_0_inside_bottom_cabinet_13 & candle_1_inside_bottom_cabinet_13 & candle_2_inside_bottom_cabinet_13 & (sheet_0_next_to_coffee_table_5 | sheet_0_on_top_of_coffee_table_5) & cauldron_0_next_to_coffee_table_5) -> X(done))",
+        "explanation": "Trigger task completion only when all placement goals are satisfied."
+    }
+]

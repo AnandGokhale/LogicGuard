@@ -1,0 +1,22 @@
+[
+    {
+        "rule": "G(shelf_15_is_under_hardback_78 -> X(!left_grasp_hardback_78))",
+        "explanation": "Once hardback_78 is under shelf_15, block any further grasp of it."
+    },
+    {
+        "rule": "G(shelf_15_is_under_hardback_78 -> X(!hardback_78_place_ontop_shelf_15))",
+        "explanation": "Once hardback_78 is already placed under shelf_15, block redundant place actions."
+    },
+    {
+        "rule": "G(shelf_15_is_under_hardback_79 -> X(!left_grasp_hardback_79))",
+        "explanation": "Once hardback_79 is under shelf_15, block any further grasp of it."
+    },
+    {
+        "rule": "G(shelf_15_is_under_hardback_79 -> X(!hardback_79_place_ontop_shelf_15))",
+        "explanation": "Once hardback_79 is already placed under shelf_15, block redundant place actions."
+    },
+    {
+        "rule": "G((shelf_15_is_under_hardback_78 & shelf_15_is_under_hardback_79 & hardback_81_on_top_of_shelf_15 & notebook_80_on_top_of_shelf_15) -> X(done))",
+        "explanation": "When all four items are observed on shelf_15 (using the correct predicates), trigger the final completion action."
+    }
+]

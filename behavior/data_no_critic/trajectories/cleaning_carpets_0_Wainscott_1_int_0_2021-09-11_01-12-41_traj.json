@@ -1,0 +1,4494 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_102",
+      "thoughts": "To clean the stained room_floor_corridor_0, I need a cleaning tool. The hand_towel_102 is a cleaning tool and is available on the floor, so I will pick it up with my left hand first."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Grasp hand_towel_102 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: hand_towel_102",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: dryer_48",
+          "Next to: washer_49"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "Next to: hand_towel_102",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "room_floor_corridor_0",
+      "thoughts": "I am holding hand_towel_102, which is a cleaning tool. Although it is not soaked, I can attempt to clean the stained room_floor_corridor_0 to achieve the target state."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Clean-stain failed, please place object in a toggled on cleaner or get a soaked cleaner first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: hand_towel_102",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103",
+          "Next to: hand_towel_102"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: dryer_48",
+          "Next to: top_cabinet_50",
+          "Next to: washer_49"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "Next to: hand_towel_102",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "hand_towel_102",
+      "thoughts": "The hand towel is a cleaning tool but is currently not soaked. To clean the stained floor, I need to soak the towel first. I will soak hand_towel_102 in the sink after toggling the sink on if necessary."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: hand_towel_102",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: dryer_48",
+          "Next to: washer_49"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "Next to: hand_towel_102",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_51",
+      "thoughts": "The sink is currently toggled off. To soak the hand towel, I need to turn the sink on first."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Toggleon sink_51 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: hand_towel_102",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: dryer_48",
+          "Next to: washer_49"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "Next to: hand_towel_102",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "hand_towel_102",
+      "thoughts": "The hand towel is already in my left hand, the sink is toggled on, so I can now soak the hand towel to prepare it for cleaning the stained floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: hand_towel_102",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: dryer_48",
+          "Next to: washer_49"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "Next to: hand_towel_102",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_51",
+      "thoughts": "The hand towel needs to be placed inside the toggled on sink before it can be soaked. This will allow me to soak it and then use it to clean the stained floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Place inside hand_towel_102 sink_51 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_102",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_51"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_102",
+      "thoughts": "I need to grasp the hand towel so I can place it into the toggled on sink for soaking, which is a necessary step before cleaning the stained floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Grasp hand_towel_102 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_51",
+      "thoughts": "I am holding the hand towel in my left hand and the sink is toggled on, so I will place the hand towel into the sink to soak it before using it to clean the stained floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Place inside hand_towel_102 sink_51 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: hand_towel_102",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_102",
+      "thoughts": "To clean the stained corridor floor, I need a cleaning tool. The hand towel is available and not soaked, so I will pick it up with my left hand first."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Grasp hand_towel_102 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "hand_towel_102",
+      "thoughts": "To clean the stained corridor floor, the hand towel should be soaked first. The sink in the utility room is toggled on and can be used as a water source. Since I am already holding the hand towel, the next step is to soak it."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_51",
+      "thoughts": "To soak the hand towel, I need to place it inside the toggled on sink first. This will allow me to perform the soak action afterwards."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Place inside hand_towel_102 sink_51 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: hand_towel_102",
+          "Next to: hand_towel_102",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_51"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_102",
+      "thoughts": "To soak the hand towel, I must first pick it up. The left hand is empty, so I will grasp hand_towel_102 with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Grasp hand_towel_102 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "room_floor_corridor_0",
+      "thoughts": "I am holding a clean hand towel in my left hand. Since the floor is stained and the goal is for it to be not stained, I will attempt to clean room_floor_corridor_0 directly with the hand towel."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Clean-stain failed, please place object in a toggled on cleaner or get a soaked cleaner first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "hand_towel_102",
+      "thoughts": "The hand towel in my left hand is not soaked. Since the sink is toggled on, I need to soak the hand towel first before using it to clean the stained floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_51",
+      "thoughts": "The hand towel in my left hand is not soaked. To soak it, I need to place it inside the toggled on sink first."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Place inside hand_towel_102 sink_51 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_102",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_51"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_102",
+      "thoughts": "To clean the stained corridor floor, I need a cleaning tool. The hand towel is available and not soaked. First, I will pick up the hand towel with my left hand so I can soak it in the sink."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Grasp hand_towel_102 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "hand_towel_102",
+      "thoughts": "The hand towel is in my left hand and is not soaked. The sink is toggled on, so I should soak the hand towel to prepare it for cleaning the stained corridor floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_51",
+      "thoughts": "The hand towel in my left hand needs to be placed inside the toggled on sink so that it can be soaked, which is necessary before cleaning the stained corridor floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Place inside hand_towel_102 sink_51 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_102",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_51"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_102",
+      "thoughts": "To soak the hand towel in the sink, I first need to pick it up with my left hand since both hands are currently empty."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Grasp hand_towel_102 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "hand_towel_102",
+      "thoughts": "The hand towel is in my left hand and the sink is toggled on, so I can soak the hand towel to prepare it for cleaning the stained floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_51",
+      "thoughts": "The hand towel must be placed inside the toggled on sink before I can soak it. This will allow me to soak the towel and use it to clean the stained corridor floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Place inside hand_towel_102 sink_51 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_102",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_51"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_102",
+      "thoughts": "I need to grasp the hand towel so that I can place it inside the toggled on sink and soak it, preparing it for cleaning the stained corridor floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Grasp hand_towel_102 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_51",
+      "thoughts": "I need to soak the hand towel before I can use it to clean the stained corridor floor. The sink is toggled on, so I will place the hand towel inside the sink to prepare for soaking."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Place inside hand_towel_102 sink_51 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_102",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sink_51",
+          "Next to: sink_51"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_102",
+      "thoughts": "I need to soak the hand towel in the sink to use it for cleaning. First, I will pick up the hand towel with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Grasp hand_towel_102 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "hand_towel_102",
+      "thoughts": "The hand towel is in my left hand and the sink is toggled on, so I should soak the hand towel to prepare it for cleaning the stained corridor floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_51",
+      "thoughts": "The hand towel needs to be placed inside the toggled on sink before I can soak it. This will prepare it for cleaning the stained floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Place inside hand_towel_102 sink_51 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_102",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_51"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_102",
+      "thoughts": "To soak the hand towel in the sink, I first need to pick it up with my left hand."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Grasp hand_towel_102 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "hand_towel_102",
+      "thoughts": "The hand towel is already in my left hand and the sink is toggled on, so I can soak the hand towel to prepare it for cleaning the stained floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_51",
+      "thoughts": "The hand towel needs to be placed inside the toggled on sink before it can be soaked. I will place the hand towel in the sink first."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Place inside hand_towel_102 sink_51 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: hand_towel_102",
+          "Next to: hand_towel_102",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_51"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_102",
+      "thoughts": "To soak the hand towel, I first need to pick it up with my left hand so I can place it inside the sink."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Grasp hand_towel_102 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_51",
+      "thoughts": "The hand towel in my left hand needs to be soaked to clean the stained floor. The sink is toggled on, so I will place the hand towel inside the sink to soak it."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Place inside hand_towel_102 sink_51 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: hand_towel_102",
+          "Next to: hand_towel_102",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_utility_room_0",
+          "Next to: sink_51",
+          "Next to: room_floor_corridor_0"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_102",
+      "thoughts": "To clean the stained room_floor_corridor_0, I first need to grasp the hand_towel_102 so I can soak it in the sink and then use it for cleaning."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Grasp hand_towel_102 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "hand_towel_102",
+      "thoughts": "I am holding the hand_towel_102 in my left hand, and the sink_51 is toggled on and available as a water source. I need to soak the towel before I can use it to clean the stained room_floor_corridor_0."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_51",
+      "thoughts": "I need to place the hand towel into the toggled on sink before I can soak it. This is required before attempting to soak the towel."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Place inside hand_towel_102 sink_51 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_102",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_51"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_102",
+      "thoughts": "To clean the stained room_floor_corridor_0, I need a cleaning tool. I will grasp the hand_towel_102 with my left hand so I can soak it in the sink and then use it to clean the floor."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Grasp hand_towel_102 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "hand_towel_102",
+      "thoughts": "I am holding the hand_towel_102 in my left hand, and there is a toggled on sink (sink_51) in the environment. I need to soak the hand_towel_102 before using it to clean the stained room_floor_corridor_0."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_51",
+      "thoughts": "I need to place the hand_towel_102 into the toggled on sink_51 in order to soak it before cleaning the stained room_floor_corridor_0."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Place inside hand_towel_102 sink_51 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_102",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: utility_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_51"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_102",
+      "thoughts": "To clean the stained room_floor_corridor_0, I need a soaked cleaning tool. First, I will grasp hand_towel_102 with my left hand so that I can soak it in the sink."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Grasp hand_towel_102 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "hand_towel_102",
+      "thoughts": "I am holding the hand_towel_102 in my left hand and the sink_51 is toggled on, so I can soak the towel to prepare it for cleaning the stained room_floor_corridor_0."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_102",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_utility_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dryer_48",
+        "category": "dryer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: washer_49",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "shampoo_103",
+        "category": "shampoo",
+        "State description ": [
+          "Location: utility_room",
+          "Frozen status: Not frozen",
+          "Next to: top_cabinet_50",
+          "Inside: top_cabinet_50"
+        ]
+      },
+      {
+        "name": "sink_51",
+        "category": "sink",
+        "State description ": [
+          "Location: utility_room_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_utility_room_0"
+        ]
+      },
+      {
+        "name": "door_80",
+        "category": "door",
+        "State description ": [
+          "Location: corridor_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "top_cabinet_50",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: shampoo_103"
+        ]
+      },
+      {
+        "name": "room_floor_corridor_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Stained",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hand_towel_102",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "washer_49",
+        "category": "washer",
+        "State description ": [
+          "Location: utility_room_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: top_cabinet_50",
+          "Next to: dryer_48",
+          "On floor: room_floor_utility_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_51",
+      "thoughts": "I need to soak the hand towel before I can use it to clean the stained floor. The sink is toggled on, so I will place the towel inside the sink to prepare for soaking."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'room_floor_corridor_0']\n\n\n",
+    "feedback": "Place inside hand_towel_102 sink_51 unsuccessful"
+  }
+]

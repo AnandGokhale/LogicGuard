@@ -1,0 +1,50 @@
+[
+    {
+        "rule": "G((!backpack_100_next_to_bed_43 & !bed_43_next_to_backpack_100 & backpack_100_in_hand) -> X(backpack_100_place_nextto_bed_43))",
+        "explanation": "If the backpack is held and not yet next to the bed, next action should place it next to the bed."
+    },
+    {
+        "rule": "G((backpack_100_next_to_bed_43 | bed_43_next_to_backpack_100) -> X(!left_grasp_backpack_100))",
+        "explanation": "Once the backpack is positioned by the bed, block any further grasping of it."
+    },
+    {
+        "rule": "G((sunglass_105_in_hand & !sunglass_105_inside_backpack_100) -> X(sunglass_105_place_inside_backpack_100))",
+        "explanation": "If the sunglasses are in hand and not yet inside, next action should place them inside the backpack."
+    },
+    {
+        "rule": "G(sunglass_105_inside_backpack_100 -> X(!left_grasp_sunglass_105))",
+        "explanation": "Once the sunglasses are inside, prevent re-grasping them."
+    },
+    {
+        "rule": "G((notebook_101_in_hand & !notebook_101_inside_backpack_100) -> X(notebook_101_place_inside_backpack_100))",
+        "explanation": "If the notebook is in hand and not yet inside, next action should place it inside the backpack."
+    },
+    {
+        "rule": "G(notebook_101_inside_backpack_100 -> X(!left_grasp_notebook_101))",
+        "explanation": "Once the notebook is inside, prevent re-grasping it."
+    },
+    {
+        "rule": "G((bracelet_102_in_hand & !bracelet_102_inside_backpack_100) -> X(bracelet_102_place_inside_backpack_100))",
+        "explanation": "If the bracelet is in hand and not yet inside, next action should place it inside the backpack."
+    },
+    {
+        "rule": "G(bracelet_102_inside_backpack_100 -> X(!left_grasp_bracelet_102))",
+        "explanation": "Once the bracelet is inside, prevent re-grasping it."
+    },
+    {
+        "rule": "G((apple_103_in_hand & !apple_103_inside_backpack_100) -> X(apple_103_place_inside_backpack_100))",
+        "explanation": "If the apple is in hand and not yet inside, next action should place it inside the backpack."
+    },
+    {
+        "rule": "G(apple_103_inside_backpack_100 -> X(!left_grasp_apple_103))",
+        "explanation": "Once the apple is inside, prevent re-grasping it."
+    },
+    {
+        "rule": "G((headset_104_in_hand & !headset_104_inside_backpack_100) -> X(headset_104_place_inside_backpack_100))",
+        "explanation": "If the headset is in hand and not yet inside, next action should place it inside the backpack."
+    },
+    {
+        "rule": "G(headset_104_inside_backpack_100 -> X(!left_grasp_headset_104))",
+        "explanation": "Once the headset is inside, prevent re-grasping it."
+    }
+]

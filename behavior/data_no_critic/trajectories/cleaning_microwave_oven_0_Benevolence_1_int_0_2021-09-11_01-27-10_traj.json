@@ -1,0 +1,1175 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "microwave_36",
+        "category": "microwave",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_15",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The microwave is both stained and dusty. To clean it, I need a cleaning tool. The rag_0 is available and clean, so I will grasp it with my left hand to prepare for cleaning."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'microwave_36']\n['not', 'stained', 'microwave_36']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "microwave_36",
+        "category": "microwave",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_15",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "microwave_36",
+      "thoughts": "I am holding a clean rag in my left hand. Although the rag is not soaked, I will attempt to clean the microwave_36 to remove both stains and dust, progressing toward the goal state."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'microwave_36']\n['not', 'stained', 'microwave_36']\n\n\n",
+    "feedback": "Clean-dust microwave_36 success\nClean-stain failed, please place object in a toggled on cleaner or get a soaked cleaner first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "microwave_36",
+        "category": "microwave",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_15",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_19",
+      "thoughts": "The rag in my left hand is not soaked, and previous feedback indicated that a soaked cleaner is needed to clean the stain on microwave_36. I will toggle on the sink to soak the rag next."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'microwave_36']\n['not', 'stained', 'microwave_36']\n\n\n",
+    "feedback": "Toggleon sink_19 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "microwave_36",
+        "category": "microwave",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_15",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_0",
+      "thoughts": "The rag in my left hand is not soaked, but the sink is toggled on. I will soak the rag to prepare it for cleaning the stained microwave."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'microwave_36']\n['not', 'stained', 'microwave_36']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "microwave_36",
+        "category": "microwave",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_19",
+      "thoughts": "The rag in my left hand is not soaked yet. To soak it, I need to place it inside the toggled on sink. This is the necessary step before I can use it to clean the microwave."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'microwave_36']\n['not', 'stained', 'microwave_36']\n\n\n",
+    "feedback": "Place inside rag_0 sink_19 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "microwave_36",
+        "category": "microwave",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag is already inside the toggled on sink, but I need to grasp it so I can use it for cleaning the microwave after it is soaked."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'microwave_36']\n['not', 'stained', 'microwave_36']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "microwave_36",
+        "category": "microwave",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_15",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_0",
+      "thoughts": "The rag is in my left hand and the sink is toggled on. I need to soak the rag so that it can be used effectively for cleaning the stained microwave."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'microwave_36']\n['not', 'stained', 'microwave_36']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "microwave_36",
+        "category": "microwave",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_15",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_19",
+      "thoughts": "The rag needs to be placed inside the toggled on sink before I can soak it. This will allow me to soak the rag and then use it to clean the microwave."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'microwave_36']\n['not', 'stained', 'microwave_36']\n\n\n",
+    "feedback": "Place inside rag_0 sink_19 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "microwave_36",
+        "category": "microwave",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_0",
+      "thoughts": "The rag is already inside the toggled on sink, so I can now soak it to prepare for cleaning the microwave."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'microwave_36']\n['not', 'stained', 'microwave_36']\n\n\n",
+    "feedback": "Soak rag_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "microwave_36",
+        "category": "microwave",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag is now soaked and ready for cleaning. I need to grasp the rag so I can use it to clean the stained and dusty microwave."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'microwave_36']\n['not', 'stained', 'microwave_36']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "microwave_36",
+        "category": "microwave",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_15",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "microwave_36",
+      "thoughts": "I am holding a soaked rag in my left hand, which is a suitable cleaning tool. The microwave is both stained and dusty, so cleaning it will help achieve the goal state."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'microwave_36']\n['not', 'stained', 'microwave_36']\n\n\n",
+    "feedback": "Clean-stain microwave_36 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "microwave_36",
+        "category": "microwave",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_15",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "microwave_36",
+      "thoughts": "I am holding a soaked rag, and the microwave still needs to be cleaned of dust to achieve the goal state. I will use the rag to clean the microwave."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'microwave_36']\n['not', 'stained', 'microwave_36']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "trash_can_0",
+        "category": "trash_can",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "microwave_36",
+        "category": "microwave",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_18",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "The microwave is already clean and not dusty, as indicated by the environment state and the feedback. No further action is needed to reach the goal state."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'microwave_36']\n['not', 'stained', 'microwave_36']\n\n\n",
+    "feedback": ""
+  }
+]

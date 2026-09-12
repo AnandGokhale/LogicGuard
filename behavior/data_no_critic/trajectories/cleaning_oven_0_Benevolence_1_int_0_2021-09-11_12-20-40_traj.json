@@ -1,0 +1,4323 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: soap_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_1",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Inside: bottom_cabinet_no_top_15",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_no_top_15",
+      "thoughts": "The scrub_brush_0 and both rags are inside the closed bottom_cabinet_no_top_15. To access and soak them, I need to open the cabinet first."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Open bottom_cabinet_no_top_15 failed"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: soap_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_1",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Inside: bottom_cabinet_no_top_15",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To soak the rags, I need to take one out of the cabinet first. Since the cabinet is already open, I will grasp rag_0 with my left hand."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15",
+          "On top of: scrub_brush_0"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_1",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0",
+          "Inside: rag_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_19",
+      "thoughts": "To soak the rag I am holding, I need to turn on the sink first so there is a water source available."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Toggleon sink_19 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_1",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_0",
+      "thoughts": "The sink is already toggled on, and I am holding rag_0 in my left hand. The next step is to soak the rag to achieve the goal state where all rags are soaked."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_1",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_19",
+      "thoughts": "I am holding rag_0 in my left hand and need to soak it. The sink is toggled on, so I should place the rag inside the sink to prepare for soaking."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Place inside rag_0 sink_19 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_1",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_0",
+      "thoughts": "rag_0 is now inside a toggled on sink, so I can execute the SOAK action to soak the rag and make progress towards the goal where all rags and the scrub brush are soaked."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Soak rag_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_1",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_0",
+      "thoughts": "To soak the scrub brush, I need to first pick it up. The scrub brush is inside the open bottom cabinet, and my hands are empty, so I will grasp it with my left hand."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Grasp scrub_brush_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "scrub_brush_0",
+      "thoughts": "The scrub brush is in my left hand, and the sink is toggled on, so I can soak the scrub brush to achieve the goal of having it soaked."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_19",
+      "thoughts": "To soak the scrub brush, I need to place it inside the toggled on sink first before performing the soak action."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Place inside scrub_brush_0 sink_19 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: scrub_brush_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "scrub_brush_0",
+      "thoughts": "The scrub brush is already inside the toggled on sink, so I can now execute the SOAK action to soak the scrub brush, which is required by the goal state."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Soak scrub_brush_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: scrub_brush_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_1",
+      "thoughts": "The goal requires all rags to be soaked. rag_1 is currently not soaked, and is inside the open bottom cabinet. I will grasp rag_1 with my left hand to move it to the sink for soaking."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Grasp rag_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "On top of: rag_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: scrub_brush_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_19",
+      "thoughts": "I am holding rag_1 in my left hand, and the sink is toggled on. Placing rag_1 inside the sink will allow it to be soaked, progressing towards the goal of all rags being soaked."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Place inside rag_1 sink_19 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "On top of: rag_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: scrub_brush_0",
+          "Under: sink_19",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_1",
+      "thoughts": "Rag_1 is not soaked, and it is inside the sink which is toggled on. Grasping rag_1 will allow me to soak it by interacting with it in the sink."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Grasp rag_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "On top of: rag_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: scrub_brush_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_1",
+      "thoughts": "The goal requires all rags to be soaked, and rag_1 is currently not soaked. I am already holding rag_1. The sink is toggled on, so I can now soak rag_1 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "On top of: rag_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: scrub_brush_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_19",
+      "thoughts": "I am holding rag_1, which needs to be soaked. The sink is toggled on and open, so I need to place rag_1 inside the sink before I can soak it."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Place inside rag_1 sink_19 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "On top of: rag_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: scrub_brush_0",
+          "Under: sink_19",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_1",
+      "thoughts": "Rag_1 needs to be soaked and is not currently soaked. My hands are empty, so I will grasp rag_1 to prepare for soaking it in the sink."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Grasp rag_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "On top of: rag_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: scrub_brush_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_1",
+      "thoughts": "Rag_1 is in my left hand and needs to be soaked to meet the goal state. The sink is toggled on, so I can soak rag_1 now."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "On top of: rag_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: scrub_brush_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_19",
+      "thoughts": "Rag_1 is in my left hand and needs to be soaked. The sink is toggled on, so the first step is to place rag_1 inside the sink before soaking it."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Place inside rag_1 sink_19 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "On top of: rag_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: scrub_brush_0",
+          "Under: sink_19",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_1",
+      "thoughts": "Rag_1 is already inside the toggled-on sink and not soaked, so soaking it will progress towards the goal that all rags are soaked."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Soak rag_1 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "Inside: sink_19",
+          "On top of: rag_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: scrub_brush_0",
+          "Under: sink_19",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: scrub_brush_0",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "On top of: scrub_brush_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_0",
+      "thoughts": "The scrub_brush_0 is currently soaked, but the goal is for it to be not soaked. I need to pick it up first in order to dry it."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Grasp scrub_brush_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DRY",
+      "object": "scrub_brush_0",
+      "thoughts": "The scrub_brush_0 is currently soaked, but the goal is for it to be not soaked. Since I am already holding it in my left hand, I can proceed to dry it to make progress toward the goal."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Dry scrub_brush_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19",
+          "Under: rag_1"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DRY",
+      "object": "scrub_brush_0",
+      "thoughts": "The scrub_brush_0 is currently not soaked, but the goal is for it to be soaked. However, the previous feedback indicates that drying was already attempted and succeeded, so now I need to soak scrub_brush_0. Since the sink is toggled on and accessible, I should soak the scrub_brush_0 next."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Dry failed, object is already dryed"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "scrub_brush_0",
+      "thoughts": "The scrub_brush_0 is not soaked, but the goal state requires it to be soaked. The sink is toggled on and accessible, and I am already holding the scrub_brush_0 in my left hand, so I should soak it now to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_19",
+      "thoughts": "To soak the scrub_brush_0, I need to place it inside the toggled on sink_19. I am holding the scrub_brush_0 in my left hand, so this is the correct next step."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Place inside scrub_brush_0 sink_19 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: scrub_brush_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_0",
+      "thoughts": "To soak the scrub_brush_0, I first need to pick it up with my left hand before I can perform any further actions such as placing it in the sink or soaking it."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Grasp scrub_brush_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_19",
+      "thoughts": "To soak the scrub_brush_0, I need to place it inside the sink_19, which is already toggled on. This will allow it to become soaked."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Place inside scrub_brush_0 sink_19 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: scrub_brush_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "scrub_brush_0",
+      "thoughts": "The scrub_brush_0 is already inside the toggled on sink_19, so I should execute the SOAK action to soak it and make progress towards the goal state."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Soak scrub_brush_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: scrub_brush_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "oven_24",
+      "thoughts": "The oven_24 is stained and needs to be cleaned to achieve the goal state. I have cleaning tools (rags and scrub brush) that are soaked and available, so I can proceed to clean the oven."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Clean-stain failed, please place object in a toggled on cleaner or get a soaked cleaner first"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: scrub_brush_0",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_0",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: scrub_brush_0",
+          "Next to: rag_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The oven needs to be cleaned to remove its stain. I will grasp a soaked rag (rag_0) with my left hand so I can use it to clean the oven in the next step."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: scrub_brush_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "oven_24",
+      "thoughts": "I am holding a soaked rag in my left hand, which is a suitable cleaning tool. The oven is stained and needs to be cleaned to match the goal state. Therefore, I will clean the oven now."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": "Clean-stain oven_24 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: sink_19",
+          "Inside: bottom_cabinet_no_top_15"
+        ]
+      },
+      {
+        "name": "scrub_brush_0",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_19",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "newspaper_0",
+        "category": "newspaper",
+        "State description ": [
+          "Location: kitchen",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: oven_24",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_15",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sink_19",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "Next to: scrub_brush_0",
+          "Next to: bottom_cabinet_no_top_15",
+          "Next to: rag_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "rag_1",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: scrub_brush_0",
+          "Next to: sink_19",
+          "On floor: room_floor_kitchen_0",
+          "Inside: sink_19",
+          "Under: sink_19"
+        ]
+      },
+      {
+        "name": "oven_24",
+        "category": "oven",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "Next to: dustpan_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "The oven has been cleaned (as per previous feedback), all rags and the scrub brush are soaked as required by the goal state. The environment matches the goal state, so the task is complete."
+    },
+    "goal": "target environment state:\n['forall', 'rag.n.01', '-', 'rag.n.01', 'soaked', 'rag.n.01']\n['soaked', 'scrub_brush_0']\n['not', 'stained', 'oven_24']\n\n\n",
+    "feedback": ""
+  }
+]

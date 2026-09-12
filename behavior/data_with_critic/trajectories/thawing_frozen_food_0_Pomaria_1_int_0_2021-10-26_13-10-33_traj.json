@@ -1,0 +1,3879 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: fish_3",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "Next to: fish_0",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Next to: fish_0",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Next to: fish_3",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "fridge_20",
+      "thoughts": "All the objects that need to be moved next to the sink are currently inside the closed fridge. The first step is to open the fridge so I can access and move them."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Open fridge_20 failed"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fish_3",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "Next to: fish_0",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Next to: fish_0",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Next to: fish_3",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "fish_0",
+      "thoughts": "Now that the fridge is open, I will start by grasping fish_0 with my left hand so I can move it next to the sink, as required by the goal state."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp fish_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "fish_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fish_3",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "Next to: fish_0",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_37",
+      "thoughts": "I am holding fish_0 in my left hand, and the goal state requires fish_0 to be next to sink_37. Placing it next to the sink will fulfill this part of the goal."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place next to fish_0 sink_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fish_3",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: sink_37"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "fish_1",
+      "thoughts": "To achieve the goal of having fish_1 next to sink_37, I need to first pick up fish_1 from the fridge so I can move it next to the sink."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp fish_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "fish_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fish_3",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: sink_37"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_37",
+      "thoughts": "I am currently holding fish_1 in my left hand. To satisfy the goal condition of fish_1 being next to sink_37, I should place fish_1 next to sink_37."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place next to fish_1 sink_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_0",
+          "Next to: fish_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fish_3",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_1"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_0"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "fish_2",
+      "thoughts": "To achieve the goal of fish_2 being next to sink_37, I need to grasp fish_2 (currently inside the fridge) so I can move it next to the sink."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp fish_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "fish_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fish_3",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_37",
+      "thoughts": "I am holding fish_2 in my left hand, and the goal is for fish_2 to be next to sink_37. Placing fish_2 next to sink_37 will achieve this part of the goal."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place next to fish_2 sink_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fish_3",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "fish_3",
+      "thoughts": "fish_3 needs to be next to sink_37, but it is currently inside fridge_20. I will grasp fish_3 with my right hand so I can move it next to sink_37."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp fish_3 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "fish_3"
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fish_3",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_NEXTTO",
+      "object": "sink_37",
+      "thoughts": "I am holding fish_3 in my right hand. To satisfy the goal that fish_3 is next to sink_37, I will place fish_3 next to sink_37."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place next to fish_3 sink_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_3",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "fish_0",
+      "thoughts": "Fish_0 needs to be next to sink_37 according to the goal state. My hands are empty, so I will grasp fish_0 with my left hand to prepare to place it next to sink_37."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp fish_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "fish_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: sink_37"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_37",
+      "thoughts": "I am holding fish_0 in my left hand, and the goal state requires fish_0 to be next to sink_37. Placing fish_0 next to sink_37 will satisfy this part of the goal."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place next to fish_0 sink_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_0",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: sink_37",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "fish_1",
+      "thoughts": "The goal state requires fish_1 to be next to sink_37, but currently fish_1 is not. I will grasp fish_1 with my right hand so I can move it next to the sink."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp fish_1 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "fish_1"
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_0",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: sink_37",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_NEXTTO",
+      "object": "sink_37",
+      "thoughts": "I am holding fish_1 in my right hand, and the goal is for fish_1 to be next to sink_37. The next logical step is to place fish_1 next to sink_37 to satisfy this part of the goal state."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place next to fish_1 sink_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_0",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: sink_37",
+          "Next to: fish_1",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: sink_37",
+          "Next to: fish_0"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "fish_3",
+      "thoughts": "Fish_3 needs to be next to sink_37 according to the goal state, but it is currently not in the kitchen. I will grasp fish_3 so I can move it next to sink_37."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp fish_3 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "fish_3",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_0",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: sink_37",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_37",
+      "thoughts": "I am currently holding fish_3 in my left hand, and the goal is for fish_3 to be next to sink_37. Placing fish_3 next to sink_37 will directly satisfy this goal condition."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place next to fish_3 sink_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_0",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: sink_37",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: sink_37",
+          "Next to: fish_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "fish_1",
+      "thoughts": "To achieve the goal state, fish_1 needs to be next to sink_37. Since I am not holding anything, I will grasp fish_1 so I can place it next to the sink."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp fish_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "fish_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_0",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: sink_37",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_37",
+      "thoughts": "I am currently holding fish_1 in my left hand, and the goal requires fish_1 to be next to sink_37. Placing fish_1 next to sink_37 will satisfy this part of the goal state."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place next to fish_1 sink_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_0",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_2",
+          "Under: fish_0",
+          "Under: fish_2"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_0",
+          "Next to: fish_1",
+          "Under: fish_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "fish_3",
+      "thoughts": "To achieve the goal, fish_3 needs to be next to sink_37, but it is currently not in the correct location. I will grasp fish_3 so I can move it next to the sink, and I am not forbidden from grasping fish_3."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp fish_3 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "fish_3",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_0",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_2",
+          "Under: fish_0",
+          "Under: fish_2"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_0",
+          "Next to: fish_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_37",
+      "thoughts": "I am currently holding fish_3 in my left hand, and the goal is for fish_3 to be next to sink_37. Placing fish_3 next to sink_37 will achieve this part of the goal state."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place next to fish_3 sink_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_3",
+          "Next to: fish_0",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_0",
+          "Next to: fish_1",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_3",
+          "Next to: fish_1",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: sink_37",
+          "Next to: fish_3",
+          "Next to: fish_0",
+          "Next to: fish_2",
+          "Under: fish_0",
+          "Under: fish_2"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_3",
+          "Next to: fish_0",
+          "Next to: fish_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "fish_0",
+      "thoughts": "To achieve the goal state, container_date_0 needs to be next to fish_0. Since fish_0 is not currently being held and my hands are empty, I will grasp fish_0 with my right hand as a first step to move it next to container_date_0."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp fish_0 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "fish_0"
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_3",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_1",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_3",
+          "Next to: fish_2",
+          "Under: fish_2"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_3",
+          "Next to: fish_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_NEXTTO",
+      "object": "container_date_0",
+      "thoughts": "I am currently holding fish_0 in my right hand. To satisfy the goal of having container_date_0 next to fish_0, I will place fish_0 next to container_date_0."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place next to fish_0 container_date_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: olive_0",
+          "Next to: fish_0",
+          "Under: fish_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Next to: fish_0",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Next to: container_date_0",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_2",
+          "Under: fish_2"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "olive_0",
+      "thoughts": "To achieve the goal of having olive_0 next to sink_37, I will first grasp olive_0 with my left hand so I can later place it next to the sink."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp olive_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "olive_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: fish_0",
+          "Under: fish_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Next to: fish_0",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: corridor",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Next to: container_date_0",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_2",
+          "Under: fish_2"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_37",
+      "thoughts": "Since I am already holding olive_0 in my left hand and the goal is to have olive_0 next to sink_37, I will place olive_0 next to sink_37 to satisfy this part of the goal state."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place next to olive_0 sink_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: olive_0",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: fish_0",
+          "Under: fish_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Next to: fish_0",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Next to: container_date_0",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_2",
+          "Under: olive_0"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: olive_0",
+          "Next to: fish_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "fish_3",
+      "thoughts": "fish_3 needs to be next to sink_37, but it is currently not in the kitchen. I will pick up fish_3 so I can move it next to the sink."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp fish_3 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "fish_3"
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: olive_0",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: fish_0",
+          "Under: fish_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Next to: fish_0",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: sink_37",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Next to: container_date_0",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_2",
+          "Under: olive_0"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: olive_0",
+          "Next to: fish_1",
+          "Under: olive_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_NEXTTO",
+      "object": "sink_37",
+      "thoughts": "I am currently holding fish_3 in my right hand, and the goal requires fish_3 to be next to sink_37. Placing fish_3 next to sink_37 will move towards satisfying this goal condition."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place next to fish_3 sink_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fish_3",
+          "Next to: olive_0",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: fish_0",
+          "Under: fish_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: olive_0",
+          "Next to: fish_1",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Next to: fish_0",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_3",
+          "Next to: fish_1",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Next to: container_date_0",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_3",
+          "Next to: olive_0",
+          "Next to: fish_2",
+          "Under: olive_0"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_3",
+          "Next to: olive_0",
+          "Next to: fish_1",
+          "Under: olive_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "fish_0",
+      "thoughts": "My left hand is empty, and fish_0 is currently inside the fridge. The goal requires fish_0 to be next to sink_37. I will grasp fish_0 with my left hand to prepare to move it next to the sink."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp fish_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "fish_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: olive_0",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "Next to: fish_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_1",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: olive_0",
+          "Next to: fish_2",
+          "Under: olive_0"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: olive_0",
+          "Next to: fish_1",
+          "Under: olive_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_37",
+      "thoughts": "I am currently holding fish_0 in my left hand. The goal requires fish_0 to be next to sink_37. Placing fish_0 next to sink_37 will make progress towards the target state."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place next to fish_0 sink_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: olive_0",
+          "Next to: fish_0",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_1",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: olive_0",
+          "Next to: fish_2",
+          "Under: olive_0"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: olive_0",
+          "Next to: fish_1",
+          "Under: olive_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "fish_1",
+      "thoughts": "Fish_1 needs to be next to sink_37 according to the goal. My right hand is empty, so I will grasp fish_1 to prepare to place it next to the sink."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp fish_1 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "fish_1"
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: olive_0",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: olive_0",
+          "Under: olive_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_NEXTTO",
+      "object": "sink_37",
+      "thoughts": "I am holding fish_1 in my right hand, and the goal is for fish_1 to be next to sink_37. Placing it next to the sink will satisfy this part of the goal."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place next to fish_1 sink_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: olive_0",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_1",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: sink_37",
+          "Next to: olive_0",
+          "Next to: fish_2",
+          "Under: olive_0"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: olive_0",
+          "Next to: fish_1",
+          "Under: olive_0",
+          "Under: fish_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "fish_0",
+      "thoughts": "Fish_0 needs to be next to sink_37 according to the goal state, and my left hand is empty. I will grasp fish_0 with my left hand to prepare to place it next to the sink."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Grasp fish_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "fish_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: olive_0",
+          "Next to: fish_1",
+          "Next to: fish_2",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: container_date_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "fish_3",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "container_date_0",
+        "category": "container_date",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "olive_0",
+        "category": "olive",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: fish_1",
+          "Next to: fish_2"
+        ]
+      },
+      {
+        "name": "fish_0",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fish_1",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: sink_37",
+          "Next to: olive_0",
+          "Next to: fish_2",
+          "Inside: olive_0"
+        ]
+      },
+      {
+        "name": "fish_2",
+        "category": "fish",
+        "State description ": [
+          "Location: None",
+          "Frozen status: Frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: sink_37",
+          "Next to: olive_0",
+          "Next to: fish_1",
+          "Under: olive_0",
+          "Under: fish_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_37",
+      "thoughts": "Fish_0 needs to be next to sink_37 to satisfy the goal state. Since I am already holding fish_0 in my left hand, I will place it next to the sink to achieve this requirement."
+    },
+    "goal": "target environment state:\n['nextto', 'container_date_0', 'fish_0']\n['nextto', 'fish_0', 'sink_37']\n['nextto', 'fish_1', 'sink_37']\n['nextto', 'fish_2', 'sink_37']\n['nextto', 'fish_3', 'sink_37']\n['nextto', 'olive_0', 'sink_37']\n\n\ninteractable objects:\n{'name': 'container_date_0', 'category': 'date.n.08'}\n{'name': 'fridge_20', 'category': 'electric_refrigerator.n.01'}\n{'name': 'olive_0', 'category': 'olive.n.04'}\n{'name': 'fish_0', 'category': 'fish.n.02'}\n{'name': 'fish_1', 'category': 'fish.n.02'}\n{'name': 'fish_2', 'category': 'fish.n.02'}\n{'name': 'fish_3', 'category': 'fish.n.02'}\n{'name': 'sink_37', 'category': 'sink.n.01'}\n{'name': 'room_floor_kitchen_0', 'category': 'floor.n.01'}\n\n\n",
+    "feedback": "Place next to fish_0 sink_37 successful"
+  }
+]

@@ -1,0 +1,2037 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "highlighter_0",
+        "category": "highlighter",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5"
+        ]
+      },
+      {
+        "name": "document_1",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "document_0",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "Next to: folder_0",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_21",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: document_1",
+          "Next to: document_3",
+          "Under: document_1",
+          "Under: document_3",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "folder_1",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "swivel_chair_5",
+        "category": "swivel_chair",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: highlighter_0",
+          "Next to: document_0",
+          "Next to: folder_1",
+          "Next to: breakfast_table_3",
+          "Next to: folder_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "document_2",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "breakfast_table_3",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "folder_0",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: document_0",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_3",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "On top of: document_1",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_no_top_21",
+      "thoughts": "The goal requires all documents and folders to be inside the bottom cabinet. Since the cabinet is currently closed, I need to open it first before placing items inside."
+    },
+    "goal": "target environment state:\n['ontop', 'highlighter_0', 'breakfast_table_3']\n['forall', 'document.n.01', '-', 'document.n.01', 'inside', 'document.n.01', 'bottom_cabinet_no_top_21']\n['forall', 'folder.n.02', '-', 'folder.n.02', 'inside', 'folder.n.02', 'bottom_cabinet_no_top_21']\n\n\n",
+    "feedback": "Open bottom_cabinet_no_top_21 failed"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "highlighter_0",
+        "category": "highlighter",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5"
+        ]
+      },
+      {
+        "name": "document_1",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "document_0",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "Next to: folder_0",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_21",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: document_1",
+          "Next to: document_3",
+          "Under: document_1",
+          "Under: document_3",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "folder_1",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "swivel_chair_5",
+        "category": "swivel_chair",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: highlighter_0",
+          "Next to: document_0",
+          "Next to: folder_1",
+          "Next to: breakfast_table_3",
+          "Next to: folder_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "document_2",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "breakfast_table_3",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "folder_0",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: document_0",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_3",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "On top of: document_1",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "highlighter_0",
+      "thoughts": "The goal requires the highlighter to be on top of the breakfast table. I need to pick up the highlighter first so I can place it on the table."
+    },
+    "goal": "target environment state:\n['ontop', 'highlighter_0', 'breakfast_table_3']\n['forall', 'document.n.01', '-', 'document.n.01', 'inside', 'document.n.01', 'bottom_cabinet_no_top_21']\n['forall', 'folder.n.02', '-', 'folder.n.02', 'inside', 'folder.n.02', 'bottom_cabinet_no_top_21']\n\n\n",
+    "feedback": "Grasp highlighter_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "highlighter_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "highlighter_0",
+        "category": "highlighter",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "document_1",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "document_0",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "Next to: folder_0",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_21",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: document_1",
+          "Next to: document_3",
+          "Under: document_1",
+          "Under: document_3",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "folder_1",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "swivel_chair_5",
+        "category": "swivel_chair",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: document_0",
+          "Next to: folder_1",
+          "Next to: breakfast_table_3",
+          "Next to: folder_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "document_2",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "breakfast_table_3",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "folder_0",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: document_0",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_3",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "On top of: document_1",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "breakfast_table_3",
+      "thoughts": "The highlighter needs to be on top of the breakfast table as per the goal. I am already holding the highlighter in my left hand, so I will place it on top of breakfast_table_3 to satisfy this part of the goal."
+    },
+    "goal": "target environment state:\n['ontop', 'highlighter_0', 'breakfast_table_3']\n['forall', 'document.n.01', '-', 'document.n.01', 'inside', 'document.n.01', 'bottom_cabinet_no_top_21']\n['forall', 'folder.n.02', '-', 'folder.n.02', 'inside', 'folder.n.02', 'bottom_cabinet_no_top_21']\n\n\n",
+    "feedback": "Place ontop highlighter_0 breakfast_table_3 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "highlighter_0",
+        "category": "highlighter",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: document_0",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_1",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "document_0",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: highlighter_0",
+          "Next to: swivel_chair_5",
+          "Next to: folder_0",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_21",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: document_1",
+          "Next to: document_3",
+          "Under: document_1",
+          "Under: document_3",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "folder_1",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "swivel_chair_5",
+        "category": "swivel_chair",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: highlighter_0",
+          "Next to: document_0",
+          "Next to: folder_1",
+          "Next to: breakfast_table_3",
+          "Next to: folder_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "document_2",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "breakfast_table_3",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "Under: highlighter_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "folder_0",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: document_0",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_3",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "On top of: document_1",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "document_0",
+      "thoughts": "To achieve the goal, all documents need to be inside bottom_cabinet_no_top_21. Document_0 is currently on top of the breakfast table, so I will grasp it first to move it into the cabinet."
+    },
+    "goal": "target environment state:\n['ontop', 'highlighter_0', 'breakfast_table_3']\n['forall', 'document.n.01', '-', 'document.n.01', 'inside', 'document.n.01', 'bottom_cabinet_no_top_21']\n['forall', 'folder.n.02', '-', 'folder.n.02', 'inside', 'folder.n.02', 'bottom_cabinet_no_top_21']\n\n\n",
+    "feedback": "Grasp document_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "document_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "highlighter_0",
+        "category": "highlighter",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_1",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "document_0",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_21",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: document_1",
+          "Next to: document_3",
+          "Under: document_1",
+          "Under: document_3",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "folder_1",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "swivel_chair_5",
+        "category": "swivel_chair",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: highlighter_0",
+          "Next to: folder_1",
+          "Next to: breakfast_table_3",
+          "Next to: folder_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "document_2",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "breakfast_table_3",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "Under: highlighter_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "folder_0",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_3",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "On top of: document_1",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_no_top_21",
+      "thoughts": "I am holding document_0 in my left hand and the bottom cabinet is open, so I will place document_0 inside bottom_cabinet_no_top_21 to satisfy the goal that all documents are inside the cabinet."
+    },
+    "goal": "target environment state:\n['ontop', 'highlighter_0', 'breakfast_table_3']\n['forall', 'document.n.01', '-', 'document.n.01', 'inside', 'document.n.01', 'bottom_cabinet_no_top_21']\n['forall', 'folder.n.02', '-', 'folder.n.02', 'inside', 'folder.n.02', 'bottom_cabinet_no_top_21']\n\n\n",
+    "feedback": "Place inside document_0 bottom_cabinet_no_top_21 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "highlighter_0",
+        "category": "highlighter",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_1",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "document_0",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Under: document_1",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_21",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: document_1",
+          "Next to: document_0",
+          "Next to: document_3",
+          "Under: document_1",
+          "Under: document_3",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "folder_1",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "swivel_chair_5",
+        "category": "swivel_chair",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: highlighter_0",
+          "Next to: folder_1",
+          "Next to: breakfast_table_3",
+          "Next to: folder_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "document_2",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "breakfast_table_3",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "Under: highlighter_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "folder_0",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_3",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "On top of: document_1",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "document_2",
+      "thoughts": "document_2 is not yet inside bottom_cabinet_no_top_21 and my hands are empty. I will grasp document_2 in order to place it inside the cabinet, progressing toward the goal that all documents are inside the cabinet."
+    },
+    "goal": "target environment state:\n['ontop', 'highlighter_0', 'breakfast_table_3']\n['forall', 'document.n.01', '-', 'document.n.01', 'inside', 'document.n.01', 'bottom_cabinet_no_top_21']\n['forall', 'folder.n.02', '-', 'folder.n.02', 'inside', 'folder.n.02', 'bottom_cabinet_no_top_21']\n\n\n",
+    "feedback": "Grasp document_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "document_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "highlighter_0",
+        "category": "highlighter",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_1",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "document_0",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Next to: room_floor_home_office_0",
+          "Under: document_1",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_21",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: document_1",
+          "Next to: document_0",
+          "Next to: document_3",
+          "Under: document_1",
+          "Under: document_3",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "folder_1",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "swivel_chair_5",
+        "category": "swivel_chair",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: highlighter_0",
+          "Next to: folder_1",
+          "Next to: breakfast_table_3",
+          "Next to: folder_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "document_2",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "breakfast_table_3",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "Under: highlighter_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "folder_0",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_3",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "On top of: document_1",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_no_top_21",
+      "thoughts": "I am currently holding document_2 in my left hand, and the goal is for all documents to be inside bottom_cabinet_no_top_21, which is open. Placing document_2 inside the cabinet will make progress toward the goal."
+    },
+    "goal": "target environment state:\n['ontop', 'highlighter_0', 'breakfast_table_3']\n['forall', 'document.n.01', '-', 'document.n.01', 'inside', 'document.n.01', 'bottom_cabinet_no_top_21']\n['forall', 'folder.n.02', '-', 'folder.n.02', 'inside', 'folder.n.02', 'bottom_cabinet_no_top_21']\n\n\n",
+    "feedback": "Place inside document_2 bottom_cabinet_no_top_21 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "highlighter_0",
+        "category": "highlighter",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_1",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "document_0",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Next to: room_floor_home_office_0",
+          "Under: document_1",
+          "Under: document_2",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_21",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: document_1",
+          "Next to: document_0",
+          "Next to: document_2",
+          "Next to: document_3",
+          "Under: document_1",
+          "Under: document_3",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "folder_1",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "swivel_chair_5",
+        "category": "swivel_chair",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: highlighter_0",
+          "Next to: folder_1",
+          "Next to: breakfast_table_3",
+          "Next to: folder_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "document_2",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "On top of: document_0",
+          "Under: document_1",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "breakfast_table_3",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "Under: highlighter_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "folder_0",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_3",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "On top of: document_1",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "document_3",
+      "thoughts": "document_3 is not yet inside bottom_cabinet_no_top_21 according to the goal, and my hands are empty. I will grasp document_3 so I can place it inside the cabinet next."
+    },
+    "goal": "target environment state:\n['ontop', 'highlighter_0', 'breakfast_table_3']\n['forall', 'document.n.01', '-', 'document.n.01', 'inside', 'document.n.01', 'bottom_cabinet_no_top_21']\n['forall', 'folder.n.02', '-', 'folder.n.02', 'inside', 'folder.n.02', 'bottom_cabinet_no_top_21']\n\n\n",
+    "feedback": "Grasp document_3 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "document_3",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "highlighter_0",
+        "category": "highlighter",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_1",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "document_0",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Next to: room_floor_home_office_0",
+          "Under: document_1",
+          "Under: document_2",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_21",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: document_1",
+          "Next to: document_0",
+          "Next to: document_2",
+          "Under: document_1",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "folder_1",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "swivel_chair_5",
+        "category": "swivel_chair",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: highlighter_0",
+          "Next to: folder_1",
+          "Next to: breakfast_table_3",
+          "Next to: folder_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "document_2",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "On top of: document_0",
+          "Under: document_1",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "breakfast_table_3",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "Under: highlighter_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "folder_0",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_3",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_no_top_21",
+      "thoughts": "I am holding document_3 in my left hand, and the goal is for all documents to be inside bottom_cabinet_no_top_21. The cabinet is open, so I will place document_3 inside it to progress toward the goal."
+    },
+    "goal": "target environment state:\n['ontop', 'highlighter_0', 'breakfast_table_3']\n['forall', 'document.n.01', '-', 'document.n.01', 'inside', 'document.n.01', 'bottom_cabinet_no_top_21']\n['forall', 'folder.n.02', '-', 'folder.n.02', 'inside', 'folder.n.02', 'bottom_cabinet_no_top_21']\n\n\n",
+    "feedback": "Place inside document_3 bottom_cabinet_no_top_21 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "highlighter_0",
+        "category": "highlighter",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_1",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "document_0",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Next to: room_floor_home_office_0",
+          "Under: document_1",
+          "Under: document_2",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_21",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: document_1",
+          "Next to: document_0",
+          "Next to: document_2",
+          "Next to: document_3",
+          "Under: document_1",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "folder_1",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "swivel_chair_5",
+        "category": "swivel_chair",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: highlighter_0",
+          "Next to: folder_1",
+          "Next to: breakfast_table_3",
+          "Next to: folder_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "document_2",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "On top of: document_0",
+          "Under: document_1",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "breakfast_table_3",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "Under: highlighter_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "folder_0",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_3",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "On top of: document_0",
+          "On top of: document_2",
+          "Under: document_1",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "folder_0",
+      "thoughts": "To achieve the goal that all folders are inside bottom_cabinet_no_top_21, I need to first grasp folder_0 so I can then place it inside the cabinet."
+    },
+    "goal": "target environment state:\n['ontop', 'highlighter_0', 'breakfast_table_3']\n['forall', 'document.n.01', '-', 'document.n.01', 'inside', 'document.n.01', 'bottom_cabinet_no_top_21']\n['forall', 'folder.n.02', '-', 'folder.n.02', 'inside', 'folder.n.02', 'bottom_cabinet_no_top_21']\n\n\n",
+    "feedback": "Grasp folder_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "folder_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "highlighter_0",
+        "category": "highlighter",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_1",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "document_0",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Next to: room_floor_home_office_0",
+          "Under: document_1",
+          "Under: document_2",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_21",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: document_1",
+          "Next to: document_0",
+          "Next to: document_2",
+          "Next to: document_3",
+          "Under: document_1",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "folder_1",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "swivel_chair_5",
+        "category": "swivel_chair",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: highlighter_0",
+          "Next to: folder_1",
+          "Next to: breakfast_table_3",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "document_2",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "On top of: document_0",
+          "Under: document_1",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "breakfast_table_3",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "Under: highlighter_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "folder_0",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "document_3",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "On top of: document_0",
+          "On top of: document_2",
+          "Under: document_1",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_no_top_21",
+      "thoughts": "I am holding folder_0 in my left hand, and the cabinet is open. To achieve the goal that all folders are inside bottom_cabinet_no_top_21, I should place folder_0 inside the cabinet next."
+    },
+    "goal": "target environment state:\n['ontop', 'highlighter_0', 'breakfast_table_3']\n['forall', 'document.n.01', '-', 'document.n.01', 'inside', 'document.n.01', 'bottom_cabinet_no_top_21']\n['forall', 'folder.n.02', '-', 'folder.n.02', 'inside', 'folder.n.02', 'bottom_cabinet_no_top_21']\n\n\n",
+    "feedback": "Place inside folder_0 bottom_cabinet_no_top_21 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "highlighter_0",
+        "category": "highlighter",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_1",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "document_0",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Next to: room_floor_home_office_0",
+          "Under: document_1",
+          "Under: document_2",
+          "Under: folder_0",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_21",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: document_1",
+          "Next to: document_0",
+          "Next to: document_2",
+          "Next to: folder_0",
+          "Next to: document_3",
+          "Under: document_1",
+          "Inside: folder_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "folder_1",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "swivel_chair_5",
+        "category": "swivel_chair",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: highlighter_0",
+          "Next to: folder_1",
+          "Next to: breakfast_table_3",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "document_2",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "On top of: document_0",
+          "Under: document_1",
+          "Under: folder_0",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "breakfast_table_3",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "Under: highlighter_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "folder_0",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Next to: room_floor_home_office_0",
+          "Next to: document_3",
+          "On top of: document_2",
+          "On top of: document_3",
+          "Under: document_1",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "document_3",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Next to: folder_0",
+          "On top of: document_0",
+          "On top of: document_2",
+          "Under: document_1",
+          "Inside: bottom_cabinet_no_top_21",
+          "Inside: folder_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "folder_1",
+      "thoughts": "The goal requires all folders to be inside bottom_cabinet_no_top_21. Folder_1 is not yet inside the cabinet, so I will grasp folder_1 to prepare to put it inside the cabinet."
+    },
+    "goal": "target environment state:\n['ontop', 'highlighter_0', 'breakfast_table_3']\n['forall', 'document.n.01', '-', 'document.n.01', 'inside', 'document.n.01', 'bottom_cabinet_no_top_21']\n['forall', 'folder.n.02', '-', 'folder.n.02', 'inside', 'folder.n.02', 'bottom_cabinet_no_top_21']\n\n\n",
+    "feedback": "Grasp folder_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "folder_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "highlighter_0",
+        "category": "highlighter",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_1",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "document_0",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Next to: room_floor_home_office_0",
+          "Under: document_1",
+          "Under: document_2",
+          "Under: folder_0",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_21",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: document_1",
+          "Next to: document_0",
+          "Next to: document_2",
+          "Next to: folder_0",
+          "Next to: document_3",
+          "Under: document_1",
+          "Under: folder_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "folder_1",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "swivel_chair_5",
+        "category": "swivel_chair",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: highlighter_0",
+          "Next to: breakfast_table_3",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "document_2",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "On top of: document_0",
+          "Under: document_1",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "breakfast_table_3",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "Under: highlighter_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "folder_0",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Next to: room_floor_home_office_0",
+          "Next to: document_3",
+          "On top of: document_2",
+          "Under: document_1",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "document_3",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Next to: room_floor_home_office_0",
+          "Next to: folder_0",
+          "On top of: document_0",
+          "On top of: document_2",
+          "Under: document_1",
+          "Inside: bottom_cabinet_no_top_21",
+          "Inside: folder_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_no_top_21",
+      "thoughts": "I am holding folder_1 in my left hand, and the goal requires all folders to be inside bottom_cabinet_no_top_21, which is open. Therefore, I will place folder_1 inside the cabinet to achieve part of the goal."
+    },
+    "goal": "target environment state:\n['ontop', 'highlighter_0', 'breakfast_table_3']\n['forall', 'document.n.01', '-', 'document.n.01', 'inside', 'document.n.01', 'bottom_cabinet_no_top_21']\n['forall', 'folder.n.02', '-', 'folder.n.02', 'inside', 'folder.n.02', 'bottom_cabinet_no_top_21']\n\n\n",
+    "feedback": "Place inside folder_1 bottom_cabinet_no_top_21 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "highlighter_0",
+        "category": "highlighter",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "On top of: breakfast_table_3"
+        ]
+      },
+      {
+        "name": "document_1",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "document_0",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Next to: room_floor_home_office_0",
+          "Under: document_1",
+          "Under: document_2",
+          "Under: folder_0",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_21",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: document_1",
+          "Next to: document_0",
+          "Next to: folder_1",
+          "Next to: document_2",
+          "Next to: folder_0",
+          "Next to: document_3",
+          "Under: document_1",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "room_floor_home_office_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "folder_1",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Next to: document_2",
+          "Next to: folder_0",
+          "Next to: document_3",
+          "On top of: document_0",
+          "On top of: document_2",
+          "Under: document_1",
+          "Under: folder_0",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "swivel_chair_5",
+        "category": "swivel_chair",
+        "State description ": [
+          "Location: home_office",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: highlighter_0",
+          "Next to: breakfast_table_3",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "document_2",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Next to: folder_1",
+          "On top of: document_0",
+          "Under: document_1",
+          "Under: document_3",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "breakfast_table_3",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: home_office_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: swivel_chair_5",
+          "Under: highlighter_0",
+          "On floor: room_floor_home_office_0"
+        ]
+      },
+      {
+        "name": "folder_0",
+        "category": "folder",
+        "State description ": [
+          "Location: home_office",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Next to: room_floor_home_office_0",
+          "Next to: folder_1",
+          "Next to: document_3",
+          "On top of: document_2",
+          "On top of: document_3",
+          "Under: document_1",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      },
+      {
+        "name": "document_3",
+        "category": "document",
+        "State description ": [
+          "Location: home_office",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_no_top_21",
+          "Next to: room_floor_home_office_0",
+          "Next to: folder_1",
+          "Next to: folder_0",
+          "On top of: document_2",
+          "Under: document_1",
+          "Under: folder_0",
+          "Inside: bottom_cabinet_no_top_21"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "All documents and folders are now inside bottom_cabinet_no_top_21, and highlighter_0 is on top of breakfast_table_3. All goal conditions are satisfied, so the task is complete."
+    },
+    "goal": "target environment state:\n['ontop', 'highlighter_0', 'breakfast_table_3']\n['forall', 'document.n.01', '-', 'document.n.01', 'inside', 'document.n.01', 'bottom_cabinet_no_top_21']\n['forall', 'folder.n.02', '-', 'folder.n.02', 'inside', 'folder.n.02', 'bottom_cabinet_no_top_21']\n\n\n",
+    "feedback": ""
+  }
+]

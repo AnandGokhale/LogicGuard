@@ -1,0 +1,230 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shower_35",
+        "category": "shower",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: shampoo_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: dishtowel_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "On floor: room_floor_bathroom_0"
+        ]
+      },
+      {
+        "name": "shampoo_0",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bathroom",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_bathroom_0",
+          "Next to: shower_35"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bathroom_0",
+          "Next to: sink_38"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "soap_0",
+      "thoughts": "The goal is to have soap_0 next to sink_38, but currently, soap_0 is not next to sink_38. I will pick up soap_0 with my left hand so I can place it next to sink_38."
+    },
+    "goal": "target environment state:\n['onfloor', 'dishtowel_0', 'room_floor_bathroom_0']\n['onfloor', 'shampoo_0', 'room_floor_bathroom_0']\n['nextto', 'soap_0', 'sink_38']\n\n\n",
+    "feedback": "Grasp soap_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "soap_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shower_35",
+        "category": "shower",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: shampoo_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: dishtowel_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom"
+        ]
+      },
+      {
+        "name": "shampoo_0",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bathroom",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_bathroom_0",
+          "Next to: shower_35"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bathroom_0",
+          "Next to: sink_38"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_38",
+      "thoughts": "I am currently holding soap_0 in my left hand, and the goal is for soap_0 to be next to sink_38. Placing soap_0 next to sink_38 will achieve this part of the goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'dishtowel_0', 'room_floor_bathroom_0']\n['onfloor', 'shampoo_0', 'room_floor_bathroom_0']\n['nextto', 'soap_0', 'sink_38']\n\n\n",
+    "feedback": "Place next to soap_0 sink_38 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "shower_35",
+        "category": "shower",
+        "State description ": [
+          "Location: bathroom_0",
+          "Stain status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: shampoo_0"
+        ]
+      },
+      {
+        "name": "sink_38",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bathroom_0",
+          "Next to: soap_0",
+          "Next to: dishtowel_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: bathroom",
+          "Next to: sink_38"
+        ]
+      },
+      {
+        "name": "shampoo_0",
+        "category": "shampoo",
+        "State description ": [
+          "Location: bathroom",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_bathroom_0",
+          "Next to: shower_35"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bathroom_0",
+          "Next to: sink_38"
+        ]
+      },
+      {
+        "name": "room_floor_bathroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "All objects are in their goal positions: dishtowel_0 and shampoo_0 are on the bathroom floor, and soap_0 is next to sink_38. No further actions are required."
+    },
+    "goal": "target environment state:\n['onfloor', 'dishtowel_0', 'room_floor_bathroom_0']\n['onfloor', 'shampoo_0', 'room_floor_bathroom_0']\n['nextto', 'soap_0', 'sink_38']\n\n\n",
+    "feedback": ""
+  }
+]

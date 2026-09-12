@@ -1,0 +1,30 @@
+[
+  {
+    "rule": "G(!bucket_0_in_hand -> X(!bucket_0_place_nextto_sink_28))",
+    "explanation": "Prevents placing the bucket next to the sink unless the robot is actually holding it."
+  },
+  {
+    "rule": "G(bucket_0_next_to_sink_28 -> X(!bucket_0_place_nextto_sink_28))",
+    "explanation": "Blocks repeated bucket placements once it is already next to the sink."
+  },
+  {
+    "rule": "G(!soap_0_in_hand -> X(!soap_0_place_inside_bucket_0))",
+    "explanation": "Ensures the soap must be grasped before attempting to place it inside the bucket."
+  },
+  {
+    "rule": "G(soap_0_inside_bucket_0 -> X(!soap_0_place_inside_bucket_0))",
+    "explanation": "Prevents unnecessary repeat placements of soap once it is already inside the bucket."
+  },
+  {
+    "rule": "G(!sink_28_is_toggled_on -> X(!soak_dishtowel_0))",
+    "explanation": "Ensures soaking the dishtowel only when the sink is turned on (water available)."
+  },
+  {
+    "rule": "G(room_floor_bathroom_0_is_stained -> X(!done))",
+    "explanation": "Prevents finishing the task until the bathroom floor stain has been removed."
+  },
+  {
+    "rule": "G((broom_0_next_to_sink_28 | sink_28_next_to_broom_0) -> X(!left_grasp_broom_0))",
+    "explanation": "Stops re-grasping the broom once it is correctly positioned next to the sink."
+  }
+]

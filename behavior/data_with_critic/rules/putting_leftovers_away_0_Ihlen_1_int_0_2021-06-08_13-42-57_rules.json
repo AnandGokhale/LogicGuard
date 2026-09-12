@@ -1,0 +1,102 @@
+[
+    {
+        "rule": "G(pasta_0_inside_fridge_61 -> X(!left_grasp_pasta_0))",
+        "explanation": "Don\u2019t re-grasp pasta_0 once it\u2019s inside the fridge"
+    },
+    {
+        "rule": "G(!pasta_0_in_hand -> X(!pasta_0_place_inside_fridge_61))",
+        "explanation": "Only place pasta_0 when it\u2019s actually in hand"
+    },
+    {
+        "rule": "G(!fridge_61_is_open -> X(!pasta_0_place_inside_fridge_61))",
+        "explanation": "Don\u2019t place pasta_0 if the fridge is closed"
+    },
+    {
+        "rule": "G(pasta_1_inside_fridge_61 -> X(!left_grasp_pasta_1))",
+        "explanation": "Don\u2019t re-grasp pasta_1 once it\u2019s inside the fridge"
+    },
+    {
+        "rule": "G(!pasta_1_in_hand -> X(!pasta_1_place_inside_fridge_61))",
+        "explanation": "Only place pasta_1 when it\u2019s in hand"
+    },
+    {
+        "rule": "G(!fridge_61_is_open -> X(!pasta_1_place_inside_fridge_61))",
+        "explanation": "Don\u2019t place pasta_1 if the fridge is closed"
+    },
+    {
+        "rule": "G(pasta_2_inside_fridge_61 -> X(!left_grasp_pasta_2))",
+        "explanation": "Don\u2019t re-grasp pasta_2 once it\u2019s inside the fridge"
+    },
+    {
+        "rule": "G(!pasta_2_in_hand -> X(!pasta_2_place_inside_fridge_61))",
+        "explanation": "Only place pasta_2 when it\u2019s in hand"
+    },
+    {
+        "rule": "G(!fridge_61_is_open -> X(!pasta_2_place_inside_fridge_61))",
+        "explanation": "Don\u2019t place pasta_2 if the fridge is closed"
+    },
+    {
+        "rule": "G(pasta_3_inside_fridge_61 -> X(!left_grasp_pasta_3))",
+        "explanation": "Don\u2019t re-grasp pasta_3 once it\u2019s inside the fridge"
+    },
+    {
+        "rule": "G(!pasta_3_in_hand -> X(!pasta_3_place_inside_fridge_61))",
+        "explanation": "Only place pasta_3 when it\u2019s in hand"
+    },
+    {
+        "rule": "G(!fridge_61_is_open -> X(!pasta_3_place_inside_fridge_61))",
+        "explanation": "Don\u2019t place pasta_3 if the fridge is closed"
+    },
+    {
+        "rule": "G(spaghetti_sauce_0_inside_fridge_61 -> X(!left_grasp_spaghetti_sauce_0))",
+        "explanation": "Don\u2019t re-grasp sauce_0 once it\u2019s inside the fridge"
+    },
+    {
+        "rule": "G(!spaghetti_sauce_0_in_hand -> X(!spaghetti_sauce_0_place_inside_fridge_61))",
+        "explanation": "Only place sauce_0 when it\u2019s in hand"
+    },
+    {
+        "rule": "G(!fridge_61_is_open -> X(!spaghetti_sauce_0_place_inside_fridge_61))",
+        "explanation": "Don\u2019t place sauce_0 if the fridge is closed"
+    },
+    {
+        "rule": "G(spaghetti_sauce_1_inside_fridge_61 -> X(!left_grasp_spaghetti_sauce_1))",
+        "explanation": "Don\u2019t re-grasp sauce_1 once it\u2019s inside the fridge"
+    },
+    {
+        "rule": "G(!spaghetti_sauce_1_in_hand -> X(!spaghetti_sauce_1_place_inside_fridge_61))",
+        "explanation": "Only place sauce_1 when it\u2019s in hand"
+    },
+    {
+        "rule": "G(!fridge_61_is_open -> X(!spaghetti_sauce_1_place_inside_fridge_61))",
+        "explanation": "Don\u2019t place sauce_1 if the fridge is closed"
+    },
+    {
+        "rule": "G(spaghetti_sauce_2_inside_fridge_61 -> X(!left_grasp_spaghetti_sauce_2))",
+        "explanation": "Don\u2019t re-grasp sauce_2 once it\u2019s inside the fridge"
+    },
+    {
+        "rule": "G(!spaghetti_sauce_2_in_hand -> X(!spaghetti_sauce_2_place_inside_fridge_61))",
+        "explanation": "Only place sauce_2 when it\u2019s in hand"
+    },
+    {
+        "rule": "G(!fridge_61_is_open -> X(!spaghetti_sauce_2_place_inside_fridge_61))",
+        "explanation": "Don\u2019t place sauce_2 if the fridge is closed"
+    },
+    {
+        "rule": "G(!mayonnaise_0_in_hand -> X(!mayonnaise_0_place_inside_fridge_61))",
+        "explanation": "Only place mayonnaise_0 when it\u2019s in hand"
+    },
+    {
+        "rule": "G(!fridge_61_is_open -> X(!mayonnaise_0_place_inside_fridge_61))",
+        "explanation": "Don\u2019t place mayonnaise_0 if the fridge is closed"
+    },
+    {
+        "rule": "G(mayonnaise_0_inside_fridge_61 -> X(!left_grasp_pasta_0))",
+        "explanation": "Once mayonnaise_0 is inside, avoid unrelated grasps (reduces wasted motions)"
+    },
+    {
+        "rule": "G(!(pasta_0_inside_fridge_61 & pasta_1_inside_fridge_61 & pasta_2_inside_fridge_61 & pasta_3_inside_fridge_61 & spaghetti_sauce_0_inside_fridge_61 & spaghetti_sauce_1_inside_fridge_61 & spaghetti_sauce_2_inside_fridge_61 & mayonnaise_0_inside_fridge_61) -> X(!done))",
+        "explanation": "Prevent `done` until all eight objects are inside the fridge"
+    }
+]

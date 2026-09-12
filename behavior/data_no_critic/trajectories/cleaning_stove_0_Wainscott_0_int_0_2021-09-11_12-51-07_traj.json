@@ -1,0 +1,1416 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: dishtowel_0",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0",
+          "Under: rag_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: soap_0"
+        ]
+      },
+      {
+        "name": "stove_88",
+        "category": "stove",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Next to: room_floor_kitchen_0",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To clean the stove, I need a cleaning tool. I will pick up the rag first, since it is a cleaning tool and required for cleaning the stove."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'stove_88']\n['not', 'stained', 'stove_88']\n['nextto', 'rag_0', 'sink_82']\n['nextto', 'dishtowel_0', 'sink_82']\n\n\n",
+    "feedback": "rag_0 is inside closed bottom_cabinet_no_top_80"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: dishtowel_0",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0",
+          "Under: rag_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: soap_0"
+        ]
+      },
+      {
+        "name": "stove_88",
+        "category": "stove",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Next to: room_floor_kitchen_0",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_no_top_80",
+      "thoughts": "The rag and dishtowel are inside a closed cabinet. I need to open the cabinet first before I can interact with them."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'stove_88']\n['not', 'stained', 'stove_88']\n['nextto', 'rag_0', 'sink_82']\n['nextto', 'dishtowel_0', 'sink_82']\n\n\n",
+    "feedback": "Open bottom_cabinet_no_top_80 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: dishtowel_0",
+          "Next to: soap_0",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: soap_0"
+        ]
+      },
+      {
+        "name": "stove_88",
+        "category": "stove",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Next to: room_floor_kitchen_0",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag needs to be moved next to the sink and used for cleaning. Grasping the rag with my left hand is the first step to achieve both moving it and cleaning the stove."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'stove_88']\n['not', 'stained', 'stove_88']\n['nextto', 'rag_0', 'sink_82']\n['nextto', 'dishtowel_0', 'sink_82']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: dishtowel_0",
+          "Next to: soap_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: soap_0"
+        ]
+      },
+      {
+        "name": "stove_88",
+        "category": "stove",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Next to: room_floor_kitchen_0",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_82",
+      "thoughts": "The rag needs to be next to the sink according to the goal state. Since I am already holding the rag in my left hand, placing it next to the sink is the most direct next step."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'stove_88']\n['not', 'stained', 'stove_88']\n['nextto', 'rag_0', 'sink_82']\n['nextto', 'dishtowel_0', 'sink_82']\n\n\n",
+    "feedback": "Place next to rag_0 sink_82 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: dishtowel_0",
+          "Next to: soap_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80",
+          "Under: soap_0"
+        ]
+      },
+      {
+        "name": "stove_88",
+        "category": "stove",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_82"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dishtowel_0",
+      "thoughts": "The dishtowel needs to be next to the sink according to the goal state. It is currently inside the bottom cabinet and next to the cabinet, but not next to the sink. I need to grasp it first so I can move it next to the sink."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'stove_88']\n['not', 'stained', 'stove_88']\n['nextto', 'rag_0', 'sink_82']\n['nextto', 'dishtowel_0', 'sink_82']\n\n\n",
+    "feedback": "Grasp dishtowel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dishtowel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "stove_88",
+        "category": "stove",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_82"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_82",
+      "thoughts": "The dishtowel_0 is currently in my left hand and needs to be placed next to the sink_82 to satisfy the goal state. This action will move it next to the sink."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'stove_88']\n['not', 'stained', 'stove_88']\n['nextto', 'rag_0', 'sink_82']\n['nextto', 'dishtowel_0', 'sink_82']\n\n\n",
+    "feedback": "Place next to dishtowel_0 sink_82 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: dishtowel_0",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_82"
+        ]
+      },
+      {
+        "name": "stove_88",
+        "category": "stove",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "Under: dishtowel_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To clean the stove_88, I need a cleaning tool. The rag_0 is available and not soaked, so I will pick it up with my left hand to prepare for soaking it or cleaning."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'stove_88']\n['not', 'stained', 'stove_88']\n['nextto', 'rag_0', 'sink_82']\n['nextto', 'dishtowel_0', 'sink_82']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: dishtowel_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_82"
+        ]
+      },
+      {
+        "name": "stove_88",
+        "category": "stove",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_82",
+      "thoughts": "The rag_0 is in my left hand and needs to be soaked before cleaning effectively. The sink_82 is currently toggled off, so I will toggle it on to prepare for soaking the rag."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'stove_88']\n['not', 'stained', 'stove_88']\n['nextto', 'rag_0', 'sink_82']\n['nextto', 'dishtowel_0', 'sink_82']\n\n\n",
+    "feedback": "Toggleon sink_82 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: dishtowel_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_82"
+        ]
+      },
+      {
+        "name": "stove_88",
+        "category": "stove",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_0",
+      "thoughts": "The rag_0 is in my left hand and needs to be soaked in the toggled on sink_82 before I can use it to clean the stove_88. The sink is already toggled on, so soaking the rag is the next logical step."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'stove_88']\n['not', 'stained', 'stove_88']\n['nextto', 'rag_0', 'sink_82']\n['nextto', 'dishtowel_0', 'sink_82']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: dishtowel_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "stove_88",
+        "category": "stove",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Dusty",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: stove_88"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_82",
+      "thoughts": "The rag_0 needs to be placed inside the toggled on sink_82 before it can be soaked. This will allow me to soak the rag and then use it to clean the stove."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'stove_88']\n['not', 'stained', 'stove_88']\n['nextto', 'rag_0', 'sink_82']\n['nextto', 'dishtowel_0', 'sink_82']\n\n\n",
+    "feedback": "Place inside rag_0 sink_82 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: dishtowel_0",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "stove_88",
+        "category": "stove",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_0",
+      "thoughts": "The rag_0 is already inside the toggled on sink_82, so I can now soak it to prepare it for cleaning the stove."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'stove_88']\n['not', 'stained', 'stove_88']\n['nextto', 'rag_0', 'sink_82']\n['nextto', 'dishtowel_0', 'sink_82']\n\n\n",
+    "feedback": "Soak rag_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: dishtowel_0",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "stove_88",
+        "category": "stove",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "Inside: sink_82",
+          "Under: sink_82"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The rag_0 is now soaked and can be used for cleaning. I need to grasp the rag_0 with my left hand so I can use it to clean the stove_88, which is both stained and dusty."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'stove_88']\n['not', 'stained', 'stove_88']\n['nextto', 'rag_0', 'sink_82']\n['nextto', 'dishtowel_0', 'sink_82']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: dishtowel_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "stove_88",
+        "category": "stove",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Stained",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Dusty",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "stove_88",
+      "thoughts": "I am holding a soaked rag_0 in my left hand, which is a cleaning tool. The stove_88 is both stained and dusty, so cleaning it will move towards the goal of having it clean and not dusty."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'stove_88']\n['not', 'stained', 'stove_88']\n['nextto', 'rag_0', 'sink_82']\n['nextto', 'dishtowel_0', 'sink_82']\n\n\n",
+    "feedback": "Clean-dust stove_88 success\nClean-stain stove_88 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: dishtowel_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "stove_88",
+        "category": "stove",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "sink_82",
+      "thoughts": "Now that the stove is clean, I need to place rag_0 next to sink_82 to satisfy the goal state where rag_0 is next to sink_82."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'stove_88']\n['not', 'stained', 'stove_88']\n['nextto', 'rag_0', 'sink_82']\n['nextto', 'dishtowel_0', 'sink_82']\n\n\n",
+    "feedback": "Place next to rag_0 sink_82 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sink_82",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: dishtowel_0",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_80",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: soap_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_82",
+          "On floor: room_floor_kitchen_0",
+          "Under: rag_0"
+        ]
+      },
+      {
+        "name": "stove_88",
+        "category": "stove",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Open? : False",
+          "Heat source/sink?: False",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_80",
+          "Inside: bottom_cabinet_no_top_80"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_82"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "The stove is clean and not dusty, and both rag_0 and dishtowel_0 are next to sink_82. All goal conditions are satisfied, so the task is complete."
+    },
+    "goal": "target environment state:\n['not', 'dusty', 'stove_88']\n['not', 'stained', 'stove_88']\n['nextto', 'rag_0', 'sink_82']\n['nextto', 'dishtowel_0', 'sink_82']\n\n\n",
+    "feedback": ""
+  }
+]

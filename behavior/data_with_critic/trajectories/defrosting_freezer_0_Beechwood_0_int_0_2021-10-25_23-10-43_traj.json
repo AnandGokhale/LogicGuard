@@ -1,0 +1,6153 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "fridge_57",
+      "thoughts": "The food objects (pomelo_0, pear_0, pea_0) are currently inside the closed fridge_57. To move them into the bucket as required by the goal, I need to open the fridge first."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Open fridge_57 failed"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_0",
+      "thoughts": "To achieve the goal of having the rag soaked inside the sink, I need to first pick up the rag. My left hand is empty, so I will grasp the rag with my left hand."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_64",
+      "thoughts": "To soak the rag, I first need to place it inside the sink. Since the rag is already in my left hand and the sink is not closed, I will place the rag inside the sink."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 sink_64 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scraper_0",
+      "thoughts": "To achieve the goal of placing the scraper on top of the fridge, I first need to pick up the scraper from the countertop."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp scraper_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scraper_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "fridge_57",
+      "thoughts": "I am currently holding the scraper in my left hand, and the goal requires the scraper to be on top of the fridge. Placing the scraper on top of the fridge will directly achieve this subgoal."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place ontop scraper_0 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "rag_0",
+      "thoughts": "The goal requires the rag to be soaked and inside the sink. The rag is already inside the sink but not soaked. I need to grasp the rag so I can turn on the sink and soak it."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp rag_0 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "rag_0"
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_INSIDE",
+      "object": "sink_64",
+      "thoughts": "To soak the rag, it needs to be placed inside the sink first. I am holding the rag in my right hand and the sink is available, so I will place the rag inside the sink."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place inside rag_0 sink_64 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_kitchen_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_64",
+      "thoughts": "The rag is now inside the sink, but the sink is currently toggled off. To soak the rag, I need to turn on the sink first, as required by the critic."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Toggleon sink_64 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_0",
+      "thoughts": "The rag is already inside the sink, and the sink is toggled on. I can now soak the rag to satisfy the goal that the rag is soaked."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Soak rag_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dustpan_0",
+      "thoughts": "To achieve the goal of placing the dustpan next to the fridge, I need to first grasp the dustpan since both of my hands are empty."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp dustpan_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dustpan_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "fridge_57",
+      "thoughts": "To satisfy the goal of having the dustpan next to the fridge, I will place the dustpan (currently in my left hand) next to fridge_57."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place next to dustpan_0 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: dustpan_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scraper_0",
+      "thoughts": "To achieve the goal state where scraper_0 is on top of fridge_57, I need to first pick up scraper_0. The left hand is empty, so I will grasp it with my left hand."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp scraper_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scraper_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pomelo_0",
+          "Next to: dustpan_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "fridge_57",
+      "thoughts": "To achieve the goal state where scraper_0 is on top of fridge_57, I will place the scraper_0 (currently in my left hand) on top of fridge_57."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place ontop scraper_0 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: dustpan_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bucket_0",
+      "thoughts": "To achieve the goal state where bucket_0 is next to countertop_56, I need to move bucket_0. First, I will pick up bucket_0 with my left hand."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp bucket_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "countertop_56",
+      "thoughts": "I am currently holding bucket_0 in my left hand and need to satisfy the goal where bucket_0 is next to countertop_56. Placing bucket_0 next to countertop_56 will achieve this part of the goal state."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place next to bucket_0 countertop_56 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_56"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scraper_0",
+      "thoughts": "To achieve the goal state where scraper_0 is on top of fridge_57, I need to first pick up scraper_0. Since both my hands are empty, I will grasp scraper_0 with my left hand."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp scraper_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scraper_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "fridge_57",
+      "thoughts": "To satisfy the goal where scraper_0 is on top of fridge_57, and since I am already holding scraper_0 in my left hand, I will place it on top of fridge_57 now."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place ontop scraper_0 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dustpan_0",
+      "thoughts": "To satisfy the goal of having dustpan_0 next to fridge_57, I need to move dustpan_0. First, I will grasp dustpan_0 with my left hand."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp dustpan_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dustpan_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: dustpan_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "fridge_57",
+      "thoughts": "Since I am holding dustpan_0 in my left hand and the goal requires it to be next to fridge_57, I will place dustpan_0 next to fridge_57."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place next to dustpan_0 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: dustpan_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bucket_0",
+      "thoughts": "To achieve the goal of having bucket_0 next to countertop_56, I need to be able to move bucket_0. The first step is to grasp bucket_0 with my left hand."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp bucket_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: dustpan_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "countertop_56",
+      "thoughts": "To satisfy the goal of having bucket_0 next to countertop_56, I will place the bucket_0 (currently in my left hand) next to countertop_56."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place next to bucket_0 countertop_56 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_56"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: dustpan_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scraper_0",
+      "thoughts": "To achieve the goal of having scraper_0 on top of fridge_57, I need to first grasp scraper_0 so I can place it on top of the fridge."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp scraper_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scraper_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "fridge_57",
+      "thoughts": "I am holding scraper_0 in my left hand, and the goal requires scraper_0 to be on top of fridge_57. Placing it on top of the fridge will satisfy this part of the goal."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place ontop scraper_0 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dustpan_0",
+      "thoughts": "The goal requires dustpan_0 to be next to fridge_57. Since the dustpan is currently on the floor, I will grasp it so I can move it next to the fridge."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp dustpan_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dustpan_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "fridge_57",
+      "thoughts": "The dustpan needs to be next to the fridge_57 according to the goal. Since I am currently holding the dustpan in my left hand, I will place it next to fridge_57 to satisfy this part of the goal."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place next to dustpan_0 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: dustpan_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scraper_0",
+      "thoughts": "To achieve the goal of having the scraper on top of the fridge, I need to first pick up the scraper. The robot's left hand is currently empty, and the scraper is next to the fridge, making it easy to grasp."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp scraper_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scraper_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pomelo_0",
+          "Next to: dustpan_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "fridge_57",
+      "thoughts": "The goal requires the scraper to be on top of the fridge. Since the scraper is already in the robot's left hand, the next logical step is to place it on top of the fridge to satisfy the 'ontop' goal condition for scraper_0 and fridge_57."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place ontop scraper_0 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pomelo_0",
+          "Next to: dustpan_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bucket_0",
+      "thoughts": "The goal requires the bucket to be next to the countertop. To move the bucket, I need to pick it up first, so I will grasp the bucket with my left hand."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp bucket_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "countertop_56",
+      "thoughts": "The bucket needs to be next to the countertop_56 to satisfy the goal condition. I am currently holding the bucket in my left hand, so I will place it next to countertop_56."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place next to bucket_0 countertop_56 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_56"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scraper_0",
+      "thoughts": "To achieve the goal state where scraper_0 is on top of fridge_57, I need to first grasp scraper_0. My left hand is free, so I will use it to grasp scraper_0."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp scraper_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scraper_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "fridge_57",
+      "thoughts": "To achieve the goal state where scraper_0 is on top of fridge_57, I should place the scraper_0 (currently in my left hand) on top of fridge_57."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place ontop scraper_0 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dustpan_0",
+      "thoughts": "To satisfy the goal of having dustpan_0 next to fridge_57, I need to move dustpan_0. First, I will pick up dustpan_0 with my left hand."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp dustpan_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dustpan_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: dining_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: dustpan_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "fridge_57",
+      "thoughts": "To achieve the goal of having dustpan_0 next to fridge_57, I will place the dustpan_0 (currently in my left hand) next to fridge_57."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place next to dustpan_0 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: dustpan_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bucket_0",
+      "thoughts": "To achieve the goal of having bucket_0 next to countertop_56, I first need to grasp bucket_0 so I can move it."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp bucket_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bucket_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: dustpan_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "countertop_56",
+      "thoughts": "I am holding bucket_0 in my left hand and need to place it next to countertop_56 to satisfy the goal state condition that bucket_0 is next to countertop_56."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place next to bucket_0 countertop_56 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: countertop_56"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bucket_0"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: dustpan_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scraper_0",
+      "thoughts": "To satisfy the goal condition that scraper_0 is on top of fridge_57, I need to first pick up scraper_0. My left hand is empty, so I will use it to grasp scraper_0."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp scraper_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scraper_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "fridge_57",
+      "thoughts": "To achieve the goal state where scraper_0 is on top of fridge_57, I will place the scraper that is currently in my left hand on top of the fridge."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place ontop scraper_0 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "dustpan_0",
+      "thoughts": "To achieve the goal where dustpan_0 is next to fridge_57, I need to move dustpan_0. First, I will pick up dustpan_0 with my left hand."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp dustpan_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "dustpan_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "fridge_57",
+      "thoughts": "I am currently holding dustpan_0 in my left hand. To satisfy the goal of dustpan_0 being next to fridge_57, I will place dustpan_0 next to fridge_57 and release it."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Place next to dustpan_0 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "scraper_0",
+        "category": "scraper",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pomelo_0",
+        "category": "pomelo",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "bucket_0",
+        "category": "bucket",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_0",
+        "category": "rag",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Is a Cleaning Tool",
+          "Next to: sink_64",
+          "Under: sink_64",
+          "Inside: sink_64",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "dustpan_0",
+        "category": "dustpan",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pear_0",
+        "category": "pear",
+        "State description ": [
+          "Location: kitchen",
+          "Sliced? : False",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: scraper_0",
+          "Next to: pomelo_0",
+          "Next to: dustpan_0",
+          "Next to: pear_0",
+          "Next to: pea_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "sink_64",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pea_0",
+        "category": "pea",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: fridge_57",
+          "Inside: fridge_57"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scraper_0",
+      "thoughts": "To achieve the goal of scraper_0 being on top of fridge_57, I first need to grasp scraper_0 so I can later place it on top of the fridge."
+    },
+    "goal": "target environment state:\n['nextto', 'dustpan_0', 'fridge_57']\n['nextto', 'bucket_0', 'countertop_56']\n['ontop', 'scraper_0', 'fridge_57']\n['ontop', 'paper_towel_0', 'countertop_56']\n['inside', 'rag_0', 'sink_64']\n['soaked', 'rag_0']\n['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket_0']\n\n\n",
+    "feedback": "Grasp scraper_0 with left_hand successful"
+  }
+]

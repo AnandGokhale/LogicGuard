@@ -1,0 +1,66 @@
+[
+    {
+        "rule": "G(!hardback_0_in_hand -> X(!hardback_0_place_ontop_shelf_19))",
+        "explanation": "Prevent placing hardback_0 unless it is currently held, ensuring the robot picks it up first."
+    },
+    {
+        "rule": "G(hardback_0_on_top_of_shelf_19 -> X(!left_grasp_hardback_0))",
+        "explanation": "Block re-grasping hardback_0 once it is correctly placed on the shelf, avoiding redundant actions."
+    },
+    {
+        "rule": "G(!shelf_19_in_living_room_0 -> X(!hardback_0_place_ontop_shelf_19))",
+        "explanation": "Don\u2019t place hardback_0 on the shelf if the shelf is not in the living room, ensuring correct target location."
+    },
+    {
+        "rule": "G(!shelf_19_on_floor -> X(!hardback_0_place_ontop_shelf_19))",
+        "explanation": "Require the shelf to be on the floor before any placement of hardback_0, maintaining feasibility of the action."
+    },
+    {
+        "rule": "G(!hardback_1_in_hand -> X(!hardback_1_place_ontop_shelf_19))",
+        "explanation": "Prevent placing hardback_1 unless it is in hand, enforcing the grasp\u2192place sequence."
+    },
+    {
+        "rule": "G(hardback_1_on_top_of_shelf_19 -> X(!left_grasp_hardback_1))",
+        "explanation": "Block re-grasping hardback_1 once placed, saving unnecessary motions."
+    },
+    {
+        "rule": "G(!shelf_19_in_living_room_0 -> X(!hardback_1_place_ontop_shelf_19))",
+        "explanation": "Ensure shelf_19 is in the living room before attempting to place hardback_1."
+    },
+    {
+        "rule": "G(!shelf_19_on_floor -> X(!hardback_1_place_ontop_shelf_19))",
+        "explanation": "Require the shelf to be on the floor before placing hardback_1."
+    },
+    {
+        "rule": "G(!hardback_2_in_hand -> X(!hardback_2_place_ontop_shelf_19))",
+        "explanation": "Prevent placing hardback_2 unless it is in hand, enforcing proper precondition."
+    },
+    {
+        "rule": "G(hardback_2_on_top_of_shelf_19 -> X(!left_grasp_hardback_2))",
+        "explanation": "Block re-grasping hardback_2 once it is on the shelf, avoiding redundant work."
+    },
+    {
+        "rule": "G(!shelf_19_in_living_room_0 -> X(!hardback_2_place_ontop_shelf_19))",
+        "explanation": "Ensure the shelf is correctly located before placing hardback_2."
+    },
+    {
+        "rule": "G(!shelf_19_on_floor -> X(!hardback_2_place_ontop_shelf_19))",
+        "explanation": "Require the shelf to be on the floor before placing hardback_2."
+    },
+    {
+        "rule": "G(hardback_3_on_top_of_breakfast_table_9 -> X(!left_grasp_hardback_3))",
+        "explanation": "Block re-grasping hardback_3 once it is correctly on the breakfast table."
+    },
+    {
+        "rule": "G(!hardback_3_in_living_room -> X(!left_grasp_hardback_3))",
+        "explanation": "Prevent grasping hardback_3 unless it is actually in the living room."
+    },
+    {
+        "rule": "G((hardback_0_on_top_of_shelf_19 & hardback_1_on_top_of_shelf_19 & hardback_2_on_top_of_shelf_19 & notebook_0_on_top_of_shelf_19 & hardback_3_on_top_of_breakfast_table_9 & notebook_1_on_top_of_breakfast_table_9 & notebook_2_on_top_of_breakfast_table_9 & notebook_3_on_top_of_breakfast_table_9) -> X(done))",
+        "explanation": "Detect when all eight object-placement goals are satisfied and trigger task completion."
+    },
+    {
+        "rule": "G(hardback_0_in_hand -> X(!left_grasp_hardback_1))",
+        "explanation": "Prevent grasping hardback_1 while already holding hardback_0, ensuring only one object is held at a time."
+    }
+]

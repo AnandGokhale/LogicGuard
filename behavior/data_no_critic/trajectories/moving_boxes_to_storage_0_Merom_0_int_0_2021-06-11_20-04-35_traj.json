@@ -1,0 +1,431 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_storage_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "carton_71",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "carton_70",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: shelf_7"
+        ]
+      },
+      {
+        "name": "shelf_7",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0",
+          "Next to: carton_70"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "carton_70",
+      "thoughts": "To move carton_70 onto the storage room floor, I need to pick it up first. My left hand is free, so I will grasp carton_70 with my left hand."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_70', 'room_floor_storage_room_0']\n['ontop', 'carton_71', 'carton_70']\n\n\n",
+    "feedback": "Grasp carton_70 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "carton_70",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_storage_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "carton_71",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "carton_70",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "shelf_7",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "room_floor_storage_room_0",
+      "thoughts": "I am currently holding carton_70 in my left hand, and the goal is to have carton_70 on the storage room floor. Placing carton_70 on top of room_floor_storage_room_0 will achieve this part of the goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_70', 'room_floor_storage_room_0']\n['ontop', 'carton_71', 'carton_70']\n\n\n",
+    "feedback": "Place ontop carton_70 room_floor_storage_room_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_storage_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "carton_71",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "carton_70",
+        "category": "carton",
+        "State description ": [
+          "Location: storage_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_storage_room_0"
+        ]
+      },
+      {
+        "name": "shelf_7",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "carton_71",
+      "thoughts": "To achieve the goal of carton_71 being on top of carton_70, I need to pick up carton_71 first. My hands are currently empty, so I will grasp carton_71 with my left hand."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_70', 'room_floor_storage_room_0']\n['ontop', 'carton_71', 'carton_70']\n\n\n",
+    "feedback": "Grasp carton_71 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "carton_71",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_storage_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "carton_71",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "carton_70",
+        "category": "carton",
+        "State description ": [
+          "Location: storage_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On floor: room_floor_storage_room_0"
+        ]
+      },
+      {
+        "name": "shelf_7",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "carton_70",
+      "thoughts": "I am holding carton_71 in my left hand, and the goal is to place carton_71 on top of carton_70. Therefore, I will place carton_71 on top of carton_70 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_70', 'room_floor_storage_room_0']\n['ontop', 'carton_71', 'carton_70']\n\n\n",
+    "feedback": "Place ontop carton_71 carton_70 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_storage_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "carton_71",
+        "category": "carton",
+        "State description ": [
+          "Location: storage_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On top of: carton_70"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "carton_70",
+        "category": "carton",
+        "State description ": [
+          "Location: storage_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: carton_71",
+          "On floor: room_floor_storage_room_0"
+        ]
+      },
+      {
+        "name": "shelf_7",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "carton_71",
+      "thoughts": "To achieve the goal state, I need to manipulate carton_71. Since both my hands are empty, I will grasp carton_71 with my left hand to prepare for placing it on top of carton_70."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_70', 'room_floor_storage_room_0']\n['ontop', 'carton_71', 'carton_70']\n\n\n",
+    "feedback": "Grasp carton_71 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "carton_71",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_storage_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "carton_71",
+        "category": "carton",
+        "State description ": [
+          "Location: storage_room",
+          "Open? : True",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "carton_70",
+        "category": "carton",
+        "State description ": [
+          "Location: storage_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: carton_71",
+          "On floor: room_floor_storage_room_0"
+        ]
+      },
+      {
+        "name": "shelf_7",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "carton_70",
+      "thoughts": "I am currently holding carton_71 in my left hand, and the goal is to have carton_71 on top of carton_70. Placing carton_71 on top of carton_70 will achieve the desired configuration."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_70', 'room_floor_storage_room_0']\n['ontop', 'carton_71', 'carton_70']\n\n\n",
+    "feedback": "Place ontop carton_71 carton_70 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_storage_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "carton_71",
+        "category": "carton",
+        "State description ": [
+          "Location: storage_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "On top of: carton_70"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "carton_70",
+        "category": "carton",
+        "State description ": [
+          "Location: storage_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: carton_71",
+          "On floor: room_floor_storage_room_0"
+        ]
+      },
+      {
+        "name": "shelf_7",
+        "category": "shelf",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "Carton_71 is already on top of carton_70, and carton_70 is on the floor of the storage room. The target state has been achieved."
+    },
+    "goal": "target environment state:\n['onfloor', 'carton_70', 'room_floor_storage_room_0']\n['ontop', 'carton_71', 'carton_70']\n\n\n",
+    "feedback": ""
+  }
+]

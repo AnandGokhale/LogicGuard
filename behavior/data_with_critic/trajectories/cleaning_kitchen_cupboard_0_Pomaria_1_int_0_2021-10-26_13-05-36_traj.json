@@ -1,0 +1,5613 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: top_cabinet_25",
+          "Next to: cup_0",
+          "Next to: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_25"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "paper_towel_0",
+      "thoughts": "The goal requires that both top_cabinet_24 and top_cabinet_25 are not dusty. Since paper_towel_0 is a cleaning tool and is accessible, I will grasp it first in preparation to clean the cabinets."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Grasp paper_towel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "paper_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: top_cabinet_25",
+          "Next to: cup_0",
+          "Next to: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_25"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_37",
+      "thoughts": "To clean the dusty cabinets, I need to soak the paper towel first. The next step is to place the paper towel into the sink so I can soak it."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Place inside paper_towel_0 sink_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: top_cabinet_25",
+          "Next to: cup_0",
+          "Next to: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: paper_towel_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_25"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_37",
+      "thoughts": "The paper towel is now inside the sink. I need to turn on the sink so I can soak the paper towel, making it usable for cleaning the dusty cabinets."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Toggleon sink_37 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: top_cabinet_25",
+          "Next to: cup_0",
+          "Next to: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: paper_towel_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_25"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "paper_towel_0",
+      "thoughts": "The sink is now toggled on and the paper towel is inside the sink. I will soak the paper towel to prepare it for cleaning the dusty cabinets."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Soak paper_towel_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: top_cabinet_25",
+          "Next to: cup_0",
+          "Next to: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: paper_towel_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_25"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "paper_towel_0",
+      "thoughts": "The paper towel is now soaked and inside the sink. I need to grasp it so I can use it to clean the dusty cabinets."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Grasp paper_towel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "paper_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: top_cabinet_25",
+          "Next to: cup_0",
+          "Next to: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_25"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "top_cabinet_24",
+      "thoughts": "The critic has blocked cleaning or placing objects inside top_cabinet_24 unless it is open. Therefore, I need to open top_cabinet_24 before proceeding with cleaning or placing objects inside."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Open top_cabinet_24 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "paper_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty",
+          "Next to: top_cabinet_25",
+          "Next to: cup_0",
+          "Next to: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_25"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "top_cabinet_24",
+      "thoughts": "Now that top_cabinet_24 is open and I have a soaked paper towel in my left hand, I can clean the dust off top_cabinet_24 to satisfy the goal of all cabinets not being dusty."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Clean-dust top_cabinet_24 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "paper_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: cup_0",
+          "Next to: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_25"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "top_cabinet_25",
+      "thoughts": "The critic has blocked cleaning or placing objects inside top_cabinet_25 while it is closed. To proceed with cleaning the dusty cabinet, I must first open top_cabinet_25."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Open top_cabinet_25 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "paper_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: cup_0",
+          "Next to: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_25"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "top_cabinet_25",
+      "thoughts": "Now that top_cabinet_25 is open and I have a soaked paper towel in my left hand, I can proceed to clean the dusty cabinet, which is required to achieve the goal state of all cabinets being not dusty."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Clean-dust top_cabinet_25 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "paper_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: cup_0",
+          "Next to: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_25"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_RELEASE",
+      "object": "paper_towel_0",
+      "thoughts": "Both cabinets are now clean, and the critic forbids further cleaning of top_cabinet_24. My left hand is still holding the cleaning tool, but the next goal is to arrange bowls and cups inside the cabinets. I need an empty hand to manipulate these objects, so I will release the paper towel to free my left hand for future actions."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Release paper_towel_0 from left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: cup_0",
+          "Next to: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_25"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "bowl_0",
+      "thoughts": "To satisfy the goal that all bowls should be inside a cabinet, I will start by grasping bowl_0, which is currently on the countertop. This will allow me to place it inside one of the open cabinets next."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Grasp bowl_0 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "bowl_0"
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: cup_0",
+          "Next to: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_25"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_INSIDE",
+      "object": "top_cabinet_24",
+      "thoughts": "Since I am holding bowl_0 in my right hand and top_cabinet_24 is open, I will place bowl_0 inside top_cabinet_24 to satisfy the goal that all bowls should be inside a cabinet."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Place inside bowl_0 top_cabinet_24 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: bowl_0"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_25"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bowl_1",
+      "thoughts": "To satisfy the goal that all bowls should be inside a cabinet, I need to move bowl_1 into a cabinet. Since my hands are empty, I will grasp bowl_1 with my left hand to prepare for placing it inside top_cabinet_24."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Grasp bowl_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bowl_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_0",
+          "Inside: bowl_0"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_25"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: corridor",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "top_cabinet_24",
+      "thoughts": "I am holding bowl_1 in my left hand and top_cabinet_24 is open. To achieve the goal that all bowls are inside a cabinet, I will place bowl_1 inside top_cabinet_24."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Place inside bowl_1 top_cabinet_24 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: bowl_0",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_25"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "cup_1",
+      "thoughts": "To achieve the goal that all cups are inside a cabinet and not inside a bowl, I will grasp cup_1, which is currently inside top_cabinet_25 and not inside any bowl. This prepares me to ensure its correct placement if needed."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Grasp cup_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "cup_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: bowl_0",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "top_cabinet_24",
+      "thoughts": "The goal requires cups to be inside a cabinet and not inside a bowl. Since cup_1 is currently in my left hand and top_cabinet_24 is open, I will place cup_1 inside top_cabinet_24 to satisfy the goal condition."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Place inside cup_1 top_cabinet_24 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: bowl_0",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bowl_0",
+      "thoughts": "The goal requires all bowls to be inside a cabinet and not inside cup_0. bowl_0 is currently inside top_cabinet_24 (a cabinet), but also inside cup_1. To remove it from cup_1, I need to grasp bowl_0 so I can later place it directly inside the cabinet without being inside a cup."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Grasp bowl_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bowl_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "top_cabinet_24",
+      "thoughts": "Now that I am holding bowl_0, I should place it directly inside top_cabinet_24 (the cabinet), ensuring it is not inside any cup, to satisfy the goal condition."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Place inside bowl_0 top_cabinet_24 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: bowl_0",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bowl_1",
+      "thoughts": "To satisfy the goal that all bowls are inside the cabinet and not inside any cup, I will grasp bowl_1 so I can place it directly inside top_cabinet_24."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Grasp bowl_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bowl_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Inside: bowl_0",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "top_cabinet_24",
+      "thoughts": "I am holding bowl_1 in my left hand, and the goal is for all bowls to be inside the cabinet and not inside any cup. Placing bowl_1 inside the open cabinet top_cabinet_24 will help achieve this part of the goal."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Place inside bowl_1 top_cabinet_24 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: bowl_0",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bowl_0",
+      "thoughts": "To achieve the goal, all bowls must be inside the cabinet and not inside any cup. Bowl_0 is currently inside both the cabinet and a cup. I will grasp bowl_0 so I can later remove it from the cup and place it only inside the cabinet."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Grasp bowl_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bowl_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "top_cabinet_24",
+      "thoughts": "To remove bowl_0 from being inside cup_1 and ensure it is only inside the cabinet, I will place bowl_0 on top of the open cabinet, so it is no longer inside any cup."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Place ontop bowl_0 top_cabinet_24 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bowl_0",
+      "thoughts": "Now that bowl_0 is on top of the cabinet and not inside any cup, I will grasp bowl_0 to place it directly inside the open cabinet (top_cabinet_24) to satisfy the goal that bowls are inside the cabinet and not inside any cup."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Grasp bowl_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bowl_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "top_cabinet_24",
+      "thoughts": "I am holding bowl_0 in my left hand and top_cabinet_24 is open, so I will place bowl_0 inside top_cabinet_24 to satisfy the goal that bowls are inside the cabinet and not inside any cup."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Place inside bowl_0 top_cabinet_24 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: bowl_0",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "cup_1",
+      "thoughts": "To ensure that all cups are inside the cabinet and not inside any bowl, I will pick up cup_1, which is currently inside bowl_1, so I can later move it directly into the cabinet."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Grasp cup_1 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "cup_1"
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "On top of: cup_1",
+          "Inside: bowl_0",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_INSIDE",
+      "object": "top_cabinet_24",
+      "thoughts": "I am holding cup_1 in my right hand and top_cabinet_24 is open. To satisfy the goal that all cups are inside a cabinet and not inside any bowl, I will place cup_1 directly inside top_cabinet_24."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Place inside cup_1 top_cabinet_24 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: bowl_0",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bowl_0",
+      "thoughts": "To achieve the goal that all bowls are inside a cabinet and not inside any cup, I need to move bowl_0 out of cup_1 and into top_cabinet_24. First, I need to grasp bowl_0."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Grasp bowl_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bowl_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "top_cabinet_24",
+      "thoughts": "I am holding bowl_0 in my left hand. To satisfy the goal that all bowls are inside a cabinet and not inside any cup, I will place bowl_0 directly inside top_cabinet_24."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Place inside bowl_0 top_cabinet_24 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: bowl_0",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bowl_1",
+      "thoughts": "To satisfy the goal that all bowls are inside a cabinet and not inside any cup, I will grasp bowl_1 so I can move it directly into top_cabinet_24."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Grasp bowl_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bowl_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Inside: bowl_0",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "top_cabinet_24",
+      "thoughts": "The goal requires all bowls to be inside a cabinet and not inside any cup. Since I am holding bowl_1 and top_cabinet_24 is open, I will place bowl_1 inside top_cabinet_24 to make progress toward the goal."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Place inside bowl_1 top_cabinet_24 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: bowl_0",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bowl_0",
+      "thoughts": "To satisfy the goal that all bowls are inside a cabinet and not inside any cup, I need to move bowl_0 out of cup_1 and into the cabinet. First, I will grasp bowl_0."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Grasp bowl_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bowl_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "top_cabinet_24",
+      "thoughts": "Since I am holding bowl_0 and top_cabinet_24 is open, I will place bowl_0 inside top_cabinet_24 to satisfy the goal that all bowls are inside a cabinet and not inside any cup."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Place inside bowl_0 top_cabinet_24 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: bowl_0",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bowl_1",
+      "thoughts": "To achieve the goal that all bowls are inside a cabinet and not inside any cup, I will grasp bowl_1 so that I can place it inside top_cabinet_24 next."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Grasp bowl_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bowl_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Inside: bowl_0",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "top_cabinet_24",
+      "thoughts": "I am holding bowl_1 in my left hand, and top_cabinet_24 is open. To satisfy the goal that all bowls are inside a cabinet and not inside any cup, I should place bowl_1 inside top_cabinet_24."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Place inside bowl_1 top_cabinet_24 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: bowl_0",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bowl_0",
+      "thoughts": "To achieve the goal that all bowls are inside a cabinet and not inside any cup, I need to move bowl_0 out of cup_1 and place it directly inside the cabinet. First, I will grasp bowl_0."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Grasp bowl_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bowl_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "top_cabinet_24",
+      "thoughts": "I am holding bowl_0 in my left hand, and to satisfy the goal that all bowls are inside a cabinet (and not inside any cup), I will place bowl_0 directly inside top_cabinet_24, which is open."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Place inside bowl_0 top_cabinet_24 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: bowl_0",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bowl_1",
+      "thoughts": "To satisfy the goal that all bowls are inside a cabinet and not inside any cup, I need to move bowl_1 into top_cabinet_24 if it is not already there. I will grasp bowl_1 to prepare for this action."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Grasp bowl_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bowl_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Inside: bowl_0",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "top_cabinet_24",
+      "thoughts": "To achieve the goal that all bowls are inside a cabinet, I will place bowl_1, which I am currently holding in my left hand, inside the open top_cabinet_24."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Place inside bowl_1 top_cabinet_24 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: bowl_0",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_0",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_0",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "bowl_0",
+      "thoughts": "To satisfy the goal that all bowls are inside a cabinet and not inside cup_0, I need to move bowl_0. I will grasp bowl_0 to prepare to place it directly inside the cabinet."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Grasp bowl_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "bowl_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "soap_0",
+        "category": "soap",
+        "State description ": [
+          "Location: kitchen",
+          "On top of: countertop_31"
+        ]
+      },
+      {
+        "name": "paper_towel_0",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_24",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_25",
+          "Next to: cup_1",
+          "Next to: cup_0",
+          "Next to: bowl_1",
+          "Inside: cup_1",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "top_cabinet_25",
+        "category": "top_cabinet",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_0"
+        ]
+      },
+      {
+        "name": "bowl_0",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_1",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: bowl_1",
+          "Inside: top_cabinet_24",
+          "Inside: bowl_1"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "cup_0",
+        "category": "cup",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: top_cabinet_25",
+          "Inside: top_cabinet_24"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bowl_1",
+        "category": "bowl",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: top_cabinet_24",
+          "Next to: cup_1",
+          "Inside: top_cabinet_24",
+          "Inside: cup_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "top_cabinet_24",
+      "thoughts": "The goal requires all bowls to be inside a cabinet and not inside cup_0. Since I am currently holding bowl_0 and top_cabinet_24 is open, I will place bowl_0 directly inside top_cabinet_24 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup_0', 'cabinet.n.01']\n['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl_0', 'cabinet.n.01']\n\n\n",
+    "feedback": "Place inside bowl_0 top_cabinet_24 successful"
+  }
+]

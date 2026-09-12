@@ -1,0 +1,3534 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : False",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pop_2",
+          "Next to: pop_1",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: toothpaste_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "fridge_20",
+      "thoughts": "The fridge is currently closed, but I need to remove all food items from inside it and clean its stains. Opening the fridge is required before I can access the items inside or clean it."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Open fridge_20 failed"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pop_2",
+          "Next to: room_floor_kitchen_0",
+          "Next to: pop_1",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: toothpaste_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pop_2",
+      "thoughts": "The goal requires all food items to be removed from inside the fridge. Since the fridge is open, I can start by grasping one of the pops (pop_2) inside the fridge to remove it."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Grasp pop_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pop_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: pop_2",
+          "Next to: room_floor_kitchen_0",
+          "Next to: pop_1",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: toothpaste_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "breakfast_table_6",
+      "thoughts": "I am holding pop_2, which was inside the fridge. The goal is to remove all food from inside the fridge. Placing pop_2 next to the breakfast_table_6 will ensure it is no longer inside the fridge, making progress towards the goal."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Place next to pop_2 breakfast_table_6 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: pop_1",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: pop_2",
+          "Next to: toothpaste_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pop_0",
+      "thoughts": "To achieve the goal of having no food inside the fridge, I need to remove pop_0 from inside fridge_20. Since my hands are empty, I will grasp pop_0 next."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Grasp pop_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pop_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: pop_1",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: pop_2",
+          "Next to: toothpaste_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "fridge_20",
+      "thoughts": "The goal is to ensure no food is inside fridge_20. I am holding pop_0 in my left hand, which should not be inside or next to the fridge. Placing pop_0 next to fridge_20 will remove it from being inside the fridge and make progress toward the goal."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Place next to pop_0 fridge_20 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: pop_1",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: pop_2",
+          "Next to: toothpaste_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20",
+          "Inside: fridge_20"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pop_1",
+      "thoughts": "The goal requires that no food is inside fridge_20. pop_1 is currently inside fridge_20, so I need to remove it. I will first grasp pop_1 to take it out of the fridge."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Grasp pop_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pop_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: pop_1",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: pop_2",
+          "Next to: toothpaste_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "fridge_20",
+      "thoughts": "I am holding pop_1 in my left hand. To ensure no food is inside fridge_20, I will place pop_1 next to the fridge, removing it from being inside the fridge and making progress towards the goal state."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Place next to pop_1 fridge_20 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: pop_1",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: pop_2",
+          "Next to: toothpaste_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20",
+          "Under: pop_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pop_0",
+      "thoughts": "To achieve the goal that no food is inside fridge_20, I need to remove all food items from the fridge. Since pop_0 is still under pop_1 and likely near the fridge, I will grasp pop_0 to remove it from the fridge next."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Grasp pop_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pop_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: pop_1",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: pop_2",
+          "Next to: toothpaste_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "breakfast_table_6",
+      "thoughts": "I am currently holding pop_0 in my left hand, and to ensure that no food is inside fridge_20, I should place pop_0 next to breakfast_table_6, which is outside the fridge and will help achieve the goal."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Place next to pop_0 breakfast_table_6 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "Next to: pop_1",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "Next to: pop_0"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: pop_2",
+          "Next to: toothpaste_0",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: fridge_20"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_2",
+          "Next to: breakfast_table_6"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pop_1",
+      "thoughts": "To ensure no food is inside fridge_20, I need to remove any food items from it. pop_1 is next to fridge_20 and likely just outside, but to be certain, I will grasp it and ensure it is not inside the fridge."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Grasp pop_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pop_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "Next to: pop_0"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: pop_2",
+          "Next to: toothpaste_0",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_2",
+          "Next to: breakfast_table_6"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_NEXTTO",
+      "object": "breakfast_table_6",
+      "thoughts": "To ensure pop_1 is not inside the fridge and is outside in the environment, I will place it next to breakfast_table_6, which is outside the fridge and in the kitchen."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Place next to pop_1 breakfast_table_6 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "Next to: pop_1",
+          "Next to: pop_0"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: pop_2",
+          "Next to: toothpaste_0",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_2",
+          "Next to: pop_0"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_2",
+          "Next to: breakfast_table_6",
+          "Next to: pop_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_0",
+      "thoughts": "The fridge is stained, and I need a cleaning tool to clean it. The hand_towel_0 is a cleaning tool and is available on top of the breakfast_table_6. I will grasp it with my left hand to prepare for cleaning the fridge."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Grasp hand_towel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "Next to: pop_1",
+          "Next to: pop_0"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: pop_2",
+          "Next to: toothpaste_0",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_2",
+          "Next to: pop_0"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_2",
+          "Next to: breakfast_table_6",
+          "Next to: pop_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "fridge_20",
+      "thoughts": "I am already holding the hand_towel_0, which is a cleaning tool, and the fridge_20 is open and stained. The next logical step is to clean the fridge to achieve the goal state where the fridge is not stained."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Clean-stain failed, please place object in a toggled on cleaner or get a soaked cleaner first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "Next to: pop_0"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: pop_2",
+          "Next to: toothpaste_0",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_2",
+          "Next to: breakfast_table_6"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_37",
+      "thoughts": "The hand towel is not soaked, and previous feedback indicates I need a soaked cleaner to clean the fridge. I will turn on the sink to soak the hand towel next."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Toggleon sink_37 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "Next to: pop_0"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: pop_2",
+          "Next to: toothpaste_0",
+          "Next to: pop_1",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_2",
+          "Next to: breakfast_table_6"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "hand_towel_0",
+      "thoughts": "The hand towel is in my left hand and the sink is already toggled on. I need to soak the hand towel so I can use it to clean the stained fridge."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_0"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: toothpaste_0",
+          "Next to: pop_1",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_2",
+          "Next to: breakfast_table_6"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_37",
+      "thoughts": "The hand towel must be placed inside the toggled on sink before I can soak it. This will allow me to soak the towel and then use it to clean the stained fridge."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Place inside hand_towel_0 sink_37 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "Next to: pop_0"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: pop_2",
+          "Next to: toothpaste_0",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_2",
+          "Next to: breakfast_table_6"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "hand_towel_0",
+      "thoughts": "The hand towel is already inside the toggled on sink, so I can now soak it. This is necessary to prepare the towel for cleaning the stained fridge."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Soak hand_towel_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_0"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: toothpaste_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_2"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "fridge_20",
+      "thoughts": "The fridge is stained and needs to be cleaned to achieve the target state. The hand towel is soaked and available as a cleaning tool, so I can now use it to clean the fridge."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Clean-stain failed, please place object in a toggled on cleaner or get a soaked cleaner first"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_0"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sink_37",
+          "Inside: sink_37"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: toothpaste_0",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: hand_towel_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_2",
+          "Next to: breakfast_table_6"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "hand_towel_0",
+      "thoughts": "The fridge is stained and needs to be cleaned. The hand towel is soaked and available in the sink, so I will grasp it with my left hand to prepare for cleaning the fridge."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Grasp hand_towel_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Stained",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_0"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: toothpaste_0",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_2",
+          "Next to: breakfast_table_6"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "fridge_20",
+      "thoughts": "The fridge is stained, and I am holding a soaked hand towel in my left hand, which is a cleaning tool. Therefore, I can clean the fridge to achieve the goal state where the fridge is not stained."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Clean-stain fridge_20 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_0",
+          "Under: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: toothpaste_0",
+          "Next to: pop_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_2",
+          "Next to: breakfast_table_6"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "fridge_20",
+      "thoughts": "The goal requires the fridge to be not stained. I am holding a soaked hand towel, which is a cleaning tool, so I can use it to clean the fridge now."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_0"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: toothpaste_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_2"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "fridge_20",
+      "thoughts": "The fridge needs to be not stained according to the goal. I am holding a soaked hand towel, which is a cleaning tool, so I will use it to clean the fridge."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "hand_towel_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "burner_64",
+        "category": "burner",
+        "State description ": [
+          "Location: kitchen_0",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Heat source/sink?: False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "door_70",
+        "category": "door",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "fridge_20",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Next to: room_floor_kitchen_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "countertop_31",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "straight_chair_7",
+        "category": "straight_chair",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: breakfast_table_6",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_2",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_0"
+        ]
+      },
+      {
+        "name": "hand_towel_0",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: kitchen",
+          "Stain status: Clean",
+          "Soaked? : True",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "breakfast_table_6",
+        "category": "breakfast_table",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: straight_chair_7",
+          "Next to: toothpaste_0",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "toothpaste_0",
+        "category": "toothpaste",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: breakfast_table_6",
+          "On top of: breakfast_table_6"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sink_37",
+        "category": "sink",
+        "State description ": [
+          "Location: kitchen_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_1",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "pop_0",
+        "category": "pop",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: pop_2"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "The fridge is already clean, as indicated in its state. The previous attempt to clean the fridge failed because it was already clean. There are no food objects inside the fridge, so the goal state is already satisfied."
+    },
+    "goal": "target environment state:\n['not', 'stained', 'fridge_20']\n['forall', 'food.n.01', '-', 'food.n.01', 'not', 'inside', 'food.n.01', 'fridge_20']\n\n\n",
+    "feedback": ""
+  }
+]

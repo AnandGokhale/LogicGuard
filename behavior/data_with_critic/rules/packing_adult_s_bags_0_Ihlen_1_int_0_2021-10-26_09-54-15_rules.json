@@ -1,0 +1,58 @@
+[
+    {
+        "rule": "G(underwear_101_place_inside_backpack_97 -> underwear_101_in_hand)",
+        "explanation": "Ensure underwear_101 is grasped before placing it inside backpack_97."
+    },
+    {
+        "rule": "G(underwear_101_inside_backpack_97 -> X(!grasp_underwear_101))",
+        "explanation": "Prevent re\u2010grasping underwear_101 once it is already in backpack_97."
+    },
+    {
+        "rule": "G(underwear_102_place_inside_backpack_97 -> underwear_102_in_hand)",
+        "explanation": "Ensure underwear_102 is in hand before placing into backpack_97."
+    },
+    {
+        "rule": "G(underwear_102_inside_backpack_97 -> X(!grasp_underwear_102))",
+        "explanation": "Avoid grasping underwear_102 again once inside backpack_97."
+    },
+    {
+        "rule": "G(toothbrush_98_place_inside_backpack_97 -> toothbrush_98_in_hand)",
+        "explanation": "Require toothbrush_98 to be in hand before placing into backpack_97."
+    },
+    {
+        "rule": "G(toothbrush_98_inside_backpack_97 -> X(!grasp_toothbrush_98))",
+        "explanation": "Do not grasp toothbrush_98 if it is already packed."
+    },
+    {
+        "rule": "G(shampoo_99_place_inside_backpack_97 -> shampoo_99_in_hand)",
+        "explanation": "Make sure shampoo_99 is held before inserting into backpack_97."
+    },
+    {
+        "rule": "G(shampoo_99_inside_backpack_97 -> X(!grasp_shampoo_99))",
+        "explanation": "Block repeated grasps of shampoo_99 once packed."
+    },
+    {
+        "rule": "G(hardback_100_place_inside_backpack_97 -> hardback_100_in_hand)",
+        "explanation": "Insist hardback_100 be in hand before placing in backpack_97."
+    },
+    {
+        "rule": "G(hardback_100_inside_backpack_97 -> X(!grasp_hardback_100))",
+        "explanation": "Prevent redundant grasps of hardback_100 after packing."
+    },
+    {
+        "rule": "G(toothpaste_103_place_inside_backpack_97 -> toothpaste_103_in_hand)",
+        "explanation": "Require toothpaste_103 to be held prior to placing into backpack_97."
+    },
+    {
+        "rule": "G(toothpaste_103_inside_backpack_97 -> X(!grasp_toothpaste_103))",
+        "explanation": "Do not grasp toothpaste_103 again once inside backpack_97."
+    },
+    {
+        "rule": "G(backpack_112_in_bedroom -> X(!open_backpack_112))",
+        "explanation": "Block any attempts to open the irrelevant backpack_112."
+    },
+    {
+        "rule": "G(underwear_101_inside_backpack_97 & underwear_102_inside_backpack_97 & toothbrush_98_inside_backpack_97 & shampoo_99_inside_backpack_97 & hardback_100_inside_backpack_97 & toothpaste_103_inside_backpack_97 & (backpack_97_on_top_of_bed_7 | backpack_97_on_floor) -> X(done))",
+        "explanation": "Once all items are packed and the backpack is properly placed, trigger task completion."
+    }
+]

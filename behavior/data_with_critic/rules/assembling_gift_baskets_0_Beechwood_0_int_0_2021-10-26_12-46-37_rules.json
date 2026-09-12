@@ -1,0 +1,42 @@
+[
+    {
+        "rule": "G(!candle_0_in_hand -> X(!(candle_0_place_inside_basket_0 | candle_0_place_inside_basket_1 | candle_0_place_inside_basket_2 | candle_0_place_inside_basket_3)))",
+        "explanation": "Cannot place candle_0 into any basket unless candle_0 is in hand."
+    },
+    {
+        "rule": "G((candle_0_inside_basket_0 | candle_0_inside_basket_1 | candle_0_inside_basket_2 | candle_0_inside_basket_3) -> X(!right_grasp_candle_0 & !left_grasp_candle_0))",
+        "explanation": "Once candle_0 is in a basket, block any further grasp of candle_0."
+    },
+    {
+        "rule": "G(!candle_1_in_hand -> X(!(candle_1_place_inside_basket_0 | candle_1_place_inside_basket_1 | candle_1_place_inside_basket_2 | candle_1_place_inside_basket_3)))",
+        "explanation": "Cannot place candle_1 into any basket unless candle_1 is in hand."
+    },
+    {
+        "rule": "G((candle_1_inside_basket_0 | candle_1_inside_basket_1 | candle_1_inside_basket_2 | candle_1_inside_basket_3) -> X(!right_grasp_candle_1 & !left_grasp_candle_1))",
+        "explanation": "Once candle_1 is in a basket, block any further grasp of candle_1."
+    },
+    {
+        "rule": "G(!candle_2_in_hand -> X(!(candle_2_place_inside_basket_0 | candle_2_place_inside_basket_1 | candle_2_place_inside_basket_2 | candle_2_place_inside_basket_3)))",
+        "explanation": "Cannot place candle_2 into any basket unless candle_2 is in hand."
+    },
+    {
+        "rule": "G((candle_2_inside_basket_0 | candle_2_inside_basket_1 | candle_2_inside_basket_2 | candle_2_inside_basket_3) -> X(!right_grasp_candle_2 & !left_grasp_candle_2))",
+        "explanation": "Once candle_2 is in a basket, block any further grasp of candle_2."
+    },
+    {
+        "rule": "G(!candle_3_in_hand -> X(!(candle_3_place_inside_basket_0 | candle_3_place_inside_basket_1 | candle_3_place_inside_basket_2 | candle_3_place_inside_basket_3)))",
+        "explanation": "Cannot place candle_3 into any basket unless candle_3 is in hand."
+    },
+    {
+        "rule": "G((candle_3_inside_basket_0 | candle_3_inside_basket_1 | candle_3_inside_basket_2 | candle_3_inside_basket_3) -> X(!right_grasp_candle_3 & !left_grasp_candle_3))",
+        "explanation": "Once candle_3 is in a basket, block any further grasp of candle_3."
+    },
+    {
+        "rule": "G(basket_0_in_hand | basket_1_in_hand | basket_2_in_hand | basket_3_in_hand -> X(!right_grasp_candle_0 & !right_grasp_candle_1 & !right_grasp_candle_2 & !right_grasp_candle_3 & !left_grasp_candle_0 & !left_grasp_candle_1 & !left_grasp_candle_2 & !left_grasp_candle_3))",
+        "explanation": "When holding any basket, block grasping additional candles until the basket is released."
+    },
+    {
+        "rule": "G((candle_0_inside_basket_0 | candle_0_inside_basket_1 | candle_0_inside_basket_2 | candle_0_inside_basket_3) & (candle_1_inside_basket_0 | candle_1_inside_basket_1 | candle_1_inside_basket_2 | candle_1_inside_basket_3) & (candle_2_inside_basket_0 | candle_2_inside_basket_1 | candle_2_inside_basket_2 | candle_2_inside_basket_3) & (candle_3_inside_basket_0 | candle_3_inside_basket_1 | candle_3_inside_basket_2 | candle_3_inside_basket_3) & (cookie_0_inside_basket_0 | cookie_0_inside_basket_1 | cookie_0_inside_basket_2 | cookie_0_inside_basket_3) & (cookie_1_inside_basket_0 | cookie_1_inside_basket_1 | cookie_1_inside_basket_2 | cookie_1_inside_basket_3) & (cookie_2_inside_basket_0 | cookie_2_inside_basket_1 | cookie_2_inside_basket_2 | cookie_2_inside_basket_3) & (cookie_3_inside_basket_0 | cookie_3_inside_basket_1 | cookie_3_inside_basket_2 | cookie_3_inside_basket_3) & (cheese_0_inside_basket_0 | cheese_0_inside_basket_1 | cheese_0_inside_basket_2 | cheese_0_inside_basket_3) & (cheese_1_inside_basket_0 | cheese_1_inside_basket_1 | cheese_1_inside_basket_2 | cheese_1_inside_basket_3) & (cheese_2_inside_basket_0 | cheese_2_inside_basket_1 | cheese_2_inside_basket_2 | cheese_2_inside_basket_3) & (cheese_3_inside_basket_0 | cheese_3_inside_basket_1 | cheese_3_inside_basket_2 | cheese_3_inside_basket_3) & (bow_0_inside_basket_0 | bow_0_inside_basket_1 | bow_0_inside_basket_2 | bow_0_inside_basket_3) & (bow_1_inside_basket_0 | bow_1_inside_basket_1 | bow_1_inside_basket_2 | bow_1_inside_basket_3) & (bow_2_inside_basket_0 | bow_2_inside_basket_1 | bow_2_inside_basket_2 | bow_2_inside_basket_3) & (bow_3_inside_basket_0 | bow_3_inside_basket_1 | bow_3_inside_basket_2 | bow_3_inside_basket_3) -> X(done))",
+        "explanation": "As soon as all 16 objects are inside some basket, trigger the `done` action."
+    }
+]

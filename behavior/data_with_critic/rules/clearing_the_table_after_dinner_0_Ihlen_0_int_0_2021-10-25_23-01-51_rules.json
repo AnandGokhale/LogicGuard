@@ -1,0 +1,62 @@
+[
+    {
+        "rule": "G(!cup_0_in_hand -> X(!cup_0_place_inside_bucket_0))",
+        "explanation": "Don\u2019t try to place cup_0 into bucket_0 unless you\u2019re holding cup_0."
+    },
+    {
+        "rule": "G(cup_0_inside_bucket_0 | cup_0_inside_bucket_1 -> X(!left_grasp_cup_0))",
+        "explanation": "Once cup_0 is inside either bucket, never grasp it again."
+    },
+    {
+        "rule": "G(!cup_1_in_hand -> X(!(cup_1_place_inside_bucket_0 | cup_1_place_inside_bucket_1)))",
+        "explanation": "Don\u2019t place cup_1 into any bucket unless cup_1 is in hand."
+    },
+    {
+        "rule": "G(cup_1_inside_bucket_0 | cup_1_inside_bucket_1 -> X(!left_grasp_cup_1))",
+        "explanation": "Once cup_1 is inside a bucket, block further grasps of cup_1."
+    },
+    {
+        "rule": "G(!bowl_0_in_hand -> X(!bowl_0_place_inside_bucket_0))",
+        "explanation": "Block placing bowl_0 if it\u2019s not held."
+    },
+    {
+        "rule": "G(bowl_0_inside_bucket_0 | bowl_0_inside_bucket_1 -> X(!left_grasp_bowl_0))",
+        "explanation": "Stop grasping bowl_0 once it\u2019s correctly placed."
+    },
+    {
+        "rule": "G(!bowl_1_in_hand -> X(!bowl_1_place_inside_bucket_0))",
+        "explanation": "Never place bowl_1 into bucket_0 unless bowl_1 is in hand."
+    },
+    {
+        "rule": "G(bowl_1_inside_bucket_0 | bowl_1_inside_bucket_1 -> X(!left_grasp_bowl_1))",
+        "explanation": "Once bowl_1 is in a bucket, block further left_grasp_bowl_1."
+    },
+    {
+        "rule": "G(!bowl_2_in_hand -> X(!(bowl_2_place_inside_bucket_0 | bowl_2_place_inside_bucket_1)))",
+        "explanation": "Prevent placing bowl_2 into any bucket unless bowl_2 is held."
+    },
+    {
+        "rule": "G(bowl_2_inside_bucket_0 | bowl_2_inside_bucket_1 -> X(!left_grasp_bowl_2))",
+        "explanation": "Once bowl_2 is inside a bucket, stop grasping it."
+    },
+    {
+        "rule": "G(!bowl_3_in_hand -> X(!(bowl_3_place_inside_bucket_0 | bowl_3_place_inside_bucket_1)))",
+        "explanation": "Prevent placing bowl_3 into any bucket unless bowl_3 is in hand."
+    },
+    {
+        "rule": "G(bowl_3_inside_bucket_0 | bowl_3_inside_bucket_1 -> X(!left_grasp_bowl_3))",
+        "explanation": "Block further grasps of bowl_3 once it\u2019s placed."
+    },
+    {
+        "rule": "G(!catsup_0_in_hand -> X(!(catsup_0_place_inside_bucket_0 | catsup_0_place_inside_bucket_1)))",
+        "explanation": "Don\u2019t place catsup_0 into a bucket unless you\u2019re holding it."
+    },
+    {
+        "rule": "G(catsup_0_inside_bucket_0 | catsup_0_inside_bucket_1 -> X(!left_grasp_catsup_0))",
+        "explanation": "Once catsup_0 is in a bucket, block any further grasps."
+    },
+    {
+        "rule": "G((cup_0_inside_bucket_0|cup_0_inside_bucket_1)&(cup_1_inside_bucket_0|cup_1_inside_bucket_1)&(bowl_0_inside_bucket_0|bowl_0_inside_bucket_1)&(bowl_1_inside_bucket_0|bowl_1_inside_bucket_1)&(bowl_2_inside_bucket_0|bowl_2_inside_bucket_1)&(bowl_3_inside_bucket_0|bowl_3_inside_bucket_1)&(catsup_0_inside_bucket_0|catsup_0_inside_bucket_1) -> X(done))",
+        "explanation": "As soon as every object is inside some bucket, trigger done and stop all actions."
+    }
+]

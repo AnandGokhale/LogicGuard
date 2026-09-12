@@ -1,0 +1,6016 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: hand_towel_52",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "necklace_48",
+      "thoughts": "The necklace needs to be placed inside bottom_cabinet_2, so the first step is to pick it up. My right hand is empty, so I will grasp the necklace with my right hand."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Grasp necklace_48 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "necklace_48"
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: hand_towel_52",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_2",
+      "thoughts": "To place the necklace inside bottom_cabinet_2, I need to open the cabinet first since it is currently closed."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Open bottom_cabinet_2 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "necklace_48"
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_2",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty",
+          "Next to: hand_towel_52",
+          "Next to: sheet_53",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: hand_towel_52",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Next to: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_INSIDE",
+      "object": "bottom_cabinet_2",
+      "thoughts": "The cabinet is now open and I am holding the necklace in my right hand. To satisfy the goal of having necklace_48 inside bottom_cabinet_2, I will place it inside the open cabinet."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Place inside necklace_48 bottom_cabinet_2 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bottom_cabinet_2",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty",
+          "Next to: necklace_48",
+          "Next to: hand_towel_52",
+          "Next to: sheet_53",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: hand_towel_52",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Next to: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sheet_53",
+      "thoughts": "To achieve the goal of placing sheet_53 on top of bed_10, I need to first pick up sheet_53. My left hand is empty, so I will grasp sheet_53 with my left hand."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Grasp sheet_53 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sheet_53",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: hand_towel_52",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_10",
+      "thoughts": "I am holding sheet_53 in my left hand, and the goal is to have sheet_53 on top of bed_10. Therefore, I will place sheet_53 on top of bed_10 to achieve this part of the goal."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Place ontop sheet_53 bed_10 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: hand_towel_52",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "painting_50",
+      "thoughts": "To achieve the goal of having painting_50 on top of sheet_53, I need to pick up painting_50 first. My right hand is empty, so I will grasp painting_50 with my right hand."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Grasp painting_50 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "painting_50"
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: hand_towel_52",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sheet_53",
+      "thoughts": "The critic has blocked placing painting_50 on sheet_53 unless the robot is holding sheet_53 or painting_50. I am already holding painting_50 in my right hand, but to satisfy the critic\u2019s rule, I should also grasp sheet_53 with my left hand before attempting to stack the painting on it."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Grasp sheet_53 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sheet_53",
+      "right_hand": "painting_50"
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: hand_towel_52",
+          "Next to: jeans_46",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_ONTOP",
+      "object": "sheet_53",
+      "thoughts": "I am holding painting_50 in my right hand and sheet_53 in my left hand. To satisfy the goal of having painting_50 on top of sheet_53, I will place painting_50 on top of sheet_53."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Place ontop painting_50 sheet_53 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sheet_53",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: painting_50"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: hand_towel_52",
+          "Next to: jeans_46",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_10",
+      "thoughts": "I am holding sheet_53 in my left hand. To satisfy the goal of having sheet_53 on top of bed_10, I will place sheet_53 on top of bed_10."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Teleport painting_50 ONTOP sheet_53 successful: True\nPlace ontop sheet_53 bed_10 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "On top of: sheet_53"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Dusty",
+          "Next to: necklace_48",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Under: painting_50"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: hand_towel_52",
+          "Next to: jeans_46",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "cologne_49",
+      "thoughts": "To achieve the goal of having cologne_49 inside bottom_cabinet_2, I need to pick up cologne_49 first since both my hands are empty."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Grasp cologne_49 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "cologne_49",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "On top of: sheet_53"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: necklace_48",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: jeans_46",
+          "Next to: bed_10",
+          "Under: painting_50"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: hand_towel_52",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "hand_towel_52",
+      "thoughts": "Since bottom_cabinet_2 is dusty and the goal state requires all cabinets to not be dusty, I will need a cleaning tool. My right hand is free, so I will grasp the hand_towel_52 to prepare for cleaning the cabinet."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Grasp hand_towel_52 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "cologne_49",
+      "right_hand": "hand_towel_52"
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10",
+          "On top of: sheet_53"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: necklace_48",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: jeans_46",
+          "Next to: bed_10",
+          "Under: painting_50"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Under: hand_towel_52"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_RELEASE",
+      "object": "cologne_49",
+      "thoughts": "I need to free up one hand to interact with the cabinet or to clean it. Since both hands are full, I will release cologne_49 from my left hand, as I will need a free hand to open the cabinet or clean it."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Release cologne_49 from left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "hand_towel_52"
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10",
+          "Under: painting_50"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Under: hand_towel_52",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_2",
+      "thoughts": "To fulfill the goal of having apparel items (like necklace_48 and cologne_49) inside the cabinet and to clean the cabinet (which is currently dusty), I need to open bottom_cabinet_2 first since it is closed."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "bottom_cabinet_2 is already opened"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "hand_towel_52"
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10",
+          "Under: painting_50"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Under: hand_towel_52",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "bottom_cabinet_2",
+      "thoughts": "The hand_towel_52 is a cleaning tool, and I am already holding it. Since bottom_cabinet_2 is dusty and open, I can now clean it to satisfy the goal that all cabinets are not dusty."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Clean-dust bottom_cabinet_2 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "hand_towel_52"
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On top of: bottom_cabinet_2"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Under: hand_towel_52",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "bottom_cabinet_0",
+      "thoughts": "The goal requires that all cabinets are not dusty. bottom_cabinet_0 is currently dusty, and I am already holding the hand_towel_52, which is a cleaning tool. Therefore, I should clean bottom_cabinet_0 next."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Clean-dust bottom_cabinet_0 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "hand_towel_52"
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "bottom_cabinet_2",
+      "thoughts": "The goal requires that all cabinets are not dusty. I am already holding hand_towel_52, a cleaning tool, and bottom_cabinet_2 is a cabinet. I should clean bottom_cabinet_2 next to satisfy the dust-free cabinet requirement."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "hand_towel_52"
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "bottom_cabinet_0",
+      "thoughts": "The goal requires that all cabinets are not dusty. I have already cleaned bottom_cabinet_2, so I should now clean bottom_cabinet_0 to satisfy the requirement that all cabinets are not dusty."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "hand_towel_52"
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: jeans_47",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: painting_50",
+          "Next to: sheet_53"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_RELEASE",
+      "object": "hand_towel_52",
+      "thoughts": "I am currently holding hand_towel_52 in my right hand, but to interact with other objects such as opening the cabinet, I need at least one empty hand. Therefore, I will release the hand towel."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Release hand_towel_52 from right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_bedroom_1",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: jeans_47",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: painting_50",
+          "Next to: sheet_53"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_2",
+      "thoughts": "To achieve the goal of having necklace_48 and cologne_49 inside bottom_cabinet_2, I first need to open bottom_cabinet_2 since it is currently closed."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "bottom_cabinet_2 is already opened"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: room_floor_bedroom_1",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: jeans_47",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: painting_50",
+          "Next to: sheet_53"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "painting_50",
+      "thoughts": "To achieve the goal state where painting_50 is on top of sheet_53, I need to pick up painting_50 first so I can place it onto sheet_53."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Grasp painting_50 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "painting_50",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sheet_53",
+      "thoughts": "The critic prevents placing painting_50 on sheet_53 unless I am holding both objects. Since my right hand is empty and my left hand holds painting_50, I will now grasp sheet_53 with my right hand to satisfy the condition required for placing the painting on the sheet."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "left_hand is already holding painting_50"
+  },
+  {
+    "robot_state": {
+      "left_hand": "painting_50",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "sheet_53",
+      "thoughts": "To comply with the critic\u2019s rule, I need to be holding both painting_50 and sheet_53 before placing the painting on the sheet. Since my right hand is empty, I will grasp sheet_53 with my right hand."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Grasp sheet_53 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "painting_50",
+      "right_hand": "sheet_53"
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10",
+          "Under: sheet_53"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "sheet_53",
+      "thoughts": "To achieve the goal state where painting_50 is on top of sheet_53, and sheet_53 is on top of bed_10, I will place painting_50 (in my left hand) on top of sheet_53 (which I am holding in my right hand). This sets up the correct stacking order for the next steps."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Place ontop painting_50 sheet_53 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "sheet_53"
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_ONTOP",
+      "object": "bed_10",
+      "thoughts": "Now that painting_50 is on top of sheet_53 in my right hand, placing sheet_53 (with painting_50 on it) onto bed_10 will achieve the required stacking order: painting_50 on sheet_53 on bed_10, progressing towards the goal state."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Teleport painting_50 ONTOP sheet_53 successful: True\nPlace ontop sheet_53 bed_10 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "On top of: sheet_53"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_10",
+          "Under: painting_50"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_2",
+      "thoughts": "To satisfy the goal that all apparel items are inside a cabinet, and specifically necklace_48 and cologne_49 inside bottom_cabinet_2, I need to open bottom_cabinet_2 before placing anything inside it."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "bottom_cabinet_2 is already opened"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "On top of: sheet_53"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_10",
+          "Under: painting_50"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "necklace_48",
+      "thoughts": "Now that bottom_cabinet_2 is open, I need to put necklace_48 inside it to satisfy the goal. First, I will pick up necklace_48 with my left hand."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Grasp necklace_48 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "necklace_48",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_10",
+          "Under: painting_50"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_2",
+      "thoughts": "To place necklace_48 inside bottom_cabinet_2, I need to open the cabinet first since it is currently closed."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "bottom_cabinet_2 is already opened"
+  },
+  {
+    "robot_state": {
+      "left_hand": "necklace_48",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10",
+          "Under: painting_50"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: sheet_53",
+          "Under: painting_50",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_2",
+      "thoughts": "Now that bottom_cabinet_2 is open and I am holding necklace_48 in my left hand, I should place the necklace inside the cabinet to achieve part of the goal state."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Place inside necklace_48 bottom_cabinet_2 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10",
+          "Under: painting_50"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: sheet_53",
+          "Under: painting_50",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "painting_50",
+      "thoughts": "To achieve the goal state where painting_50 is on top of sheet_53, I need to first grasp painting_50 so I can later place it on top of sheet_53."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Grasp painting_50 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "painting_50",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: None",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sheet_53",
+      "thoughts": "Since the critic has blocked placing painting_50 on sheet_53 unless I am holding the sheet or painting, I will grasp sheet_53 with my left hand (after releasing painting_50 if necessary) to enable a valid placement action later."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "left_hand is already holding painting_50"
+  },
+  {
+    "robot_state": {
+      "left_hand": "painting_50",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_10",
+      "thoughts": "Placing sheet_53 (which I am holding in my left hand) onto bed_10 will satisfy the goal of having the sheet on top of the bed, and will free my left hand for subsequent actions."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Place ontop painting_50 bed_10 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10",
+          "Under: painting_50"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: painting_50",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_2",
+      "thoughts": "To satisfy the goal of having necklace_48 and cologne_49 inside bottom_cabinet_2, I need to open the cabinet first, as it is currently closed."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "bottom_cabinet_2 is already opened"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10",
+          "Under: painting_50"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: painting_50",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "necklace_48",
+      "thoughts": "Now that bottom_cabinet_2 is open, I need to ensure necklace_48 is inside it. To do this, I must first pick up necklace_48 so I can place it inside the cabinet."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Grasp necklace_48 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "necklace_48",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10",
+          "On top of: sheet_53"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10",
+          "Under: painting_50"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: sheet_53",
+          "Under: painting_50",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_2",
+      "thoughts": "I am currently holding necklace_48 in my left hand and bottom_cabinet_2 is in the environment. To satisfy the goal of having necklace_48 inside bottom_cabinet_2, I should place it inside now."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Place inside necklace_48 bottom_cabinet_2 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10",
+          "On top of: sheet_53"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10",
+          "Under: painting_50"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: sheet_53",
+          "Under: painting_50",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_2",
+      "thoughts": "To ensure that cologne_49 can be placed inside bottom_cabinet_2 (and that the necklace remains accessible), I need to open bottom_cabinet_2 first, as it is currently closed."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "bottom_cabinet_2 is already opened"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: bed_10",
+          "Under: painting_50"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: sheet_53",
+          "Under: painting_50",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sheet_53",
+      "thoughts": "To achieve the goal state where sheet_53 is on top of bed_10 and painting_50 is on top of sheet_53, I need to manipulate sheet_53. Grasping it with the left hand is the first step to move it onto the bed."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Grasp sheet_53 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sheet_53",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Under: painting_50",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_10",
+      "thoughts": "I am holding sheet_53 in my left hand, and the goal requires sheet_53 to be on top of bed_10. Placing sheet_53 onto bed_10 is the logical next step to achieve this part of the goal state."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Place ontop sheet_53 bed_10 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10",
+          "Under: sheet_53"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: sheet_53",
+          "Under: painting_50",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "painting_50",
+      "thoughts": "To achieve the goal of having painting_50 on top of sheet_53 (which is now on bed_10), I need to pick up painting_50 as the next step."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Grasp painting_50 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "painting_50",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: jeans_46",
+          "Next to: jeans_47",
+          "Next to: sheet_53",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "sheet_53",
+      "thoughts": "The goal requires painting_50 to be on top of sheet_53, which is itself on top of bed_10. Since I am already holding painting_50 in my left hand, the next logical step is to place it on top of sheet_53."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Place ontop painting_50 sheet_53 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "necklace_48",
+        "category": "necklace",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_1",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "vacuum_51",
+        "category": "vacuum",
+        "State description ": [
+          "Location: bedroom",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: hand_towel_52",
+          "Next to: bed_10",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "hand_towel_52",
+        "category": "hand_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: vacuum_51",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "painting_50",
+        "category": "painting",
+        "State description ": [
+          "Location: bedroom",
+          "Dust status: Clean",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "jeans_46",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sheet_53",
+          "Next to: bed_10"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_0",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_2",
+        "category": "bottom_cabinet",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Next to: necklace_48",
+          "Next to: cologne_49",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "jeans_47",
+        "category": "jeans",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sheet_53",
+        "category": "sheet",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Next to: jeans_46",
+          "Next to: bed_10",
+          "Under: painting_50"
+        ]
+      },
+      {
+        "name": "bed_10",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_1",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: vacuum_51",
+          "Next to: painting_50",
+          "Next to: jeans_46",
+          "Next to: sheet_53",
+          "Under: painting_50",
+          "Under: sheet_53",
+          "On floor: room_floor_bedroom_1"
+        ]
+      },
+      {
+        "name": "cologne_49",
+        "category": "cologne",
+        "State description ": [
+          "Location: bedroom",
+          "Frozen status: Not frozen",
+          "Next to: bottom_cabinet_2",
+          "Inside: bottom_cabinet_2",
+          "On floor: room_floor_bedroom_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sheet_53",
+      "thoughts": "To achieve the goal of having sheet_53 on top of bed_10, I need to pick up sheet_53 so I can place it on top of bed_10 in the next step."
+    },
+    "goal": "target environment state:\n['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']\n['and', 'inside', 'necklace_48', 'bottom_cabinet_2', 'inside', 'cologne_49', 'bottom_cabinet_2']\n['ontop', 'sheet_53', 'bed_10']\n['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']\n['nextto', 'vacuum_51', 'bed_10']\n['ontop', 'painting_50', 'sheet_53']\n\n\n",
+    "feedback": "Teleport painting_50 ONTOP sheet_53 successful: True\nGrasp sheet_53 with left_hand successful"
+  }
+]

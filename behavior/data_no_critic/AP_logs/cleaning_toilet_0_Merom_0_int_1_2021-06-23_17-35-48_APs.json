@@ -1,0 +1,209 @@
+[
+  {
+    "timestep": 0,
+    "state_APs": [
+      "detergent_71_in_bathroom",
+      "detergent_71_next_to_toilet_45",
+      "detergent_71_on_floor",
+      "scrub_brush_70_in_bathroom",
+      "scrub_brush_70_next_to_toilet_45",
+      "scrub_brush_70_on_floor",
+      "sink_48_in_bathroom_0",
+      "sink_48_on_floor",
+      "toilet_45_in_bathroom_0",
+      "toilet_45_is_stained",
+      "toilet_45_next_to_detergent_71",
+      "toilet_45_next_to_scrub_brush_70",
+      "toilet_45_on_floor"
+    ],
+    "action_APs": "left_grasp_scrub_brush_70",
+    "goal": "target environment state:\n['not', 'stained', 'toilet_45']\n['onfloor', 'scrub_brush_70', 'room_floor_bathroom_0']\n['onfloor', 'detergent_71', 'room_floor_bathroom_0']\n\n\n",
+    "feedback": "Grasp scrub_brush_70 with hand successful"
+  },
+  {
+    "timestep": 1,
+    "state_APs": [
+      "scrub_brush_70_in_hand",
+      "detergent_71_in_bathroom",
+      "detergent_71_next_to_toilet_45",
+      "detergent_71_on_floor",
+      "scrub_brush_70_in_bathroom",
+      "sink_48_in_bathroom_0",
+      "sink_48_on_floor",
+      "toilet_45_in_bathroom_0",
+      "toilet_45_is_stained",
+      "toilet_45_next_to_detergent_71",
+      "toilet_45_on_floor"
+    ],
+    "action_APs": "clean_toilet_45",
+    "goal": "target environment state:\n['not', 'stained', 'toilet_45']\n['onfloor', 'scrub_brush_70', 'room_floor_bathroom_0']\n['onfloor', 'detergent_71', 'room_floor_bathroom_0']\n\n\n",
+    "feedback": "Clean-stain failed, please place object in a toggled on cleaner or get a soaked cleaner first"
+  },
+  {
+    "timestep": 2,
+    "state_APs": [
+      "scrub_brush_70_in_hand",
+      "detergent_71_in_bathroom",
+      "detergent_71_next_to_toilet_45",
+      "detergent_71_on_floor",
+      "scrub_brush_70_in_bathroom",
+      "sink_48_in_bathroom_0",
+      "sink_48_on_floor",
+      "toilet_45_in_bathroom_0",
+      "toilet_45_is_stained",
+      "toilet_45_next_to_detergent_71",
+      "toilet_45_on_floor"
+    ],
+    "action_APs": "toggle_on_sink_48",
+    "goal": "target environment state:\n['not', 'stained', 'toilet_45']\n['onfloor', 'scrub_brush_70', 'room_floor_bathroom_0']\n['onfloor', 'detergent_71', 'room_floor_bathroom_0']\n\n\n",
+    "feedback": "Toggleon sink_48 success"
+  },
+  {
+    "timestep": 3,
+    "state_APs": [
+      "scrub_brush_70_in_hand",
+      "detergent_71_in_bathroom",
+      "detergent_71_next_to_toilet_45",
+      "detergent_71_on_floor",
+      "scrub_brush_70_in_bathroom",
+      "sink_48_in_bathroom_0",
+      "sink_48_is_toggled_on",
+      "sink_48_on_floor",
+      "toilet_45_in_bathroom_0",
+      "toilet_45_is_stained",
+      "toilet_45_next_to_detergent_71",
+      "toilet_45_on_floor"
+    ],
+    "action_APs": "soak_scrub_brush_70",
+    "goal": "target environment state:\n['not', 'stained', 'toilet_45']\n['onfloor', 'scrub_brush_70', 'room_floor_bathroom_0']\n['onfloor', 'detergent_71', 'room_floor_bathroom_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "timestep": 4,
+    "state_APs": [
+      "scrub_brush_70_in_hand",
+      "detergent_71_in_bathroom",
+      "detergent_71_next_to_toilet_45",
+      "detergent_71_on_floor",
+      "scrub_brush_70_in_bathroom",
+      "sink_48_in_bathroom_0",
+      "sink_48_is_toggled_on",
+      "sink_48_on_floor",
+      "toilet_45_in_bathroom_0",
+      "toilet_45_is_stained",
+      "toilet_45_next_to_detergent_71",
+      "toilet_45_on_floor"
+    ],
+    "action_APs": "scrub_brush_70_place_inside_sink_48",
+    "goal": "target environment state:\n['not', 'stained', 'toilet_45']\n['onfloor', 'scrub_brush_70', 'room_floor_bathroom_0']\n['onfloor', 'detergent_71', 'room_floor_bathroom_0']\n\n\n",
+    "feedback": "Place inside scrub_brush_70 sink_48 successful"
+  },
+  {
+    "timestep": 5,
+    "state_APs": [
+      "detergent_71_in_bathroom",
+      "detergent_71_next_to_toilet_45",
+      "detergent_71_on_floor",
+      "scrub_brush_70_in_bathroom",
+      "scrub_brush_70_next_to_sink_48",
+      "scrub_brush_70_inside_sink_48",
+      "sink_48_in_bathroom_0",
+      "sink_48_is_toggled_on",
+      "sink_48_next_to_scrub_brush_70",
+      "sink_48_on_floor",
+      "sink_48_inside_scrub_brush_70",
+      "toilet_45_in_bathroom_0",
+      "toilet_45_is_stained",
+      "toilet_45_next_to_detergent_71",
+      "toilet_45_on_floor"
+    ],
+    "action_APs": "soak_scrub_brush_70",
+    "goal": "target environment state:\n['not', 'stained', 'toilet_45']\n['onfloor', 'scrub_brush_70', 'room_floor_bathroom_0']\n['onfloor', 'detergent_71', 'room_floor_bathroom_0']\n\n\n",
+    "feedback": "Soak scrub_brush_70 success"
+  },
+  {
+    "timestep": 6,
+    "state_APs": [
+      "detergent_71_in_bathroom",
+      "detergent_71_next_to_toilet_45",
+      "detergent_71_on_floor",
+      "scrub_brush_70_in_bathroom",
+      "scrub_brush_70_is_soaked",
+      "scrub_brush_70_next_to_sink_48",
+      "scrub_brush_70_inside_sink_48",
+      "sink_48_in_bathroom_0",
+      "sink_48_is_toggled_on",
+      "sink_48_next_to_scrub_brush_70",
+      "sink_48_on_floor",
+      "sink_48_inside_scrub_brush_70",
+      "toilet_45_in_bathroom_0",
+      "toilet_45_is_stained",
+      "toilet_45_next_to_detergent_71",
+      "toilet_45_on_floor"
+    ],
+    "action_APs": "left_grasp_scrub_brush_70",
+    "goal": "target environment state:\n['not', 'stained', 'toilet_45']\n['onfloor', 'scrub_brush_70', 'room_floor_bathroom_0']\n['onfloor', 'detergent_71', 'room_floor_bathroom_0']\n\n\n",
+    "feedback": "Grasp scrub_brush_70 with hand successful"
+  },
+  {
+    "timestep": 7,
+    "state_APs": [
+      "scrub_brush_70_in_hand",
+      "detergent_71_in_bathroom",
+      "detergent_71_next_to_toilet_45",
+      "detergent_71_on_floor",
+      "scrub_brush_70_in_bathroom",
+      "scrub_brush_70_is_soaked",
+      "sink_48_in_bathroom_0",
+      "sink_48_is_toggled_on",
+      "sink_48_on_floor",
+      "toilet_45_in_bathroom_0",
+      "toilet_45_is_stained",
+      "toilet_45_next_to_detergent_71",
+      "toilet_45_on_floor"
+    ],
+    "action_APs": "clean_toilet_45",
+    "goal": "target environment state:\n['not', 'stained', 'toilet_45']\n['onfloor', 'scrub_brush_70', 'room_floor_bathroom_0']\n['onfloor', 'detergent_71', 'room_floor_bathroom_0']\n\n\n",
+    "feedback": "Clean-stain toilet_45 success"
+  },
+  {
+    "timestep": 8,
+    "state_APs": [
+      "scrub_brush_70_in_hand",
+      "detergent_71_in_bathroom",
+      "detergent_71_next_to_toilet_45",
+      "detergent_71_on_floor",
+      "scrub_brush_70_in_bathroom",
+      "scrub_brush_70_is_soaked",
+      "sink_48_in_bathroom_0",
+      "sink_48_is_toggled_on",
+      "sink_48_on_floor",
+      "toilet_45_in_bathroom_0",
+      "toilet_45_next_to_detergent_71",
+      "toilet_45_on_floor"
+    ],
+    "action_APs": "scrub_brush_70_release_scrub_brush_70",
+    "goal": "target environment state:\n['not', 'stained', 'toilet_45']\n['onfloor', 'scrub_brush_70', 'room_floor_bathroom_0']\n['onfloor', 'detergent_71', 'room_floor_bathroom_0']\n\n\n",
+    "feedback": "Release scrub_brush_70 from hand successful"
+  },
+  {
+    "timestep": 9,
+    "state_APs": [
+      "detergent_71_in_bathroom",
+      "detergent_71_next_to_toilet_45",
+      "detergent_71_on_floor",
+      "scrub_brush_70_in_bathroom",
+      "scrub_brush_70_is_soaked",
+      "scrub_brush_70_on_floor",
+      "sink_48_in_bathroom_0",
+      "sink_48_is_toggled_on",
+      "sink_48_on_floor",
+      "toilet_45_in_bathroom_0",
+      "toilet_45_next_to_detergent_71",
+      "toilet_45_on_floor"
+    ],
+    "action_APs": "done",
+    "goal": "target environment state:\n['not', 'stained', 'toilet_45']\n['onfloor', 'scrub_brush_70', 'room_floor_bathroom_0']\n['onfloor', 'detergent_71', 'room_floor_bathroom_0']\n\n\n",
+    "feedback": ""
+  }
+]

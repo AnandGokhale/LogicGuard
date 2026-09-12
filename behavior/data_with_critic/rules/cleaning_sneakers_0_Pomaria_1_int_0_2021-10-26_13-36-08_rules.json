@@ -1,0 +1,170 @@
+[
+    {
+        "rule": "G(hand_towel_83_in_hand -> X(hand_towel_83_place_ontop_countertop_31))",
+        "explanation": "Only place the towel on the countertop if the robot is actually holding it."
+    },
+    {
+        "rule": "G(hand_towel_83_on_top_of_countertop_31 -> X(!hand_towel_83_place_ontop_countertop_31))",
+        "explanation": "Once the towel is on the countertop, block further attempts to place it there."
+    },
+    {
+        "rule": "G(scrub_brush_84_in_hand -> X(scrub_brush_84_place_nextto_hand_towel_83))",
+        "explanation": "Only place the scrub brush next to the towel when the robot is holding it."
+    },
+    {
+        "rule": "G(scrub_brush_84_next_to_hand_towel_83 -> X(!scrub_brush_84_place_nextto_hand_towel_83))",
+        "explanation": "Once the brush is next to the towel, block redundant placement attempts."
+    },
+    {
+        "rule": "G(soap_82_in_hand -> X(soap_82_place_inside_sink_37))",
+        "explanation": "Only place soap into the sink if the robot is holding the soap."
+    },
+    {
+        "rule": "G(soap_82_inside_sink_37 -> X(!soap_82_place_inside_sink_37))",
+        "explanation": "Once soap is in the sink, block further placement actions."
+    },
+    {
+        "rule": "G(gym_shoe_78_is_dusty -> X(clean_gym_shoe_78))",
+        "explanation": "If shoe 78 is dusty, the next action should be to clean it."
+    },
+    {
+        "rule": "G(!gym_shoe_78_is_dusty -> X(!clean_gym_shoe_78))",
+        "explanation": "If shoe 78 is not dusty, block any unnecessary cleaning."
+    },
+    {
+        "rule": "G(gym_shoe_79_is_dusty -> X(clean_gym_shoe_79))",
+        "explanation": "If shoe 79 is dusty, enforce a cleaning action next."
+    },
+    {
+        "rule": "G(!gym_shoe_79_is_dusty -> X(!clean_gym_shoe_79))",
+        "explanation": "If shoe 79 is already clean, block redundant cleaning."
+    },
+    {
+        "rule": "G(gym_shoe_80_is_dusty -> X(clean_gym_shoe_80))",
+        "explanation": "If shoe 80 is dusty, require it to be cleaned next."
+    },
+    {
+        "rule": "G(!gym_shoe_80_is_dusty -> X(!clean_gym_shoe_80))",
+        "explanation": "If shoe 80 is clean, prevent extra cleaning."
+    },
+    {
+        "rule": "G(gym_shoe_81_is_dusty -> X(clean_gym_shoe_81))",
+        "explanation": "If shoe 81 is dusty, trigger a cleaning action."
+    },
+    {
+        "rule": "G(!gym_shoe_81_is_dusty -> X(!clean_gym_shoe_81))",
+        "explanation": "If shoe 81 is already dust\u2010free, block cleaning."
+    },
+    {
+        "rule": "G(gym_shoe_78_is_stained -> X(clean_gym_shoe_78))",
+        "explanation": "If shoe 78 is stained, enforce cleaning next."
+    },
+    {
+        "rule": "G(!gym_shoe_78_is_stained -> X(!clean_gym_shoe_78))",
+        "explanation": "If shoe 78 is not stained, block unnecessary cleaning."
+    },
+    {
+        "rule": "G(gym_shoe_79_is_stained -> X(clean_gym_shoe_79))",
+        "explanation": "If shoe 79 is stained, require a cleaning action."
+    },
+    {
+        "rule": "G(!gym_shoe_79_is_stained -> X(!clean_gym_shoe_79))",
+        "explanation": "If shoe 79 is stain\u2010free, prevent redundant cleaning."
+    },
+    {
+        "rule": "G(gym_shoe_80_is_stained -> X(clean_gym_shoe_80))",
+        "explanation": "If shoe 80 is stained, ensure it is cleaned next."
+    },
+    {
+        "rule": "G(!gym_shoe_80_is_stained -> X(!clean_gym_shoe_80))",
+        "explanation": "If shoe 80 has no stains, block cleaning."
+    },
+    {
+        "rule": "G(gym_shoe_81_is_stained -> X(clean_gym_shoe_81))",
+        "explanation": "If shoe 81 is stained, enforce cleaning."
+    },
+    {
+        "rule": "G(!gym_shoe_81_is_stained -> X(!clean_gym_shoe_81))",
+        "explanation": "If shoe 81 is not stained, prevent redundant clean."
+    },
+    {
+        "rule": "G(!gym_shoe_78_in_hand -> X(!gym_shoe_78_place_under_coffee_table_4))",
+        "explanation": "Block placing shoe 78 under the table unless the robot holds it."
+    },
+    {
+        "rule": "G(gym_shoe_78_in_hand -> X(gym_shoe_78_place_under_coffee_table_4))",
+        "explanation": "Only place shoe 78 under the coffee table when it is grasped."
+    },
+    {
+        "rule": "G(gym_shoe_78_under_coffee_table_4 -> X(!gym_shoe_78_place_under_coffee_table_4))",
+        "explanation": "Once shoe 78 is under the table, block further place actions."
+    },
+    {
+        "rule": "G(!gym_shoe_79_in_hand -> X(!gym_shoe_79_place_under_coffee_table_4))",
+        "explanation": "Block placing shoe 79 under the table unless held."
+    },
+    {
+        "rule": "G(gym_shoe_79_in_hand -> X(gym_shoe_79_place_under_coffee_table_4))",
+        "explanation": "Only place shoe 79 under the table when grasped."
+    },
+    {
+        "rule": "G(gym_shoe_79_under_coffee_table_4 -> X(!gym_shoe_79_place_under_coffee_table_4))",
+        "explanation": "Once shoe 79 is under the table, prevent further placement."
+    },
+    {
+        "rule": "G(!gym_shoe_80_in_hand -> X(!gym_shoe_80_place_under_coffee_table_4))",
+        "explanation": "Block incorrect under\u2010placement of shoe 80 unless it is held."
+    },
+    {
+        "rule": "G(gym_shoe_80_in_hand -> X(gym_shoe_80_place_under_coffee_table_4))",
+        "explanation": "Only place shoe 80 under the table when the robot is holding it."
+    },
+    {
+        "rule": "G(gym_shoe_80_next_to_coffee_table_4 -> X(!gym_shoe_80_place_under_coffee_table_4))",
+        "explanation": "If shoe 80 is already next to the table, block under\u2010placement."
+    },
+    {
+        "rule": "G(!gym_shoe_81_in_hand -> X(!gym_shoe_81_place_under_coffee_table_4))",
+        "explanation": "Block under\u2010placement of shoe 81 unless grasped."
+    },
+    {
+        "rule": "G(gym_shoe_81_in_hand -> X(gym_shoe_81_place_under_coffee_table_4))",
+        "explanation": "Only place shoe 81 under the table when holding it."
+    },
+    {
+        "rule": "G(gym_shoe_81_next_to_coffee_table_4 -> X(!gym_shoe_81_place_under_coffee_table_4))",
+        "explanation": "If shoe 81 is next to the table, block any under\u2010placement."
+    },
+    {
+        "rule": "G(gym_shoe_78_on_floor & gym_shoe_78_in_living_room -> X(!left_grasp_gym_shoe_78))",
+        "explanation": "Once shoe 78 is on the living\u2010room floor, do not re\u2010grasp it."
+    },
+    {
+        "rule": "G(gym_shoe_78_on_floor & gym_shoe_78_in_living_room -> X(!clean_gym_shoe_78))",
+        "explanation": "Once shoe 78 is correctly placed on the floor, block further cleaning."
+    },
+    {
+        "rule": "G(gym_shoe_79_on_floor & gym_shoe_79_in_living_room -> X(!left_grasp_gym_shoe_79))",
+        "explanation": "Once shoe 79 is on the living\u2010room floor, forbid re\u2010grasping."
+    },
+    {
+        "rule": "G(gym_shoe_79_on_floor & gym_shoe_79_in_living_room -> X(!clean_gym_shoe_79))",
+        "explanation": "Once shoe 79 is placed, block extra clean actions."
+    },
+    {
+        "rule": "G(gym_shoe_80_on_floor & gym_shoe_80_in_living_room -> X(!left_grasp_gym_shoe_80))",
+        "explanation": "Once shoe 80 is on the living\u2010room floor, do not pick it up again."
+    },
+    {
+        "rule": "G(gym_shoe_80_on_floor & gym_shoe_80_in_living_room -> X(!clean_gym_shoe_80))",
+        "explanation": "Once shoe 80 is correctly placed, block any cleaning."
+    },
+    {
+        "rule": "G(gym_shoe_81_on_floor & gym_shoe_81_in_living_room -> X(!left_grasp_gym_shoe_81))",
+        "explanation": "Once shoe 81 is on the living\u2010room floor, forbid re\u2010grasping."
+    },
+    {
+        "rule": "G(gym_shoe_81_on_floor & gym_shoe_81_in_living_room -> X(!clean_gym_shoe_81))",
+        "explanation": "Once shoe 81 is in its final spot, block further cleaning."
+    }
+]

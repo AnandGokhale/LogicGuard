@@ -1,0 +1,22 @@
+[
+    {
+        "rule": "G(!bath_towel_0_in_hand -> X(!bath_towel_0_place_inside_sink_49))",
+        "explanation": "Prevent placing the towel into the sink unless the robot is holding it."
+    },
+    {
+        "rule": "G(!bath_towel_0_in_hand -> X(!clean_room_floor_bathroom_0))",
+        "explanation": "Ensure floor cleaning only occurs when the robot has a towel in hand (to scrub)."
+    },
+    {
+        "rule": "G((!room_floor_bathroom_0_is_dusty & !room_floor_bathroom_0_is_stained) -> X(done))",
+        "explanation": "Trigger the completion action once both dust and stains have been removed."
+    },
+    {
+        "rule": "G((!room_floor_bathroom_0_is_dusty & !room_floor_bathroom_0_is_stained) -> X(!clean_room_floor_bathroom_0))",
+        "explanation": "Prevent further cleaning once the floor is already clean and dust-free."
+    },
+    {
+        "rule": "G(sink_49_is_toggled_on -> X(!toggle_on_sink_49))",
+        "explanation": "Avoid redundant toggles of the sink when it is already on."
+    }
+]

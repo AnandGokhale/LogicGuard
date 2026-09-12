@@ -1,0 +1,70 @@
+[
+    {
+        "rule": "G((carton_0_on_floor & carton_0_in_garage) -> X(!left_grasp_carton_0))",
+        "explanation": "Once carton_0 is correctly on the garage floor, never grasp it again."
+    },
+    {
+        "rule": "G((carton_1_on_floor & carton_1_in_garage) -> X(!left_grasp_carton_1))",
+        "explanation": "Once carton_1 is correctly on the garage floor, never grasp it again."
+    },
+    {
+        "rule": "G(!ball_0_in_hand -> X(!ball_0_place_inside_carton_0))",
+        "explanation": "Don\u2019t place ball_0 into carton_0 unless you\u2019re actually holding it."
+    },
+    {
+        "rule": "G((ball_0_inside_carton_0 | ball_0_inside_carton_1) -> X(!left_grasp_ball_0))",
+        "explanation": "Once ball_0 is inside either carton, never grasp ball_0 again."
+    },
+    {
+        "rule": "G(!ball_1_in_hand -> X(!ball_1_place_inside_carton_0))",
+        "explanation": "Don\u2019t place ball_1 into carton_0 unless you\u2019re actually holding it."
+    },
+    {
+        "rule": "G((ball_1_inside_carton_0 | ball_1_inside_carton_1) -> X(!left_grasp_ball_1))",
+        "explanation": "Once ball_1 is inside either carton, never grasp ball_1 again."
+    },
+    {
+        "rule": "G(!plate_0_in_hand -> X(!plate_0_place_inside_carton_0))",
+        "explanation": "Don\u2019t place plate_0 into carton_0 unless you\u2019re actually holding it."
+    },
+    {
+        "rule": "G((plate_0_inside_carton_0 | plate_0_inside_carton_1) -> X(!(plate_0_place_inside_carton_0 | plate_0_place_inside_carton_1)))",
+        "explanation": "Once plate_0 is inside a carton, never place it again."
+    },
+    {
+        "rule": "G(!plate_1_in_hand -> X(!(plate_1_place_inside_carton_0 | plate_1_place_inside_carton_1)))",
+        "explanation": "Don\u2019t place plate_1 into any carton unless you\u2019re holding it."
+    },
+    {
+        "rule": "G((plate_1_inside_carton_0 | plate_1_inside_carton_1) -> X(!left_grasp_plate_1))",
+        "explanation": "Once plate_1 is inside a carton, never grasp it again."
+    },
+    {
+        "rule": "G(!plate_2_in_hand -> X(!(plate_2_place_inside_carton_0 | plate_2_place_inside_carton_1)))",
+        "explanation": "Don\u2019t place plate_2 into any carton unless you\u2019re holding it."
+    },
+    {
+        "rule": "G((plate_2_inside_carton_0 | plate_2_inside_carton_1) -> X(!left_grasp_plate_2))",
+        "explanation": "Once plate_2 is inside a carton, never grasp it again."
+    },
+    {
+        "rule": "G(!carton_0_is_open -> X(!(ball_0_place_inside_carton_0 | ball_1_place_inside_carton_0 | plate_1_place_inside_carton_0 | plate_2_place_inside_carton_0)))",
+        "explanation": "If carton_0 is closed, block any place_inside_carton_0 actions."
+    },
+    {
+        "rule": "G(!carton_1_is_open -> X(!(ball_0_place_inside_carton_1 | ball_1_place_inside_carton_1 | plate_1_place_inside_carton_1 | plate_2_place_inside_carton_1)))",
+        "explanation": "If carton_1 is closed, block any place_inside_carton_1 actions."
+    },
+    {
+        "rule": "G(!saucepan_0_in_hand -> X(!saucepan_0_place_inside_carton_0))",
+        "explanation": "Don\u2019t place the saucepan into carton_0 unless you\u2019re holding it."
+    },
+    {
+        "rule": "G((saucepan_0_inside_carton_0 | saucepan_0_inside_carton_1) -> X(!left_grasp_saucepan_0))",
+        "explanation": "Once the saucepan is in a carton, never grasp it again."
+    },
+    {
+        "rule": "G((carton_0_on_floor & carton_0_in_garage & carton_1_on_floor & carton_1_in_garage & (ball_0_inside_carton_0|ball_0_inside_carton_1) & (ball_1_inside_carton_0|ball_1_inside_carton_1) & (plate_0_inside_carton_0|plate_0_inside_carton_1) & (plate_1_inside_carton_0|plate_1_inside_carton_1) & (plate_2_inside_carton_0|plate_2_inside_carton_1) & (saucepan_0_inside_carton_0|saucepan_0_inside_carton_1)) -> X(done))",
+        "explanation": "When all placement goals hold and cartons are in place, the next action must be `done`."
+    }
+]

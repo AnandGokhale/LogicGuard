@@ -1,0 +1,4207 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: coffee_table_26",
+          "Next to: hardback_0",
+          "Next to: notebook_0",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "Next to: room_floor_living_room_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "Next to: room_floor_living_room_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_0",
+      "thoughts": "To achieve the goal, all plates need to be placed inside a carton. I will start by picking up plate_0, which is currently on the coffee table."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Grasp plate_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "I am holding plate_0 in my left hand, and carton_0 is open. To make progress toward the goal of placing all plates inside a carton, I will place plate_0 inside carton_0."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Place inside plate_0 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: t-shirt_0",
+          "Next to: room_floor_living_room_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "Next to: room_floor_living_room_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_1",
+      "thoughts": "To achieve the goal of placing all plates inside a carton, I need to pick up another plate. Plate_1 is on the floor and accessible, so I will grasp it with my left hand."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Grasp plate_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: t-shirt_0",
+          "Next to: room_floor_living_room_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "Next to: room_floor_living_room_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: None",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "Since I am holding plate_1 in my left hand and the goal is to place all plates inside a carton, I will put plate_1 into carton_0, which is open and accessible."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Place inside plate_1 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_1",
+          "Next to: room_floor_living_room_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_2",
+      "thoughts": "The goal is to put all plates inside a carton. Plate_2 is still on the floor and not yet inside any carton. My hands are free, so I will grasp plate_2 with my left hand to prepare for placing it inside an open carton."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Grasp plate_2 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_2",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_1",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_1",
+          "Next to: room_floor_living_room_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "Next to: room_floor_living_room_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "The goal is to put all plates inside a carton. I am currently holding plate_2 in my left hand, and carton_0 is open. I will place plate_2 inside carton_0 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Place inside plate_2 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_1",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_1",
+          "Next to: room_floor_living_room_0",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "Next to: room_floor_living_room_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_1",
+          "Next to: plate_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: room_floor_living_room_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "plate_3",
+      "thoughts": "To achieve the goal of placing all plates inside a carton, I need to pick up plate_3 next, since plates 0, 1, and 2 are already inside carton_0. My left hand is now free after placing plate_2, so I will grasp plate_3."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Grasp plate_3 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "plate_3",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_1",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_1",
+          "Next to: room_floor_living_room_0",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_1",
+          "Next to: plate_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "My left hand is holding plate_3, and the goal is for all plates to be inside a carton. Carton_0 is open and already contains the other plates. I will place plate_3 inside carton_0 to progress towards the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Place inside plate_3 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: plate_2",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: t-shirt_1",
+          "Next to: plate_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: plate_2",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: plate_3",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "dishtowel_0",
+      "thoughts": "The goal requires the dishtowel_0 to be inside a carton. Since my hands are empty, I will grasp dishtowel_0 with my right hand to prepare to put it inside carton_0."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Grasp dishtowel_0 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "dishtowel_0"
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: t-shirt_1",
+          "Next to: plate_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: plate_1",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_2",
+          "Under: plate_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "The goal requires dishtowel_0 to be inside a carton. I am already holding dishtowel_0 in my right hand, and carton_0 is open, so I will place dishtowel_0 inside carton_0 to satisfy part of the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Place inside dishtowel_0 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_1",
+          "Next to: plate_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: plate_1",
+          "Next to: plate_2",
+          "Under: dishtowel_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_2",
+          "Under: plate_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: carton_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sweater_0",
+      "thoughts": "To make progress towards the goal, all shirts and sweaters need to be inside a carton. Sweater_0 is on the floor and not yet inside any carton, so I will grasp it with my left hand in preparation to place it inside carton_0 or carton_1."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Grasp sweater_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sweater_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Under: sweater_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_1",
+          "Next to: plate_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: plate_1",
+          "Under: sweater_0",
+          "Under: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Under: plate_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: plate_2",
+          "On top of: plate_3",
+          "Under: sweater_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: dishtowel_0",
+          "On top of: plate_1",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "The goal is to have all shirts and sweaters inside a carton. I am holding sweater_0 in my left hand, and carton_0 is open and available. I will place sweater_0 inside carton_0 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Place inside sweater_0 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_2",
+          "On top of: plate_3",
+          "On top of: plate_1",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_1",
+          "Next to: plate_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: plate_1",
+          "Under: sweater_0",
+          "Under: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Under: plate_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: carton_0",
+          "Next to: plate_2",
+          "On top of: plate_3",
+          "Under: sweater_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: dishtowel_0",
+          "On top of: plate_3",
+          "On top of: plate_1",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "t-shirt_0",
+      "thoughts": "To achieve the goal of having all shirts inside a carton, I will grasp t-shirt_0 with my left hand so I can place it inside carton_0 next."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Grasp t-shirt_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "t-shirt_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: plate_2",
+          "On top of: plate_3",
+          "On top of: plate_1",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Under: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: plate_3",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Under: t-shirt_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: plate_1",
+          "Under: sweater_0",
+          "Under: t-shirt_0",
+          "Under: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: plate_3",
+          "Under: plate_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: plate_2",
+          "On top of: plate_3",
+          "Under: sweater_0",
+          "Under: t-shirt_0",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: dishtowel_0",
+          "Under: t-shirt_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "I am holding t-shirt_0 in my left hand and the goal is to have all shirts inside a carton. Carton_0 is open and accessible, so I will place t-shirt_0 inside carton_0 to make progress toward the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Place inside t-shirt_0 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_2",
+          "On top of: plate_3",
+          "On top of: plate_1",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: room_floor_living_room_0",
+          "Next to: plate_2",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: plate_3",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Under: sweater_0",
+          "Under: t-shirt_0",
+          "Under: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: plate_3",
+          "Under: plate_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_2",
+          "Under: sweater_0",
+          "Under: t-shirt_0",
+          "Inside: carton_0",
+          "Inside: sweater_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: dishtowel_0",
+          "Under: t-shirt_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "t-shirt_1",
+      "thoughts": "To satisfy the goal that all shirts are inside a carton, I need to put t-shirt_1 inside a carton. My hands are empty, so I will grasp t-shirt_1 first."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Grasp t-shirt_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "t-shirt_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_2",
+          "On top of: plate_3",
+          "Under: t-shirt_1",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Under: t-shirt_1",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Under: t-shirt_1",
+          "Inside: carton_0",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: plate_3",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Under: t-shirt_1",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Under: sweater_0",
+          "Under: t-shirt_1",
+          "Under: t-shirt_0",
+          "Under: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: plate_3",
+          "Under: plate_0",
+          "Under: t-shirt_1",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_2",
+          "Under: sweater_0",
+          "Under: t-shirt_1",
+          "Under: t-shirt_0",
+          "Inside: carton_0",
+          "Inside: sweater_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: dishtowel_0",
+          "Under: t-shirt_1",
+          "Under: t-shirt_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "I am currently holding t-shirt_1 in my left hand, and the goal requires all shirts to be inside a carton. carton_0 is open and accessible, so I will place t-shirt_1 inside carton_0 to make progress toward the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Place inside t-shirt_1 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_2",
+          "On top of: plate_3",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: t-shirt_1",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "Inside: t-shirt_1",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "Inside: t-shirt_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Under: sweater_0",
+          "Under: t-shirt_1",
+          "Under: t-shirt_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_2",
+          "Under: plate_0",
+          "Under: t-shirt_1",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_2",
+          "Under: sweater_0",
+          "Under: t-shirt_1",
+          "Under: t-shirt_0",
+          "Inside: carton_0",
+          "Inside: sweater_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Under: t-shirt_1",
+          "Under: t-shirt_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_GRASP",
+      "object": "hardback_0",
+      "thoughts": "The goal requires all books to be inside a carton. hardback_0 is currently on top of the coffee table and not yet inside a carton. I will grasp hardback_0 with my right hand to prepare to place it inside carton_0 or carton_1."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Grasp hardback_0 with right_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": "hardback_0"
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_2",
+          "On top of: plate_3",
+          "On top of: plate_1",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: t-shirt_1",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "Inside: t-shirt_1",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "Inside: t-shirt_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Under: sweater_0",
+          "Under: t-shirt_1",
+          "Under: t-shirt_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: plate_3",
+          "Under: plate_0",
+          "Under: t-shirt_1",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_2",
+          "Under: sweater_0",
+          "Under: t-shirt_1",
+          "Under: t-shirt_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: dishtowel_0",
+          "Under: t-shirt_1",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "RIGHT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "I am currently holding hardback_0 in my right hand, and the goal is to have all books inside a carton. carton_0 is open and accessible, so I will place hardback_0 inside carton_0 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Place inside hardback_0 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: hardback_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: hardback_0",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: t-shirt_1",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "Inside: t-shirt_1",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: hardback_0",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: hardback_0",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "Inside: t-shirt_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Under: sweater_0",
+          "Under: t-shirt_1",
+          "Under: t-shirt_0",
+          "Under: hardback_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Under: plate_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "On top of: plate_3",
+          "On top of: dishtowel_0",
+          "Inside: carton_0",
+          "Inside: t-shirt_1",
+          "Inside: t-shirt_0"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: hardback_0",
+          "Next to: plate_2",
+          "Under: sweater_0",
+          "Under: t-shirt_1",
+          "Under: t-shirt_0",
+          "Under: hardback_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: hardback_0",
+          "Next to: dishtowel_0",
+          "Under: t-shirt_1",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "On top of: coffee_table_26"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "notebook_0",
+      "thoughts": "The goal requires all books to be inside a carton. hardback_0 is already inside carton_0, but notebook_0 is on top of the coffee_table_26. I will grasp notebook_0 with my left hand so I can put it into carton_0 next."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Grasp notebook_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "notebook_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_2",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: hardback_0",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: t-shirt_1",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_1",
+          "Next to: room_floor_living_room_0",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "Inside: t-shirt_1",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: hardback_0",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: plate_3",
+          "Next to: hardback_0",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "Inside: t-shirt_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Under: sweater_0",
+          "Under: t-shirt_1",
+          "Under: t-shirt_0",
+          "Under: hardback_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: plate_3",
+          "Under: plate_0",
+          "Under: t-shirt_1",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "On top of: plate_3",
+          "On top of: dishtowel_0",
+          "Inside: carton_0",
+          "Inside: t-shirt_1",
+          "Inside: t-shirt_0"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: hardback_0",
+          "Next to: plate_2",
+          "Under: sweater_0",
+          "Under: t-shirt_1",
+          "Under: t-shirt_0",
+          "Under: hardback_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: hardback_0",
+          "Next to: dishtowel_0",
+          "Under: t-shirt_1",
+          "Under: t-shirt_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "carton_0",
+      "thoughts": "The goal is for all books to be inside a carton. I am currently holding notebook_0 in my left hand, and carton_0 is open. I will place notebook_0 inside carton_0 to satisfy part of the goal."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": "Place inside notebook_0 carton_0 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "plate_0",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: hardback_0",
+          "Next to: plate_2",
+          "On top of: plate_1",
+          "Inside: carton_0"
+        ]
+      },
+      {
+        "name": "carton_0",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: hardback_0",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Next to: notebook_0",
+          "Inside: t-shirt_1",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "carton_1",
+        "category": "carton",
+        "State description ": [
+          "Location: living_room",
+          "Open? : True",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: room_floor_living_room_0",
+          "Next to: plate_2",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "sweater_0",
+        "category": "sweater",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "Inside: t-shirt_1",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_1",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: hardback_0",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Next to: notebook_0",
+          "Inside: carton_0",
+          "Inside: t-shirt_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "t-shirt_0",
+        "category": "t-shirt",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: hardback_0",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Next to: notebook_0",
+          "Inside: carton_0",
+          "Inside: t-shirt_1",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "plate_3",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_1",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Under: sweater_0",
+          "Under: t-shirt_1",
+          "Under: t-shirt_0",
+          "Under: hardback_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "coffee_table_26",
+        "category": "coffee_table",
+        "State description ": [
+          "Location: living_room_0",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_1",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_2",
+          "Under: plate_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "hardback_0",
+        "category": "hardback",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: dishtowel_0",
+          "Next to: plate_2",
+          "Next to: notebook_0",
+          "On top of: plate_3",
+          "On top of: dishtowel_0",
+          "Inside: carton_0",
+          "Inside: t-shirt_1",
+          "Inside: t-shirt_0"
+        ]
+      },
+      {
+        "name": "dishtowel_0",
+        "category": "dishtowel",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: carton_0",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: hardback_0",
+          "Next to: plate_2",
+          "Under: sweater_0",
+          "Under: t-shirt_1",
+          "Under: t-shirt_0",
+          "Under: hardback_0",
+          "Under: notebook_0",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "room_floor_living_room_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "plate_2",
+        "category": "plate",
+        "State description ": [
+          "Location: living_room",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: plate_0",
+          "Next to: carton_0",
+          "Next to: carton_1",
+          "Next to: sweater_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: plate_3",
+          "Next to: plate_1",
+          "Next to: hardback_0",
+          "Next to: dishtowel_0",
+          "Next to: notebook_0",
+          "Under: t-shirt_1",
+          "Inside: carton_0",
+          "On floor: room_floor_living_room_0"
+        ]
+      },
+      {
+        "name": "notebook_0",
+        "category": "notebook",
+        "State description ": [
+          "Location: living_room",
+          "Dust status: Clean",
+          "Next to: carton_0",
+          "Next to: t-shirt_1",
+          "Next to: t-shirt_0",
+          "Next to: hardback_0",
+          "Next to: plate_2",
+          "Inside: carton_0",
+          "Inside: t-shirt_1",
+          "Inside: t-shirt_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "The critic has instructed that the task is complete and to choose the DONE command. All required objects are already inside the carton as specified by the goal state."
+    },
+    "goal": "target environment state:\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel_0', 'carton.n.02']\n['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater_0', 'carton.n.02']\n\n\ninteractable objects:\n{'name': 'carton_0', 'category': 'carton.n.02'}\n{'name': 'carton_1', 'category': 'carton.n.02'}\n{'name': 'room_floor_living_room_0', 'category': 'floor.n.01'}\n{'name': 'notebook_0', 'category': 'book.n.02'}\n{'name': 'hardback_0', 'category': 'book.n.02'}\n{'name': 'coffee_table_26', 'category': 'table.n.02'}\n{'name': 'sweater_0', 'category': 'sweater.n.01'}\n{'name': 't-shirt_0', 'category': 'shirt.n.01'}\n{'name': 't-shirt_1', 'category': 'shirt.n.01'}\n{'name': 'plate_0', 'category': 'plate.n.04'}\n{'name': 'plate_1', 'category': 'plate.n.04'}\n{'name': 'plate_2', 'category': 'plate.n.04'}\n{'name': 'plate_3', 'category': 'plate.n.04'}\n{'name': 'dishtowel_0', 'category': 'dishtowel.n.01'}\n\n\n",
+    "feedback": ""
+  }
+]

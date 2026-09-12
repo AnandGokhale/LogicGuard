@@ -1,0 +1,4990 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_37",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_37",
+      "thoughts": "To clean the stained and dusty sandals, I need a cleaning tool. The rag_37 is a cleaning tool and easily accessible, so I will pick it up with my left hand first."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp rag_37 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "sandal_40",
+      "thoughts": "I am holding rag_37 in my left hand, which is a cleaning tool. sandal_40 is stained, so I will clean it to progress towards the goal of all shoes being not stained."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Clean-stain failed, please place object in a toggled on cleaner or get a soaked cleaner first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : False",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "TOGGLE_ON",
+      "object": "sink_18",
+      "thoughts": "The feedback indicates I need a soaked cleaner to clean stains. I will toggle on the sink first so I can soak the rag and then use it to clean the stained sandals."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Toggleon sink_18 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_37",
+      "thoughts": "The rag in my left hand is not soaked, and the sink in the bathroom is toggled on. I need to soak the rag first to effectively clean the stained sandals."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_18",
+      "thoughts": "To soak the rag, I need to place it inside the toggled on sink. This will allow me to soak it and then use it for cleaning the stained and dusty shoes."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside rag_37 sink_18 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_18"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_37",
+          "Inside: rag_37"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_37",
+      "thoughts": "I need to soak the rag before cleaning. First, I will grasp the rag with my left hand so I can place it inside the toggled on sink to soak it."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp rag_37 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_18",
+      "thoughts": "The rag in my left hand is not soaked. To clean the stained and dusty shoes, I need to soak the rag first. The sink is toggled on, so I will place the rag inside the sink to soak it."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside rag_37 sink_18 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_18"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_37",
+          "Inside: rag_37",
+          "Under: rag_37"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_37",
+      "thoughts": "To clean the stained and dusty sandals, I need a soaked rag. I will first grasp the rag with my left hand so I can then soak it in the sink."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp rag_37 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_37",
+      "thoughts": "The rag in my left hand is not soaked, but the sink is toggled on. I will soak the rag so I can effectively clean the stained and dusty sandals next."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_18",
+      "thoughts": "To soak the rag, I must first place it inside the toggled on sink. This will allow me to soak it in the next step and then use it to clean the stained and dusty sandals."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside rag_37 sink_18 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_18"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_37",
+          "Inside: rag_37"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_37",
+      "thoughts": "I need to soak the rag in the sink to prepare it for cleaning the stained and dusty sandals. First, I will pick up the rag with my left hand."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp rag_37 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_37",
+      "thoughts": "The rag in my left hand is not soaked yet. Since the sink is toggled on, I can soak the rag now to prepare it for cleaning the stained and dusty sandals."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_18",
+      "thoughts": "The rag in my left hand needs to be placed inside the toggled on sink so I can soak it and then use it for cleaning the stained and dusty sandals."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside rag_37 sink_18 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_18"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_37",
+          "Inside: rag_37"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_37",
+      "thoughts": "To clean the sandals, I need a cleaning tool. The rag_37 is next to the sink and is not currently soaked, so I will grasp it with my left hand to prepare for soaking it in the sink."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp rag_37 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_37",
+      "thoughts": "The rag_37 is in my left hand and is not soaked. Since the sink_18 is toggled on and available, soaking the rag will prepare it for cleaning the stained and dusty sandals, which is required to achieve the goal state."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_18",
+      "thoughts": "To soak the rag_37, I need to first place it inside the toggled on sink_18. This will allow me to perform the SOAK action next, preparing the rag for cleaning the stained and dusty sandals."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside rag_37 sink_18 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_18"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_37",
+          "Inside: rag_37"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_37",
+      "thoughts": "I need to soak the rag before cleaning the shoes. First, I will pick up rag_37 with my left hand so I can place it inside the sink for soaking."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp rag_37 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_37",
+      "thoughts": "The rag is already in my left hand but is not soaked. Since the sink is toggled on, I can soak the rag now to prepare it for cleaning the stained and dusty shoes."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_18",
+      "thoughts": "The rag is in my left hand and the sink is toggled on. I need to place the rag inside the sink so I can soak it and use it to clean the shoes."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside rag_37 sink_18 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_18"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_37",
+          "Inside: rag_37",
+          "Under: rag_37"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_37",
+      "thoughts": "I need to soak the rag before using it to clean the shoes. First, I will pick up the rag so I can place it in the sink and soak it."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp rag_37 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_37",
+      "thoughts": "The rag is already in my left hand and the sink is toggled on, so I should soak the rag before using it to clean the stained and dusty shoes."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_18",
+      "thoughts": "The rag is in my left hand, and in order to soak it, I need to place it inside the toggled on sink first."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside rag_37 sink_18 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_18"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_37",
+          "Inside: rag_37"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_37",
+      "thoughts": "To clean the stained and dusty shoes, I need a cleaning tool. The rag is a cleaning tool and is currently next to the sink. I will pick up the rag with my left hand so I can soak it in the sink before cleaning the shoes."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp rag_37 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_37",
+      "thoughts": "The rag in my left hand is not soaked, and the sink is toggled on. I need to soak the rag so it will be more effective for cleaning the stained and dusty shoes."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_18",
+      "thoughts": "The rag in my left hand needs to be placed inside the toggled on sink before I can soak it. This will allow me to soak the rag and use it for cleaning the shoes."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside rag_37 sink_18 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_18"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_37",
+          "Inside: rag_37"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_37",
+      "thoughts": "To clean the stained and dusty shoes, I need a cleaning tool. I will first pick up the rag with my left hand so I can soak it in the sink and use it for cleaning."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp rag_37 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_37",
+      "thoughts": "The rag in my left hand is not soaked, and I need it soaked to effectively clean the stained and dusty shoes. The sink is toggled on, so I will soak the rag to prepare it for cleaning."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_18",
+      "thoughts": "To soak the rag, I need to place it inside the toggled on sink first. This will allow me to soak it in the next step and then use it to clean the shoes."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside rag_37 sink_18 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_18"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_37",
+          "Inside: rag_37"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_37",
+      "thoughts": "To soak the rag, I need to pick it up first since both my hands are empty. This is the first step to prepare the cleaning tool for cleaning the shoes."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp rag_37 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_37",
+      "thoughts": "I am holding the rag in my left hand, the sink is toggled on, so I can soak the rag to prepare it for cleaning the stained and dusty shoes."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_18",
+      "thoughts": "I need to soak the rag, so I should place it inside the toggled on sink before performing the soak action."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside rag_37 sink_18 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_18"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_37"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_37",
+      "thoughts": "To soak the rag, I need to first pick it up with my left hand so I can place it inside the toggled on sink."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp rag_37 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_18",
+      "thoughts": "I am holding the rag in my left hand and the sink is toggled on, so I should place the rag inside the sink to soak it, preparing it for cleaning the shoes."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside rag_37 sink_18 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_18"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_37"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_37",
+      "thoughts": "To clean the stained and dusty sandals, I first need a cleaning tool. I will grasp rag_37 with my left hand so I can soak it in the sink next."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp rag_37 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_37",
+      "thoughts": "I am holding rag_37 in my left hand, and it is not soaked. The sink_18 is toggled on, so I can soak the rag to prepare it for cleaning the stained and dusty sandals."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_18",
+      "thoughts": "I need to place the rag_37 in the toggled on sink_18 so that I can soak it and use it to clean the stained and dusty shoes."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside rag_37 sink_18 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_18"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_37",
+          "Inside: rag_37",
+          "Under: rag_37"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_37",
+      "thoughts": "I need to pick up rag_37 first so I can place it inside the sink_18 and soak it, which will allow me to clean the stained and dusty shoes."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp rag_37 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "sink_18",
+      "thoughts": "I am holding rag_37 in my left hand, and the sink_18 is toggled on. Placing the rag inside the sink will allow me to soak it, preparing the rag for cleaning the stained and dusty shoes as required by the goal state."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Place inside rag_37 sink_18 unsuccessful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool",
+          "Next to: sink_18"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: rag_37",
+          "Inside: rag_37"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "rag_37",
+      "thoughts": "I need a soaked cleaning tool to clean the stained and dusty shoes. First, I should grasp the rag_37 with my left hand to be able to soak it in the sink."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Grasp rag_37 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "rag_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "rag_37",
+        "category": "rag",
+        "State description ": [
+          "Location: bathroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "sandal_40",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: sandal_41",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_41",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sandal_40",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sandal_40",
+          "Next to: sandal_41",
+          "Next to: soap_36",
+          "Next to: walker_42",
+          "Next to: sandal_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "soap_36",
+        "category": "soap",
+        "State description ": [
+          "Location: bedroom",
+          "Next to: room_floor_bedroom_0",
+          "Next to: bed_11",
+          "Next to: sandal_39"
+        ]
+      },
+      {
+        "name": "paper_towel_38",
+        "category": "paper_towel",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sink_18",
+        "category": "sink",
+        "State description ": [
+          "Location: bathroom_0",
+          "Is a Water Source",
+          "Toggled on? : True",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "walker_42",
+        "category": "walker",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "sandal_39",
+        "category": "sandal",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Stained",
+          "Dust status: Clean",
+          "Next to: bed_11",
+          "Next to: soap_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "SOAK",
+      "object": "rag_37",
+      "thoughts": "The rag_37 is in my left hand and is not soaked. I need to soak it in the toggled on sink_18 so I can use it to clean the stained and dusty shoes."
+    },
+    "goal": "target environment state:\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'stained', 'shoe.n.01']\n['forall', 'shoe.n.01', '-', 'shoe.n.01', 'not', 'dusty', 'shoe.n.01']\n['onfloor', 'paper_towel_38', 'room_floor_bedroom_0']\n\n\n",
+    "feedback": "Soak failed, please place object in a toggled on sink first"
+  }
+]

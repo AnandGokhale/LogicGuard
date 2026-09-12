@@ -1,0 +1,3778 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_39",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sweater_39"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "scrub_brush_40",
+      "thoughts": "To clean the dusty sweaters, I need to use a cleaning tool. I will pick up the scrub brush first."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Grasp scrub_brush_40 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_40",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sweater_39"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "sweater_39",
+      "thoughts": "I am holding the scrub brush in my left hand, which is a cleaning tool. I will clean one of the dusty sweaters (sweater_39) to make progress towards all sweaters being not dusty."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Clean-dust sweater_39 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_40",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "Next to: sweater_39"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "sweater_38",
+      "thoughts": "I am holding a scrub brush and sweater_38 is still dusty. Cleaning it will make progress towards all sweaters being not dusty."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Clean-dust sweater_38 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_40",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_39"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "sweater_38",
+      "thoughts": "I am holding a scrub brush, which is a cleaning tool, and sweater_38 is dusty. Cleaning it will help achieve the goal of all sweaters being not dusty."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_40",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_39"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "sweater_36",
+      "thoughts": "I am holding a scrub brush, and sweater_36 is dusty. Cleaning it will help achieve the goal that all sweaters are not dusty."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Clean-dust sweater_36 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_40",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_39"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Dusty",
+          "On floor: room_floor_bedroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "sweater_37",
+      "thoughts": "I am holding a scrub brush, and sweater_37 is dusty. Cleaning it will help achieve the goal that all sweaters are not dusty."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Clean-dust sweater_37 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_40",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_39"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "CLEAN",
+      "object": "sweater_38",
+      "thoughts": "I am holding a scrub brush and sweater_38 is a sweater that needs to be not dusty. Cleaning sweater_38 will help achieve the goal that all sweaters are not dusty."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Clean failed, object is already clean"
+  },
+  {
+    "robot_state": {
+      "left_hand": "scrub_brush_40",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_39"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_11",
+      "thoughts": "All sweaters are already clean and not dusty. The remaining goal is to ensure all sweaters are on top of bed_11. Placing the scrub brush on bed_11 will free my hand so I can move sweaters onto the bed."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Place ontop scrub_brush_40 bed_11 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_39"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sweater_36",
+      "thoughts": "All sweaters need to be on top of bed_11. My hands are empty, so I will grasp sweater_36 to move it onto the bed."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Grasp sweater_36 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sweater_36",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Next to: sweater_39",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_40",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_39"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_11",
+      "thoughts": "I am currently holding sweater_36 in my left hand, and the goal is for all sweaters to be on top of bed_11. Placing sweater_36 onto bed_11 progresses towards this goal."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Place ontop sweater_36 bed_11 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_36",
+          "Next to: sweater_39",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_39"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On floor: room_floor_bedroom_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sweater_37",
+      "thoughts": "To progress towards the goal of having all sweaters on top of bed_11, I should start by picking up sweater_37 since my hands are empty."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Grasp sweater_37 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sweater_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_36",
+          "Next to: sweater_39",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_39"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_11",
+      "thoughts": "I am holding sweater_37 in my left hand. To satisfy the goal that all sweaters are on top of bed_11, I should place sweater_37 on top of bed_11 first."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Place ontop sweater_37 bed_11 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: sweater_39",
+          "Next to: sweater_36",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_37",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_39",
+          "Next to: sweater_36"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_11"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sweater_39",
+      "thoughts": "I need to place all sweaters on top of bed_11. My hands are empty, so I will grasp sweater_39 to prepare to place it on the bed."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Grasp sweater_39 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sweater_39",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: sweater_36",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_37",
+          "Next to: scrub_brush_40",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_36"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: sweater_38",
+          "Next to: bed_11"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_11",
+      "thoughts": "I am holding sweater_39 in my left hand, and the goal is to have all sweaters on top of bed_11. I will place sweater_39 on top of bed_11 to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Place ontop sweater_39 bed_11 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: sweater_36",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_37",
+          "Next to: scrub_brush_40",
+          "Next to: bed_11",
+          "Next to: sweater_38",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_36"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: scrub_brush_40",
+          "Under: sweater_39",
+          "Next to: sweater_36",
+          "Next to: bed_11"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sweater_36",
+      "thoughts": "To achieve the goal of having all sweaters on top of bed_11, I need to grasp sweater_36 next so I can place it on the bed."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Grasp sweater_36 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sweater_36",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: sweater_38",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_37",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_11",
+      "thoughts": "I am holding sweater_36 in my left hand and need to place it on top of bed_11 to work towards the goal of having all sweaters on the bed."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Place ontop sweater_36 bed_11 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: scrub_brush_40",
+          "Under: sweater_36",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sweater_39",
+      "thoughts": "To achieve the goal of having all sweaters on top of the bed, I need to start by picking up sweater_39 so I can place it on bed_11."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Grasp sweater_39 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sweater_39",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Next to: scrub_brush_40",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_11",
+      "thoughts": "I am holding sweater_39 in my left hand and need to place it on top of bed_11 to satisfy the goal that all sweaters are on the bed."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Place ontop sweater_39 bed_11 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: scrub_brush_40",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Next to: sweater_36",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sweater_36",
+      "thoughts": "To satisfy the goal that all sweaters are on top of bed_11, I need to move sweater_36 next. I will grasp sweater_36 to prepare for placing it on the bed."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Grasp sweater_36 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sweater_36",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: sweater_38",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_37",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_11",
+      "thoughts": "I am already holding sweater_36 with my left hand, so I will place it on top of bed_11 to make progress towards the goal that all sweaters are on top of the bed."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Place ontop sweater_36 bed_11 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: scrub_brush_40",
+          "Under: sweater_36",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sweater_39",
+      "thoughts": "To achieve the goal of all sweaters being on top of the bed, I need to move sweater_39, which is currently on top of a scrub brush and under sweater_36, onto bed_11. First, I will grasp sweater_39 so I can place it on the bed."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Grasp sweater_39 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sweater_39",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Next to: scrub_brush_40",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_11",
+      "thoughts": "I am currently holding sweater_39 in my left hand, and the goal is to have all sweaters on top of the bed. I will place sweater_39 on top of bed_11 to make progress towards this goal."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Place ontop sweater_39 bed_11 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: scrub_brush_40",
+          "Under: sweater_39",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sweater_36",
+      "thoughts": "To achieve the goal of having all sweaters on top of the bed, I need to pick up sweater_36 next so I can place it on bed_11."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Grasp sweater_36 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sweater_36",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: sweater_38",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_37",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_11",
+      "thoughts": "I am holding sweater_36 in my left hand, and the goal is to have all sweaters on top of bed_11. The next step is to place sweater_36 on top of bed_11."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Place ontop sweater_36 bed_11 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sweater_39",
+      "thoughts": "To achieve the goal of placing all sweaters on top of bed_11, I need to pick up sweater_39 next, as it is not yet on top of the bed."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Grasp sweater_39 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sweater_39",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_11",
+      "thoughts": "I am currently holding sweater_39 in my left hand, and the goal is for all sweaters to be on top of bed_11. Placing sweater_39 on top of bed_11 will move towards achieving the target state."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Place ontop sweater_39 bed_11 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: scrub_brush_40",
+          "Under: sweater_39",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sweater_36",
+      "thoughts": "To achieve the goal of having all sweaters on top of bed_11, I need to grasp sweater_36 next so I can place it on bed_11."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Grasp sweater_36 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sweater_36",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: sweater_38"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_37",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_37",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_11",
+      "thoughts": "I am currently holding sweater_36 in my left hand, and the goal is to place all sweaters on top of bed_11. Placing sweater_36 on top of bed_11 is a necessary step towards achieving this."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Place ontop sweater_36 bed_11 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sweater_39",
+      "thoughts": "To achieve the goal of having all sweaters on top of the bed, I need to move sweater_39 next. I will grasp sweater_39 to prepare for placing it on bed_11."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Grasp sweater_39 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sweater_39",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Next to: scrub_brush_40",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_11",
+      "thoughts": "I am holding sweater_39 in my left hand and need to place it on top of bed_11 to make progress towards the goal that all sweaters are on the bed."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Place ontop sweater_39 bed_11 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: scrub_brush_40",
+          "Under: sweater_39",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Next to: sweater_36",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sweater_36",
+      "thoughts": "To achieve the goal of all sweaters being on top of bed_11, I need to start by picking up sweater_36, as it is currently not on the bed and is accessible."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Grasp sweater_36 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sweater_36",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: sweater_38",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_37",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_11",
+      "thoughts": "I am holding sweater_36 in my left hand, and the goal is for all sweaters to be on top of bed_11. Placing sweater_36 on top of bed_11 will make progress towards achieving the goal."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Place ontop sweater_36 bed_11 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: scrub_brush_40",
+          "Under: sweater_36",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Next to: scrub_brush_40",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sweater_39",
+      "thoughts": "To achieve the goal of having all sweaters on top of bed_11, I will first grasp sweater_39 so I can place it on the bed next."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Grasp sweater_39 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sweater_39",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_11",
+      "thoughts": "I am holding sweater_39 in my left hand and need to place it on top of bed_11 to satisfy the goal that all sweaters are on the bed."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Place ontop sweater_39 bed_11 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sweater_36",
+      "thoughts": "To achieve the goal where all sweaters are on top of bed_11, I need to start by grasping sweater_36 so I can place it on the bed."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Grasp sweater_36 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sweater_36",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: sweater_38",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_37",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_11",
+      "thoughts": "I am holding sweater_36 in my left hand, and the goal is for all sweaters to be on top of bed_11. The next step is to place sweater_36 on top of bed_11 to satisfy part of the goal."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Place ontop sweater_36 bed_11 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: scrub_brush_40",
+          "Under: sweater_36",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_37"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sweater_37",
+      "thoughts": "To achieve the goal of all sweaters being on top of bed_11, I need to grasp sweater_37 so I can place it on the bed next."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Grasp sweater_37 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sweater_37",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_39"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: bed_11"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_11",
+      "thoughts": "I am holding sweater_37 in my left hand, and the goal requires all sweaters to be on top of bed_11. Placing sweater_37 on top of bed_11 is the next logical step."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Place ontop sweater_37 bed_11 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: sweater_39",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_37",
+          "Next to: sweater_39",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_36",
+          "Under: sweater_37",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_36",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_39"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: sweater_36"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "sweater_36",
+      "thoughts": "To achieve the goal of all sweaters being on top of bed_11, I need to grasp sweater_36 next so I can place it on the bed."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Grasp sweater_36 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "sweater_36",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "sweater_39",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_37",
+          "Next to: bed_11",
+          "Next to: sweater_38"
+        ]
+      },
+      {
+        "name": "scrub_brush_40",
+        "category": "scrub_brush",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Soaked? : False",
+          "Dust status: Clean",
+          "Is a Cleaning Tool",
+          "Under: sweater_39",
+          "Under: sweater_37",
+          "Next to: bed_11"
+        ]
+      },
+      {
+        "name": "room_floor_bedroom_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "sweater_36",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "bed_11",
+        "category": "bed",
+        "State description ": [
+          "Location: bedroom_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Under: sweater_39",
+          "Under: sweater_37",
+          "Next to: sweater_39",
+          "Next to: scrub_brush_40",
+          "Next to: sweater_37",
+          "On floor: room_floor_bedroom_0"
+        ]
+      },
+      {
+        "name": "sweater_38",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: sweater_39"
+        ]
+      },
+      {
+        "name": "sweater_37",
+        "category": "sweater",
+        "State description ": [
+          "Location: bedroom",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "On top of: sweater_39",
+          "On top of: sweater_38",
+          "Next to: bed_11"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_ONTOP",
+      "object": "bed_11",
+      "thoughts": "I am currently holding sweater_36 in my left hand, and to satisfy the goal state of all sweaters being on top of bed_11, I should place sweater_36 on top of bed_11 first."
+    },
+    "goal": "target environment state:\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']\n['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed_11']\n\n\n",
+    "feedback": "Place ontop sweater_36 bed_11 successful"
+  }
+]

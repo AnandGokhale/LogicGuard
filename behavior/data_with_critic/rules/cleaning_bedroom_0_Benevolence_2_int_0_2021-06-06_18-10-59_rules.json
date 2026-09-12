@@ -1,0 +1,50 @@
+[
+  {
+    "rule": "G(!bottom_cabinet_0_is_open -> X(!jeans_46_place_inside_bottom_cabinet_0))",
+    "explanation": "Prevent placing jeans 46 into cabinet 0 when it is closed"
+  },
+  {
+    "rule": "G(!bottom_cabinet_0_is_open -> X(!jeans_47_place_inside_bottom_cabinet_0))",
+    "explanation": "Prevent placing jeans 47 into cabinet 0 when it is closed"
+  },
+  {
+    "rule": "G(necklace_48_inside_bottom_cabinet_2 -> X(!(left_grasp_necklace_48|right_grasp_necklace_48)))",
+    "explanation": "Don't re\u2010grasp necklace 48 once it is already stored in cabinet 2"
+  },
+  {
+    "rule": "G(cologne_49_inside_bottom_cabinet_2 -> X(!(left_grasp_cologne_49|right_grasp_cologne_49)))",
+    "explanation": "Don't re\u2010grasp cologne 49 once it is already stored in cabinet 2"
+  },
+  {
+    "rule": "G(!sheet_53_in_hand -> X(!sheet_53_place_ontop_bed_10))",
+    "explanation": "Prevent placing the sheet on the bed when the robot is not holding it"
+  },
+  {
+    "rule": "G(bottom_cabinet_2_is_dusty -> X(!jeans_46_place_inside_bottom_cabinet_2))",
+    "explanation": "Prevent placing jeans 46 into a dusty cabinet 2 before cleaning"
+  },
+  {
+    "rule": "G(bottom_cabinet_2_is_dusty -> X(!cologne_49_place_inside_bottom_cabinet_2))",
+    "explanation": "Prevent placing cologne 49 into a dusty cabinet 2 before cleaning"
+  },
+  {
+    "rule": "G(bottom_cabinet_0_is_dusty -> X(!jeans_46_place_inside_bottom_cabinet_0))",
+    "explanation": "Prevent placing jeans 46 into a dusty cabinet 0 before cleaning"
+  },
+  {
+    "rule": "G(bottom_cabinet_0_is_dusty -> X(!jeans_47_place_inside_bottom_cabinet_0))",
+    "explanation": "Prevent placing jeans 47 into a dusty cabinet 0 before cleaning"
+  },
+  {
+    "rule": "G(!bed_10_next_to_vacuum_51 -> X(!vacuum_51_release_vacuum_51))",
+    "explanation": "Block releasing the vacuum unless it is already positioned next to the bed"
+  },
+  {
+    "rule": "G(!bed_10_next_to_vacuum_51 -> X(!done))",
+    "explanation": "Prevent signaling task completion until the vacuum is next to the bed"
+  },
+  {
+    "rule": "G(painting_50_on_top_of_sheet_53 -> X(!right_grasp_painting_50))",
+    "explanation": "Don't re\u2010grasp painting 50 once it is correctly placed on the sheet"
+  }
+]

@@ -1,0 +1,5362 @@
+[
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "Next to: broccoli_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: lettuce_1",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: countertop_56",
+          "Next to: pork_1",
+          "Next to: lettuce_1",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: broccoli_0",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: cereal_1",
+          "Next to: lettuce_1",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: raspberry_0",
+          "Next to: cereal_1",
+          "Next to: pork_1"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: cereal_0",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "On floor: room_floor_kitchen_0",
+          "Next to: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "fridge_57",
+      "thoughts": "To put multiple items inside the fridge as required by the goal state, the fridge must be open. Currently, it is closed, so the first step is to open it."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Open fridge_57 failed"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "Next to: broccoli_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: lettuce_1",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: countertop_56",
+          "Next to: pork_1",
+          "Next to: lettuce_1",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : False",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: broccoli_0",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: cereal_1",
+          "Next to: lettuce_1",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: raspberry_0",
+          "Next to: cereal_1",
+          "Next to: pork_1"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: cereal_0",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "OPEN",
+      "object": "bottom_cabinet_no_top_54",
+      "thoughts": "To put cereal_0 and cereal_1 inside bottom_cabinet_no_top_54 as required by the goal state, the cabinet must be open. Currently, it is closed, so the first step is to open it."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Open bottom_cabinet_no_top_54 success"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "Next to: broccoli_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: lettuce_1",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: countertop_56",
+          "Next to: pork_1",
+          "Next to: lettuce_1",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: broccoli_0",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: cereal_1",
+          "Next to: lettuce_1",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: raspberry_0",
+          "Next to: cereal_1",
+          "Next to: pork_1"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: cereal_0",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "cereal_0",
+      "thoughts": "To put cereal_0 inside bottom_cabinet_no_top_54 as required by the goal state, I need to first pick it up. My left hand is free, so I will grasp cereal_0 with my left hand."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Grasp cereal_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "cereal_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "Next to: broccoli_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: lettuce_1",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: countertop_56",
+          "Next to: pork_1",
+          "Next to: lettuce_1",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: cereal_1",
+          "Next to: lettuce_1",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: raspberry_0",
+          "Next to: cereal_1",
+          "Next to: pork_1"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_no_top_54",
+      "thoughts": "I am currently holding cereal_0 in my left hand, and the goal state requires cereal_0 to be inside bottom_cabinet_no_top_54, which is open. Placing cereal_0 inside the cabinet will achieve this part of the goal."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Place inside cereal_0 bottom_cabinet_no_top_54 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "Next to: broccoli_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: lettuce_1",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Next to: countertop_56",
+          "Next to: pork_1",
+          "Next to: lettuce_1",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "Under: cereal_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: cereal_1",
+          "Next to: lettuce_1",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: raspberry_0",
+          "Next to: cereal_1",
+          "Next to: pork_1"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "cereal_1",
+      "thoughts": "The next goal is to place cereal_1 inside bottom_cabinet_no_top_54 and next to cereal_0. I need to grasp cereal_1 to move it into the cabinet, which is already open."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Grasp cereal_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "cereal_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: broccoli_1",
+          "On top of: bottom_cabinet_no_top_54",
+          "On top of: cereal_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: lettuce_1",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "Under: cereal_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: lettuce_1",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: raspberry_0",
+          "Next to: pork_1"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: bottom_cabinet_no_top_54",
+          "On top of: cereal_0"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "bottom_cabinet_no_top_54",
+      "thoughts": "I am currently holding cereal_1 in my left hand, and the bottom_cabinet_no_top_54 is open. To achieve the goal of having cereal_1 inside the cabinet and next to cereal_0 (which is already inside), I will place cereal_1 inside the cabinet."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Place inside cereal_1 bottom_cabinet_no_top_54 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: broccoli_1",
+          "On top of: bottom_cabinet_no_top_54",
+          "On top of: cereal_0"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: lettuce_1",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: lettuce_1",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: raspberry_0",
+          "Next to: pork_1"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "lettuce_0",
+      "thoughts": "To achieve the goal state, lettuce_0 needs to be placed inside fridge_57. Since both of the robot\u2019s hands are empty, I will grasp lettuce_0 with my left hand to start the process of moving it to the fridge."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Grasp lettuce_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "lettuce_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "Next to: broccoli_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: lettuce_1",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: lettuce_1",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: raspberry_0",
+          "Next to: pork_1"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "On floor: room_floor_kitchen_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_57",
+      "thoughts": "I am currently holding lettuce_0 in my left hand and the fridge_57 is open. To progress towards the goal of having lettuce_0 inside the fridge, I will place it inside fridge_57."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Place inside lettuce_0 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "Next to: broccoli_1",
+          "Next to: cereal_0",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "Next to: lettuce_1",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: lettuce_1",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Next to: raspberry_0",
+          "Next to: pork_1"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: fridge_57",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Inside: lettuce_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: lettuce_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "lettuce_1",
+      "thoughts": "To achieve the goal state, lettuce_1 needs to be placed inside fridge_57 and next to lettuce_0. Since the fridge is open and my hands are empty, I will grasp lettuce_1 to prepare to put it inside the fridge."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Grasp lettuce_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "lettuce_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "Next to: broccoli_1",
+          "Next to: cereal_0",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: storage_room",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: fridge_57",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Inside: lettuce_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: lettuce_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_57",
+      "thoughts": "I am holding lettuce_1 in my left hand and the fridge is open, so I should place lettuce_1 inside fridge_57 to achieve part of the goal state."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Place inside lettuce_1 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "Next to: broccoli_1",
+          "Next to: cereal_0",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: lettuce_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: lettuce_1",
+          "Inside: fridge_57",
+          "Next to: lettuce_1",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "lettuce_0",
+      "thoughts": "Lettuce_0 needs to be inside fridge_57 and next to lettuce_1. Since lettuce_1 is already inside the fridge, I should grasp lettuce_0 next to proceed to place it inside fridge_57."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Grasp lettuce_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "lettuce_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "Next to: broccoli_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: fridge_57",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: storage_room",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Inside: lettuce_1",
+          "On floor: room_floor_kitchen_0",
+          "Next to: lettuce_1"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_57",
+      "thoughts": "I am holding lettuce_0 in my left hand and the fridge_57 is open. To achieve the goal of having lettuce_0 inside the fridge and next to lettuce_1 (which is already inside), I should place lettuce_0 inside fridge_57 now."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Place inside lettuce_0 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "Next to: broccoli_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Under: lettuce_0",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: lettuce_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: lettuce_1",
+          "Inside: fridge_57",
+          "Next to: lettuce_1",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "broccoli_0",
+      "thoughts": "To achieve the goal, broccoli_0 needs to be inside fridge_57 and next to broccoli_1. Since both hands are empty and broccoli_0 is accessible, I will grasp broccoli_0 with my left hand to prepare for placing it in the fridge."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Grasp broccoli_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "broccoli_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "Next to: broccoli_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Under: lettuce_0",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: lettuce_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: lettuce_1",
+          "Inside: fridge_57",
+          "Next to: lettuce_1",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: storage_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_57",
+      "thoughts": "I am currently holding broccoli_0 in my left hand, and the goal requires broccoli_0 to be inside fridge_57. The fridge is open, so I can place broccoli_0 inside to progress towards the target state."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Place inside broccoli_0 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "Next to: broccoli_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Under: broccoli_0",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: lettuce_1",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: lettuce_1",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "broccoli_1",
+      "thoughts": "Broccoli_1 needs to be inside fridge_57 and is currently on top of the bottom cabinet. Grasping it with my left hand is the next logical step to move it into the fridge."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Grasp broccoli_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "broccoli_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: storage_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Under: broccoli_0",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: lettuce_1",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: lettuce_1",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_57",
+      "thoughts": "I am holding broccoli_1 in my left hand, and the goal is for broccoli_1 to be inside fridge_57. The fridge is open, so I can place broccoli_1 inside it now."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Place inside broccoli_1 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Under: broccoli_1",
+          "Under: broccoli_0",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: broccoli_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: broccoli_1",
+          "Inside: lettuce_1",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: broccoli_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Inside: broccoli_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "lettuce_1",
+      "thoughts": "I have just placed broccoli_1 inside fridge_57, and now need to make sure lettuce_1 is also inside the fridge and next to lettuce_0. I will grasp lettuce_1 with my left hand to prepare to place it in the fridge."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Grasp lettuce_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "lettuce_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: storage_room",
+          "Frozen status: Not frozen"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: broccoli_1",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: broccoli_1",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: broccoli_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: broccoli_1",
+          "Next to: lettuce_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Inside: lettuce_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: broccoli_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_57",
+      "thoughts": "I am holding lettuce_1 in my left hand and need to place it inside fridge_57 to satisfy the goal state that requires lettuce_1 to be inside the fridge and next to lettuce_0, which is already inside the fridge."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Place inside lettuce_1 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: room_floor_kitchen_0",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: lettuce_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: broccoli_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: broccoli_1",
+          "Inside: lettuce_1",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: broccoli_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "raspberry_0",
+      "thoughts": "To achieve the goal state, raspberry_0 needs to be inside fridge_57. Since my left hand is empty and raspberry_0 is on the countertop, I will grasp it to prepare for moving it into the fridge."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Grasp raspberry_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "raspberry_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: storage_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: lettuce_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: broccoli_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Under: lettuce_1",
+          "Inside: broccoli_1",
+          "Inside: lettuce_1",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: broccoli_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_57",
+      "thoughts": "I am currently holding raspberry_0 in my left hand, and the goal is for raspberry_0 to be inside fridge_57. The fridge is open, so I can place raspberry_0 inside to make progress towards the goal."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Place inside raspberry_0 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_0",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: raspberry_0",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Under: raspberry_0",
+          "Under: lettuce_1",
+          "Inside: broccoli_1",
+          "Inside: lettuce_1",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_0",
+          "Inside: broccoli_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Inside: raspberry_0",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "raspberry_1",
+      "thoughts": "Raspberry_1 needs to be inside fridge_57 and next to raspberry_0. Since raspberry_1 is on the countertop and the fridge is open, I will grasp raspberry_1 with my left hand to prepare to place it inside the fridge."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Grasp raspberry_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "raspberry_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_0",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: storage_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: raspberry_0",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Under: raspberry_0",
+          "Under: lettuce_1",
+          "Inside: broccoli_1",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_0",
+          "Inside: broccoli_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Under: raspberry_0",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_57",
+      "thoughts": "I am holding raspberry_1 in my left hand, and the fridge_57 is open. Placing raspberry_1 inside fridge_57 will achieve part of the goal state and free up my left hand for further actions."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Place inside raspberry_1 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: pork_0",
+          "Next to: cereal_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Next to: countertop_56",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_0",
+          "Under: raspberry_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_0",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: raspberry_0",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Under: raspberry_0",
+          "Under: broccoli_1",
+          "Under: raspberry_1",
+          "Under: lettuce_1",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_0",
+          "Under: raspberry_1",
+          "Inside: broccoli_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Under: raspberry_0",
+          "Inside: raspberry_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pork_0",
+      "thoughts": "To achieve the goal of having pork_0 inside fridge_57 and next to pork_1, I need to first grasp pork_0. My hands are currently free, and pork_0 is on top of the countertop, so I can pick it up next."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Grasp pork_0 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pork_0",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cereal_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: storage_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_0",
+          "Under: raspberry_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_0",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: raspberry_0",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Under: broccoli_1",
+          "Under: raspberry_1",
+          "Under: lettuce_1",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_0",
+          "Under: raspberry_1",
+          "Inside: broccoli_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Under: raspberry_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_57",
+      "thoughts": "I am currently holding pork_0 in my left hand, and the goal is to have pork_0 inside fridge_57. The fridge is open, so I can place the pork_0 inside it now to make progress toward the goal state."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Place inside pork_0 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cereal_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: broccoli_1",
+          "Inside: raspberry_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_0",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_0",
+          "Inside: pork_0",
+          "Inside: raspberry_0",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "On top of: countertop_56"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Under: raspberry_0",
+          "Under: broccoli_1",
+          "Under: raspberry_1",
+          "Under: lettuce_1",
+          "Inside: pork_0",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_0",
+          "Inside: broccoli_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Inside: pork_0",
+          "Inside: raspberry_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pork_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_GRASP",
+      "object": "pork_1",
+      "thoughts": "To achieve the goal of having pork_1 inside fridge_57 and next to pork_0, I need to first grasp pork_1, which is currently on top of the countertop and accessible."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Grasp pork_1 with left_hand successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": "pork_1",
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cereal_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_1",
+          "Inside: broccoli_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_0",
+          "Inside: pork_0",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: pork_0",
+          "Inside: raspberry_0",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: storage_room",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Under: broccoli_1",
+          "Under: raspberry_1",
+          "Under: lettuce_1",
+          "Inside: pork_0",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_0",
+          "Inside: pork_0",
+          "Inside: broccoli_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Inside: pork_0",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pork_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "LEFT_PLACE_INSIDE",
+      "object": "fridge_57",
+      "thoughts": "Since I am holding pork_1 in my left hand and the goal is to have pork_1 inside fridge_57 (which is open and accessible), I should place pork_1 inside fridge_57 to move towards the target state."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": "Place inside pork_1 fridge_57 successful"
+  },
+  {
+    "robot_state": {
+      "left_hand": null,
+      "right_hand": null
+    },
+    "object_state": [
+      {
+        "name": "countertop_56",
+        "category": "countertop",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Dust status: Clean",
+          "Next to: cereal_1",
+          "On top of: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "room_floor_kitchen_0",
+        "category": "room_floor",
+        "State description ": [
+          "Stain status: Clean",
+          "Dust status: Clean"
+        ]
+      },
+      {
+        "name": "pork_0",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: broccoli_1",
+          "Inside: pork_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: pork_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "raspberry_0",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: pork_1",
+          "Inside: pork_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_1",
+          "Next to: pork_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "cereal_1",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: countertop_56",
+          "Next to: bottom_cabinet_no_top_54",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "broccoli_1",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_0",
+          "Inside: pork_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_1",
+          "Next to: pork_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "bottom_cabinet_no_top_54",
+        "category": "bottom_cabinet_no_top",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Under: countertop_56",
+          "On floor: room_floor_kitchen_0",
+          "Next to: cereal_1",
+          "Next to: cereal_0"
+        ]
+      },
+      {
+        "name": "raspberry_1",
+        "category": "raspberry",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Inside: pork_0",
+          "Inside: pork_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: pork_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "cereal_0",
+        "category": "cereal",
+        "State description ": [
+          "Location: kitchen",
+          "Under: countertop_56",
+          "Inside: bottom_cabinet_no_top_54",
+          "Next to: cereal_1",
+          "Next to: bottom_cabinet_no_top_54"
+        ]
+      },
+      {
+        "name": "pork_1",
+        "category": "pork",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_1",
+          "Inside: pork_0",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "lettuce_1",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: pork_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "lettuce_0",
+        "category": "lettuce",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Under: lettuce_1",
+          "Inside: pork_0",
+          "Inside: broccoli_1",
+          "Inside: pork_1",
+          "Inside: lettuce_1",
+          "Inside: broccoli_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: pork_1",
+          "Next to: lettuce_1",
+          "Next to: broccoli_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "broccoli_0",
+        "category": "broccoli",
+        "State description ": [
+          "Location: kitchen",
+          "Frozen status: Not frozen",
+          "Cooked status: Not cooked",
+          "Burnt status: Not burnt",
+          "Under: raspberry_0",
+          "Inside: broccoli_1",
+          "Inside: pork_1",
+          "Inside: lettuce_1",
+          "Inside: lettuce_0",
+          "Inside: fridge_57",
+          "Next to: pork_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: pork_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: fridge_57"
+        ]
+      },
+      {
+        "name": "fridge_57",
+        "category": "fridge",
+        "State description ": [
+          "Location: kitchen_0",
+          "Stain status: Clean",
+          "Open? : True",
+          "Dust status: Clean",
+          "Heat source/sink?: False",
+          "Under: pork_0",
+          "Under: broccoli_1",
+          "Under: pork_1",
+          "Under: lettuce_1",
+          "Under: lettuce_0",
+          "Under: broccoli_0",
+          "On floor: room_floor_kitchen_0",
+          "Next to: pork_0",
+          "Next to: raspberry_0",
+          "Next to: broccoli_1",
+          "Next to: raspberry_1",
+          "Next to: pork_1",
+          "Next to: lettuce_1",
+          "Next to: lettuce_0",
+          "Next to: broccoli_0"
+        ]
+      }
+    ],
+    "action": {
+      "action": "DONE",
+      "object": "none",
+      "thoughts": "All objects are already in their correct locations and relations according to the goal state. No further actions are needed."
+    },
+    "goal": "target environment state:\n['inside', 'cereal_0', 'bottom_cabinet_no_top_54']\n['inside', 'cereal_1', 'bottom_cabinet_no_top_54']\n['nextto', 'cereal_0', 'cereal_1']\n['inside', 'lettuce_0', 'fridge_57']\n['inside', 'lettuce_1', 'fridge_57']\n['nextto', 'lettuce_0', 'lettuce_1']\n['inside', 'broccoli_0', 'fridge_57']\n['inside', 'broccoli_1', 'fridge_57']\n['nextto', 'broccoli_0', 'broccoli_1']\n['inside', 'raspberry_0', 'fridge_57']\n['inside', 'raspberry_1', 'fridge_57']\n['nextto', 'raspberry_0', 'raspberry_1']\n['inside', 'pork_0', 'fridge_57']\n['inside', 'pork_1', 'fridge_57']\n['nextto', 'pork_0', 'pork_1']\n\n\n",
+    "feedback": ""
+  }
+]

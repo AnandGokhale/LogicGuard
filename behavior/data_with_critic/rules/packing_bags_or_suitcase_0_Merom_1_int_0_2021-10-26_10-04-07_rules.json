@@ -1,0 +1,75 @@
+[
+    {
+        "rule": "G(!underwear_101_in_hand -> X(!underwear_101_place_inside_backpack_97))",
+        "explanation": "Blocks placing underwear_101 inside the backpack unless it is first held."
+    },
+    {
+        "rule": "G(underwear_101_inside_backpack_97 -> X(!left_grasp_underwear_101))",
+        "explanation": "Prevents re\u2010grasping underwear_101 once it is already inside the backpack."
+    },
+    {
+        "rule": "G(!underwear_102_in_hand -> X(!underwear_102_place_inside_backpack_97))",
+        "explanation": "Blocks placing underwear_102 inside the backpack unless it is first held."
+    },
+    {
+        "rule": "G(underwear_102_inside_backpack_97 -> X(!left_grasp_underwear_102))",
+        "explanation": "Prevents re\u2010grasping underwear_102 once it is already inside the backpack."
+    },
+    {
+        "rule": "G(!underwear_103_in_hand -> X(!underwear_103_place_inside_backpack_97))",
+        "explanation": "Blocks placing underwear_103 inside the backpack unless it is first held."
+    },
+    {
+        "rule": "G(underwear_103_inside_backpack_97 -> X(!left_grasp_underwear_103))",
+        "explanation": "Prevents re\u2010grasping underwear_103 once it is already inside the backpack."
+    },
+    {
+        "rule": "G(!toothbrush_98_in_hand -> X(!toothbrush_98_place_inside_backpack_97))",
+        "explanation": "Blocks placing toothbrush_98 inside the backpack unless it is first held."
+    },
+    {
+        "rule": "G(toothbrush_98_inside_backpack_97 -> X(!left_grasp_toothbrush_98))",
+        "explanation": "Prevents re\u2010grasping toothbrush_98 once it is already inside the backpack."
+    },
+    {
+        "rule": "G(!shampoo_99_in_hand -> X(!shampoo_99_place_inside_backpack_97))",
+        "explanation": "Blocks placing shampoo_99 inside the backpack unless it is first held."
+    },
+    {
+        "rule": "G(shampoo_99_inside_backpack_97 -> X(!left_grasp_shampoo_99))",
+        "explanation": "Prevents re\u2010grasping shampoo_99 once it is already inside the backpack."
+    },
+    {
+        "rule": "G(!hardback_100_in_hand -> X(!hardback_100_place_inside_backpack_97))",
+        "explanation": "Blocks placing hardback_100 inside the backpack unless it is first held."
+    },
+    {
+        "rule": "G(hardback_100_inside_backpack_97 -> X(!left_grasp_hardback_100))",
+        "explanation": "Prevents re\u2010grasping hardback_100 once it is already inside the backpack."
+    },
+    {
+        "rule": "G(!toothpaste_103_in_hand -> X(!toothpaste_103_place_inside_backpack_97))",
+        "explanation": "Blocks placing toothpaste_103 inside the backpack unless it is first held."
+    },
+    {
+        "rule": "G(toothpaste_103_inside_backpack_97 -> X(!left_grasp_toothpaste_103))",
+        "explanation": "Prevents re\u2010grasping toothpaste_103 once it is already inside the backpack."
+    },
+    {
+        "rule": "G(!backpack_97_in_hand -> X(!backpack_97_place_ontop_bed_7))",
+        "explanation": "Blocks placing the backpack onto the bed unless the backpack is first held."
+    },
+    {
+        "rule": "G(bed_7_is_under_backpack_97 -> X(!backpack_97_place_ontop_bed_7))",
+        "explanation": "Prevents re\u2010placing the backpack onto the bed once the bed is already under it."
+    },
+    {
+        "rule": "G((underwear_101_inside_backpack_97 & underwear_102_inside_backpack_97 & underwear_103_inside_backpack_97 & toothbrush_98_inside_backpack_97 & shampoo_99_inside_backpack_97 & hardback_100_inside_backpack_97 & toothpaste_103_inside_backpack_97) -> X(done))",
+        "explanation": "Once all seven items are inside the backpack, trigger task completion and stop further actions."
+    },
+
+    {
+        "rule": "G((backpack_97_on_floor | bed_7_is_under_backpack_97) -> X(!(left_grasp_backpack_97|right_grasp_backpack_97)))",
+        "explanation": "Blocks re\u2010grasping the backpack once it has been placed in its final desired position."
+    }
+]

@@ -1,0 +1,114 @@
+[
+    {
+        "rule": "G(pretzel_0_inside_bottom_cabinet_no_top_80 -> X(!right_grasp_pretzel_0))",
+        "explanation": "Once pretzel_0 is in the cabinet, don\u2019t grasp it again."
+    },
+    {
+        "rule": "G(!bottom_cabinet_no_top_80_is_open -> X(!pretzel_0_place_inside_bottom_cabinet_no_top_80))",
+        "explanation": "Cannot place pretzel_0 inside the bottom cabinet unless it is open."
+    },
+    {
+        "rule": "G(flour_0_inside_bottom_cabinet_no_top_80 -> X(!right_grasp_flour_0))",
+        "explanation": "Once flour_0 is in the cabinet, block re\u2010grasping it."
+    },
+    {
+        "rule": "G(!bottom_cabinet_no_top_80_is_open -> X(!flour_0_place_inside_bottom_cabinet_no_top_80))",
+        "explanation": "Cannot place flour_0 inside the bottom cabinet unless it is open."
+    },
+    {
+        "rule": "G(milk_0_inside_fridge_97 -> X(!right_grasp_milk_0))",
+        "explanation": "Once milk_0 is in the fridge, don\u2019t grasp it again."
+    },
+    {
+        "rule": "G(!fridge_97_is_open -> X(!milk_0_place_inside_fridge_97))",
+        "explanation": "Cannot place milk_0 inside the fridge unless it is open."
+    },
+    {
+        "rule": "G(prosciutto_0_inside_fridge_97 -> X(!right_grasp_prosciutto_0))",
+        "explanation": "Once prosciutto_0 is in the fridge, block further grasps."
+    },
+    {
+        "rule": "G(!fridge_97_is_open -> X(!prosciutto_0_place_inside_fridge_97))",
+        "explanation": "Cannot place prosciutto_0 inside the fridge unless it is open."
+    },
+    {
+        "rule": "G(cheese_0_inside_fridge_97 -> X(!right_grasp_cheese_0))",
+        "explanation": "Once cheese_0 is in the fridge, don\u2019t grasp it again."
+    },
+    {
+        "rule": "G(!fridge_97_is_open -> X(!cheese_0_place_inside_fridge_97))",
+        "explanation": "Cannot place cheese_0 inside the fridge unless it is open."
+    },
+    {
+        "rule": "G(!yogurt_0_inside_fridge_97 -> X(!done))",
+        "explanation": "Cannot finish until yogurt_0 is placed inside the fridge."
+    },
+    {
+        "rule": "G(!soup_0_inside_fridge_97 -> X(!done))",
+        "explanation": "Cannot finish until soup_0 is placed inside the fridge."
+    },
+    {
+        "rule": "G(!carrot_0_inside_fridge_97 -> X(!done))",
+        "explanation": "Cannot finish until carrot_0 is placed inside the fridge."
+    },
+    {
+        "rule": "G(!carrot_1_inside_fridge_97 -> X(!done))",
+        "explanation": "Cannot finish until carrot_1 is placed inside the fridge."
+    },
+    {
+        "rule": "G(!carrot_2_inside_fridge_97 -> X(!done))",
+        "explanation": "Cannot finish until carrot_2 is placed inside the fridge."
+    },
+    {
+        "rule": "G(!((carrot_0_next_to_carrot_1 | carrot_0_next_to_carrot_2)) -> X(!done))",
+        "explanation": "Cannot finish until carrot_0 is adjacent to carrot_1 or carrot_2."
+    },
+    {
+        "rule": "G(!((carrot_1_next_to_carrot_0 | carrot_1_next_to_carrot_2)) -> X(!done))",
+        "explanation": "Cannot finish until carrot_1 is adjacent to carrot_0 or carrot_2."
+    },
+    {
+        "rule": "G(!((carrot_2_next_to_carrot_0 | carrot_2_next_to_carrot_1)) -> X(!done))",
+        "explanation": "Cannot finish until carrot_2 is adjacent to carrot_0 or carrot_1."
+    },
+    {
+        "rule": "G(!broccoli_0_inside_fridge_97 -> X(!done))",
+        "explanation": "Cannot finish until broccoli_0 is placed inside the fridge."
+    },
+    {
+        "rule": "G(!apple_0_inside_fridge_97 -> X(!done))",
+        "explanation": "Cannot finish until apple_0 is inside the fridge."
+    },
+    {
+        "rule": "G(!apple_1_inside_fridge_97 -> X(!done))",
+        "explanation": "Cannot finish until apple_1 is inside the fridge."
+    },
+    {
+        "rule": "G(!apple_0_next_to_apple_1 -> X(!done))",
+        "explanation": "Cannot finish until apple_0 is next to apple_1."
+    },
+    {
+        "rule": "G(! (orange_0_on_top_of_breakfast_table_44 | orange_0_next_to_orange_1 | orange_0_next_to_orange_2) -> X(!done))",
+        "explanation": "Cannot finish until orange_0 is on the table or adjacent to another orange."
+    },
+    {
+        "rule": "G(orange_0_on_top_of_breakfast_table_44 -> X(!right_grasp_orange_0))",
+        "explanation": "Once orange_0 is correctly placed, block re\u2010grasping it."
+    },
+    {
+        "rule": "G(! (orange_1_on_top_of_breakfast_table_44 | orange_1_next_to_orange_0 | orange_1_next_to_orange_2) -> X(!done))",
+        "explanation": "Cannot finish until orange_1 is on the table or adjacent to another orange."
+    },
+    {
+        "rule": "G(orange_1_on_top_of_breakfast_table_44 -> X(!right_grasp_orange_1))",
+        "explanation": "Once orange_1 is correctly placed, block re\u2010grasping it."
+    },
+    {
+        "rule": "G(! (orange_2_on_top_of_breakfast_table_44 | orange_2_next_to_orange_0 | orange_2_next_to_orange_1) -> X(!done))",
+        "explanation": "Cannot finish until orange_2 is on the table or adjacent to another orange."
+    },
+    {
+        "rule": "G(orange_2_on_top_of_breakfast_table_44 -> X(!right_grasp_orange_2))",
+        "explanation": "Once orange_2 is correctly placed, block re\u2010grasping it."
+    }
+]

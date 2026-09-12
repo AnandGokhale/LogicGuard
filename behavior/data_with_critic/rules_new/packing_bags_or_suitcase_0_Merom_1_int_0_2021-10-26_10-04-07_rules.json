@@ -1,0 +1,14 @@
+[
+    {
+        "rule": "G(!backpack_97_in_hand -> X(!open_backpack_97))",
+        "explanation": "Blocks opening the backpack unless the robot is holding it."
+    },
+    {
+        "rule": "G(open_backpack_97 -> X(!open_backpack_97))",
+        "explanation": "Prevents issuing two open_backpack_97 actions in a row without an intervening step."
+    },
+    {
+        "rule": "G((backpack_97_on_floor | bed_7_is_under_backpack_97) -> X(!right_grasp_backpack_97))",
+        "explanation": "Blocks re\u2010grasping the backpack once it has been placed in its final desired position."
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "rule": "G(!carving_knife_0_in_hand -> X(!slice_lemon_0))",
+        "explanation": "Don\u2019t attempt to slice the lemon unless the carving knife is in hand."
+    },
+    {
+        "rule": "G(lemon_0_is_sliced -> X(!slice_lemon_0))",
+        "explanation": "Once the lemon is sliced, block any further slicing to avoid redundancy."
+    },
+    {
+        "rule": "G(!lemon_0_is_sliced -> X(!carving_knife_0_release_carving_knife_0))",
+        "explanation": "Don\u2019t release the knife before the lemon is actually sliced\u2014instead keep it until slicing completes."
+    },
+    {
+        "rule": "G(!teapot_0_in_hand -> X(!teapot_0_place_ontop_stove_88))",
+        "explanation": "Prevent placing the teapot on the stove unless the robot is holding it."
+    },
+    {
+        "rule": "G((stove_88_is_under_teapot_0 | teapot_0_is_on_top_of_stove_88) -> X(!teapot_0_place_ontop_stove_88))",
+        "explanation": "If the teapot is already on the stove, block any further place-ontop actions."
+    },
+    {
+        "rule": "G(!tea_bag_0_in_hand -> X(!tea_bag_0_place_inside_teapot_0))",
+        "explanation": "Only place the tea bag inside the teapot when you are actually holding the tea bag."
+    },
+    {
+        "rule": "G(tea_bag_0_inside_teapot_0 -> X(!tea_bag_0_place_inside_teapot_0))",
+        "explanation": "Once the tea bag is in the teapot, prevent redundant place-inside actions."
+    },
+    {
+        "rule": "G(!stove_88_next_to_teapot_0 -> X(!toggle_on_stove_88))",
+        "explanation": "Block toggling the stove on unless the teapot is already positioned over it."
+    },
+    {
+        "rule": "G(stove_88_is_toggled_on -> X(!toggle_on_stove_88))",
+        "explanation": "After the stove is on, block any additional toggle-on actions."
+    },
+    {
+        "rule": "G(!tea_bag_0_is_soaked -> X(!done))",
+        "explanation": "Do not finish the task until the tea bag soaking condition is observed."
+    },
+    {
+        "rule": "G(!(lemon_0_is_sliced & (stove_88_is_under_teapot_0 | teapot_0_is_on_top_of_stove_88) & tea_bag_0_inside_teapot_0 & stove_88_is_toggled_on & tea_bag_0_is_soaked) -> X(!done))",
+        "explanation": "Prevent declaring done until *all* sub-goals\u2014including slicing, placement, stove on, and soak\u2014are satisfied."
+    }
+]

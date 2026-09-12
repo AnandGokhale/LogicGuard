@@ -1,0 +1,77 @@
+[
+  {
+    "law_id": "law-001",
+    "law": "G(!obs_has_log & !obs_has_plank & !obs_has_2x_stick & !obs_has_iron_pickaxe -> X(action_mine_log))",
+    "explanation": ""
+  },
+  {
+    "law_id": "law-002",
+    "law": "G(obs_has_log & !obs_has_plank -> X(action_craft_planks))",
+    "explanation": ""
+  },
+  {
+    "law_id": "law-003",
+    "law": "G(obs_has_2x_plank & !obs_has_2x_stick -> X(action_craft_stick))",
+    "explanation": ""
+  },
+  {
+    "law_id": "law-004",
+    "law": "G(obs_has_4x_plank & obs_has_2x_stick & !obs_has_crafting_table & !obs_near_crafting_table -> X(action_craft_crafting_table))",
+    "explanation": ""
+  },
+  {
+    "law_id": "law-005",
+    "law": "G(obs_has_4x_plank & obs_has_2x_stick & obs_has_crafting_table & !obs_near_crafting_table -> X(action_place_crafting_table))",
+    "explanation": ""
+  },
+  {
+    "law_id": "law-006",
+    "law": "G(obs_has_3x_plank & obs_has_2x_stick & !obs_has_wood_pickaxe & obs_near_crafting_table -> X(action_craft_wooden_pickaxe))",
+    "explanation": ""
+  },
+  {
+    "law_id": "law-007",
+    "law": "G(obs_has_wooden_pickaxe & !obs_wooden_pickaxe_equipped & !obs_has_3x_cobble -> X(action_equip_wooden_pickaxe))",
+    "explanation": ""
+  },
+  {
+    "law_id": "law-008",
+    "law": "G(obs_wood_pickaxe_equipped & !obs_has_3x_cobble & !obs_has_stone_pickaxe & !obs_has_2x_stick -> X(action_mine_stone))",
+    "explanation": ""
+  },
+  {
+    "law_id": "law-009",
+    "law": "G(obs_wood_pickaxe_equipped & obs_has_3x_cobble & !obs_has_stone_pickaxe -> X(action_craft_stone_pickaxe))",
+    "explanation": ""
+  },
+  {
+    "law_id": "law-010",
+    "law": "G(obs_has_3x_iron_ore & obs_near_furnace & obs_has_fuel & !obs_has_3x_iron_ingot -> X(action_smelt_iron))",
+    "explanation": ""
+  },
+  {
+    "law_id": "law-011",
+    "law": "G(obs_has_3x_iron_ingot & obs_has_2x_stick & obs_near_crafting_table & !obs_has_iron_pickaxe -> X(action_craft_iron_pickaxe))",
+    "explanation": ""
+  },
+  {
+    "law_id": "law-012",
+    "law": "G(obs_has_iron_pickaxe & !obs_iron_pickaxe_equipped & !obs_has_2x_stick -> X(action_equip_iron_pickaxe))",
+    "explanation": ""
+  },
+  {
+    "law_id": "law-013",
+    "law": "G(obs_iron_pickaxe_equipped & !obs_diamond_in_chunk -> X(action_explore_diamond_down))",
+    "explanation": ""
+  },
+  {
+    "law_id": "law-014",
+    "law": "G((!obs_has_iron_pickaxe & !obs_iron_pickaxe_equipped) -> X(!action_explore_diamond_down))",
+    "explanation": ""
+  },
+  {
+    "law_id": "law-015",
+    "law": "G( obs_has_fuel & obs_iron_in_chunk & obs_coal_in_chunk -> X(!action_explore_general))",
+    "explanation": ""
+  }
+]
